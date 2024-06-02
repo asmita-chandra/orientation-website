@@ -15,6 +15,10 @@ import { SnackbarProvider } from './util/SnackbarProvider';
 import { getScuntSettings } from './state/scuntSettings/saga';
 import { getUserInfo } from './state/user/saga';
 
+import { LandingPage } from './pages/Initial/LandingPage';
+
+const readyForFrosh = false;
+
 export default function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -24,11 +28,15 @@ export default function App() {
 
   return (
     <DarkModeProvider>
-      <SnackbarProvider>
-        <BrowserRouter>
-          <TransitionRoutes />
-        </BrowserRouter>
-      </SnackbarProvider>
+      {readyForFrosh ? (
+        <SnackbarProvider>
+          <BrowserRouter>
+            <TransitionRoutes />
+          </BrowserRouter>
+        </SnackbarProvider>
+      ) : (
+        <LandingPage />
+      )}
     </DarkModeProvider>
   );
 }
