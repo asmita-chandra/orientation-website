@@ -73,7 +73,7 @@ hr.line {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 420px;
+  width: 405px;
   margin: 0 auto;
   padding: 10px 20px;
   border-radius: 100px;
@@ -187,6 +187,10 @@ a:active {
 
   .button-container {
     grid-template-columns: 1fr;
+  }
+
+  .button-text {
+    font-size: 10px;
   }
 
   .footer-text {
