@@ -78,7 +78,6 @@ hr.line {
   padding: 10px 20px;
   border-radius: 100px;
   background: var(--white);
-  font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.05em;
   text-align: center;
@@ -178,14 +177,12 @@ a:active {
     padding-top: 10%;
   }
 
-  .info-text {
-    font-size: 12px;
-    max-width: 274px;
-    letter-spacing: 0.03em;
-    padding-top: 0;
-    padding-left: 10%;
-    text-align: left;
-    display: inline-block;
+  .button {
+    width: 274px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 11px;
+    letter-spacing: 0.05em;
   }
 
   .button-container {
