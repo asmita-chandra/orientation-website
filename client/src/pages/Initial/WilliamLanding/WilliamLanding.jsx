@@ -47,7 +47,7 @@ const WilliamLanding = () => {
   Object.keys(timeLeft).forEach((interval) => {
     if (!timeLeft[interval]) return;
     timerComponents.push(
-      <span key={interval}>
+      <span key={interval} className="timer-interval">
         {timeLeft[interval]} {interval}{' '}
       </span>,
     );
@@ -56,7 +56,7 @@ const WilliamLanding = () => {
   return (
     <div className="landing-page">
       <div className="container">
-        <div className="title-section">
+        <div className="title-section animate-fadeIn">
           <h1 className="title-text">COMING SOON!</h1>
           <p className="subtitle">
             Hey F!rosh! Our website is currently under construction. Check back soon!
@@ -64,6 +64,7 @@ const WilliamLanding = () => {
           <div className="countdown">
             {timerComponents.length ? timerComponents : <span>Time is up!</span>}
           </div>
+          <p className="stay-tuned">Stay Tuned</p>
         </div>
         <div className="info-section">
           <div className="button-container">
