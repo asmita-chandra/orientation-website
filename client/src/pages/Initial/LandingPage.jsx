@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 // F!rosh 2T4 Landing Pages
 import { AshLanding } from './AshLanding/AshLanding';
-import { AsmitaLanding } from './AsmitaLanding/AsmitaLanding';
 
 const landingPages = [
   {
     key: 0,
-    component: <AsmitaLanding />,
+    component: <AshLanding />,
   },
   {
     key: 1,
