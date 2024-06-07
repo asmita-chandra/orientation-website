@@ -6,9 +6,9 @@ import InstagramIcon from '../../../assets/social/instagram-brands-dark-purple.s
 const InstagramButton = ({ link, text }) => {
   return (
     <a href={link} target="_blank" rel="noreferrer" className="no-link-style">
-      <div className="button">
-        <img src={InstagramIcon} alt="Instagram Icon" className="button-icon" />
-        <span className="button-text">{text}</span>
+      <div className="ash-button">
+        <img src={InstagramIcon} alt="Instagram Icon" className="ash-button-icon" />
+        <span className="ash-button-text">{text}</span>
       </div>
     </a>
   );
@@ -22,18 +22,18 @@ InstagramButton.propTypes = {
 const AshLanding = () => {
   return (
     <>
-      <div className="initial-page">
-        <div className="container">
-          <div className="title">
-            <h1 className="title-text">COMING SOON!</h1>
-            <hr className="line"></hr>
-            <p className="subtitle">
+      <div className="ash-initial-page">
+        <div className="ash-container">
+          <div className="ash-title">
+            <h1 className="ash-title-text">COMING SOON!</h1>
+            <hr className="ash-line"></hr>
+            <p className="ash-subtitle">
               Hey F!rosh! Our website is currently under construction. Check back soon!
             </p>
           </div>
 
-          <div className="info">
-            <div className="button-container">
+          <div className="ash-info">
+            <div className="ash-button-container">
               <InstagramButton
                 link="https://www.instagram.com/froshweek/"
                 text="Follow @froshweek for updates"
@@ -45,8 +45,8 @@ const AshLanding = () => {
             </div>
           </div>
 
-          <div className="footer">
-            <h2 className="footer-text">Made with 💜 by the F!rosh Week 2T4 Tech Team</h2>
+          <div className="ash-footer">
+            <h2 className="ash-footer-text">Made with 💜 by the F!rosh Week 2T4 Tech Team</h2>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-.initial-page {
+.ash-initial-page {
   width: 100vw;
   height: 100vh;
 
@@ -17,7 +17,7 @@
 }
 
 /* TITLE SECTION */
-.title {
+.ash-title {
   display: flex;
   flex-direction: column;
 
@@ -28,14 +28,14 @@
   text-align: center;
   padding-top: 20%;
 }
-.title-text {
+.ash-title-text {
   font-size: 64px;
   font-style: bold;
   letter-spacing: 0.1em;
   margin-bottom: 24px;
   text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
 }
-hr.line {
+hr.ash-line {
   top: 10px;
   width: 851px;
   height: 0px;
@@ -43,13 +43,13 @@ hr.line {
   border-radius: 100px;
   margin-bottom: 24px;
 }
-.subtitle {
+.ash-subtitle {
   font-size: 20px;
   letter-spacing: 0.05em;
 }
 
 /* LINKS SECTION */
-.info {
+.ash-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +58,7 @@ hr.line {
   margin: 0 auto;
   padding-top: 70px;
 }
-.button-container {
+.ash-button-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -69,38 +69,50 @@ hr.line {
     grid-template-columns: 1fr 1fr;
   }
 }
-.button {
+.ash-button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 405px;
+  width: 410px;
   margin: 0 auto;
   padding: 10px 20px;
-  border-radius: 100px;
   background: var(--white);
+  border-radius: 100px;
+  font-size: 17px;
   font-weight: bold;
   letter-spacing: 0.05em;
   text-align: center;
   cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  user-select: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), var(--shadow);
+  transition: transform 200ms, background-color 200ms, box-shadow 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:active,
+  &:focus {
+    transform: scale(0.97);
+    transition: transform 150ms;
+  }
 }
-.button:hover {
+
+.ash-button:hover {
   background: var(--yellow);
   color: var(--purple-shades-dark);
   transition: 0.3s;
 }
-.button-icon {
+.ash-button-icon {
   width: 30px;
   height: 30px;
 }
-.button-text {
+.ash-button-text {
   color: var(--purple-shades-dark);
   margin-left: 7px;
+  margin: auto;
 }
 
 /* FOOTER */
-.footer {
+.ash-footer {
   position: absolute;
   bottom: 10px;
   right: 0;
@@ -109,18 +121,11 @@ hr.line {
   align-items: center;
   color: var(--purple-shades-muted);
 }
-.footer-text {
+.ash-footer-text {
   text-align: center;
   font-size: 20px;
   font-style: normal;
   letter-spacing: 0.1em;
-}
-
-a:hover,
-a:visited,
-a:link,
-a:active {
-  text-decoration: none !important;
 }
 
 /***************** MOBILE VIEW *******************/
@@ -130,7 +135,7 @@ a:active {
 		i.e. the largest screen width is an iphone 13 pro max thing
 	*/
 
-  .title {
+  .ash-title {
     display: flex;
     flex-direction: column;
 
@@ -143,7 +148,7 @@ a:active {
     text-align: center;
     padding-top: 60%;
   }
-  .title-text {
+  .ash-title-text {
     font-style: bold;
     font-size: 20px;
     letter-spacing: 0.1em;
@@ -153,19 +158,19 @@ a:active {
 
     margin-bottom: 10px;
   }
-  hr.line {
+  hr.ash-line {
     width: 274px;
     border: 1px solid var(--yellow);
     border-radius: 100px;
     margin-bottom: 10px;
   }
-  .subtitle {
+  .ash-subtitle {
     font-size: 12px;
     max-width: 274px;
     letter-spacing: 0.03em;
   }
 
-  .info {
+  .ash-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -177,7 +182,7 @@ a:active {
     padding-top: 10%;
   }
 
-  .button {
+  .ash-button {
     width: 274px;
     padding: 5px 10px;
     border-radius: 100px;
@@ -185,22 +190,16 @@ a:active {
     letter-spacing: 0.05em;
   }
 
-  .button-container {
+  .ash-ash-button-container {
     grid-template-columns: 1fr;
   }
 
-  .button-text {
+  .ash-ash-button-text {
     font-size: 10px;
   }
 
-  .footer-text {
+  .ash-footer-text {
     font-size: 8px;
     letter-spacing: 0.1em;
   }
-}
-a:hover,
-a:visited,
-a:link,
-a:active {
-  text-decoration: none !important;
 }
