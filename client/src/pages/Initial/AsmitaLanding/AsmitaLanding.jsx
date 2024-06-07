@@ -22,19 +22,19 @@ InstagramButton.propTypes = {
 const AsmitaLanding = () => {
   return (
     <>
-      <div className="initial-page">
+      <div className="background">
         <div className="container">
-          <div className="title">
-            <h1 className="title-text">COMING SOON</h1>
-            <hr className="line"></hr>
-            <p className="subtitle">
+          <div className="main">
+            <h1 className="main-text">COMING SOON</h1>
+            <hr className="empty"></hr>
+            <p className="subheading">
               Hey F!rosh! Our magical portal is currently being enchanted. Check back soon to
               witness the wonders we’re creating!
             </p>
           </div>
 
-          <div className="info">
-            <div className="button-container">
+          <div className="insta">
+            <div className="insta-container">
               <InstagramButton
                 link="https://www.instagram.com/froshweek/"
                 text="follow @froshweek to get updates"
@@ -46,8 +46,8 @@ const AsmitaLanding = () => {
             </div>
           </div>
 
-          <div className="footer">
-            <h2 className="footer-text">Made with 💜 by the F!rosh Week 2T4 Tech Team</h2>
+          <div className="credits">
+            <h2 className="credits-text">Made with 💜 by the F!rosh Week 2T4 Tech Team</h2>
           </div>
         </div>
       </div>
