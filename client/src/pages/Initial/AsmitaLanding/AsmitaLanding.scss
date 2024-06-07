@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Love+Ya+Like+A+Sister&display=swap');
 
 //BACKGROUND IMAGE
-.background {
+.ac-background {
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
@@ -19,7 +19,7 @@
 }
 
 //TITLE PAGE CONTENT
-.main {
+.ac-main {
   display: flex;
   flex-direction: column;
 
@@ -31,7 +31,7 @@
   padding-top: 3%;
 }
 
-.main-text {
+.ac-main-text {
   //font qualities
   font-family: 'Griffy', system-ui;
   font-size: 6em;
@@ -49,7 +49,7 @@
 }
 
 //EMPTY LINE SPACER
-hr.empty {
+hr.ac-empty {
   top: 10px;
   width: 851px;
   height: 0px;
@@ -59,7 +59,7 @@ hr.empty {
 }
 
 //SUB CONTENT
-.subheading {
+.ac-subheading {
   //font qualities
   font-family: 'Love Ya Like A Sister', cursive;
   font-weight: 400;
@@ -76,7 +76,7 @@ hr.empty {
 }
 
 //INSTAGRAM LINKS
-.insta {
+.ac-insta {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +86,7 @@ hr.empty {
   padding-top: 70px;
 }
 
-.insta-container {
+.ac-insta-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -99,7 +99,7 @@ hr.empty {
 }
 
 //BUTTON STUFF
-.button {
+.ac-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,24 +117,24 @@ hr.empty {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button:hover {
+.ac-button:hover {
   background: #f3d384;
   color: var(--purple-shades-dark);
   transition: 0.3s;
 }
 
-.button-icon {
+.ac-button-icon {
   width: 30px;
   height: 30px;
 }
 
-.button-text {
+.ac-button-text {
   color: var(--purple-shades-dark);
   margin-left: 7px;
 }
 
 //CREDITS
-.credits {
+.ac-credits {
   text-shadow: 0px 7px 10px rgb(225, 225, 225);
   position: absolute;
   bottom: 10px;
@@ -145,7 +145,7 @@ hr.empty {
   margin-bottom: 2%;
 }
 
-.credits-text {
+.ac-credits-text {
   font-style: bold;
   color: #ffffff;
   text-shadow: 0px 7px 10px rgb(189, 174, 189);
@@ -169,7 +169,7 @@ a:active {
 		i.e. the largest screen width is an iphone 13 pro max thing
 	*/
 
-  .main {
+  .ac-main {
     display: flex;
     flex-direction: column;
 
@@ -183,7 +183,7 @@ a:active {
     padding-top: 60%;
   }
 
-  .main-text {
+  .ac-main-text {
     font-family: 'Griffy', system-ui;
     font-style: bold;
     font-size: 3.5em;
@@ -206,7 +206,7 @@ a:active {
     margin-bottom: 10px;
   }
 
-  .subheading {
+  .ac-subheading {
     font-size: 12px;
     max-width: 274px;
     letter-spacing: 0.03em;
@@ -225,7 +225,7 @@ a:active {
     letter-spacing: 0.05em;
   }
 
-  .insta {
+  .ac-insta {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,7 +237,7 @@ a:active {
     padding-top: 0%;
   }
 
-  .info-text {
+  .ac-info-text {
     font-size: 12px;
     max-width: 274px;
     letter-spacing: 0.03em;
@@ -247,17 +247,17 @@ a:active {
     display: inline-block;
   }
 
-  .button {
+  .ac-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
-    height: 25px;
+    width: 300px;
+    height: 35px;
     margin: 0 auto;
     padding: 14px 20px;
     border-radius: 100px;
     background: var(--white);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.05em;
     text-align: center;
@@ -266,21 +266,21 @@ a:active {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .button-icon {
+  .ac-button-icon {
     width: 30px;
     height: 30px;
   }
 
-  .button-text {
+  .ac-button-text {
     color: var(--purple-shades-dark);
     margin-left: 7px;
   }
 
-  .button-container {
+  .ac-button-container {
     grid-template-columns: 1fr;
   }
 
-  .credits-text {
+  .ac-credits-text {
     font-style: bold;
     color: #ffffff;
     text-shadow: 0px 7px 10px rgb(189, 174, 189);
