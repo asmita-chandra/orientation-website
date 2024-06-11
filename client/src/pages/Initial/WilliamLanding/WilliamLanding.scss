@@ -6,7 +6,7 @@ $highlight-yellow: #ffeb3b;
 $white: #ffffff;
 $muted-purple: #9575cd;
 
-.landing-page {
+.jw-landing-page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,56 +16,56 @@ $muted-purple: #9575cd;
   text-align: center;
   padding: 20px;
   overflow: hidden;
-  animation: enchantedBackground 10s infinite alternate;
+  animation: jw-enchantedBackground 10s infinite alternate;
 }
 
-.container {
+.jw-container {
   max-width: 1200px;
   width: 100%;
 }
 
-.title-section {
+.jw-title-section {
   margin-bottom: 50px;
 }
 
-.title-text {
+.jw-title-text {
   font-size: 64px;
   font-weight: bold;
   margin-bottom: 20px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.subtitle {
+.jw-subtitle {
   font-size: 20px;
   margin-bottom: 30px;
 }
 
-.countdown {
+.jw-countdown {
   font-size: 24px;
   margin-bottom: 20px;
   color: $highlight-yellow;
 }
 
-.stay-tuned {
+.jw-stay-tuned {
   font-size: 24px;
   margin-top: 10px;
   color: $white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  animation: glow 1.5s infinite alternate;
+  animation: jw-glow 1.5s infinite alternate;
 }
 
-.info-section {
+.jw-info-section {
   margin-bottom: 50px;
 }
 
-.button-container {
+.jw-button-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.button {
+.jw-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,19 +83,19 @@ $muted-purple: #9575cd;
     transform: translateY(-5px);
   }
 
-  .button-icon {
+  .jw-button-icon {
     width: 24px;
     height: 24px;
     margin-right: 10px;
   }
 
-  .button-text {
+  .jw-button-text {
     font-size: 16px;
     font-weight: bold;
   }
 }
 
-.footer-section {
+.jw-footer-section {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -103,13 +103,13 @@ $muted-purple: #9575cd;
   color: $white;
 }
 
-.footer-text {
+.jw-footer-text {
   font-size: 18px;
   font-weight: bold;
 }
 
 // Animations
-@keyframes fadeIn {
+@keyframes jw-fadeIn {
   0% {
     opacity: 0;
   }
@@ -118,7 +118,7 @@ $muted-purple: #9575cd;
   }
 }
 
-@keyframes glow {
+@keyframes jw-glow {
   0% {
     text-shadow: 0 0 5px $highlight-yellow, 0 0 10px $highlight-yellow, 0 0 15px $highlight-yellow,
       0 0 20px $highlight-yellow;
@@ -129,7 +129,7 @@ $muted-purple: #9575cd;
   }
 }
 
-@keyframes enchantedBackground {
+@keyframes jw-enchantedBackground {
   0% {
     background-position: 0% 50%;
   }
@@ -138,37 +138,37 @@ $muted-purple: #9575cd;
   }
 }
 
-.animate-fadeIn {
-  animation: fadeIn 1s ease-in-out;
+.jw-animate-fadeIn {
+  animation: jw-fadeIn 1s ease-in-out;
 }
 
 // Mobile View
 @media screen and (max-width: 768px) {
-  .title-text {
+  .jw-title-text {
     font-size: 36px;
   }
 
-  .subtitle {
+  .jw-subtitle {
     font-size: 16px;
   }
 
-  .countdown {
+  .jw-countdown {
     font-size: 18px;
   }
 
-  .stay-tuned {
+  .jw-stay-tuned {
     font-size: 18px;
   }
 
-  .button {
+  .jw-button {
     width: 200px;
     padding: 10px;
-    .button-text {
+    .jw-button-text {
       font-size: 14px;
     }
   }
 
-  .footer-text {
+  .jw-footer-text {
     font-size: 14px;
   }
 }
