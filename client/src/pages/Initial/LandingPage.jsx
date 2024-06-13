@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 // F!rosh 2T4 Landing Pages
 import { AshLanding } from './AshLanding/AshLanding';
 import { AlissaLanding } from './AlissaLanding/AlissaLanding';
+import { AsmitaLanding } from './AsmitaLanding/AsmitaLanding';
 
 const landingPages = [
   {
