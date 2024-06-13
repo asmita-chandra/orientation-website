@@ -1,0 +1,146 @@
+// Define color variables for the theme
+$primary-color: #7b1fa2; // Deep purple
+$secondary-color: #ffd700; // Gold yellow
+$background-color: #f3e5f5; // Light lavender
+$text-color: #ffffff; // White
+$subtitle-color: #ffeb3b; // Bright yellow
+$footer-background: #4a148c; // Darker purple
+$button-color: #ffffff; // White
+$button-text-color: #7b1fa2; // Deep purple
+
+// Mixin for box shadow
+@mixin enchanted-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+// Animation for falling stars
+@keyframes falling-stars {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(50px);
+    opacity: 0;
+  }
+}
+
+// General styles
+.coming-soon-page {
+  background-color: $background-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; // Added to align footer at the bottom
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $text-color;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  position: relative;
+
+  // Falling stars effect
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: 10px;
+    background: $secondary-color;
+    box-shadow: 50px 100px $secondary-color, 100px 200px $secondary-color,
+      150px 300px $secondary-color, 200px 400px $secondary-color, 250px 500px $secondary-color,
+      300px 600px $secondary-color, 350px 700px $secondary-color, 400px 800px $secondary-color,
+      450px 900px $secondary-color, 500px 1000px $secondary-color;
+    animation: falling-stars 5s linear infinite;
+  }
+  &:after {
+    left: 50%;
+    top: -10px;
+    width: 1px;
+    height: 5px;
+    animation-duration: 7s;
+    box-shadow: -50px 150px $secondary-color, -100px 250px $secondary-color,
+      -150px 350px $secondary-color, -200px 450px $secondary-color, -250px 550px $secondary-color,
+      -300px 650px $secondary-color, -350px 750px $secondary-color, -400px 850px $secondary-color,
+      -450px 950px $secondary-color, -500px 1050px $secondary-color;
+  }
+}
+
+.ax-container {
+  background: linear-gradient(
+    180deg,
+    var(--purple) 0%,
+    var(--light-purple) 50%,
+    var(--purple) 100%
+  ); // Gradient background
+  border-radius: 15px;
+  padding: 120px;
+  width: 90%; // Increased width
+  max-width: 900px; // Increased max width
+  @include enchanted-shadow; // Shadow effect
+}
+
+.ax-title {
+  .title-text {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: $subtitle-color;
+    margin-bottom: 30px;
+  }
+}
+
+.ax-instagram {
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .button {
+      background-color: $button-color;
+      color: $button-text-color;
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      @include enchanted-shadow;
+      text-decoration: none;
+
+      .button-icon {
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+      }
+
+      .button-text {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        background-color: darken($button-color, 10%);
+      }
+    }
+  }
+}
+
+.ax-footer {
+  position: absolute; // Positioned absolutely
+  bottom: 0; // At the bottom
+  left: 50%; // Center horizontally
+  transform: translateX(-50%); // Adjust to be perfectly centered
+  background-color: $footer-background;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: $text-color;
+  width: 100%;
+  text-align: center;
+
+  .footer-text {
+    margin: 0;
+  }
+}
