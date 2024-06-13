@@ -4,7 +4,7 @@ import './WilliamLanding.scss';
 import InstagramIcon from '../../../assets/social/instagram-brands-dark-purple.svg';
 
 const InstagramButton = ({ link, text }) => (
-  <a href={link} target="_blank" rel="noreferrer" className="jw-no-link-style">
+  <a href={link} target="_blank" rel="noreferrer" className="no-link-style">
     <div className="jw-button">
       <img src={InstagramIcon} alt="Instagram Icon" className="jw-button-icon" />
       <span className="jw-button-text">{text}</span>

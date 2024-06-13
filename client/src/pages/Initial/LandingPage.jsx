@@ -16,9 +16,12 @@ const landingPages = [
     component: <AlissaLanding />,
   },
   {
-    key: 1,
+    key: 2,
     component: <WilliamLanding />,
-    year: '2T4',
+  },
+  {
+    key: 3,
+    component: <AsmitaLanding />,
   },
 ];
 
