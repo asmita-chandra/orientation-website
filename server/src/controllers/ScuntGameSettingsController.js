@@ -4,6 +4,7 @@ const ScuntGameSettingsController = {
   async getGameSettings(req, res, next) {
     try {
       const gameSettings = await ScuntGameSettingsServices.getGameSettings();
+      console.log(gameSettings);
       return res.status(200).send({
         message: 'Found game settings',
         settings: gameSettings,

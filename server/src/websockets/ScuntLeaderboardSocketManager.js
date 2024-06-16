@@ -86,9 +86,9 @@ class ScuntLeaderboardSocketManager {
           console.log(this.settings);
           return done();
         }
-      } catch (e) {
-        console.log(e);
-        done();
+      } catch (error) {
+        console.log(error);
+        done(error);
       }
     });
   }

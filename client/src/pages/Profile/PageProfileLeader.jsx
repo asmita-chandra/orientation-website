@@ -47,6 +47,7 @@ const PageProfileLeader = () => {
           <ProfilePageSchedule />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
+          {/* <ProfilePageQRCode /> */}
           {qrCodeLeader === true ? (
             <ProfilePageQRScanner scopes={user?.authScopes?.approved} />
           ) : null}
