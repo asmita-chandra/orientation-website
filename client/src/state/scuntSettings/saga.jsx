@@ -8,12 +8,18 @@ import {
   setScuntSettingsStart,
   setScuntSettingsSuccess,
   setScuntSettingsFailure,
+  getJudgesStart,
+  getJudgesSuccess,
+  getJudgesFailure,
+  giveJudgeBribePointsStart,
+  giveJudgeBribePointsSuccess,
+  giveJudgeBribePointsFailure,
 } from './scuntSettingsSlice';
 import useAxios from '../../hooks/useAxios';
 
 export const getScuntSettings = createAction('getScuntSettingsSaga');
 
-export function* getScuntSettingsSaga() {
+export function* getScuntSettingsSaga({ payload: setSnackbar }) {
   const { axios } = useAxios();
   try {
     yield put(getScuntSettingsStart());
@@ -21,6 +27,7 @@ export function* getScuntSettingsSaga() {
     yield put(getScuntSettingsSuccess(result.data.settings));
   } catch (error) {
     yield put(getScuntSettingsFailure(error?.response?.data?.errorMessage));
+    setSnackbar && setSnackbar(error?.response?.data?.errorMessage, true);
   }
 }
 
@@ -69,7 +76,44 @@ export function* setGameSettingsSaga({
   }
 }
 
+export const getJudges = createAction('getJudgesSaga');
+
+export function* getJudgesSaga({ payload: setSnackbar }) {
+  const { axios } = useAxios();
+  try {
+    yield put(getJudgesStart());
+    const result = yield call(axios.get, '/scunt-teams/judges');
+    yield put(getJudgesSuccess(result.data.judges));
+  } catch (error) {
+    yield put(getJudgesFailure(error?.response?.data?.errorMessage));
+    setSnackbar && setSnackbar(error?.response?.data?.errorMessage, true);
+  }
+}
+
+export const giveJudgeBribePoints = createAction('giveJudgeBribePointsSaga');
+
+export function* giveJudgeBribePointsSaga({
+  payload: { judgeUserId, points, isAddPoints, setSnackbar },
+}) {
+  const { axios } = useAxios();
+  try {
+    yield put(giveJudgeBribePointsStart());
+    const result = yield call(axios.post, '/scunt-teams/transaction/refill-bribe', {
+      judgeUserId,
+      points,
+      isAddPoints,
+    });
+    setSnackbar(result.data.message);
+    yield put(giveJudgeBribePointsSuccess(result.data.judges));
+  } catch (error) {
+    yield put(giveJudgeBribePointsFailure(error?.response?.data?.errorMessage));
+    setSnackbar && setSnackbar(error?.response?.data?.errorMessage, true);
+  }
+}
+
 export default function* scuntSettingsSaga() {
   yield takeLeading(getScuntSettings.type, getScuntSettingsSaga);
   yield takeLeading(setScuntSettings.type, setGameSettingsSaga);
+  yield takeLeading(getJudges.type, getJudgesSaga);
+  yield takeLeading(giveJudgeBribePoints.type, giveJudgeBribePointsSaga);
 }

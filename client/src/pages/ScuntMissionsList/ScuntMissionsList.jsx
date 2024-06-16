@@ -17,6 +17,10 @@ import { scuntMissionsSelector } from '../../state/scuntMissions/scuntMissionsSl
 import useAxios from '../../hooks/useAxios';
 const { axios } = useAxios();
 import greenCheck from '../../assets/misc/check-solid-green.svg';
+import { scuntTeamTransactionsSelector } from '../../state/scuntTeams/scuntTeamsSlice';
+import { getScuntTeamTransactions } from '../../state/scuntTeams/saga';
+import { PopupModal } from '../../components/popup/PopupModal';
+import { Button } from '../../components/button/Button/Button';
 
 function getMissionCategories(missions) {
   let currentCategory = '';
@@ -32,6 +36,7 @@ function getMissionCategories(missions) {
 
 const PageScuntMissionsList = () => {
   const { user } = useSelector(userSelector);
+  const loggedIn = useSelector(loggedInSelector);
   const { setSnackbar } = useContext(SnackbarContext);
   const leader = user?.userType === 'leadur';
   const { scuntSettings, loading } = useSelector(scuntSettingsSelector);
@@ -40,16 +45,14 @@ const PageScuntMissionsList = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (scuntSettings !== undefined) {
-      setRevealMissions(scuntSettings?.revealMissions);
-    }
+    if (scuntSettings?.revealMissions) setRevealMissions(true);
   }, [scuntSettings]);
 
   useEffect(() => {
-    dispatch(getScuntMissions({ showHidden: false, setSnackbar }));
-  }, []);
+    dispatch(getScuntMissions({ showHidden: false }));
+  }, [dispatch]);
 
-  if (revealMissions !== true && !leader) {
+  if ((revealMissions !== true && !leader) || !loggedIn) {
     return (
       <>
         <Header text={'Missions'} underlineDesktop={'300px'} underlineMobile={'210px'}>
@@ -72,9 +75,121 @@ const PageScuntMissionsList = () => {
   );
 };
 
+const ReportMission = () => {
+  const [click, setClick] = useState(false);
+
+  return (
+    <>
+      <PopupModal trigger={click} setTrigger={setClick} exitIcon={true} blurBackground={false}>
+        <ReportMissionPopup></ReportMissionPopup>
+      </PopupModal>
+      <Button
+        style={{ boxShadow: '5px 5px 20px #13131362' }}
+        class_options=""
+        label={<div className="scunt-report-popup-button">Report Mission</div>}
+        isSecondary
+        onClick={() => {
+          setClick(true);
+        }}
+      ></Button>
+    </>
+  );
+};
+
+const ReportMissionPopup = () => {
+  const initialFormData = {
+    optionalName: '',
+    reportReason: '',
+    preferredAction: '',
+  };
+  const [formData, setFormData] = useState(initialFormData);
+  const { setSnackbar } = useContext(SnackbarContext);
+  const [clearText, setClearText] = useState(false);
+
+  const handleInputChange = (text, field) => {
+    let newFormData = { ...formData };
+    newFormData[field] = text;
+    setFormData(newFormData);
+  };
+
+  async function handleSubmit(text) {
+    if (formData.reportReason?.length <= 0) {
+      setSnackbar('Please provide a reason for reporting', true);
+    } else if (formData.preferredAction?.length <= 0) {
+      setSnackbar('Please provide a preferred action', true);
+    } else {
+      // using faq services
+      const reqObj = {
+        email: formData.name,
+        question:
+          'Report Reason: ' +
+          formData.reportReason +
+          ' | Preferred Action: ' +
+          formData.preferredAction,
+        category: 'Scunt Reports',
+      };
+
+      try {
+        const result = await axios.post('/faq/create', reqObj);
+        if (result.status !== 200) {
+          setSnackbar('There was an error submitting your report' + result, true);
+        } else {
+          setSnackbar('Thank you for submitting your report!', false);
+          setClearText(true);
+        }
+      } catch (error) {
+        return error;
+      }
+    }
+  }
+
+  return (
+    <div className="scunt-report-popup-container">
+      <h1>Report Mission</h1>
+      <p style={{ marginBottom: '20px' }}>
+        Your report will be shared with F!rosh Execs, we aim to review reports within 30 minutes.
+      </p>
+
+      <div className="scunt-report-input">
+        <TextInput
+          label={'Name (Optional)'}
+          onChange={(text) => handleInputChange(text, 'optionalName')}
+          inputType={'text'}
+          clearText={clearText}
+          setClearText={setClearText}
+        />
+        <TextInput
+          label={'Reason for Reporting'}
+          isRequiredInput={true}
+          onChange={(text) => handleInputChange(text, 'reportReason')}
+          inputType={'textArea'}
+          clearText={clearText}
+          setClearText={setClearText}
+        />
+        <TextInput
+          label={'Preferred Action'}
+          isRequiredInput={true}
+          onChange={(text) => handleInputChange(text, 'preferredAction')}
+          inputType={'textArea'}
+          placeholder={'Remove the item'}
+          clearText={clearText}
+          setClearText={setClearText}
+        />
+      </div>
+
+      <div style={{ textAlign: 'center' }}>
+        <Button label={'Submit'} onClick={handleSubmit}>
+          Submit
+        </Button>
+      </div>
+    </div>
+  );
+};
+
 const PageScuntMissionsListShow = () => {
   const { user } = useSelector(userSelector);
   const { missions } = useSelector(scuntMissionsSelector);
+  const { scuntTeamTransactions } = useSelector(scuntTeamTransactionsSelector);
   const [mission, setMission] = useState(undefined);
   const [searchedMissions, setSearchedMissions] = useState(missions);
   const [clearText, setClearText] = useState(false);
@@ -84,9 +199,26 @@ const PageScuntMissionsListShow = () => {
   const loggedIn = useSelector(loggedInSelector);
   const [completedMissions, setCompletedMissions] = useState({});
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    getAllTeamTransactions(user?.scuntTeam);
-  }, [missions]); // inital run and whenever missions updated
+    dispatch(getScuntTeamTransactions({ teamNumber: user?.scuntTeam }));
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (scuntTeamTransactions?.length) {
+      setCompletedMissions(
+        scuntTeamTransactions.reduce((missions, transaction) => {
+          if (transaction?.missionNumber > 0) {
+            // -1 for bribes for deleted points
+            missions[transaction?.missionNumber] = transaction?.points;
+          }
+
+          return missions;
+        }, {}),
+      );
+    }
+  }, [scuntTeamTransactions]);
 
   useEffect(() => {
     setMission(undefined);
@@ -153,22 +285,6 @@ const PageScuntMissionsListShow = () => {
     setMissionStatus(response?.data?.missionStatus);
   };
 
-  const getAllTeamTransactions = async (teamNumber) => {
-    const response = await axios.post('/scunt-teams/transactions', {
-      teamNumber: teamNumber,
-    });
-    const teamTransactions = response?.data?.transactions?.transactions || [];
-
-    teamTransactions.forEach((transaction) => {
-      const missionNum = transaction?.missionNumber;
-
-      if (missionNum !== -1) {
-        // -1 for bribes for deleted points
-        completedMissions[missionNum] = transaction?.points;
-      }
-    });
-  };
-
   let previousCategory = '';
 
   let missionStatusText = '';
@@ -195,6 +311,7 @@ const PageScuntMissionsListShow = () => {
           />
           <p>These indicate completed missions!</p>
         </div>
+        <ReportMission></ReportMission>
       </div>
 
       <div className="scunt-mission-list">
@@ -313,16 +430,12 @@ const PageScuntMissionsListShow = () => {
             <p>No search results</p>
           ) : mission === undefined ? (
             <div className="separator" />
-          ) : (
-            <></>
-          )}
+          ) : null}
         </div>
       </div>
       {!loggedIn ? (
         <p>To see mission status and mission QR code please login to your account.</p>
-      ) : (
-        <></>
-      )}
+      ) : null}
       {loggedIn && mission !== undefined ? (
         missionStatus?.completed ? (
           <>
@@ -336,12 +449,8 @@ const PageScuntMissionsListShow = () => {
               </p>
             </div>
           </>
-        ) : (
-          <></>
-        )
-      ) : (
-        <></>
-      )}
+        ) : null
+      ) : null}
       {loggedIn && user?.scuntTeam && mission !== undefined ? (
         <div className="scunt-mission-qr-code">
           <QRNormal
@@ -355,9 +464,7 @@ const PageScuntMissionsListShow = () => {
             backgroundColor="white"
           />
         </div>
-      ) : (
-        <></>
-      )}
+      ) : null}
     </div>
   );
 };

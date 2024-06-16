@@ -11,52 +11,19 @@ import secondPlace from '../../assets/scuntleaderboard/second-medal.svg';
 import thirdPlace from '../../assets/scuntleaderboard/third-medal.svg';
 import { Button } from '../../components/button/Button/Button';
 
-import { useDispatch, useSelector } from 'react-redux';
-import { registeredSelector, userSelector } from '../../state/user/userSlice';
+import { useSelector } from 'react-redux';
+import { loggedInSelector, userSelector } from '../../state/user/userSlice';
 import { scuntSettingsSelector } from '../../state/scuntSettings/scuntSettingsSlice';
-import { getScuntSettings } from '../../state/scuntSettings/saga';
 import io from 'socket.io-client';
-
-const test = [
-  {
-    name: 'HIHIHI jhjhj',
-    number: 3, // group #3
-    points: 2000,
-  },
-  {
-    name: 'igsdkfj ea',
-    number: 3, // group #3
-    points: 2000,
-  },
-  {
-    name: 'asdfsgadjdd',
-    number: 3, // group #3
-    points: 50,
-  },
-  {
-    name: 'jhjhjh',
-    number: 12, // group #3
-    points: 50,
-  },
-  {
-    name: 'happi happi happi fgf fg',
-    number: 6, // group #3
-    points: 5110,
-  },
-  {
-    name: 'AADA DSAFKDGKAD',
-    number: 14, // group #3
-    points: 780,
-  },
-];
 
 const buttonStyle = { width: 'fit-content' };
 
 const ScuntLeaderboard = () => {
   const { user } = useSelector(userSelector);
   const leader = user?.userType === 'leadur';
-  const { scuntSettings, loading } = useSelector(scuntSettingsSelector);
-  const [revealJudgesAndBribes, setRevealJudgesAndBribes] = useState(false);
+  const loggedIn = useSelector(loggedInSelector);
+  const { scuntSettings } = useSelector(scuntSettingsSelector);
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
   const socket = io(`${import.meta.env.VITE_API_BASE_URL}/leaderboard`, { autoConnect: false });
   const [leaderboard, setLeaderboard] = useState([]);
 
@@ -93,15 +60,13 @@ const ScuntLeaderboard = () => {
     };
   }, []);
 
-  const dispatch = useDispatch();
-
   useEffect(() => {
-    if (scuntSettings !== undefined) {
-      setRevealJudgesAndBribes(scuntSettings?.revealJudgesAndBribes);
+    if (scuntSettings) {
+      setShowLeaderboard(scuntSettings?.revealLeaderboard);
     }
   }, [scuntSettings]);
 
-  if (revealJudgesAndBribes !== true && !leader) {
+  if ((showLeaderboard !== true && !leader) || !loggedIn) {
     return (
       <Header text={'Judges'} underlineDesktop={'265px'} underlineMobile={'180px'}>
         <ScuntLinks />
@@ -154,7 +119,6 @@ const ScuntLeaderboardShow = ({ leaderboard }) => {
 
       return team;
     });
-    console.table(result);
     return result;
   }, [leaderboard]);
   const handle = useFullScreenHandle();
@@ -207,26 +171,23 @@ const ScuntLeaderboardFullScreen = ({ arr }) => {
 };
 
 const ScuntLeaderboardDesktop = ({ arr }) => {
-  console.table(arr);
   return (
-    <>
-      <div className="leaderboard-page-desktop">
-        <table className="leaderboard-page-table">
-          {arr?.map((item) => {
-            let key = item.name + String(item.number);
-            return (
-              <ScuntLeaderboardBar
-                key={key}
-                name={item.name}
-                number={item.number}
-                points={item.computedPoints}
-                barwidth={item.width}
-              />
-            );
-          })}
-        </table>
-      </div>
-    </>
+    <div className="leaderboard-page-desktop">
+      <table className="leaderboard-page-table">
+        {arr?.map((item) => {
+          let key = item.name + String(item.number);
+          return (
+            <ScuntLeaderboardBar
+              key={key}
+              name={item.name}
+              number={item.number}
+              points={item.computedPoints}
+              barwidth={item.width}
+            />
+          );
+        })}
+      </table>
+    </div>
   );
 };
 
@@ -234,61 +195,59 @@ const ScuntLeaderboardMobile = ({ arr }) => {
   arr.sort((a, b) => b.computedPoints - a.computedPoints);
 
   return (
-    <>
-      <div className="leaderboard-page-mobile">
-        {arr.map((item) => {
-          let rank = arr.indexOf(item) + 1;
-          let key = item.name + String(item.number);
-          if (rank === 1) {
-            // first place
-            return (
-              <ScuntLeaderboardBubble
-                key={key}
-                name={item.name}
-                number={item.number}
-                points={item.computedPoints}
-                img={firstPlace}
-                barwidth={item.width}
-              />
-            );
-          } else if (rank === 2) {
-            // second place
-            return (
-              <ScuntLeaderboardBubble
-                key={key}
-                name={item.name}
-                number={item.number}
-                points={item.computedPoints}
-                img={secondPlace}
-                barwidth={item.width}
-              />
-            );
-          } else if (rank === 3) {
-            return (
-              <ScuntLeaderboardBubble
-                key={key}
-                name={item.name}
-                number={item.number}
-                points={item.computedPoints}
-                img={thirdPlace}
-                barwidth={item.width}
-              />
-            );
-          } else {
-            return (
-              <ScuntLeaderboardBubble
-                key={key}
-                rank={rank}
-                name={item.name}
-                number={item.number}
-                points={item.computedPoints}
-                barwidth={item.width}
-              />
-            );
-          }
-        })}
-      </div>
-    </>
+    <div className="leaderboard-page-mobile">
+      {arr.map((item) => {
+        let rank = arr.indexOf(item) + 1;
+        let key = item.name + String(item.number);
+        if (rank === 1) {
+          // first place
+          return (
+            <ScuntLeaderboardBubble
+              key={key}
+              name={item.name}
+              number={item.number}
+              points={item.computedPoints}
+              img={firstPlace}
+              barwidth={item.width}
+            />
+          );
+        } else if (rank === 2) {
+          // second place
+          return (
+            <ScuntLeaderboardBubble
+              key={key}
+              name={item.name}
+              number={item.number}
+              points={item.computedPoints}
+              img={secondPlace}
+              barwidth={item.width}
+            />
+          );
+        } else if (rank === 3) {
+          return (
+            <ScuntLeaderboardBubble
+              key={key}
+              name={item.name}
+              number={item.number}
+              points={item.computedPoints}
+              img={thirdPlace}
+              barwidth={item.width}
+            />
+          );
+        } else {
+          return (
+            <ScuntLeaderboardBubble
+              key={key}
+              rank={rank}
+              name={item.name}
+              number={item.number}
+              points={item.computedPoints}
+              barwidth={item.width}
+            />
+          );
+        }
+      })}
+    </div>
   );
 };
 
@@ -323,64 +282,60 @@ const ScuntLeaderboardBar = ({ name, number, points, barwidth }) => {
 
 const ScuntLeaderboardBarVertical = ({ name, number, points, barwidth }) => {
   return (
-    <>
-      <div className="scunt-leaderboard-bar-outer-v">
-        <div className="scunt-leaderboard-bar-container-v">
-          <div className="scunt-leaderboard-bar-v" style={{ height: barwidth }}></div>
-          <h3
-            style={{
-              color: 'var(--payment-error-text)',
-              marginBottom: '20px',
-              textAlign: 'center',
-            }}
-          >
-            {points}pts
-          </h3>
-        </div>
-        <div className="leaderboard-team-info-v">
-          <h3>{name}</h3>
-          <p>Group {number}</p>
-        </div>
+    <div className="scunt-leaderboard-bar-outer-v">
+      <div className="scunt-leaderboard-bar-container-v">
+        <div className="scunt-leaderboard-bar-v" style={{ height: barwidth }}></div>
+        <h3
+          style={{
+            color: 'var(--payment-error-text)',
+            marginBottom: '20px',
+            textAlign: 'center',
+          }}
+        >
+          {points}pts
+        </h3>
       </div>
-    </>
+      <div className="leaderboard-team-info-v">
+        <h3>{name}</h3>
+        <p>Group {number}</p>
+      </div>
+    </div>
   );
 };
 
 // for mobile
 const ScuntLeaderboardBubble = ({ name, number, points, rank, img, barwidth }) => {
   return (
-    <>
-      <div className="scunt-leaderboard-bubble-outer">
-        <div className="scunt-leaderboard-bubble-outer-hover">
-          {img !== undefined ? (
-            <img className="scunt-leaderboard-bubble-medal" src={img}></img>
-          ) : (
-            <></>
-          )}
-          <div
-            className="scunt-leaderboard-bubble"
-            style={{
-              backgroundImage: `linear-gradient(90deg,var(--light-purple) 0%,var(--light-purple) ${barwidth},var(--purple-transparent) ${barwidth},var(--purple-transparent) 100%)`,
-            }}
-          >
-            <div className="scunt-leaderboard-bubble-info">
-              {rank !== undefined ? (
-                <h1 className="scunt-leaderboard-bubble-rank">{rank}</h1>
-              ) : (
-                <h1 className="scunt-leaderboard-bubble-rank"></h1>
-              )}
-              <div className="scunt-leaderboard-bubble-name">
-                <h3 style={{ fontSize: '16px' }}>{name}</h3>
-                <p style={{ fontSize: '14px' }}>Group {number}</p>
-              </div>
+    <div className="scunt-leaderboard-bubble-outer">
+      <div className="scunt-leaderboard-bubble-outer-hover">
+        {img !== undefined ? (
+          <img className="scunt-leaderboard-bubble-medal" src={img}></img>
+        ) : (
+          <></>
+        )}
+        <div
+          className="scunt-leaderboard-bubble"
+          style={{
+            backgroundImage: `linear-gradient(90deg,var(--light-purple) 0%,var(--light-purple) ${barwidth},var(--purple-transparent) ${barwidth},var(--purple-transparent) 100%)`,
+          }}
+        >
+          <div className="scunt-leaderboard-bubble-info">
+            {rank !== undefined ? (
+              <h1 className="scunt-leaderboard-bubble-rank">{rank}</h1>
+            ) : (
+              <h1 className="scunt-leaderboard-bubble-rank"></h1>
+            )}
+            <div className="scunt-leaderboard-bubble-name">
+              <h3 style={{ fontSize: '16px' }}>{name}</h3>
+              <p style={{ fontSize: '14px' }}>Group {number}</p>
             </div>
-            {/* <div className='scunt-leaderboard-bubble-points'> */}
-            <h3 style={{ color: 'var(--white)', marginLeft: '5px' }}>{points + ' pts'}</h3>
-            {/* </div> */}
           </div>
+          {/* <div className='scunt-leaderboard-bubble-points'> */}
+          <h3 style={{ color: 'var(--white)', marginLeft: '5px' }}>{points + ' pts'}</h3>
+          {/* </div> */}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -22,8 +22,8 @@ const ScuntTeamController = {
   },
   async getTeamPoints(req, res, next) {
     try {
-      const teams = await ScuntTeamServices.getTeamPoints();
-      return res.status(200).send({ message: 'Team points', teams });
+      const scuntTeams = await ScuntTeamServices.getTeamPoints();
+      return res.status(200).send({ message: 'Team points', scuntTeams });
     } catch (e) {
       req.log.fatal({ msg: 'Unable to get team points', e });
       next(e);
@@ -32,8 +32,9 @@ const ScuntTeamController = {
   async bribeTransaction(req, res, next) {
     try {
       const { teamNumber, points } = req.body;
-      // const userId = req.user.id;
       const { leadur } = await ScuntTeamServices.bribeTransaction(teamNumber, points, req.user);
+      const scuntTeams = await ScuntTeamServices.getTeamPoints();
+
       return res.status(200).send({
         message:
           'Successfully added bribe points for team #' +
@@ -41,17 +42,18 @@ const ScuntTeamController = {
           ' of ' +
           points.toString(),
         user: leadur,
+        scuntTeams,
       });
-    } catch (e) {
-      req.log.fatal({ msg: 'Unable to process bribe transaction', e });
-      next(e);
+    } catch (error) {
+      req.log.fatal({ msg: 'Unable to process bribe transaction', error });
+      next(error);
     }
   },
 
   async getScuntJudges(req, res, next) {
     try {
       const judgeUsers = await ScuntTeamServices.getScuntJudges();
-      return res.status(200).send({ message: 'Successfuly found judge users', users: judgeUsers });
+      return res.status(200).send({ message: 'Successfuly found judge users', judges: judgeUsers });
     } catch (e) {
       req.log.fatal({ msg: 'Unable to get scunt judges', e });
       next(e);
@@ -62,8 +64,10 @@ const ScuntTeamController = {
     try {
       const { judgeUserId, points, isAddPoints = false } = req.body;
       await ScuntTeamServices.refillBribePoints(judgeUserId, points, isAddPoints);
+      const judges = await ScuntTeamServices.getScuntJudges();
       return res.status(200).send({
         message: (isAddPoints ? 'Added ' : 'Set ') + points?.toString() + ' bribe points',
+        judges,
       });
     } catch (e) {
       req.log.fatal({ msg: 'Unable to refill bribe points', e });
@@ -75,8 +79,10 @@ const ScuntTeamController = {
     try {
       const { teamNumber, missionNumber, points } = req.body;
       const result = await ScuntTeamServices.addTransaction(teamNumber, missionNumber, points);
+      const scuntTeams = await ScuntTeamServices.getTeamPoints();
       return res.status(200).send({
         message: result,
+        scuntTeams,
       });
     } catch (e) {
       req.log.fatal({ msg: 'Unable to add scunt team transaction', e });
@@ -87,12 +93,14 @@ const ScuntTeamController = {
     try {
       const { teamNumber, points } = req.body;
       await ScuntTeamServices.subtractTransaction(teamNumber, points);
+      const scuntTeams = await ScuntTeamServices.getTeamPoints();
       return res.status(200).send({
         message:
           'Successfully subtracted ' +
           points.toString() +
           ' points for team ' +
           teamNumber.toString(),
+        scuntTeams,
       });
     } catch (e) {
       req.log.fatal({ msg: 'Unable to subtract scunt team transaction', e });
@@ -134,11 +142,13 @@ const ScuntTeamController = {
   async intializeTeams(req, res, next) {
     try {
       await ScuntTeamServices.initializeTeams();
-      const teams = await ScuntTeamServices.getTeams();
-      res.status(200).send({ teams, message: `Successfully created ${teams.length} teams!` });
-    } catch (error) {
-      req.log.fatal({ msg: 'Unable to initialize scunt teams', error });
-      next(error);
+      const scuntTeams = await ScuntTeamServices.getTeams();
+      res
+        .status(200)
+        .send({ scuntTeams, message: `Successfully created ${scuntTeams.length} teams!` });
+    } catch (e) {
+      req.log.fatal({ msg: 'Unable to initialize scunt teams', e });
+      next(e);
     }
   },
 
@@ -157,9 +167,11 @@ const ScuntTeamController = {
     const teamObjs = req.body.teamObjs;
     try {
       const scuntTeams = await Promise.all(
-        teamObjs.map((teamObj) => ScuntTeamServices.setTeamName(teamObj.number, teamObj.name)),
+        teamObjs.map(
+          async (teamObj) => await ScuntTeamServices.setTeamName(teamObj.number, teamObj.name),
+        ),
       );
-      res.status(200).send({ scuntTeams, message: `Successfully renamed scunt teams!` });
+      res.status(200).send({ message: `Successfully renamed scunt teams!`, scuntTeams });
     } catch (e) {
       req.log.error({ msg: 'Unable to rename scunt teams', e });
       next(e);

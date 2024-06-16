@@ -13,8 +13,8 @@ const rootReducer = combineReducers({
   froshReducer,
   scuntSettingsReducer,
   scuntMissionsReducer,
-  scuntTeamsReducer,
   announcementsReducer,
+  scuntTeamsReducer,
 });
 
 export default rootReducer;

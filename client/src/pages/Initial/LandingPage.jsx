@@ -1,25 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { TanuLanding } from './TanuLanding/TanuLanding';
-import { UzmaLanding } from './UzmaLanding/UzmaLanding';
-import { NatLanding } from './NatLanding/NatLanding';
-import { SherryLanding } from './SherryLanding/SherryLanding';
+
+// F!rosh 2T4 Landing Pages
+import { AshLanding } from './AshLanding/AshLanding';
+import { WilliamLanding } from './WilliamLanding/WilliamLanding';
+import { AlissaLanding } from './AlissaLanding/AlissaLanding';
+import { AsmitaLanding } from './AsmitaLanding/AsmitaLanding';
 
 const landingPages = [
   {
     key: 0,
-    component: <TanuLanding />,
+    component: <AshLanding />,
   },
   {
     key: 1,
-    component: <UzmaLanding />,
+    component: <AlissaLanding />,
   },
   {
     key: 2,
-    component: <NatLanding />,
+    component: <WilliamLanding />,
   },
   {
     key: 3,
-    component: <SherryLanding />,
+    component: <AsmitaLanding />,
   },
 ];
 
@@ -43,6 +45,12 @@ export const LandingPage = () => {
 
     setPageIndex(JSON.parse(randIdx));
   }, []);
+
+  useEffect(() => {
+    console.log('pageIndex updated:', pageIndex);
+  }, [pageIndex]);
+
+  console.log('Current pageIndex:', pageIndex);
 
   return (
     <>

@@ -4,7 +4,6 @@ import './ScuntJudgeForm.scss';
 import { TextInput } from '../../components/input/TextInput/TextInput';
 import { useDispatch, useSelector } from 'react-redux';
 import { userSelector } from '../../state/user/userSlice';
-import { list } from './scuntTempData';
 import ReactSlider from 'react-slider';
 import { Dropdown } from '../../components/form/Dropdown/Dropdown';
 import { Button } from '../../components/button/Button/Button';
@@ -12,12 +11,18 @@ import { QRScannerDisplay } from '../../components/QRScannerDisplay/QRScannerDis
 import { SnackbarContext } from '../../util/SnackbarProvider';
 import { scuntSettingsSelector } from '../../state/scuntSettings/scuntSettingsSlice';
 import { getScuntSettings } from '../../state/scuntSettings/saga';
-import { submitBribePoints } from './functions';
+// import { submitBribePoints } from './functions';
 import greenCheck from '../../assets/misc/check-solid-green.svg';
 import { scuntMissionsSelector } from '../../state/scuntMissions/scuntMissionsSlice';
 import { getScuntMissions } from '../../state/scuntMissions/saga';
-import useAxios from '../../hooks/useAxios';
-const { axios } = useAxios();
+import { missionStatusSelector, scuntTeamsSelector } from '../../state/scuntTeams/scuntTeamsSlice';
+import {
+  addPoints,
+  getMissionStatus,
+  getScuntTeams,
+  submitBribePoints,
+  subtractPoints,
+} from '../../state/scuntTeams/saga';
 
 export const getScuntTeamObjFromTeamName = (teamName, teamObjs) => {
   if (!teamName || !teamObjs) {
@@ -41,33 +46,34 @@ export const PageScuntJudgeForm = () => {
   const { user } = useSelector(userSelector);
   const dispatch = useDispatch();
   const { missions } = useSelector(scuntMissionsSelector);
+  const { scuntTeams } = useSelector(scuntTeamsSelector);
+  const { scuntSettings } = useSelector(scuntSettingsSelector);
   const { setSnackbar } = useContext(SnackbarContext);
 
   const [teams, setTeams] = useState(['Select Team']);
   const [teamObjs, setTeamObjs] = useState();
 
-  const getScuntTeams = async () => {
-    try {
-      const response = await axios.get('/scunt-teams');
-      const { teams: teamPoints } = response.data;
-      if (teamPoints.length <= 0 || !teamPoints) setTeams([]);
-      else {
-        setTeamObjs(teamPoints);
-        setTeams(
-          teamPoints.map((team) => {
-            return team?.name;
-          }),
-        );
-      }
-    } catch (e) {
-      setTeams(['Error loading teams']);
-    }
-  };
+  useEffect(() => {
+    dispatch(getScuntMissions({ showHidden: false, setSnackbar }));
+    dispatch(getScuntSettings(setSnackbar));
+    dispatch(getScuntTeams(setSnackbar));
+  }, []);
 
   useEffect(() => {
-    dispatch(getScuntMissions({ showHidden: false }));
-    getScuntTeams();
-  }, []);
+    if (scuntTeams?.length) {
+      setTeamObjs(scuntTeams);
+      setTeams(['Select Team', ...scuntTeams.map((team) => team?.name)]);
+    }
+  }, [scuntTeams]);
+
+  if (!scuntSettings?.allowJudging)
+    return (
+      <div className="scunt-judge-form-page">
+        <div className="scunt-judge-form-container">
+          <h1>Judging is not currently allowed.</h1>
+        </div>
+      </div>
+    );
 
   return (
     <div className="scunt-judge-form-page">
@@ -97,6 +103,8 @@ const ScuntNegativePoints = ({ teams, teamObjs }) => {
 
   const { setSnackbar } = useContext(SnackbarContext);
 
+  const dispatch = useDispatch();
+
   return (
     <div style={{ width: '100%' }}>
       <div style={{ height: '15px' }} />
@@ -124,7 +132,7 @@ const ScuntNegativePoints = ({ teams, teamObjs }) => {
           <div>
             <TextInput
               label={'Points'}
-              placeholder={assignedPoints}
+              placeholder={`${assignedPoints}`}
               onChange={(value) => {
                 if (isNaN(parseInt(value))) {
                   return;
@@ -180,11 +188,15 @@ const ScuntNegativePoints = ({ teams, teamObjs }) => {
               }
               setAssignedPoints(0);
               //Subtract points here
-              const response = await axios.post('/scunt-teams/transaction/subtract', {
-                teamNumber: assignedTeam?.number,
-                points: assignedPoints,
-              });
-              setSnackbar(response?.data?.message);
+
+              dispatch(
+                subtractPoints({
+                  teamNumber: assignedTeam?.number,
+                  points: assignedPoints,
+                  setSnackbar,
+                }),
+              );
+
               setClearPointsInput(true);
             }}
           />
@@ -208,19 +220,19 @@ const ScuntBribePoints = ({ teams, teamObjs }) => {
   const [assignedTeam, setAssignedTeam] = useState('');
   const [clearPointsInput, setClearPointsInput] = useState(false);
 
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    setRemainingBribePoints(user?.scuntJudgeBribePoints);
+  }, [user]);
+
   const { setSnackbar } = useContext(SnackbarContext);
   const submitBribe = async (teamNumber, points) => {
     if (points <= 0 || points === undefined) {
       setSnackbar('You cannot give 0 points!', true);
     } else {
-      const req = { teamNumber: teamNumber, points: points };
-      const result = await submitBribePoints(req);
-      if (result !== true) {
-        setSnackbar('Error - You may not have enough bribe points', true);
-      } else {
-        setSnackbar(`Added ${assignedPoints} points to ${assignedTeam?.name}`, false);
-        setAssignedPoints(0);
-      }
+      dispatch(submitBribePoints({ teamNumber, points, setSnackbar }));
+      setAssignedPoints(0);
     }
   };
 
@@ -256,7 +268,7 @@ const ScuntBribePoints = ({ teams, teamObjs }) => {
             <div>
               <TextInput
                 label={'Points'}
-                placeholder={assignedPoints}
+                placeholder={`${assignedPoints}`}
                 onChange={(value) => {
                   if (isNaN(parseInt(value))) {
                     return;
@@ -312,8 +324,19 @@ const ScuntBribePoints = ({ teams, teamObjs }) => {
                 }
 
                 setClearPointsInput(true);
-                submitBribe(assignedTeam?.number, assignedPoints);
-                setRemainingBribePoints(remainingBribePoints - assignedPoints);
+                if (assignedPoints <= 0 || assignedPoints === undefined) {
+                  setSnackbar('You cannot give 0 points!', true);
+                } else {
+                  dispatch(
+                    submitBribePoints({
+                      teamNumber: assignedTeam?.number,
+                      assignedPoints,
+                      setSnackbar,
+                    }),
+                  );
+                  setAssignedPoints(0);
+                }
+                // setRemainingBribePoints(remainingBribePoints - assignedPoints);
               }}
             />
           </div>
@@ -330,48 +353,48 @@ ScuntBribePoints.propTypes = {
   teamObjs: PropTypes.array,
 };
 
-const ScuntMissionSelection = ({ missions, teams: teamsPassed, teamObjs }) => {
-  const teams = ['Select Team', ...teamsPassed];
-  const { scuntSettings, loading } = useSelector(scuntSettingsSelector);
+const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
+  const { scuntSettings } = useSelector(scuntSettingsSelector);
+  const { missionStatus } = useSelector(missionStatusSelector);
+  const { setSnackbar } = useContext(SnackbarContext);
   const [maxAmountPointsPercent, setMaxAmountPointsPercent] = useState(0);
   const [minAmountPointsPercent, setMinAmountPointsPercent] = useState(0);
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getScuntSettings());
-  }, []);
-
-  useEffect(() => {
-    if (scuntSettings !== undefined) {
-      if (Array.isArray(scuntSettings)) {
-        setMinAmountPointsPercent(scuntSettings?.minAmountPointsPercent);
-        setMaxAmountPointsPercent(scuntSettings?.maxAmountPointsPercent);
-      }
-    }
-  }, [scuntSettings]);
-
   const [assignedMission, setAssignedMission] = useState(undefined);
-  const [missionStatus, setMissionStatus] = useState(undefined);
   const [searchedMissions, setSearchedMissions] = useState([]);
   const [assignedPoints, setAssignedPoints] = useState(0);
   const [assignedTeam, setAssignedTeam] = useState('');
   const [clearText, setClearText] = useState(false);
   const [clearPointsInput, setClearPointsInput] = useState(false);
   const [hasQRScanned, setHasQRScanned] = useState(false);
-  const { setSnackbar } = useContext(SnackbarContext);
 
-  const getMissionStatus = async (mission, team) => {
-    if (!team || !mission) return 0;
-    const response = await axios.post('/scunt-teams/transaction/check', {
-      teamNumber: team?.number,
-      missionNumber: mission?.number,
-    });
-    setMissionStatus(response?.data?.missionStatus);
-    if (response?.data?.missionStatus?.points) {
-      setAssignedPoints(response?.data?.missionStatus?.points);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getScuntSettings(setSnackbar));
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (scuntSettings) {
+      setMinAmountPointsPercent(scuntSettings.minAmountPointsPercent);
+      setMaxAmountPointsPercent(scuntSettings.maxAmountPointsPercent);
     }
-  };
+  }, [scuntSettings]);
+
+  useEffect(() => {
+    if (assignedMission && assignedTeam)
+      dispatch(
+        getMissionStatus({
+          missionNumber: assignedMission?.number,
+          teamNumber: assignedTeam?.number,
+        }),
+      );
+  }, [dispatch, assignedMission, assignedTeam]);
+
+  useEffect(() => {
+    if (missionStatus) {
+      setAssignedPoints(missionStatus?.points || assignedMission?.points);
+    }
+  }, [missionStatus]);
 
   const getMissionSearchName = (searchName) => {
     if (searchName === '') {
@@ -398,10 +421,6 @@ const ScuntMissionSelection = ({ missions, teams: teamsPassed, teamObjs }) => {
     }
     getMissionSearchName('');
   };
-
-  useEffect(() => {
-    getMissionStatus(assignedMission, assignedTeam);
-  }, [assignedMission, assignedTeam]);
 
   return (
     <>
@@ -467,15 +486,13 @@ const ScuntMissionSelection = ({ missions, teams: teamsPassed, teamObjs }) => {
         />
       </div>
       {assignedMission !== undefined ? (
-        <div
-          style={{ width: '100%', cursor: 'pointer', marginRight: '9px' }}
-          onClick={() => {
-            setAssignedMission(undefined);
-            setSearchedMissions([]);
-            setClearText(true);
-          }}
-        >
-          <ScuntMissionEntry mission={assignedMission} selected />
+        <div style={{ width: '100%', cursor: 'pointer', marginRight: '9px' }}>
+          <ScuntMissionEntry
+            mission={assignedMission}
+            selected
+            completed={missionStatus?.completed}
+            pointsAwarded={missionStatus?.points}
+          />
         </div>
       ) : (
         searchedMissions.map((mission) => {
@@ -488,7 +505,11 @@ const ScuntMissionSelection = ({ missions, teams: teamsPassed, teamObjs }) => {
                 setAssignedPoints(mission?.points);
               }}
             >
-              <ScuntMissionEntry mission={mission} />
+              <ScuntMissionEntry
+                mission={mission}
+                completed={missionStatus?.completed}
+                pointsAwarded={missionStatus?.points}
+              />
             </div>
           );
         })
@@ -526,7 +547,7 @@ const ScuntMissionSelection = ({ missions, teams: teamsPassed, teamObjs }) => {
             <div>
               <TextInput
                 label={'Points'}
-                placeholder={assignedPoints}
+                placeholder={`${assignedPoints}`}
                 onChange={(value) => {
                   if (isNaN(parseInt(value))) {
                     return;
@@ -563,9 +584,7 @@ const ScuntMissionSelection = ({ missions, teams: teamsPassed, teamObjs }) => {
                 </b>
               </p>
             </>
-          ) : (
-            <></>
-          )}
+          ) : null}
           <div style={{ height: '15px' }} />
           <ReactSlider
             value={assignedPoints}
@@ -603,12 +622,14 @@ const ScuntMissionSelection = ({ missions, teams: teamsPassed, teamObjs }) => {
                   setSnackbar('Please select a team!', true);
                   return;
                 }
-                const response = await axios.post('/scunt-teams/transaction/add', {
-                  teamNumber: assignedTeam?.number,
-                  missionNumber: assignedMission?.number,
-                  points: assignedPoints,
-                });
-                setSnackbar(response?.data?.message);
+                dispatch(
+                  addPoints({
+                    teamNumber: assignedTeam?.number,
+                    missionNumber: assignedMission?.number,
+                    points: assignedPoints,
+                    setSnackbar,
+                  }),
+                );
                 setAssignedPoints(0);
                 setClearText(true);
                 setAssignedMission(undefined);
@@ -622,9 +643,7 @@ const ScuntMissionSelection = ({ missions, teams: teamsPassed, teamObjs }) => {
             Mission {assignedMission?.number} - {assignedPoints} Points
           </h3>
         </div>
-      ) : (
-        <></>
-      )}
+      ) : null}
     </>
   );
 };
@@ -645,18 +664,12 @@ export const ScuntMissionEntry = ({ mission, selected, completed, pointsAwarded 
           alt="judging station indication"
           className="scunt-mission-entry-judging-star"
         />
-      ) : (
-        <></>
-      )}
+      ) : null}
       <p className="mission-name">{mission?.name}</p>
 
-      {completed ? (
-        <h3 className="mission-points">
-          {pointsAwarded}/{mission?.points}
-        </h3>
-      ) : (
-        <h3 className="mission-points">{mission?.points}</h3>
-      )}
+      <h3 className="mission-points">
+        {completed ? pointsAwarded / mission?.points : mission?.points}
+      </h3>
     </div>
   );
 };

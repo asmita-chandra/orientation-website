@@ -44,9 +44,9 @@ const RadioButtons = ({
       <div
         style={{
           display: 'flex',
-          alignItems: 'center',
+          alignItems: 'flex-start',
           flexWrap: 'wrap',
-          justifyContent: 'space-evenly',
+          justifyContent: 'space-around',
         }}
         className={'radio-buttons'}
       >

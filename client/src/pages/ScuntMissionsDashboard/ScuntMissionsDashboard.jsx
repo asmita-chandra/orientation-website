@@ -2,7 +2,6 @@
 
 import { React, useState, useEffect, useContext } from 'react';
 
-import { list } from '../ScuntJudgeForm/scuntTempData';
 import './ScuntMissionsDashboard.scss';
 import '../AccountsApproval/AccountsApproval.scss';
 
@@ -30,7 +29,7 @@ import { scuntMissionsSelector } from '../../state/scuntMissions/scuntMissionsSl
 import { createMultipleMissions, getScuntMissions } from '../../state/scuntMissions/saga';
 import { Checkboxes } from '../../components/form/Checkboxes/Checkboxes';
 
-const missioninput = [
+const missionInput = [
   {
     label: 'Number',
     placeholder: '1',
@@ -68,7 +67,6 @@ const ScuntCreateMissions = () => {
   };
 
   const { setSnackbar } = useContext(SnackbarContext); // use Snackbar to send messages --> successfull hidden/deleted, etc.
-  const { darkMode } = useContext(DarkModeContext);
   const [newMission, setNewMission] = useState(initialMission);
 
   let keys = Object.keys(newMission);
@@ -106,47 +104,46 @@ const ScuntCreateMissions = () => {
   };
 
   return (
-    <>
-      <div className="scunt-create-missions-tab-container">
-        <div className="scunt-create-missions-container">
-          <div className="scunt-create-missions-textinput">
-            {missioninput.map((i) => {
-              return (
-                <TextInput
-                  key={i.key}
-                  label={i.label}
-                  placeholder={i.label}
-                  isRequiredInput={i.key === 'number' || i.key === 'name' ? true : false}
-                  onChange={
-                    (input) => {
-                      handleInput(input, i.key);
-                    }
-                    // TODO: update the state var -- DONE
+    <div className="scunt-create-missions-tab-container">
+      <div className="scunt-create-missions-container">
+        <div className="scunt-create-missions-textinput">
+          {missionInput.map((i) => {
+            return (
+              <TextInput
+                key={i.key}
+                label={i.label}
+                placeholder={i.label}
+                isRequiredInput={i.key === 'number' || i.key === 'name' ? true : false}
+                onChange={
+                  (input) => {
+                    handleInput(input, i.key);
                   }
-                  style={{ width: '100%', flexGrow: '1' }}
-                  description={i.des}
-                />
-              );
-            })}
-            <Checkboxes
-              values={['isHidden']}
-              onSelected={(value, index, state, selectedIndices) => {
-                handleInput(state, 'isHidden');
-              }}
-            />
-            <Checkboxes
-              values={['isJudgingStation']}
-              onSelected={(value, index, state, selectedIndices) => {
-                handleInput(state, 'isJudgingStation');
-              }}
-            />
-          </div>
-          <div className="scunt-create-missions-preview-container">
-            <div className="scunt-create-missions-preview">
-              <h3 style={{ marginBottom: '20px' }}>Mission Preview</h3>
+                  // TODO: update the state var -- DONE
+                }
+                style={{ width: '100%', flexGrow: '1' }}
+                description={i.des}
+              />
+            );
+          })}
+          <Checkboxes
+            values={['isHidden']}
+            onSelected={(value, index, state, selectedIndices) => {
+              handleInput(state, 'isHidden');
+            }}
+          />
+          {/* <Checkboxes
+            values={['isJudgingStation']}
+            onSelected={(value, index, state, selectedIndices) => {
+              handleInput(state, 'isJudgingStation');
+            }}
+          /> */}
+        </div>
+        <div className="scunt-create-missions-preview-container">
+          <div className="scunt-create-missions-preview">
+            <h3 style={{ marginBottom: '20px' }}>Mission Preview</h3>
 
-              {newMission !== undefined ? (
-                keys?.map((i) => {
+            {newMission !== undefined
+              ? keys?.map((i) => {
                   return (
                     <div key={i}>
                       <p style={{ color: 'var(--text-dynamic)', marginBottom: '8px' }}>
@@ -169,26 +166,23 @@ const ScuntCreateMissions = () => {
                     </div>
                   );
                 })
-              ) : (
-                <></>
-              )}
-            </div>
-
-            <Button
-              label="Create Mission"
-              onClick={() => {
-                // TODO: call backend to submit mission
-                // delete the object or set it back to initial state
-
-                handleSubmit();
-              }}
-              isSecondary={true}
-              style={{ width: 'fit-content' }}
-            />
+              : null}
           </div>
+
+          <Button
+            label="Create Mission"
+            onClick={() => {
+              // TODO: call backend to submit mission
+              // delete the object or set it back to initial state
+
+              handleSubmit();
+            }}
+            isSecondary={true}
+            style={{ width: 'fit-content' }}
+          />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -272,7 +266,7 @@ const ScuntAllMissions = () => {
             <th className="all-accounts-table-header-left-align">Category</th>
             <th className="all-accounts-table-header">Points</th>
             <th className="all-accounts-table-header">Hidden</th>
-            <th className="all-accounts-table-header">{'Judging \n Station'}</th>
+            {/* <th className="all-accounts-table-header">{'Judging \n Station'}</th> */}
             <th className="all-accounts-table-header">Delete</th>
           </tr>
           {missions.map((mission) => {
@@ -332,7 +326,7 @@ const ScuntAllMissions = () => {
                     />
                   </div>
                 </td>
-                <td
+                {/* <td
                   className="all-account-data"
                   style={{
                     padding: '8px',
@@ -343,7 +337,7 @@ const ScuntAllMissions = () => {
                   }}
                 >
                   {mission?.isJudgingStation.toString()}
-                </td>
+                </td> */}
                 <td className="all-account-data" style={{ padding: '8px' }}>
                   <div
                     onClick={async () => {
@@ -414,13 +408,13 @@ const ScuntUploadMissions = () => {
       required: false,
       errorMessage: '',
     },
-    'Judging Station?': {
-      key: 'isJudgingStation',
-      parseFunction: (val) => val.toLowerCase() === 'true',
-      validator: () => true,
-      required: false,
-      errorMessage: '',
-    },
+    // 'Judging Station?': {
+    //   key: 'isJudgingStation',
+    //   parseFunction: (val) => val.toLowerCase() === 'true',
+    //   validator: () => true,
+    //   required: false,
+    //   errorMessage: '',
+    // },
   };
 
   const handleOnSubmit = (e) => {
@@ -429,7 +423,7 @@ const ScuntUploadMissions = () => {
     if (file) {
       fileReader.onload = function (event) {
         const text = event.target.result;
-        const { data, errors } = parseCsvString(text, csvFields);
+        const { data } = parseCsvString(text, csvFields);
         setArray(data);
       };
 
