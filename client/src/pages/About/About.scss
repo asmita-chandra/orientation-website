@@ -157,11 +157,22 @@
 }
 
 // VC GRID
-.aboutus-oc-container {
-  display: flex;
-  width: 100%;
+.aboutus-oc-grid-container {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: repeat(auto-fit, 450px);
+  align-items: center;
+  justify-items: center;
   justify-content: center;
-  justify-self: center;
+  margin-bottom: 25px;
+
+  @include devices(tablet) {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .aboutus-vc-grid-container {
   display: grid;
@@ -479,4 +490,159 @@
   text-align: center;
   color: var(--black);
   margin-bottom: 20px;
+}
+
+/*creating the properties of the arrows and where they are located*/
+.aboutus-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/*creating the properties of the arrow button*/
+.aboutus-arrow-btn {
+  background-color: #ffffff;
+  color: #6f1f85;
+  font-family: 'Staatliches', sans-serif;
+  border: 0px solid #6f1f8500;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*changing the properties of the arrow button if mouse hovers*/
+.aboutus-arrow-btn:hover {
+  background-color: #6f1f85;
+  color: #fcc606;
+}
+
+/* Team slide */
+.team-slide {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Customize slick dots */
+.slick-dots li button:before {
+  color: var(--purple-shades-dark);
+}
+
+.slick-dots li.slick-active button:before {
+  color: #f3d384;
+}
+
+/* Customize slick arrows */
+.slick-prev:before,
+.slick-next:before {
+  color: var(--purple-shades-dark);
+}
+
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-slide-container {
+  padding: 20px;
+}
+
+.carousel-slide-border {
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 55px;
+  cursor: pointer;
+  height: calc(350px - 50px);
+
+  @include devices(tablet) {
+    width: 100%;
+    margin-bottom: 40px;
+    height: calc(290px - 50px);
+  }
+}
+
+.carousel-slide {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 55px;
+  cursor: pointer;
+  height: calc(320px - 50px);
+  @include devices(tablet) {
+    width: 80%;
+    margin-bottom: 40px;
+    height: calc(260px - 50px);
+  }
+
+  object-fit: contain;
+}
+
+.control-dots {
+  .dot {
+    background: var(--control-dot) !important;
+    box-shadow: unset !important;
+    width: 40px !important;
+    height: 6px !important;
+    margin: 0 0px !important;
+    border-radius: 0 !important;
+    @include devices(tablet) {
+      width: 20px !important;
+      height: 5px !important;
+    }
+  }
+}
+
+.carousel-link {
+  background: none;
+  display: block;
+  transition: transform 300ms;
+}
+
+.carousel-link:hover {
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
+
+.all-teams-tabs-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutus-tabs-component {
+  margin-top: 20px;
+}
+
+/* AboutUsTeamsCarousel styles */
+.aboutus-teams-carousel {
+  margin: 20px auto;
+  max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+.aboutus-teams-carousel-tab {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0; /* Background color for the carousel tabs */
+  margin-right: 10px; /* Adjust the right margin as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.aboutus-teams-carousel-tab h1 {
+  margin: 0;
+  font-size: 16px;
+  color: #333; /* Tab text color */
+}
+
+.aboutus-teams-carousel-tab.active {
+  background-color: #007bff; /* Active tab background color */
+}
+
+.aboutus-teams-carousel-tab.active h1 {
+  color: #fff; /* Active tab text color */
 }

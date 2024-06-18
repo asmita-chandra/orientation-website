@@ -1,24 +1,27 @@
-import {
-  React,
-  // useState
-} from 'react';
+import { React, useState } from 'react';
 import './About.scss';
+//import { Carousel } from 'react-responsive-carousel';
+//import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+//import MultiCarousel from 'react-multi-carousel';
+//import 'react-multi-carousel/lib/styles.css';
 
 import { aboutUsInfo } from '../../util/about/aboutus';
-// import { execInfo } from '../../util/about/execs';
+import { execInfo } from '../../util/about/execs';
+
 // import { techTeam } from '../../util/about/techteam';
 // import { headLeedurs } from '../../util/about/headleedurs';
 // import { subComs } from '../../util/about/subcoms';
 
-// import { ExecProfile } from './ExecProfile/ExecProfile';
+import { ExecProfile } from './ExecProfile/ExecProfile';
 import ExecLogo from '../../assets/about/about-page.svg';
-// import { useEffect } from 'react';
-// import { object } from 'prop-types';
+import { useEffect } from 'react';
+import { object } from 'prop-types';
 import { Header } from '../../components/text/Header/Header';
 
-// import InstagramIcon from '../../assets/social/instagram-brands.svg';
-// import MailIcon from '../../assets/social/envelope-solid.svg';
-// import { instagramAccounts } from '../../util/instagramAccounts';
+import InstagramIcon from '../../assets/social/instagram-brands.svg';
+import MailIcon from '../../assets/social/envelope-solid.svg';
+import { instagramAccounts } from '../../util/instagramAccounts';
 
 // import PropTypes from 'prop-types';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -70,57 +73,56 @@ const AboutUsSection = () => {
   );
 };
 
-// const OCSection = () => {
-//   return (
-//     <div className="aboutus-oc-container">
-//       {[execInfo.oc].map((info) => {
-//         return (
-//           <ExecProfile
-//             key={info.name}
-//             image={info.image}
-//             name={info.name}
-//             role={info.role}
-//             discipline={info.discipline}
-//             roleDescription={info.description}
-//             favPart={info.favPart}
-//             exec={true}
-//           />
-//         );
-//       })}
-//     </div>
-//   );
-// };
+const OCSection = () => {
+  return (
+    <div className="aboutus-oc-grid-container">
+      {[...execInfo.ocs].map((info) => {
+        return (
+          <ExecProfile
+            key={info.name}
+            className="oc-grid-item"
+            image={info.image}
+            name={info.name}
+            role={info.role}
+            discipline={info.discipline}
+            roleDescription={info.description}
+            exec={true}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
-// const VCSection = () => {
-//   return (
-//     <div className="aboutus-vc-grid-container">
-//       {[...execInfo.vcs].map((info) => {
-//         return (
-//           <ExecProfile
-//             key={info.name}
-//             className="vc-grid-item"
-//             image={info.image}
-//             name={info.name}
-//             role={info.role}
-//             discipline={info.discipline}
-//             roleDescription={info.description}
-//             favPart={info.favPart}
-//             exec={true}
-//           />
-//         );
-//       })}
-//     </div>
-//   );
-// };
+const VCSection = () => {
+  return (
+    <div className="aboutus-vc-grid-container">
+      {[...execInfo.vcs].map((info) => {
+        return (
+          <ExecProfile
+            key={info.name}
+            className="vc-grid-item"
+            image={info.image}
+            name={info.name}
+            role={info.role}
+            discipline={info.discipline}
+            roleDescription={info.description}
+            exec={true}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
-// const AboutUsExecTeam = () => {
-//   return (
-//     <>
-//       <OCSection />
-//       <VCSection />
-//     </>
-//   );
-// };
+const AboutUsExecTeam = () => {
+  return (
+    <>
+      <OCSection />
+      <VCSection />
+    </>
+  );
+};
 
 // const AboutUsTechTeam = () => {
 //   let count = 0;
@@ -283,12 +285,13 @@ const AboutUsSection = () => {
 // };
 
 const tabs = [
-  // {
-  //   title: 'Exec Team',
-  //   component: <AboutUsExecTeam />,
-  //   active: true,
-  //   wantToLoad: false,
-  // },
+  {
+    title: 'Exec Team',
+    component: <AboutUsExecTeam />,
+    active: true,
+    wantToLoad: true,
+  },
+
   // {
   //   title: 'Tech Team',
   //   component: <AboutUsTechTeam />,
@@ -309,98 +312,98 @@ const tabs = [
   // },
 ];
 
-// const AboutUsTeamsTab = () => {
-//   const wantedTabs = tabs.filter((tab) => tab.wantToLoad);
+const AboutUsTeamsTab = () => {
+  const wantedTabs = tabs.filter((tab) => tab.wantToLoad);
 
-//   const [currentTab, setCurrentTab] = useState(
-//     wantedTabs.length > 0 ? wantedTabs.at(0).title : 'Exec Team',
-//   );
+  const [currentTab, setCurrentTab] = useState(
+    wantedTabs.length > 0 ? wantedTabs.at(0).title : 'Exec Team',
+  );
 
-//   let tabsCounter = 0;
-//   let numTabs = tabs.length;
-//   let tabComponent;
+  let tabsCounter = 0;
+  let numTabs = tabs.length;
+  let tabComponent;
 
-//   return (
-//     <>
-//       <div className="aboutus-teams-all-tabs">
-//         <div className="aboutus-teams-all-tabs-scroll">
-//           {tabs.map((tab) => {
-//             if (tab.active) {
-//               tabsCounter++;
+  return (
+    <>
+      <div className="aboutus-teams-all-tabs">
+        <div className="aboutus-teams-all-tabs-scroll">
+          {tabs.map((tab) => {
+            if (tab.active) {
+              tabsCounter++;
 
-//               return (
-//                 <div key={tab.title} className="aboutus-teams-tabs">
-//                   <div
-//                     className="aboutus-teams-tabs-container"
-//                     onClick={() => {
-//                       setCurrentTab(tab.title);
-//                     }}
-//                   >
-//                     {tabsCounter > 1 ? <div className="aboutus-short-vertical-line"></div> : <></>}
-//                     <div
-//                       style={{
-//                         display: 'flex',
-//                         flexDirection: 'column',
-//                         justifyContent: 'start',
-//                       }}
-//                     >
-//                       <h1
-//                         className={
-//                           currentTab === tab.title
-//                             ? 'aboutus-teams-tabs-title-selected'
-//                             : 'aboutus-teams-tabs-title'
-//                         }
-//                       >
-//                         {tab.title}
-//                       </h1>
-//                       <div
-//                         className={`aboutus-yellow-bubble ${
-//                           currentTab === tab.title
-//                             ? 'aboutus-yellow-bubble-show'
-//                             : 'aboutus-yellow-bubble-noshow'
-//                         }`}
-//                       ></div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               );
-//             } else {
-//               return;
-//             }
-//           })}
-//         </div>
-//       </div>
+              return (
+                <div key={tab.title} className="aboutus-teams-tabs">
+                  <div
+                    className="aboutus-teams-tabs-container"
+                    onClick={() => {
+                      setCurrentTab(tab.title);
+                    }}
+                  >
+                    {tabsCounter > 1 ? <div className="aboutus-short-vertical-line"></div> : <></>}
+                    <div
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'start',
+                      }}
+                    >
+                      <h1
+                        className={
+                          currentTab === tab.title
+                            ? 'aboutus-teams-tabs-title-selected'
+                            : 'aboutus-teams-tabs-title'
+                        }
+                      >
+                        {tab.title}
+                      </h1>
+                      <div
+                        className={`aboutus-yellow-bubble ${
+                          currentTab === tab.title
+                            ? 'aboutus-yellow-bubble-show'
+                            : 'aboutus-yellow-bubble-noshow'
+                        }`}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              );
+            } else {
+              return;
+            }
+          })}
+        </div>
+      </div>
 
-//       <div className="aboutus-tabs-component">
-//         {tabs.map((tab) => {
-//           if (currentTab === tab.title && tab.active) {
-//             return tab.component;
-//           }
-//         })}
-//       </div>
-//     </>
-//   );
-// };
+      <div className="aboutus-tabs-component">
+        {tabs.map((tab) => {
+          if (currentTab === tab.title && tab.active) {
+            return tab.component;
+          }
+        })}
+      </div>
+    </>
+  );
+};
 
 const AboutUsTeamsTabWrapper = () => {
-  // let showAboutUs = false;
+  let showAboutUs = true;
 
-  // tabs.map((tab) => (tab.active = showAboutUs ? tab.wantToLoad : false));
+  tabs.map((tab) => (tab.active = showAboutUs ? tab.wantToLoad : false));
 
   // set showAboutUs in case every single tab is false
 
-  // showAboutUs = !tabs.every((tab, i, a) => !tab.wantToLoad);
+  showAboutUs = !tabs.every((tab, i, a) => !tab.wantToLoad);
 
-  // return (
-  //   <>
-  //     {showAboutUs ? (
-  //       <AboutUsTeamsTab />
-  //     ) : (
-  //       <h2 className="about-introduction-title">Stay tuned to meet the team!</h2>
-  //     )}
-  //   </>
-  // );
-  return <h2 className="about-introduction-title">Stay tuned to meet the team!</h2>;
+  return (
+    <>
+      {showAboutUs ? (
+        <AboutUsTeamsTab />
+      ) : (
+        <h2 className="about-introduction-title">Stay tuned to meet the team!</h2>
+      )}
+    </>
+  );
+  //return <h2 className="about-introduction-title">Stay tuned to meet the team!</h2>;
 };
 
 export { PageAbout };
