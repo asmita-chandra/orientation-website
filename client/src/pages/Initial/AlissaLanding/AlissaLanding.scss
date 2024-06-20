@@ -30,7 +30,7 @@ $button-text-color: #7b1fa2; // Deep purple
   background-color: $background-color;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; // Added to align footer at the bottom
+  flex-direction: column; // Align footer at the bottom
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -79,18 +79,43 @@ $button-text-color: #7b1fa2; // Deep purple
   width: 90%; // Increased width
   max-width: 900px; // Increased max width
   @include enchanted-shadow; // Shadow effect
+
+  @media (max-width: 768px) {
+    padding: 60px; // Reduce padding for smaller screens
+    width: 95%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px; // Further reduce padding for very small screens
+  }
 }
 
 .ax-title {
   .title-text {
     font-size: 4.5rem;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 3rem; // Adjust font size for smaller screens
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2.5rem; // Further adjust font size for very small screens
+    }
   }
 
   .subtitle {
     font-size: 1.2rem;
     color: $subtitle-color;
     margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+      font-size: 1rem; // Adjust font size for smaller screens
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.9rem; // Further adjust font size for very small screens
+    }
   }
 }
 
@@ -99,6 +124,11 @@ $button-text-color: #7b1fa2; // Deep purple
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    @media (max-width: 480px) {
+      flex-direction: column; // Stack buttons vertically on very small screens
+      gap: 10px;
+    }
 
     .button {
       background-color: $button-color;
@@ -118,6 +148,14 @@ $button-text-color: #7b1fa2; // Deep purple
 
       .button-text {
         font-size: 1rem;
+
+        @media (max-width: 768px) {
+          font-size: 0.9rem; // Adjust font size for smaller screens
+        }
+
+        @media (max-width: 480px) {
+          font-size: 0.8rem; // Further adjust font size for very small screens
+        }
       }
 
       &:hover {
@@ -142,5 +180,13 @@ $button-text-color: #7b1fa2; // Deep purple
 
   .footer-text {
     margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem; // Adjust font size for smaller screens
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.8rem; // Further adjust font size for very small screens
+    }
   }
 }
