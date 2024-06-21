@@ -118,6 +118,7 @@ const HomePageSlideshow = () => {
             src={image.src}
             placeholder={image.placeholder}
             alt={'slideshow' + index}
+            loading="lazy"
           />
         </div>
       ))}
