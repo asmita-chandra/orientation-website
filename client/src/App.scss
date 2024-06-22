@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Almendra SC', sans-serif;
+  font-family: 'LittleWitches', sans-serif;
   @include devices(tablet) {
     user-select: none;
   }
@@ -52,7 +52,7 @@ html {
   background-color: var(--page-bg);
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-family: 'Almendra SC', sans-serif;
+  font-family: 'LittleWitches', sans-serif;
 }
 
 h1,
@@ -60,7 +60,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Almendra SC', serif;
+  font-family: 'LittleWitches', serif;
   margin: 0px;
   padding: 0px;
 }
