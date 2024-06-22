@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'LittleWitches', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   @include devices(tablet) {
     user-select: none;
   }
@@ -18,6 +18,11 @@
 @font-face {
   font-family: 'LittleWitches';
   src: url('../assets/fonts/LittleWitches-K7r7y.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova_regular.ttf') format('opentype');
 }
 
 @font-face {
@@ -52,7 +57,7 @@ html {
   background-color: var(--page-bg);
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-family: 'LittleWitches', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
 }
 
 h1,
