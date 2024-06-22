@@ -52,7 +52,7 @@ const PageAbout = () => {
 
 const AboutUsSection = () => {
   return (
-    <Header text="About Us">
+    <Header text="ABOUT US">
       <div className="aboutus-subsubcontainer">
         <div className="aboutus-image-container">
           <LazyLoadImage className="aboutus-image" src={ExecLogo} alt="logo"></LazyLoadImage>
@@ -286,7 +286,7 @@ const AboutUsExecTeam = () => {
 
 const tabs = [
   {
-    title: 'Exec Team',
+    title: 'EXEC TEAM',
     component: <AboutUsExecTeam />,
     active: true,
     wantToLoad: true,
@@ -316,7 +316,7 @@ const AboutUsTeamsTab = () => {
   const wantedTabs = tabs.filter((tab) => tab.wantToLoad);
 
   const [currentTab, setCurrentTab] = useState(
-    wantedTabs.length > 0 ? wantedTabs.at(0).title : 'Exec Team',
+    wantedTabs.length > 0 ? wantedTabs.at(0).title : 'EXEC TEAM',
   );
 
   let tabsCounter = 0;

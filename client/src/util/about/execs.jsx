@@ -1,10 +1,10 @@
-import oc1Photo from '../../assets/about/execs/co-oc1.jpg';
-import oc2Photo from '../../assets/about/execs/co-oc2.jpg';
-import vcFinance from '../../assets/about/execs/vcfinance.jpg';
-import vcEvents1 from '../../assets/about/execs/vcevents1.jpg';
-import vcEvents2 from '../../assets/about/execs/vcevents2.jpg';
-import vcLeadership from '../../assets/about/execs/vcleadership.jpg';
-import vcMarketing from '../../assets/about/execs/vcmarketing.jpg';
+import oc1Photo from '../../assets/about/execs/Lily_pfp.png';
+import oc2Photo from '../../assets/about/execs/vedant_pfp.png';
+import vcFinance from '../../assets/about/execs/finance_pfp.png';
+import vcEvents1 from '../../assets/about/execs/vc-events_pfp.png';
+import vcEvents2 from '../../assets/about/execs/events_pfp.png';
+import vcLeadership from '../../assets/about/execs/leadership_pfp.png';
+import vcMarketing from '../../assets/about/execs/marketing_pfp.png';
 
 export const execInfo = {
   ocs: [

@@ -18,7 +18,7 @@ import MessageIconDefaultDarkMode from '../../assets/darkmode/navbar/message-sol
 
 import ProfileIcon from '../../assets/navbar/circle-user-solid-purple.svg';
 import ProfileIconDarkMode from '../../assets/darkmode/navbar/circle-user-solid-purple.svg';
-import MainFroshLogo from '../../assets/logo/frosh-draft-logo-2t4.svg';
+import MainFroshLogo from '../../assets/logo/main-logo.png';
 
 import { Link, useLocation } from 'react-router-dom';
 import { pages } from '../../util/pages';
@@ -204,26 +204,26 @@ const NavbarMobile = ({ isLoggedIn, froshInitials, isRegistered }) => {
                         <img
                           className="navbar-svg-icon"
                           alt={
-                            page.label === 'Home'
-                              ? 'home'
-                              : page.label === 'About'
-                              ? 'about'
+                            page.label === 'HOME'
+                              ? 'HOME'
+                              : page.label === 'ABOUT'
+                              ? 'ABOUT'
                               : page.label === 'FAQ'
-                              ? 'faq'
+                              ? 'FAQ'
                               : ''
                           }
                           src={
                             pathname === page.path
-                              ? page.label === 'Home'
+                              ? page.label === 'HOME'
                                 ? HomeIconPurple
-                                : page.label === 'About'
+                                : page.label === 'ABOUT'
                                 ? AboutIconPurple
                                 : page.label === 'FAQ'
                                 ? MessageIconPurple
                                 : {}
-                              : page.label === 'Home'
+                              : page.label === 'HOME'
                               ? HomeIconGrey
-                              : page.label === 'About'
+                              : page.label === 'ABOUT'
                               ? AboutIconGrey
                               : page.label === 'FAQ'
                               ? MessageIconGrey
@@ -234,26 +234,26 @@ const NavbarMobile = ({ isLoggedIn, froshInitials, isRegistered }) => {
                         <img
                           className="navbar-svg-icon"
                           alt={
-                            page.label === 'Home'
-                              ? 'home'
-                              : page.label === 'About'
-                              ? 'about'
+                            page.label === 'HOME'
+                              ? 'HOME'
+                              : page.label === 'ABOUT'
+                              ? 'ABOUT'
                               : page.label === 'FAQ'
-                              ? 'faq'
+                              ? 'FAQ'
                               : ''
                           }
                           src={
                             pathname === page.path
-                              ? page.label === 'Home'
+                              ? page.label === 'HOME'
                                 ? HomeIconHighlightDarkMode
-                                : page.label === 'About'
+                                : page.label === 'ABOUT'
                                 ? AboutIconHighlightDarkMode
                                 : page.label === 'FAQ'
                                 ? MessageIconHighlightDarkMode
                                 : {}
-                              : page.label === 'Home'
+                              : page.label === 'HOME'
                               ? HomeIconDefaultDarkMode
-                              : page.label === 'About'
+                              : page.label === 'ABOUT'
                               ? AboutIconDefaultDarkMode
                               : page.label === 'FAQ'
                               ? MessageIconDefaultDarkMode
