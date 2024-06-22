@@ -18,7 +18,6 @@ const ExecProfile = ({
   discipline,
   roleDescription,
   description,
-  favPart,
   exec,
   quote,
   subcom,
@@ -56,7 +55,6 @@ const ExecProfile = ({
             role={role}
             discipline={discipline}
             roleDescription={roleDescription}
-            favPart={favPart}
           />
         ) : subcom ? (
           <SubcomProfileDescription name={name} description={roleDescription} cochairs={cochairs} />
@@ -82,7 +80,7 @@ const ExecProfileTitle = ({ name, role }) => {
   );
 };
 
-const ExecProfileDescription = ({ name, role, discipline, roleDescription, favPart }) => {
+const ExecProfileDescription = ({ name, role, discipline, roleDescription }) => {
   return (
     <div className="exec-profile-description">
       <div className="exec-profile-title-cont">
@@ -96,15 +94,9 @@ const ExecProfileDescription = ({ name, role, discipline, roleDescription, favPa
       </p>
 
       <p className="exec-profile-description-role">
-        <span style={{ fontWeight: 'bold' }}>MY ROLE: </span>
+        <span style={{ fontWeight: 'bold' }}> FUN FACTS: </span>
         <br></br>
         {roleDescription}
-      </p>
-
-      <p className="exec-profile-description-fav">
-        <span style={{ fontWeight: 'bold' }}>MY FAVOURITE PART: </span>
-        <br></br>
-        {favPart}
       </p>
     </div>
   );
@@ -216,7 +208,6 @@ ExecProfile.propTypes = {
 
   discipline: PropTypes.string,
   roleDescription: PropTypes.string,
-  favPart: PropTypes.string,
   quote: PropTypes.string,
   cochairs: PropTypes.array, // list of subcom members
 
@@ -237,7 +228,6 @@ ExecProfileDescription.propTypes = {
   role: PropTypes.string,
   discipline: PropTypes.string,
   roleDescription: PropTypes.string,
-  favPart: PropTypes.string,
 };
 
 ScuntJudgeDescription.propTypes = {
