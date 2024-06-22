@@ -18,7 +18,7 @@ import MessageIconDefaultDarkMode from '../../assets/darkmode/navbar/message-sol
 
 import ProfileIcon from '../../assets/navbar/circle-user-solid-purple.svg';
 import ProfileIconDarkMode from '../../assets/darkmode/navbar/circle-user-solid-purple.svg';
-import MainFroshLogo from '../../assets/logo/frosh-main-logo-with-bg.svg';
+import MainFroshLogo from '../../assets/logo/frosh-draft-logo-2t4.svg';
 
 import { Link, useLocation } from 'react-router-dom';
 import { pages } from '../../util/pages';
