@@ -74,7 +74,7 @@
 }
 
 .lily-background {
-  width: 100%; /* Adjust this value based on how much you want the image to be shifted */
+  width: 100%;
   position: absolute;
   left: 50%;
   transform: translateX(-125%);
@@ -107,7 +107,7 @@
 .schedule-container-dates-container-selected {
   opacity: 1;
   transform: scale(1);
-  box-shadow: 0 0 10px rgb(251, 214, 246); /* Adjust the shadow as needed */
+  box-shadow: 0 0 10px rgb(251, 214, 246);
 }
 
 .schedule-accordion {

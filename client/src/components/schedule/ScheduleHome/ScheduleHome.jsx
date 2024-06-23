@@ -6,7 +6,7 @@ import './ScheduleHome.scss';
 import { data } from '../../../assets/schedule/data';
 import location from '../../../assets/misc/location.png';
 import { DarkModeContext } from '../../../util/DarkModeProvider';
-import LilyDesign from '../../../assets/schedule/lily.svg'; // Import the SVG
+import LilyDesign from '../../../assets/schedule/lily.svg';
 
 function getDaysSchedule() {
   return Object.keys(data);
