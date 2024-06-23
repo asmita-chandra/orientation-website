@@ -9,7 +9,7 @@ import vcMarketing from '../../assets/about/execs/marketing_pfp.png';
 export const execInfo = {
   ocs: [
     {
-      name: ' Lily VanderWoude',
+      name: 'LILY VANDERWOUDE',
       role: 'Orientation Chair',
       discipline: 'Mech 2T5 + PEY ',
       image: oc1Photo,
@@ -24,7 +24,7 @@ export const execInfo = {
     },
 
     {
-      name: 'Vedant Gupta',
+      name: 'VEDANT GUPTA',
       role: 'Orientation Chair',
       discipline: 'EngSci (Aerospace) 2T5 + PEY',
       image: oc2Photo,
@@ -38,8 +38,8 @@ export const execInfo = {
 
   vcs: [
     {
-      name: 'Mehak Afzal',
-      role: 'Vice-Chair Finance',
+      name: 'MEHAK AFZAL',
+      role: 'VC Finance',
       discipline: ' Mech 2T5 + PEY',
       image: vcFinance,
       description: `Some fun facts about me are: You may have (hopefully) seen me around skule in a variety of 
@@ -51,7 +51,7 @@ export const execInfo = {
     },
 
     {
-      name: 'Olivia Fredrickson',
+      name: 'OLIVIA FREDRICKSON',
       role: 'VC Leadership',
       discipline: 'Mech 2T4+1 + PEY',
       image: vcLeadership,
@@ -62,7 +62,7 @@ export const execInfo = {
     },
 
     {
-      name: 'Victoria Zhou',
+      name: 'VICTORIA ZHOU',
       role: 'VC Marketing',
       discipline: ' EngSci (BME) 2T5 + PEY',
       image: vcMarketing,
@@ -72,7 +72,7 @@ export const execInfo = {
       `,
     },
     {
-      name: 'Simona Tenche',
+      name: 'SIMONA TENCHE',
       role: 'VC Events',
       discipline: 'MSE 2T6 + PEY',
       image: vcEvents1,
@@ -82,7 +82,7 @@ export const execInfo = {
       `,
     },
     {
-      name: 'Katherine Elder',
+      name: 'KATHERINE ELDER',
       role: 'VC Events',
       discipline: 'EngSci (Physics) 2T5 + PEY',
       image: vcEvents2,
