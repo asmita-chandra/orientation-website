@@ -7,14 +7,7 @@ import { TextInput } from '../../components/input/TextInput/TextInput';
 import { Button } from '../../components/button/Button/Button';
 
 import BackgroundColourDark from '../../assets/darkmode/login/background-colour-dark.svg';
-import BackgroundDark from '../../assets/darkmode/login/background-dark.svg';
-import CloudsDark from '../../assets/darkmode/login/clouds-dark.svg';
-import CloudsLongDark from '../../assets/darkmode/login/clouds-long-dark.svg';
-import ForegroundDark from '../../assets/darkmode/login/foreground-dark.svg';
-import MidgroundDark from '../../assets/darkmode/login/midground-dark.svg';
-
 import BackgroundColour from '../../assets/login/background-colour.svg';
-import Background from '../../assets/login/background.svg';
 
 import LoadingAnimation from '../../components/misc/LoadingAnimation/LoadingAnimation';
 import { ErrorSuccessBox } from '../../components/containers/ErrorSuccessBox/ErrorSuccessBox';
