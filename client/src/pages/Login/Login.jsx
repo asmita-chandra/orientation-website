@@ -15,11 +15,6 @@ import MidgroundDark from '../../assets/darkmode/login/midground-dark.svg';
 
 import BackgroundColour from '../../assets/login/background-colour.svg';
 import Background from '../../assets/login/background.svg';
-import Birds from '../../assets/login/birds.svg';
-import Clouds from '../../assets/login/clouds.svg';
-import CloudsLong from '../../assets/login/clouds-long.svg';
-import Foreground from '../../assets/login/foreground.svg';
-import Midground from '../../assets/login/midground.svg';
 
 import LoadingAnimation from '../../components/misc/LoadingAnimation/LoadingAnimation';
 import { ErrorSuccessBox } from '../../components/containers/ErrorSuccessBox/ErrorSuccessBox';
@@ -148,42 +143,6 @@ const LoginBackgroundImages = () => {
             <img className="bg-colour" src={BackgroundColour} alt="background-colour"></img>
           ) : (
             <img className="bg-colour" src={BackgroundColourDark} alt="background-colour"></img>
-          )}
-
-          {!darkMode ? (
-            <img className="bg" src={Background} alt="background"></img>
-          ) : (
-            <img className="bg" src={BackgroundDark} alt="background"></img>
-          )}
-
-          {!darkMode ? (
-            <img className="birds" src={Birds} alt="birds"></img>
-          ) : (
-            <img className="birds" src={Birds} alt="birds"></img>
-          )}
-
-          {!darkMode ? (
-            <img className="clouds" src={Clouds} alt="clouds"></img>
-          ) : (
-            <img className="clouds" src={CloudsDark} alt="clouds"></img>
-          )}
-
-          {!darkMode ? (
-            <img className="clouds-long" src={CloudsLong} alt="clouds"></img>
-          ) : (
-            <img className="clouds-long" src={CloudsLongDark} alt="clouds"></img>
-          )}
-
-          {!darkMode ? (
-            <img className="midground" src={Midground} alt="midground"></img>
-          ) : (
-            <img className="midground" src={MidgroundDark} alt="midground"></img>
-          )}
-
-          {!darkMode ? (
-            <img className="foreground" src={Foreground} alt="foreground"></img>
-          ) : (
-            <img className="foreground" src={ForegroundDark} alt="foreground"></img>
           )}
         </div>
       </LazyLoadComponent>
