@@ -58,6 +58,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: 'Proxima Nova', sans-serif;
+  cursor: url('src/assets/cursor/cursor-2t4.png'), auto; // Apply custom cursor here
 }
 
 h1,
@@ -89,9 +90,11 @@ button {
 input {
   background-color: (--faq-searchbar-bg);
 }
+
 input[type='text'] {
   color: var(--black);
 }
+
 ::placeholder {
   color: var(--placeholder-text);
 }
