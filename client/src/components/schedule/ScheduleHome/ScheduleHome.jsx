@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { ButtonSelector } from '../../buttonSelector/buttonSelector/ButtonSelector';
 import { SingleAccordion } from '../../text/Accordion/SingleAccordion/SingleAccordion';
@@ -6,6 +6,7 @@ import './ScheduleHome.scss';
 import { data } from '../../../assets/schedule/data';
 import location from '../../../assets/misc/location.png';
 import { DarkModeContext } from '../../../util/DarkModeProvider';
+import LilyDesign from '../../../assets/schedule/lily.svg';
 
 function getDaysSchedule() {
   return Object.keys(data);
@@ -30,64 +31,72 @@ const ScheduleComponent = () => {
   const buttonList = Object.keys(data).map((item) => {
     return { name: item };
   });
+
   return (
     <div className="schedule-container">
-      <div className="mobile-only">
-        <ButtonSelector
-          buttonList={buttonList}
-          activeIndex={selectedDayIndex}
-          setActiveIndex={(index) => {
-            setSelectedDayIndex(index);
-            setCloseAll(!closeAll);
-          }}
-          style={{
-            maxWidth: '250px',
-            marginTop: '0px',
-            marginBottom: '10px',
-            padding: '11px 15px',
-            minWidth: '110px',
-          }}
-        />
+      <div className="schedule-left-container desktop-only">
+        <img src={LilyDesign} alt="Lily Design" className="lily-design" />
       </div>
-      <div className="schedule-container-dates desktop-only">
-        {Object.keys(data).map((day, index) => {
-          const dayOfWeek = day.split(' ')[0];
-          const date = day.split(' ')[1] + ' ' + day.split(' ')[2];
-          return (
-            <div className="schedule-container-left" key={index}>
-              <div
-                style={{
-                  top: index === 0 ? '42.5px' : 'unset',
-                  height: index === Object.keys(data).length - 1 ? '42.5px' : '',
-                }}
-                className="schedule-container-line"
+      <div className="schedule-middle-container">
+        <div className="mobile-only">
+          <ButtonSelector
+            buttonList={buttonList}
+            activeIndex={selectedDayIndex}
+            setActiveIndex={(index) => {
+              setSelectedDayIndex(index);
+              setCloseAll(!closeAll);
+            }}
+            style={{
+              maxWidth: '250px',
+              marginTop: '0px',
+              marginBottom: '10px',
+              padding: '11px 15px',
+              minWidth: '110px',
+            }}
+          />
+        </div>
+        <div className="schedule-container-dates desktop-only">
+          {Object.keys(data).map((day, index) => {
+            const dayOfWeek = day.split(' ')[0];
+            const date = day.split(' ')[1] + ' ' + day.split(' ')[2];
+
+            return (
+              <div className="schedule-container-left" key={index}>
+                <div
+                  style={{
+                    top: index === 0 ? '42.5px' : 'unset',
+                    height: index === Object.keys(data).length - 1 ? '42.5px' : '',
+                  }}
+                ></div>
+                <div
+                  className={`schedule-container-dates-container ${
+                    selectedDayIndex === index ? 'schedule-container-dates-container-selected' : ''
+                  }`}
+                  onClick={() => {
+                    setSelectedDayIndex(index);
+                    setCloseAll(!closeAll);
+                  }}
+                >
+                  <h1>{dayOfWeek}</h1>
+                  <h2>{date}</h2>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="schedule-right-container">
+        <div style={{ width: '100%' }}>
+          {data[Object.keys(data)[selectedDayIndex]].map((scheduleDay, index) => {
+            return (
+              <ScheduleComponentAccordion
+                key={index}
+                scheduleDay={scheduleDay}
+                closeAll={closeAll}
               />
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <div className="schedule-container-dot" />
-                <div className="schedule-container-dot2" />
-              </div>
-              <div
-                className={`schedule-container-dates-container ${
-                  selectedDayIndex === index ? 'schedule-container-dates-container-selected' : ''
-                }`}
-                onClick={() => {
-                  setSelectedDayIndex(index);
-                  setCloseAll(!closeAll);
-                }}
-              >
-                <h1>{dayOfWeek}</h1>
-                <h2>{date}</h2>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-      <div style={{ width: '100%' }}>
-        {data[Object.keys(data)[selectedDayIndex]].map((scheduleDay, index) => {
-          return (
-            <ScheduleComponentAccordion key={index} scheduleDay={scheduleDay} closeAll={closeAll} />
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -95,7 +104,7 @@ const ScheduleComponent = () => {
 
 export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
   const [isOpen, setIsOpen] = useState(true);
-  const { darkMode, setDarkModeStatus } = useContext(DarkModeContext);
+  const { darkMode } = useContext(DarkModeContext);
 
   useEffect(() => {
     setIsOpen(false);
