@@ -112,7 +112,7 @@
   padding: 15px;
 
   pointer-events: all;
-  cursor: pointer;
+  cursor: url('src/assets/cursor/cursor-2t4.png'), auto; // Apply custom cursor here
   transition: transform 200ms;
 
   &:hover {
