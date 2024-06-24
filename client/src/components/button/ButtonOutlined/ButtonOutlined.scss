@@ -1,4 +1,13 @@
 @import '../../../scssStyles/_mixins.scss';
+:root {
+  --top-left-corner-border: url('src/assets/buttons/top-left-corner-border.svg');
+  --bottom-right-corner-border: url('src/assets/buttons/bottom-right-corner-border.svg');
+}
+
+.dark-mode {
+  --top-left-corner-border: url('src/assets/buttons/top-left-corner-border-dark.svg');
+  --bottom-right-corner-border: url('src/assets/buttons/bottom-right-corner-border-dark.svg');
+}
 
 .button-outlined {
   margin: 15px 10px;
@@ -17,6 +26,31 @@
   border-width: 4px;
   border-color: var(--light-purple);
   border-style: solid;
+  position: relative;
+
+  //BUTTON BORDERS
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
+  &::before {
+    top: -10px;
+    left: -10px;
+    background-image: var(--top-left-corner-border);
+  }
+
+  &::after {
+    bottom: -45px;
+    right: -15px;
+    background-image: var(--bottom-right-corner-border);
+  }
+  //BUTTON BORDERS END
 
   &:hover {
     transform: scale(1.02);
