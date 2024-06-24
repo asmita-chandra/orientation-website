@@ -105,7 +105,7 @@
   position: absolute;
   &:hover {
     transform: scale(1.2);
-    cursor: pointer;
+    cursor: url('src/assets/cursor/cursor-2t4.png'), auto; // Apply custom cursor here
   }
 }
 
