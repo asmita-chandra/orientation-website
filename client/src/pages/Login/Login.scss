@@ -147,9 +147,11 @@
 
 .bg-colour {
   display: flex;
+  flex: 4;
+  position: absolute;
+  left: 0;
   //overflow: hidden;
   color: #e8e0eb;
-  position: absolute;
   height: 100%;
   width: 100%;
 }
