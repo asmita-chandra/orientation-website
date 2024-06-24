@@ -146,17 +146,23 @@
 }
 
 .bg-colour {
-  color: #e8e0eb;
+  display: flex;
+  flex: 4;
   position: absolute;
+  left: 0;
+  //overflow: hidden;
+  color: #e8e0eb;
   height: 100%;
+  width: 100%;
 }
 
 .bg {
-  // overflow: hidden;
+  //overflow: hidden;
   position: absolute;
   left: 0;
   bottom: -8vh;
   height: 100%;
+  width: 100%;
   animation: ground-sway infinite 40s ease-in-out;
   animation-duration: 90s;
 }
