@@ -21,6 +21,12 @@ function DarkModeProvider({ children }) {
         setColor(color, colors[color][1]);
       }
     }
+
+    if (status) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
   };
 
   useEffect(() => {
