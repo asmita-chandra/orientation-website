@@ -37,6 +37,7 @@
 
   color: var(--red-error);
 }
+
 .no-error-message {
   display: none;
 }
@@ -47,12 +48,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .forgot-message {
   display: inline-block;
   margin: 15px 0px 10px 10px;
   color: var(--forgot-message);
   font-weight: 600;
-  cursor: url('src/assets/cursor/cursor-2t4.png'), auto; // Apply custom cursor here
+  cursor: url('../assets/cursor/cursor-2t4.png'), auto; // Apply custom cursor here
   transition: color 200ms, transform 200ms;
   font-size: 18px;
 
@@ -61,6 +63,7 @@
     transform: scale(1.02);
     transition: transform 200ms;
   }
+
   &:active {
     color: var(--forgot-message-hover);
     transform: scale(0.97);
@@ -97,6 +100,7 @@
     justify-content: flex-start;
     align-items: center;
   }
+
   .forgot-message {
     margin: 4px;
     font-weight: 600;
@@ -119,12 +123,15 @@
   from {
     transform: translate(0, 0);
   }
+
   33% {
     transform: translate(0, 10%);
   }
+
   66% {
     transform: translate(0, -10%);
   }
+
   to {
     transform: translate(0, 0);
   }
@@ -134,12 +141,15 @@
   from {
     transform: translate(0, 0);
   }
+
   33% {
     transform: translate(0, 3%);
   }
+
   66% {
     transform: translate(0, -3%);
   }
+
   to {
     transform: translate(0, 0);
   }
@@ -214,9 +224,11 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.02);
   }
+
   100% {
     transform: scale(1);
   }
@@ -235,9 +247,11 @@
     transform: scale(0);
     opacity: 0;
   }
+
   70% {
     transform: scale(1.13);
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -250,10 +264,12 @@
   align-items: center;
   flex-direction: column;
 }
+
 .forgot-password-container-button-fade-out {
   opacity: 0;
   transition: opacity 400ms;
 }
+
 .forgot-password-container-button-fade-in {
   opacity: 1;
   transition: opacity 400ms;

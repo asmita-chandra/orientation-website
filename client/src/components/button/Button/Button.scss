@@ -21,7 +21,7 @@
   text-align: center;
   font-size: 17px;
   font-weight: 600;
-  cursor: url('src/assets/cursor/cursor-2t4.png'), auto;
+  cursor: url('../assets/cursor/cursor-2t4.png'), auto;
   transition: transform 200ms, background-color 200ms;
   user-select: none;
   position: relative;
@@ -48,12 +48,14 @@
     right: -15px;
     background-image: var(--bottom-right-corner-border);
   }
+
   //BUTTON BORDERS END
 
   &:hover {
     transform: scale(1.02);
     transition: transform 200ms;
   }
+
   &:active,
   &:focus {
     transform: scale(0.97);
@@ -78,9 +80,11 @@
   background-color: var(--button-disabled);
   color: var(--white);
   transition: background-color 200ms;
+
   &:hover {
     transform: scale(1);
   }
+
   &:active {
     transform: scale(1);
   }

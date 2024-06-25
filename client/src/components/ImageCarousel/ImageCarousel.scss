@@ -13,7 +13,7 @@
   padding: 15px;
   border-radius: 15px;
   margin-bottom: 55px;
-  cursor: url('src/assets/cursor/cursor-2t4.png'), auto; // Apply custom cursor here
+  cursor: url('../assets/cursor/cursor-2t4.png'), auto; // Apply custom cursor here
   height: calc(350px - 50px);
 
   @include devices(tablet) {
@@ -30,6 +30,7 @@
   margin-bottom: 55px;
   cursor: pointer;
   height: calc(320px - 50px);
+
   @include devices(tablet) {
     width: 80%;
     margin-bottom: 40px;
@@ -47,6 +48,7 @@
     height: 6px !important;
     margin: 0 0px !important;
     border-radius: 0 !important;
+
     @include devices(tablet) {
       width: 20px !important;
       height: 5px !important;
