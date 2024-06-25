@@ -4486,7 +4486,7 @@ export const data = {
   'MONDAY AUGUST 26': [
     {
       'Event Name': 'REGISTRATION + MEET YOUR F!ROSH GROUP',
-      'Start Time': '7:30 AM',
+      'Start Time': '8:00 AM',
       'End Time': '9:00 AM',
       Color: 'purple',
     },
@@ -4500,10 +4500,16 @@ export const data = {
       Color: 'yellow',
     },
     {
-      'Event Name': 'F!ROSH GAMES, D!YE STATION & LUNCH',
+      'Event Name': 'LUNCH',
+      'Start Time': '11:00 AM',
+      'End Time': '12:00 PM',
+      Color: 'green',
+    },
+    {
+      'Event Name': 'F!ROSH GAMES + D!YE STATION',
       'Event Description':
         'Frosh Games: Compete against other frosh groups in the craziest competitions imaginable.\nDye: When I say purple you say purple! Where F!rosh and Leedurs alike dye their bodies (or parts thereof) purple. The colour purple represents great significance in the traditions of engineering schools across Canada.',
-      'Start Time': '11:00 AM',
+      'Start Time': '12:00 PM',
       'End Time': '3:00 PM',
       Color: 'purple',
     },
@@ -4519,31 +4525,51 @@ export const data = {
       'Event Name': 'NITELIFE & SUDS',
       'Event Description':
         'You thought F!rosh Week ended at 6:00pm? Think again! We have activities the Monday, Tuesday, and Friday of F!rosh Week for you to keep the hype going all week long!',
-      'Start Time': '6:00 PM',
+      'Start Time': '7:00 PM',
       'End Time': 'Late',
       Color: 'dark-purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
-      'Event Name': 'ACADEMIC STRATEGIES SEMINAR',
-      'Event Description':
-        "Learn from some of your amazing new TA's about all the strategies you need to know for success here at UofT Engineering!",
-      'Start Time': '9:00 AM',
-      'End Time': '10:30 AM',
+      'Event Name': 'CONSENT WORKSHOP',
+      'Start Time': '8:00 AM',
+      'End Time': '10:00 AM',
       Color: 'gray',
     },
     {
-      'Event Name': 'CAMPUS TOUR, BUILD BATTLE & LUNCH',
+      'Event Name': 'CAMPUS TOUR & BUILD BATTLE',
       'Event Description':
         "Campus Tour: Be guided by your F!rosh Leedurs on a tour of our gorgeous campus, showing you all the best places to study, grab food, participate in extracurriculars, and nap! \nBuild Battle: Your first of many design challenges at UofT Engineering, except its probably the one of the coolest ones you do! Work with your frosh group to tackle your piece of the puzzle for this year's unique design challenge, coming together to build something truly amazing as a 2T7 class!",
-      'Start Time': '10:30 AM',
-      'End Time': '4:30 PM',
+      'Start Time': '10:00 AM',
+      'End Time': '12:00 PM',
+      Color: 'yellow',
+    },
+    {
+      'Event Name': 'LUNCH',
+      'Start Time': '12:00 PM',
+      'End Time': '1:00 PM',
+      Color: 'green',
+    },
+    {
+      'Event Name': 'ACADEMIC SUCCESS SEMINAR',
+      'Event Description':
+        "Learn from some of your amazing new TA's about all the strategies you need to know for success here at UofT Engineering!",
+      'Start Time': '1:00 PM',
+      'End Time': '2:00 PM',
+      Color: 'gray',
+    },
+    {
+      'Event Name': 'CAMPUS TOUR & BUILD BATTLE',
+      'Event Description':
+        "Campus Tour: Be guided by your F!rosh Leedurs on a tour of our gorgeous campus, showing you all the best places to study, grab food, participate in extracurriculars, and nap! \nBuild Battle: Your first of many design challenges at UofT Engineering, except its probably the one of the coolest ones you do! Work with your frosh group to tackle your piece of the puzzle for this year's unique design challenge, coming together to build something truly amazing as a 2T7 class!",
+      'Start Time': '2:00 PM',
+      'End Time': '5:00 PM',
       Color: 'yellow',
     },
     {
       'Event Name': 'CHEER OFF',
-      'Start Time': '4:30 PM',
+      'Start Time': '5:00 PM',
       'End Time': '6:00 PM',
       Color: 'purple',
     },
@@ -4551,22 +4577,22 @@ export const data = {
       'Event Name': 'NITELIFE & SUDS',
       'Event Description':
         'You thought F!rosh Week ended at 6:00pm? Think again! We have activities the Monday, Tuesday, and Friday of F!rosh Week for you to keep the hype going all week long!',
-      'Start Time': '6:00 PM',
+      'Start Time': '7:00 PM',
       'End Time': 'Late',
       Color: 'dark-purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
     {
-      'Event Name': 'FACULTY ORIENTATION & SKULE CLUBS FAIR',
+      'Event Name': 'FACULTY EVENTS',
       'Start Time': '9:00 AM',
-      'End Time': '6:00 PM',
+      'End Time': '5:00 PM',
       Color: 'gray',
     },
     {
-      'Event Name': 'HAVENGER SCUNT',
+      'Event Name': 'Skule  Hunt',
       'Event Description':
-        'Havenger Scunt: The longest items list you’ve ever seen. Join us for a full fledged scavenger hunt all over the city of Toronto!',
+        'Skule   Hunt: The longest items list you’ve ever seen. Join us for a full fledged scavenger hunt all over the city of Toronto!',
       'Start Time': '6:00 PM',
       'End Time': 'Late',
       Color: 'dark-purple',
@@ -4574,38 +4600,32 @@ export const data = {
   ],
   'THURSDAY AUGUST 29': [
     {
-      'Event Name': 'CLASS STARTS',
+      'Event Name': 'FACULTY EVENTS',
       'Start Time': '9:00 AM',
-      'End Time': '4:00 PM',
-      Color: 'gray',
-    },
-    {
-      'Event Name': 'BLUE & GOLD BED RACES',
-      'Event Description':
-        'Teams from various colleges and faculties boast a magnificent, self-made "vehicle" that is human-powered/heaved towards the finish line! For the winning team, this culminates at the speediest of speeds in the Blue and Gold Committee’s highest distinction, the most prestigious of all awards, the top of all honours and prizes, The Bed Races SLEEPER’S CUP!!!',
-      'Start Time': '4:00 PM',
-      'End Time': '6:00 PM',
-      Color: 'blue',
-    },
-    {
-      'Event Name': 'SUDS',
-      'Start Time': '6:00 PM',
-      'End Time': 'Late',
-      Color: 'dark-purple',
-    },
-  ],
-  'FRIDAY AUGUST 30': [
-    {
-      'Event Name': 'CLASS STARTS',
-      'Start Time': '9:00 AM',
-      'End Time': '6:00 PM',
+      'End Time': '5:00 PM',
       Color: 'gray',
     },
     {
       'Event Name': 'NITELIFE & SUDS',
       'Event Description':
         'You thought F!rosh Week ended at 6:00pm? Think again! We have activities the Monday, Tuesday, and Friday of F!rosh Week for you to keep the hype going all week long!',
-      'Start Time': '6:00 PM',
+      'Start Time': '7:00 PM',
+      'End Time': 'Late',
+      Color: 'dark-purple',
+    },
+  ],
+  'FRIDAY AUGUST 30': [
+    {
+      'Event Name': 'F!ROSH OLYMPICS',
+      'Start Time': '9:00 AM',
+      'End Time': '5:00 PM',
+      Color: 'gray',
+    },
+    {
+      'Event Name': 'NITELIFE & SUDS',
+      'Event Description':
+        'You thought F!rosh Week ended at 6:00pm? Think again! We have activities the Monday, Tuesday, and Friday of F!rosh Week for you to keep the hype going all week long!',
+      'Start Time': '7:00 PM',
       'End Time': 'Late',
       Color: 'dark-purple',
     },

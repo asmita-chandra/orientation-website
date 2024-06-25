@@ -62,7 +62,7 @@ const PageLogin = ({ incorrectEntry }) => {
       <div className="login-entire-page">
         <div className="login-bg">
           <div className={`login-container ${loading ? 'login-container-disappear' : ''}`}>
-            <h1 className="login-title">Login</h1>
+            <h1 className="login-title">LOGIN</h1>
             <form onSubmit={handleSubmit}>
               <TextInput
                 inputType={'text'}
