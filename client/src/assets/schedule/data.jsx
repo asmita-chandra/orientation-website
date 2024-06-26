@@ -4590,9 +4590,9 @@ export const data = {
       Color: 'gray',
     },
     {
-      'Event Name': 'Skule  Hunt',
+      'Event Name': 'SKULE™ HUNT',
       'Event Description':
-        'Skule   Hunt: The longest items list you’ve ever seen. Join us for a full fledged scavenger hunt all over the city of Toronto!',
+        'SKULE™ HUNT: The longest items list you’ve ever seen. Join us for a full fledged scavenger hunt all over the city of Toronto!',
       'Start Time': '6:00 PM',
       'End Time': 'Late',
       Color: 'dark-purple',
