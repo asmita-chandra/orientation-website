@@ -23,9 +23,9 @@ export const socials = [
     link: 'https://chat.whatsapp.com/L5ZKvpJIOD0JtiJDU9hj1U', //outdated, needs new WhatsApp inivite for 2T4 F!ROSH
     icon: WhatsAppIcon,
   },*/
-  {
-    label: 'YoutubeIcon',
-    link: 'https://www.youtube.com/@skulefroshweek',
-    icon: YoutubeIcon,
-  },
+  // {
+  //   label: 'YoutubeIcon',
+  //   link: 'https://www.youtube.com/@skulefroshweek',
+  //   icon: YoutubeIcon,
+  // },
 ];

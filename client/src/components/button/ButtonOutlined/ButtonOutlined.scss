@@ -1,13 +1,13 @@
 @import '../../../scssStyles/_mixins.scss';
 
 :root {
-  --top-left-corner-border: url('src/assets/buttons/top-left-corner-border.svg');
-  --bottom-right-corner-border: url('src/assets/buttons/bottom-right-corner-border.svg');
+  --top-left-corner-border: url('../../../../src/assets/buttons/top-left-corner-border.svg');
+  --bottom-right-corner-border: url('../../../../src/assets/buttons/bottom-right-corner-border.svg');
 }
 
 .dark-mode {
-  --top-left-corner-border: url('src/assets/buttons/top-left-corner-border-dark.svg');
-  --bottom-right-corner-border: url('src/assets/buttons/bottom-right-corner-border-dark.svg');
+  --top-left-corner-border: url('../../../../src/assets/buttons/top-left-corner-border-dark.svg');
+  --bottom-right-corner-border: url('../../../../src/assets/buttons/bottom-right-corner-border-dark.svg');
 }
 
 .button-outlined {
