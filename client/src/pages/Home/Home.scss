@@ -11,6 +11,7 @@
   align-items: center;
   overflow: hidden;
   margin-top: 0;
+
   @include devices(tablet) {
     justify-content: center;
   }
@@ -19,7 +20,10 @@
 .FroshHardHatWhite-logo {
   text-align: center;
   object-fit: fill;
-  height: 400px;
+  height: 300px;
+  // background-color: rgba(220, 191, 225, 0.8);
+  border-radius: 100px;
+
   @include devices(tablet) {
     text-align: center;
     height: 220px;
@@ -31,14 +35,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 3%;
+  padding: 20px 3% 0 3%;
   text-align: center;
+
   h1 {
     text-align: center;
     font-size: max(14vh, 140px);
     color: var(--text-light);
     line-height: 1;
   }
+
   h2 {
     text-align: center;
     font-size: max(6vh, 60px);
@@ -46,6 +52,7 @@
     line-height: 0.7;
     line-height: 1;
   }
+
   p {
     text-align: center;
     font-size: max(3vh, 14px);
@@ -54,17 +61,21 @@
     color: var(--text-light);
     line-height: 1.2;
   }
+
   @include devices(tablet) {
     padding: 0px 25px;
+
     h1 {
       font-size: 100px;
       text-align: center;
     }
+
     h2 {
       font-size: 32px;
       text-align: center;
       line-height: 1;
     }
+
     p {
       font-size: 15px;
       padding: 0px 20px;
@@ -79,12 +90,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   @include devices(tablet) {
     text-align: center;
     width: unset;
     height: unset;
     font-size: unset;
   }
+
   font-size: max(1.8vh, 18px);
 }
 
@@ -101,6 +114,7 @@
   width: 100vw;
   min-height: 500px;
 }
+
 .home-page-landing-image {
   object-fit: cover;
   height: 100vh;
@@ -112,6 +126,7 @@
   width: 100vw;
   height: min(10vh, 80px);
   object-fit: fill;
+
   @include devices(tablet) {
     height: min(10vh, 40px);
   }
@@ -119,22 +134,27 @@
 
 .home-page-timeline {
   background-color: var(--purple);
+
   ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     background: var(--text-muted);
   }
+
   ::-webkit-scrollbar-thumb {
     background-color: var(--gray);
     background: var(--gray);
     border-radius: 3px;
   }
+
   ::-webkit-scrollbar-track {
     background: var(--purple);
     border-radius: 3px;
   }
+
   @include devices(tablet) {
     ::-webkit-scrollbar {
       width: 5px;
@@ -145,16 +165,20 @@
 
 .home-page-timeline-popup-container {
   color: var(--white);
+
   h1 {
     margin-bottom: 10px;
     font-size: 34px;
   }
+
   p {
     font-size: 18px;
   }
+
   .home-page-timeline-popup-button {
     margin-top: 25px;
   }
+
   @include devices(tablet) {
     display: flex;
     flex-direction: column;
@@ -167,6 +191,7 @@
 .home-page-schedule {
   background-color: var(--purple);
   padding-bottom: 30px;
+
   .home-page-schedule-warning {
     font-size: 18px;
     color: var(--white);
@@ -174,6 +199,7 @@
     margin-top: -25px;
     margin-bottom: 15px;
     padding-right: min(40px, 3.5%);
+
     @include devices(tablet) {
       margin-top: -10px;
       font-size: 15px;
@@ -187,6 +213,7 @@
   padding-left: min(40px, 3.5%);
   padding-top: 35px;
   margin-bottom: 24px;
+
   @include devices(tablet) {
     padding-top: 30px;
     margin-bottom: 10px;
@@ -202,23 +229,29 @@
   color: var(--black);
 
   text-align: center;
+
   h2 {
     font-size: 40px;
     margin-bottom: 20px;
+
     @include devices(tablet) {
       padding-top: 20px;
     }
+
     text-align: center;
   }
+
   h3 {
     font-size: 30px;
     padding-bottom: 10px;
     text-align: center;
   }
+
   h4 {
     font-size: 25px;
     text-align: center;
   }
+
   a {
     user-select: all;
     text-align: center;
@@ -226,6 +259,7 @@
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
+
   .please-sponsor {
     color: (--text-dark);
     padding-top: 20px;
@@ -235,6 +269,7 @@
     transition: transform 500ms;
     transform: scale(1);
   }
+
   .please-sponsor:hover {
     transition: transform 500ms;
     transform: scale(1.05);
@@ -246,6 +281,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .sponsor-container {
   display: flex;
   flex-direction: column;
@@ -266,10 +302,12 @@
     height: 100%;
     object-fit: contain;
   }
+
   &:hover {
     transform: scale(1.05);
     transition: transform 500ms;
   }
+
   @include devices(tablet) {
     width: min(90%, 350px);
   }

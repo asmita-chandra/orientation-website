@@ -15,17 +15,17 @@ export const socials = [
   },
   {
     label: 'Discord',
-    link: 'https://discord.com/invite/6D9bBkU4ka',
+    link: 'https://discord.com/invite/39uyG95KaU',
     icon: DiscordIcon,
   },
-  {
+  /*{
     label: 'WhatsApp',
-    link: 'https://chat.whatsapp.com/L5ZKvpJIOD0JtiJDU9hj1U',
+    link: 'https://chat.whatsapp.com/L5ZKvpJIOD0JtiJDU9hj1U', //outdated, needs new WhatsApp inivite for 2T4 F!ROSH
     icon: WhatsAppIcon,
-  },
-  {
-    label: 'YoutubeIcon',
-    link: 'https://www.youtube.com/@skulefroshweek',
-    icon: YoutubeIcon,
-  },
+  },*/
+  // {
+  //   label: 'YoutubeIcon',
+  //   link: 'https://www.youtube.com/@skulefroshweek',
+  //   icon: YoutubeIcon,
+  // },
 ];
