@@ -78,10 +78,12 @@
 }
 
 .dragon-design {
-  top: 7em;
-  right: 4em;
-  width: 30%;
+  margin: auto;
+  margin-top: -190px;
+  right: 5vw;
+  width: 300px;
   position: absolute;
+  z-index: 1;
 }
 
 .searchIcon img {
