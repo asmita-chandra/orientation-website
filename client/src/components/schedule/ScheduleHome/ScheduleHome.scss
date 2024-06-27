@@ -51,12 +51,18 @@
 }
 
 .schedule-left-container {
-  flex: 1.1;
+  flex: 0.75;
   display: flex;
   justify-content: center;
   align-items: left;
-  margin-left: -6%;
+  margin-left: -60px;
+  margin-right: -50px;
   flex-direction: column;
+  height: 930px;
+}
+
+.lily-design {
+  height: 100%;
 }
 
 .schedule-middle-container {
