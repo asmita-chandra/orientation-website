@@ -158,7 +158,6 @@ const PageFAQ = () => {
           </>
         )}
       </div>
-      <img src={Dragon} alt="Dragon" className="dragon-design desktop-only" />
     </div>
   );
 };
@@ -230,6 +229,7 @@ const FAQPageHeader = ({
                 setActiveIndex={setActiveIndex}
                 questionCategories={questionCategories}
               />
+              <img src={Dragon} alt="Dragon" className="dragon-design desktop-only" />
             </div>
             <div
               className="deleteIcon"

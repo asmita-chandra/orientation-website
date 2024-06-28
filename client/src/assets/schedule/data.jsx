@@ -4522,7 +4522,7 @@ export const data = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE & SUDS',
+      'Event Name': 'NITELIFE & ****',
       'Event Description':
         'You thought F!rosh Week ended at 6:00pm? Think again! We have activities the Monday, Tuesday, and Friday of F!rosh Week for you to keep the hype going all week long!',
       'Start Time': '7:00 PM',
@@ -4574,7 +4574,7 @@ export const data = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE & SUDS',
+      'Event Name': 'NITELIFE & ****',
       'Event Description':
         'You thought F!rosh Week ended at 6:00pm? Think again! We have activities the Monday, Tuesday, and Friday of F!rosh Week for you to keep the hype going all week long!',
       'Start Time': '7:00 PM',
@@ -4606,7 +4606,7 @@ export const data = {
       Color: 'gray',
     },
     {
-      'Event Name': 'NITELIFE & SUDS',
+      'Event Name': 'NITELIFE & ****',
       'Event Description':
         'You thought F!rosh Week ended at 6:00pm? Think again! We have activities the Monday, Tuesday, and Friday of F!rosh Week for you to keep the hype going all week long!',
       'Start Time': '7:00 PM',
@@ -4622,7 +4622,7 @@ export const data = {
       Color: 'gray',
     },
     {
-      'Event Name': 'NITELIFE & SUDS',
+      'Event Name': 'NITELIFE & ****',
       'Event Description':
         'You thought F!rosh Week ended at 6:00pm? Think again! We have activities the Monday, Tuesday, and Friday of F!rosh Week for you to keep the hype going all week long!',
       'Start Time': '7:00 PM',
