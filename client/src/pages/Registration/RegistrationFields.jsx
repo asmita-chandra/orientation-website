@@ -430,10 +430,7 @@ export const fields = {
       noEdit: false,
       localStorageKey: 'registration-attendingRetreat',
     },
-    summerLocationLabel: {
-      type: 'label',
-      label: 'Where will you be located for the majority of the summer?',
-    },
+
     summerLocationQuery: {
       type: 'dropdown',
       label:
@@ -472,6 +469,15 @@ export const fields = {
       isRequiredInput: false,
       noEdit: false,
       localStorageKey: 'registration-commuterChestnutQuery',
+    },
+    bursary: {
+      type: 'dropdown',
+      label: 'Would you be interested in a bursary?',
+      values: ['Yes', 'No'],
+      initialSelectedIndex: 0,
+      isRequiredInput: false,
+      noEdit: false,
+      localStorageKey: 'registration-bursary',
     },
     photograph: {
       type: 'dropdown',
