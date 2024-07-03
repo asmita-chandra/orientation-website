@@ -4616,7 +4616,7 @@ export const data = {
   ],
   'FRIDAY AUGUST 30': [
     {
-      'Event Name': 'F!ROSH OLYMPICS',
+      'Event Name': 'F!ROSH OLYMPIKS',
       'Start Time': '9:00 AM',
       'End Time': '5:00 PM',
       Color: 'gray',
