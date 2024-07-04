@@ -17,20 +17,20 @@ function logoutFunction({ dispatch, navigate }) {
 
 export const profilePages = {
   notLogin: [
-    // {
-    //   label: 'Log in',
-    //   icon: LoginIcon,
-    //   iconDark: LoginIconDarkMode,
-    //   path: '/login',
-    // },
+    {
+      label: 'Log in',
+      icon: LoginIcon,
+      iconDark: LoginIconDarkMode,
+      path: '/login',
+    },
   ],
   login: [
-    {
-      label: 'Register',
-      icon: RegisterIcon,
-      iconDark: RegisterIconDarkMode,
-      path: '/registration',
-    },
+    // {
+    //   label: 'Register',
+    //   icon: RegisterIcon,
+    //   iconDark: RegisterIconDarkMode,
+    //   path: '/registration',
+    // },
     {
       label: 'Profile',
       icon: ProfileIcon,
