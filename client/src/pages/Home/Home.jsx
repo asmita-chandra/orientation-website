@@ -77,23 +77,29 @@ const HomeHeaderButton = () => {
             <Button
               label={loggedIn ? 'View Profile' : 'Register Now!'}
               isSecondary
+              // style={{
+              //   margin: '0px',
+              //   height: '100%',
+              //   fontSize: 'unset',
+              //   display: 'flex',
+              //   justifyContent: 'center',
+              //   alignItems: 'center',
+              // }}
               style={{
-                margin: '0px',
-                height: '100%',
-                fontSize: 'unset',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
+                width: '0.px',
+                height: '0.px',
+                fontSize: '0px',
+                opacity: '0',
               }}
             />
           </div>
-          <div className="mobile-only">
+          {/* <div className="mobile-only">
             <Button
               label={loggedIn ? 'View Profile' : 'Register Now!'}
               isSecondary
               style={{ margin: '0px' }}
             />
-          </div>
+          </div> */}
         </div>
       </Link>
     </>
