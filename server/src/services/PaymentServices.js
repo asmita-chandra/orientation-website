@@ -124,11 +124,6 @@ const PaymentServices = {
           quantity: 1,
         },
       ],
-      discounts: [
-        {
-          coupon: 'rUbsZzLU',
-        },
-      ],
       mode: 'payment',
       success_url: `${process.env.CLIENT_BASE_URL}${
         products[type]?.relativeUrlSuccess ?? products['orientation'].relativeUrlSuccess
