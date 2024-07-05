@@ -239,15 +239,16 @@ const ProfilePageFroshHeader = ({ editButton }) => {
 
       {!isRegistered ? (
         <div className={'profile-not-registered'}>
-          <h1>You are not registered!</h1>
-          <h2>You will not be able to participate in F!rosh week events until you register.</h2>
+          <h1>YOU ARE NOT REGISTERED!</h1>
+          {/* <h2>You will not be able to participate in F!rosh week events until you register.</h2> */}
+          <h2>Registration opens soon. Stay tuned!</h2>
           <Link
             key={'/registration'}
             to={'/registration'}
             style={{ textDecoration: 'none' }}
             className={'no-link-style'}
           >
-            <Button label="Register" style={{}} />
+            {/* <Button label="Register" style={{}} /> */}
           </Link>
         </div>
       ) : null}
