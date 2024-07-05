@@ -398,7 +398,7 @@ export const fields = {
     attendingScunt: {
       type: 'dropdown',
       label:
-        'Would you like to participate in Havenger Scunt? (It will take place on the evening of Wednesday, August 28th)',
+        'Would you like to participate in SkavENGer Hunt!? (It will take place on the evening of Wednesday, August 28th)',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
       localStorageKey: 'registration-scunt',
@@ -408,7 +408,7 @@ export const fields = {
     scuntInfo: {
       type: 'label',
       label:
-        "What is Havenger Scunt? Havenger Scunt is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! Scunt is an exciting night of challenges for all comfort levels.",
+        "What is SkavENGer Hunt!? SkavENGer Hunt! is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! Hunt is an exciting night of challenges for all comfort levels.",
       isBold: true,
     },
     attendingNiteLifeCarnival: {
@@ -423,7 +423,7 @@ export const fields = {
     attendingRetreat: {
       type: 'dropdown',
       label:
-        'Would you like to attend an overnight retreat on September 9th-10th at Hart House Farms (at an additional cost)?',
+        'Would you like to attend an overnight retreat on August 31st-September 1st at Hart House Farms (at an additional cost)?',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
       isRequiredInput: false,
@@ -451,28 +451,9 @@ export const fields = {
       noEdit: false,
       localStorageKey: 'registration-moveToToronto',
     },
-    commuterProgramQuery: {
-      type: 'dropdown',
-      label:
-        'Will you take part in the Commuter Program (you can still sign up via links on Instagram and Frosh week website)?',
-      values: ['Yes', 'No', 'Put me on the Waitlist'],
-      initialSelectedIndex: 0,
-      isRequiredInput: false,
-      noEdit: false,
-      localStorageKey: 'registration-commuterProgramQuery',
-    },
-    commuterChestnutQuery: {
-      type: 'dropdown',
-      label: 'Would you like to stay up at Chestnut during Frosh week with an additional cost?',
-      values: ['Yes', 'No'],
-      initialSelectedIndex: 0,
-      isRequiredInput: false,
-      noEdit: false,
-      localStorageKey: 'registration-commuterChestnutQuery',
-    },
     bursary: {
       type: 'dropdown',
-      label: 'Would you be interested in a bursary?',
+      label: 'Do you require any bursary or financial aid for your Frosh Week ticket?',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
       isRequiredInput: false,

@@ -43,7 +43,7 @@ export const FroshRetreat = () => {
             Escape the city to the lovely Hart House Farms for a weekend of wholesome camp vibes!
           </h3>
           <p style={{ color: 'var(--white)' }}>
-            The retreat is taking place on September 9th and September 10th, 2023 at Hart House
+            The retreat is taking place on August 31st and September 1st, 2024 at Hart House
             Farm.
           </p>
           <p style={{ color: 'var(--white)' }}>
