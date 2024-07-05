@@ -437,7 +437,7 @@ export const fields = {
         'Will you be based in Toronto or the GTA over the summer?  (or would you be available for events)',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
-      isRequiredInput: false,
+      isRequiredInput: true,
       noEdit: false,
       localStorageKey: 'registration-summerLocationQuery',
     },
