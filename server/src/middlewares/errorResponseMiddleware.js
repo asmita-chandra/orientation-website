@@ -90,7 +90,7 @@ function errorResponseMiddleware(err, req, res, next) {
     errorMessage = 'Frosh not found. They might not be registered.';
   } else {
     statusCode = 500;
-    errorMessage = 'whoops we have no idea what happened!?';
+    errorMessage = err.errors;
   }
   //... for more error messages ...
 
