@@ -279,11 +279,11 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
                   initialSelectedIndices={
                     editFieldsPage === true
                       ? field.values.reduce((prev, curr, index) => {
-                          if (initialValues[key].includes(curr)) {
-                            prev.push(index);
-                          }
-                          return prev;
-                        }, [])
+                        if (initialValues[key].includes(curr)) {
+                          prev.push(index);
+                        }
+                        return prev;
+                      }, [])
                       : field.initialSelectedIndices
                   }
                   maxCanSelect={field.maxCanSelect}
@@ -317,8 +317,8 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
                     <></>
                   )}
                   {field.isRequiredInput !== undefined &&
-                  field.isRequiredInput === true &&
-                  field.label !== undefined ? (
+                    field.isRequiredInput === true &&
+                    field.label !== undefined ? (
                     <p className="text-input-required-star">*</p>
                   ) : (
                     <></>
@@ -417,13 +417,13 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
                         <img className="registration-icon-logo" src={MainFroshLogo}></img>
                         <div>
                           <h1 className="registration-first-step-title">
-                            {'Hello ' +
-                              (user?.preferredName === '' || !user?.preferredName
+                            {'HELLO ' +
+                              ((user?.preferredName === '' || !user?.preferredName
                                 ? user?.firstName
-                                : user?.preferredName)}
+                                : user?.preferredName).toUpperCase())}
                           </h1>
                           <h2 className="registration-first-step-subtitle">
-                            Let&apos;s register for UofT Engineering&apos;s F!rosh Week 2T3
+                            LET&apos;S REGISTER FOR UOFT ENGINEERING&apos;S F!ROSH WEEK 2T4
                           </h2>
                         </div>
                       </div>
@@ -458,15 +458,7 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
                         isDisabled={!canRegister}
                       />
                       <p className="register-terms-of-service" style={{ marginTop: '20px' }}>
-                        If you&apos;re looking to apply for a bursary, click{' '}
-                        <a
-                          href="https://forms.gle/UFajTRoBF8iWah2MA"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          here
-                        </a>{' '}
-                        to submit in an application
+                        Note: We will be making bursary decisions after Frosh week and will refund the amount to the students after the decisions. Our team will reach out to you for more details regarding the bursary program. Bursaries range from partial to complete settlement of the ticket price.
                       </p>
                     </div>
                   ),
