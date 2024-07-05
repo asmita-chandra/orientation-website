@@ -77,21 +77,21 @@ const HomeHeaderButton = () => {
             <Button
               label={loggedIn ? 'View Profile' : 'Register Now!'}
               isSecondary
-              style={{
-                margin: '0px',
-                height: '100%',
-                fontSize: 'unset',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
+              // style={{
+              //   margin: '0px',
+              //   height: '100%',
+              //   fontSize: 'unset',
+              //   display: 'flex',
+              //   justifyContent: 'center',
+              //   alignItems: 'center',
+              // }}
             // hidden button xD
-            // style={{
-            //   width: '0.px',
-            //   height: '0.px',
-            //   fontSize: '0px',
-            //   opacity: '0',
-            // }}
+            style={{
+              width: '0.px',
+              height: '0.px',
+              fontSize: '0px',
+              opacity: '0',
+            }}
             />
           </div>
           <div className="mobile-only">

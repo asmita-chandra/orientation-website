@@ -61,11 +61,10 @@ const PageRegistrationSuccess = () => {
                 <div className="registration-success-page-step1-2-disappear">
                   <h2 style={{ color: 'var(--black)' }}>FOR F!ROSH WEEK 2T4</h2>
                   <p style={{ color: 'var(--black)' }} className="registration-success-wait-msg">
-                    {`${
-                      user.preferredName === '' || !user.preferredName
+                    {`${user.preferredName === '' || !user.preferredName
                         ? user.firstName
                         : user.preferredName
-                    }, YOUR F!ROSH GROUP IS...`}
+                      }, your F!rosh group is`}
                   </p>
                 </div>
               </div>
@@ -81,7 +80,7 @@ const PageRegistrationSuccess = () => {
                   </text>
                 </svg>
                 <div className="registration-success-page-step4">
-                  <h2 style={{ color: 'var(--black)' }}>{user.froshGroup.toUpperCase + '!'}</h2>
+                  <h2 style={{ color: 'var(--black)' }}>{user.froshGroup.toUpperCase() + '!'}</h2>
                 </div>
                 <div className="registration-success-page-step5">
                   <Link to={'/profile'} className="no-link-style">
@@ -91,9 +90,9 @@ const PageRegistrationSuccess = () => {
                 <div className="registration-success-page-step6">
                   <Link
                     state={{
-                      name: user.name.toUpperCase(),
-                      froshGroup: user.froshGroup.toUpperCase(),
-                      froshGroupIcon: user.froshGroupIcon.toUpperCase(),
+                      name: user.name,
+                      froshGroup: user.froshGroup,
+                      froshGroupIcon: user.froshGroupIcon,
                     }}
                     to={'/registration-success'}
                     className="no-link-style"
