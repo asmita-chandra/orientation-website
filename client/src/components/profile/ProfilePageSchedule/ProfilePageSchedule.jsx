@@ -49,7 +49,7 @@ export const ProfilePageSchedule = () => {
         }}
       >
         <h2 className="profile-page-section-header profile-page-section-header-schedule">
-          Schedule
+          SCHEDULE
         </h2>
       </div>
       <div className="profile-page-schedule-content">

@@ -25,12 +25,12 @@ export const profilePages = {
     },
   ],
   login: [
-    {
-      label: 'Register',
-      icon: RegisterIcon,
-      iconDark: RegisterIconDarkMode,
-      path: '/registration',
-    },
+    // {
+    //   label: 'Register',
+    //   icon: RegisterIcon,
+    //   iconDark: RegisterIconDarkMode,
+    //   path: '/registration',
+    // },
     {
       label: 'Profile',
       icon: ProfileIcon,

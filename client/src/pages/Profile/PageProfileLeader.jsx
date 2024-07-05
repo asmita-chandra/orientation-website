@@ -47,6 +47,7 @@ const PageProfileLeader = () => {
           <ProfilePageSchedule />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
+          {/* <ProfilePageQRCode /> */}
           {qrCodeLeader === true ? (
             <ProfilePageQRScanner scopes={user?.authScopes?.approved} />
           ) : null}
@@ -100,7 +101,7 @@ export const ProfilePageLeaderScuntMessage = () => {
       <div className="frosh-instagram-container">
         <img src={ScuntIcon} alt="Scunt" style={{ filter: darkMode ? 'invert(1)' : 'unset' }} />
         <div>
-          <h2>Havenger Scunt!</h2>
+          <h2>SkavENGer Hunt!!</h2>
           <p>Find more information about Scunt by clicking here!</p>
         </div>
       </div>

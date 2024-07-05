@@ -163,8 +163,6 @@ export const ProfilePageQRScanner = ({ scopes }) => {
               );
             })}
 
-            {/* Scanner specific */}
-
             {scannerInfo()}
           </div>
         </div>

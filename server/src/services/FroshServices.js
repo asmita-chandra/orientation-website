@@ -166,7 +166,10 @@ const FroshServices = {
    */
   async getFilteredUserInfo(query, projection) {
     return UserModel.find(query, { ...projection, isRegistered: 1 }, { strictQuery: false }).then(
-      (user) => user,
+      (user) => {
+        if (!user.length) throw new Error('USERS_NOT_FOUND');
+        return user;
+      },
       (error) => {
         throw new Error('UNABLE_TO_GET_USER', { cause: error });
       },

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 import { Timeline } from '../../components/timeline/Timeline/Timeline';
 import { ImageCarousel } from '../../components/ImageCarousel/ImageCarousel';
-import MainFroshLogo from '../../assets/logo/frosh-main-logo-outline.svg';
+import MainFroshLogo from '../../assets/logo/main-logo.png';
 import 'react-slideshow-image/dist/styles.css';
 import { Slide } from 'react-slideshow-image';
 import { ScheduleComponent } from '../../components/schedule/ScheduleHome/ScheduleHome';
@@ -45,7 +45,7 @@ const HomePageHeader = () => {
         effect="blur"
       ></LazyLoadImage>
       <div className="home-page-header-text">
-        <h2>Welcome to F!rosh Week!</h2>
+        <h2>WELCOME TO F!ROSH WEEK!</h2>
         <p>Organized by the University of Toronto Engineering Society Orientation Commitee</p>
         <HomeHeaderButton />
       </div>
@@ -85,6 +85,13 @@ const HomeHeaderButton = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
               }}
+            // hidden button xD
+            // style={{
+            //   width: '0.px',
+            //   height: '0.px',
+            //   fontSize: '0px',
+            //   opacity: '0',
+            // }}
             />
           </div>
           <div className="mobile-only">
@@ -118,6 +125,7 @@ const HomePageSlideshow = () => {
             src={image.src}
             placeholder={image.placeholder}
             alt={'slideshow' + index}
+            loading="lazy"
           />
         </div>
       ))}
@@ -139,7 +147,7 @@ const HomePageTimeline = () => {
   return (
     !(dates === undefined || dates?.length === 0) && (
       <div className="home-page-timeline">
-        <h2 className="home-page-section-header">Timeline</h2>
+        <h2 className="home-page-section-header">TIMELINE</h2>
         <Timeline
           dates={dates}
           onClick={(date) => {
@@ -187,7 +195,7 @@ const HomePageSchedule = () => {
   const loggedIn = useSelector(loggedInSelector);
   return (
     <div className="home-page-schedule">
-      <h2 className="home-page-section-header">Schedule{loggedIn ? '*' : ''}</h2>
+      <h2 className="home-page-section-header">SCHEDULE{loggedIn ? '*' : ''}</h2>
       {loggedIn ? (
         <div className="home-page-schedule-warning">
           *Different Frosh groups have different schedules. The homepage schedule is the basic
@@ -216,7 +224,7 @@ const HomePageSponsors = () => {
       ) : (
         <img src={WaveReverse} className="wave-image home-page-bottom-wave-image" alt="wave-img" />
       )}
-      <h2>Our Sponsors</h2>
+      <h2>OUR SPONSORS</h2>
       <PleaseSponsor />
 
       {sponsors.length > 0 && (
@@ -267,8 +275,8 @@ const HomePageSponsors = () => {
 const PleaseSponsor = () => {
   return (
     <div className="please-sponsor">
-      <h3>Want to sponsor F!rosh Week?</h3>
-      <h4>Please contact:</h4>
+      <h3>WANT TO SPONSOR F!ROSH WEEK?</h3>
+      <h4>PLEASE CONTACT:</h4>
       <a href="mailto:sponsorship@orientation.skule.ca">sponsorship@orientation.skule.ca</a>
     </div>
   );

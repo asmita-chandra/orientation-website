@@ -20,7 +20,7 @@ const textValidation = (value) => {
       return 'Please use Aa-Zz characters';
     }
   } else {
-    return 'Please ensure that your full name is between 1 and 50 characters';
+    return 'Please ensure that your name is between 1 and 50 characters';
   }
 };
 
@@ -186,16 +186,6 @@ export const fields = {
       noEdit: true,
       localStorageKey: 'registration-discipline',
     },
-    shirtSize: {
-      type: 'dropdown',
-      label: 'T-shirt Size',
-      values: ['S', 'M', 'L', 'XL', '2XL', '3XL'],
-      initialSelectedIndex: 1,
-      className: 'half-width-input',
-      isRequiredInput: true,
-      noEdit: true,
-      localStorageKey: 'registration-shirtSize',
-    },
     phoneNumberLabel: {
       type: 'label',
       label: 'Phone Number',
@@ -281,7 +271,7 @@ export const fields = {
   },
   HealthSafety: {
     medicalInfo: {
-      type: 'radio',
+      type: 'dropdown',
       values: ['Yes', 'No'],
       initialSelectedIndex: 1,
       label: 'Medical Conditions',
@@ -385,7 +375,7 @@ export const fields = {
       },
     },
     accommodation: {
-      type: 'radio',
+      type: 'dropdown',
       label: 'Would you like us to reach out to you about how we can best accommodate you?',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
@@ -395,10 +385,20 @@ export const fields = {
     },
   },
   ExtraEvents: {
+    shirtSize: {
+      type: 'dropdown',
+      label: 'T-shirt Size',
+      values: ['S', 'M', 'L', 'XL', '2XL', '3XL'],
+      initialSelectedIndex: 1,
+      className: 'half-width-input',
+      isRequiredInput: true,
+      noEdit: true,
+      localStorageKey: 'registration-shirtSize',
+    },
     attendingScunt: {
-      type: 'radio',
+      type: 'dropdown',
       label:
-        'Would you like to participate in S!cavenger H!unt? (It will take place on the evening of Wednesday, September 6th)',
+        'Would you like to participate in SkavENGer Hunt!? (It will take place on the evening of Wednesday, August 28th)',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
       localStorageKey: 'registration-scunt',
@@ -408,43 +408,38 @@ export const fields = {
     scuntInfo: {
       type: 'label',
       label:
-        "What is S!cavenger H!unt? It is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! The H!unt is an exciting night of challenges for all comfort levels.",
+        "What is SkavENGer Hunt!? SkavENGer Hunt! is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! Hunt is an exciting night of challenges for all comfort levels.",
       isBold: true,
     },
-    summerLocationLabel: {
-      type: 'label',
-      label: 'Where will you be located for the majority of the summer?',
+    attendingNiteLifeCarnival: {
+      type: 'dropdown',
+      label: 'Would you be interested in attending a carnival with other UofT Departments?',
+      values: ['Yes', 'No'],
+      initialSelectedIndex: 0,
+      isRequiredInput: false,
+      noEdit: false,
+      localStorageKey: 'registration-attendingNiteLifeCarnival',
     },
-    summerLocationCity: {
-      type: 'text',
-      inputType: 'text',
-      label: 'City',
-      placeholder: 'Toronto',
+    attendingRetreat: {
+      type: 'dropdown',
+      label:
+        'Would you like to attend an overnight retreat on August 31st-September 1st at Hart House Farms (at an additional cost)?',
+      values: ['Yes', 'No'],
+      initialSelectedIndex: 0,
+      isRequiredInput: false,
+      noEdit: false,
+      localStorageKey: 'registration-attendingRetreat',
+    },
+
+    summerLocationQuery: {
+      type: 'dropdown',
+      label:
+        'Will you be based in Toronto or the GTA over the summer?  (or would you be available for events)',
+      values: ['Yes', 'No'],
+      initialSelectedIndex: 0,
       isRequiredInput: true,
       noEdit: false,
-      localStorageKey: 'registration-summerLocationCity',
-      errorMessage: 'Please enter your city',
-      className: 'half-width-input',
-      validation: textLengthValidation,
-    },
-    summerLocationCountry: {
-      type: 'text',
-      inputType: 'text',
-      label: 'Country (2 character code)',
-      placeholder: 'CA',
-      hasRestrictedInput: true,
-      isRequiredInput: true,
-      noEdit: false,
-      localStorageKey: 'registration-summerLocationCountry',
-      errorMessage: 'Please enter your country',
-      className: 'half-width-input',
-      validation: (value) => {
-        if (/^[A-Z]*$/.test(value) && value.length === 2) {
-          return true;
-        } else {
-          return 'Please use the 2 letter country code';
-        }
-      },
+      localStorageKey: 'registration-summerLocationQuery',
     },
     moveToToronto: {
       type: 'dropdown',
@@ -456,8 +451,17 @@ export const fields = {
       noEdit: false,
       localStorageKey: 'registration-moveToToronto',
     },
+    bursary: {
+      type: 'dropdown',
+      label: 'Do you require any bursary or financial aid for your Frosh Week ticket?',
+      values: ['Yes', 'No'],
+      initialSelectedIndex: 0,
+      isRequiredInput: false,
+      noEdit: false,
+      localStorageKey: 'registration-bursary',
+    },
     photograph: {
-      type: 'radio',
+      type: 'dropdown',
       label: 'Are you okay with being photographed during Frosh Week?',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,

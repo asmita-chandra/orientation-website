@@ -3,7 +3,7 @@ import { TextInput } from '../../components/input/TextInput/TextInput';
 import './SignUp.scss';
 import { Button } from '../../components/button/Button/Button';
 import { validateEmail, validatePassword, validatePasswordLength } from './functions';
-import MainFroshLogo from '../../assets/logo/frosh-main-logo-with-bg.svg';
+import MainFroshLogo from '../../assets/logo/main-logo.png';
 import LoadingAnimation from '../../components/misc/LoadingAnimation/LoadingAnimation';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -105,8 +105,8 @@ const PageSignUp = () => {
             src={MainFroshLogo}
             onClick={handleLeaderReveal}
           ></img>
-          <h1 style={{ color: 'var(--black)' }}>Create an Account</h1>
-          <h3 style={{ color: 'var(--black)' }}>For F!rosh Week 2T3, UofT Engineering</h3>
+          <h1 style={{ color: 'var(--black)' }}>CREATE AN ACCOUNT</h1>
+          <h3 style={{ color: 'var(--black)' }}>FOR F!ROSH WEEK 2T4, UOFT ENGINEERING</h3>
           <div className="full-width-input">
             <TextInput
               label="Email"
@@ -218,7 +218,7 @@ const PageSignUp = () => {
           > */}
           <Button
             label="Create Account"
-            style={{ margin: 0 }}
+            style={{ margin: 15 }}
             isDisabled={anyErrors}
             onClick={async () => {
               const anyErrors = checkErrors(true);

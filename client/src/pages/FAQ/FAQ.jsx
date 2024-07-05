@@ -13,6 +13,7 @@ import DeleteIconDarkMode from '../../assets/darkmode/misc/circle-xmark-solid.sv
 import { DarkModeContext } from '../../util/DarkModeProvider';
 import { SnackbarContext } from '../../util/SnackbarProvider';
 import LoadingAnimation from '../../components/misc/LoadingAnimation/LoadingAnimation';
+import Dragon from '../../assets/faq/dragon.svg';
 
 const PageFAQ = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -260,6 +261,7 @@ const FAQPageHeader = ({
                 setActiveIndex={setActiveIndex}
                 questionCategories={questionCategories}
               />
+              <img src={Dragon} alt="Dragon" className="dragon-design desktop-only" />
             </div>
             <div
               className="deleteIcon"

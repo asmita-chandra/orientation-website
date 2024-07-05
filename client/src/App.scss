@@ -1,17 +1,29 @@
 @import './scssStyles/_mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   @include devices(tablet) {
     user-select: none;
   }
+  cursor: url('../assets/cursor/cursor-2t4.png'), auto;
 }
 
 :root {
   --dark-mode: true;
+}
+
+@font-face {
+  font-family: 'LittleWitches';
+  src: url('../assets/fonts/LittleWitches-K7r7y.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova_regular.ttf') format('opentype');
 }
 
 @font-face {
@@ -46,7 +58,7 @@ html {
   background-color: var(--page-bg);
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
 }
 
 h1,
@@ -54,7 +66,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Nunito-Bold', sans-serif;
+  font-family: 'LittleWitches', serif;
   margin: 0px;
   padding: 0px;
 }
@@ -63,7 +75,6 @@ a {
   text-decoration: none;
   color: var(--text-link);
   transition: text-decoration-color 250ms;
-  cursor: pointer;
   background: linear-gradient(to left, var(--text-link), var(--text-link));
   background-size: 100% 2px, 0 2px;
   background-position: 0% 100%, 0 100%;
@@ -78,9 +89,11 @@ button {
 input {
   background-color: (--faq-searchbar-bg);
 }
+
 input[type='text'] {
   color: var(--black);
 }
+
 ::placeholder {
   color: var(--placeholder-text);
 }
