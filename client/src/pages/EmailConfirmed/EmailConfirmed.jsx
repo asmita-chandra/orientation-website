@@ -25,7 +25,7 @@ const PageEmailConfirmed = () => {
         <div className="email-confirmed-page">
           <div className="email-confirmed-container">
             <h1>PERFECT!</h1>
-            <h2 style="font-family: 'Proxima Nova', sans-serif;">Your email is now verified. Head to the login page to get started!</h2>
+            <h2>Your email is now verified. Head to the login page to get started!</h2>
             <Link to={'/login'} style={{ textDecoration: 'none' }} className={'no-link-style'}>
               <Button label="Login Page" />
             </Link>
