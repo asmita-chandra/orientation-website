@@ -408,7 +408,7 @@ export const fields = {
     scuntInfo: {
       type: 'label',
       label:
-        "What is Havenget Scunt? Havenger Scunt is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! Scunt is an exciting night of challenges for all comfort levels.",
+        "What is Havenger Scunt? Havenger Scunt is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! Scunt is an exciting night of challenges for all comfort levels.",
       isBold: true,
     },
     attendingNiteLifeCarnival: {

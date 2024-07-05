@@ -132,12 +132,8 @@ const FroshSchema = new mongoose.Schema(
       type: Boolean, // true is attending scunt, false is not attending
       required: true,
     },
-    summerLocationCity: {
-      type: String,
-      required: true,
-    },
-    summerLocationCountry: {
-      type: String,
+    summerLocationQuery: {
+      type: Boolean,
       required: true,
     },
     moveToToronto: {

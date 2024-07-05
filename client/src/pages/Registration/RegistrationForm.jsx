@@ -43,25 +43,70 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
   const handleRegister = async () => {
     setCanRegister(false);
     const isFormValid = validateForm();
+    // console.log(isFormValid)
     if (!isFormValid) {
       return setCanRegister(true);
     } else {
       try {
+
+        const convertedFroshObject = { ...froshObject };
+
+        // Convert string values to booleans
+        if (convertedFroshObject.attendingScunt === 'Yes') {
+          convertedFroshObject.attendingScunt = true;
+        } else if (convertedFroshObject.attendingScunt === 'No') {
+          convertedFroshObject.attendingScunt = false;
+        }
+
+        if (convertedFroshObject.photograph === 'Yes') {
+          convertedFroshObject.photograph = true;
+        } else if (convertedFroshObject.photograph === 'No') {
+          convertedFroshObject.photograph = false;
+        }
+
+        if (convertedFroshObject.accommodation === 'Yes') {
+          convertedFroshObject.accommodation = true;
+        } else if (convertedFroshObject.accommodation === 'No') {
+          convertedFroshObject.accommodation = false;
+        }
+
+        if (convertedFroshObject.summerLocationQuery === 'Yes') {
+          convertedFroshObject.summerLocationQuery = true;
+        } else if (convertedFroshObject.summerLocationQuery === 'No') {
+          convertedFroshObject.summerLocationQuery = false;
+        }
+
         let formData = new FormData();
-        for (const [key, value] of Object.entries(froshObject)) {
+        for (const [key, value] of Object.entries(convertedFroshObject)) {
           if (value === undefined) continue;
           formData.append(key, value);
         }
-        froshObject['id'] = user.id;
+        // for (let [key, value] of formData.entries()) {
+        //   console.log(`${key}: ${value}`);
+        // }
+        convertedFroshObject['id'] = user.id;
         const ReactPDF = await import('@react-pdf/renderer');
         const { MakeReceipt } = await import('../../components/MakeReceipt/MakeReceipt');
-        const dataReceipt = await ReactPDF.pdf(MakeReceipt(froshObject)).toBlob();
+        const dataReceipt = await ReactPDF.pdf(MakeReceipt(convertedFroshObject)).toBlob();
         formData.append('dataReceipt', dataReceipt);
+        // console.log(formData)
+        // console.log("form data executed")
         const response = await axios.post('/frosh/register', formData, {
           headers: { 'content-type': 'multipart/form-data' },
         });
+        // console.log("response executed")
+        // console.log(response.data.url)
         window.location.href = response.data.url;
       } catch (error) {
+        // console.error('Error message:', error.message);
+        // console.error('Error code:', error.code);
+        // console.error('Request config:', error.config);
+        // console.error('Request data:', error.config.data);
+        // if (error.response) {
+        //   console.error('Response data:', error.response.data);
+        //   console.error('Response status:', error.response.status);
+        //   console.error('Response headers:', error.response.headers);
+        // }
         console.log(error);
         setCanRegister(true);
       }
