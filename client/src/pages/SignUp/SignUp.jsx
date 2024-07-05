@@ -242,7 +242,7 @@ const PageSignUp = () => {
           className={`sign-up-success ${pageState === 'success' ? 'sign-up-success-appear' : ''}`}
         >
           <div style={{ margin: 'auto auto' }}>
-            <h2 style="font-family: 'Proxima Nova', sans-serif;">{`Thank you for creating an account, ${
+            <h2 class="proxima-nova-text">{`Thank you for creating an account, ${
               accountObj['preferredName'] === null ||
               accountObj['preferredName'] === undefined ||
               accountObj['preferredName'] === ''
@@ -250,14 +250,14 @@ const PageSignUp = () => {
                 : accountObj['preferredName']
             }.`}</h2>
             {accountObj['leadur'] === true ? (
-              <h3 style="font-family: 'Proxima Nova', sans-serif;">
+              <h3 class="proxima-nova-text">
                 Check your inbox for an email from tech@orientation.skule.ca for a link to verify your email. Your account will be reviewed and
                 shortly become an official Leedur account.
               </h3>
             ) : (
               <>
-                <h1 style="font-family: 'Proxima Nova', sans-serif;">You aren&apos;t done just yet!</h1>
-                <h3 style="font-family: 'Proxima Nova', sans-serif;">
+                <h1 class="proxima-nova-text">You aren&apos;t done just yet!</h1>
+                <h3 class="proxima-nova-text">
                   Check your inbox for an email from tech@orientation.skule.cafor a link to verify your email. You still need to register and
                   pay for the F!rosh Week event.
                 </h3>
