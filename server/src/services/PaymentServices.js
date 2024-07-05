@@ -126,7 +126,7 @@ const PaymentServices = {
       ],
       discounts: [
         {
-          coupon: 'MSH2gI9n',
+          coupon: 'rUbsZzLU',
         },
       ],
       mode: 'payment',
