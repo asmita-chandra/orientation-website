@@ -132,6 +132,10 @@ const FroshSchema = new mongoose.Schema(
       type: Boolean, // true is attending scunt, false is not attending
       required: true,
     },
+    attendingRetreat: {
+      type: Boolean, // true is attending retreat, false is not attending
+      required: true,
+    },
     summerLocationQuery: {
       type: Boolean,
       required: true,
@@ -144,6 +148,14 @@ const FroshSchema = new mongoose.Schema(
     photograph: {
       type: Boolean, // true is okay with being photographed, false it not
       required: true,
+    },
+    marketing: {
+      type: [String],
+      required: false,
+    },
+    marketingOther: {
+      type: String,
+      required: false,
     },
     froshGroup: {
       type: String, //TODO: add enum validation to frosh groups with all valid Frosh Group names

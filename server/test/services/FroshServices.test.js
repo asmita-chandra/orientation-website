@@ -103,6 +103,7 @@ describe('FroshServices', () => {
       emergencyContactRelationship: 'test',
       emergencyContactNumber: '000-000-0000',
       attendingScunt: true,
+      attendingRetreat: true,
       summerLocationQuery: true,
       photograph: true,
       froshGroup: 'alpha',

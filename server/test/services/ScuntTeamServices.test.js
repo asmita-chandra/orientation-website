@@ -488,6 +488,7 @@ describe('ScuntTeamServices', () => {
         emergencyContactNumber: 'test',
         bursaryRequested: false,
         attendingScunt: true,
+        attendingRetreat: true,
         summerLocationQuery: true,
         photograph: true,
         froshGroup: 'test',

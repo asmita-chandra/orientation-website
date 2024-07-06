@@ -48,46 +48,45 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
       return setCanRegister(true);
     } else {
       try {
+        // const convertedFroshObject = { ...froshObject };
 
-        const convertedFroshObject = { ...froshObject };
+        // // Convert string values to booleans
+        // if (convertedFroshObject.attendingScunt === 'Yes') {
+        //   convertedFroshObject.attendingScunt = true;
+        // } else if (convertedFroshObject.attendingScunt === 'No') {
+        //   convertedFroshObject.attendingScunt = false;
+        // }
 
-        // Convert string values to booleans
-        if (convertedFroshObject.attendingScunt === 'Yes') {
-          convertedFroshObject.attendingScunt = true;
-        } else if (convertedFroshObject.attendingScunt === 'No') {
-          convertedFroshObject.attendingScunt = false;
-        }
+        // if (convertedFroshObject.photograph === 'Yes') {
+        //   convertedFroshObject.photograph = true;
+        // } else if (convertedFroshObject.photograph === 'No') {
+        //   convertedFroshObject.photograph = false;
+        // }
 
-        if (convertedFroshObject.photograph === 'Yes') {
-          convertedFroshObject.photograph = true;
-        } else if (convertedFroshObject.photograph === 'No') {
-          convertedFroshObject.photograph = false;
-        }
+        // if (convertedFroshObject.accommodation === 'Yes') {
+        //   convertedFroshObject.accommodation = true;
+        // } else if (convertedFroshObject.accommodation === 'No') {
+        //   convertedFroshObject.accommodation = false;
+        // }
 
-        if (convertedFroshObject.accommodation === 'Yes') {
-          convertedFroshObject.accommodation = true;
-        } else if (convertedFroshObject.accommodation === 'No') {
-          convertedFroshObject.accommodation = false;
-        }
-
-        if (convertedFroshObject.summerLocationQuery === 'Yes') {
-          convertedFroshObject.summerLocationQuery = true;
-        } else if (convertedFroshObject.summerLocationQuery === 'No') {
-          convertedFroshObject.summerLocationQuery = false;
-        }
-
+        // if (convertedFroshObject.summerLocationQuery === 'Yes') {
+        //   convertedFroshObject.summerLocationQuery = true;
+        // } else if (convertedFroshObject.summerLocationQuery === 'No') {
+        //   convertedFroshObject.summerLocationQuery = false;
+        // }
+        
         let formData = new FormData();
-        for (const [key, value] of Object.entries(convertedFroshObject)) {
+        for (const [key, value] of Object.entries(froshObject)) {
           if (value === undefined) continue;
           formData.append(key, value);
         }
         // for (let [key, value] of formData.entries()) {
         //   console.log(`${key}: ${value}`);
         // }
-        convertedFroshObject['id'] = user.id;
+        froshObject['id'] = user.id;
         const ReactPDF = await import('@react-pdf/renderer');
         const { MakeReceipt } = await import('../../components/MakeReceipt/MakeReceipt');
-        const dataReceipt = await ReactPDF.pdf(MakeReceipt(convertedFroshObject)).toBlob();
+        const dataReceipt = await ReactPDF.pdf(MakeReceipt(froshObject)).toBlob();
         formData.append('dataReceipt', dataReceipt);
         // console.log(formData)
         // console.log("form data executed")
@@ -279,11 +278,11 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
                   initialSelectedIndices={
                     editFieldsPage === true
                       ? field.values.reduce((prev, curr, index) => {
-                        if (initialValues[key].includes(curr)) {
-                          prev.push(index);
-                        }
-                        return prev;
-                      }, [])
+                          if (initialValues[key].includes(curr)) {
+                            prev.push(index);
+                          }
+                          return prev;
+                        }, [])
                       : field.initialSelectedIndices
                   }
                   maxCanSelect={field.maxCanSelect}
@@ -317,8 +316,8 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
                     <></>
                   )}
                   {field.isRequiredInput !== undefined &&
-                    field.isRequiredInput === true &&
-                    field.label !== undefined ? (
+                  field.isRequiredInput === true &&
+                  field.label !== undefined ? (
                     <p className="text-input-required-star">*</p>
                   ) : (
                     <></>
@@ -418,9 +417,11 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
                         <div>
                           <h1 className="registration-first-step-title">
                             {'HELLO ' +
-                              ((user?.preferredName === '' || !user?.preferredName
-                                ? user?.firstName
-                                : user?.preferredName).toUpperCase())}
+                              (user && (user.preferredName === '' || !user.preferredName)
+                                ? user.firstName
+                                : user
+                                ? user.preferredName.toUpperCase()
+                                : '')}
                           </h1>
                           <h2 className="registration-first-step-subtitle">
                             LET&apos;S REGISTER FOR UOFT ENGINEERING&apos;S F!ROSH WEEK 2T4
@@ -458,7 +459,10 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
                         isDisabled={!canRegister}
                       />
                       <p className="register-terms-of-service" style={{ marginTop: '20px' }}>
-                        Note: We will be making bursary decisions after Frosh week and will refund the amount to the students after the decisions. Our team will reach out to you for more details regarding the bursary program. Bursaries range from partial to complete settlement of the ticket price.
+                        Note: We will be making bursary decisions after Frosh week and will refund
+                        the amount to the students after the decisions. Our team will reach out to
+                        you for more details regarding the bursary program. Bursaries range from
+                        partial to complete settlement of the ticket price.
                       </p>
                     </div>
                   ),
