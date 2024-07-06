@@ -271,7 +271,7 @@ export const fields = {
   },
   HealthSafety: {
     medicalInfo: {
-      type: 'dropdown',
+      type: 'radio',
       values: ['Yes', 'No'],
       initialSelectedIndex: 1,
       label: 'Medical Conditions',
@@ -375,7 +375,7 @@ export const fields = {
       },
     },
     accommodation: {
-      type: 'dropdown',
+      type: 'radio',
       label: 'Would you like us to reach out to you about how we can best accommodate you?',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
@@ -396,9 +396,9 @@ export const fields = {
       localStorageKey: 'registration-shirtSize',
     },
     attendingScunt: {
-      type: 'dropdown',
+      type: 'radio',
       label:
-        'Would you like to participate in SkavENGer Hunt!? (It will take place on the evening of Wednesday, August 28th)',
+        'Would you like to participate in Skule Hunt!? (It will take place on the evening of Wednesday, August 28th)',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
       localStorageKey: 'registration-scunt',
@@ -408,20 +408,11 @@ export const fields = {
     scuntInfo: {
       type: 'label',
       label:
-        "What is SkavENGer Hunt!? SkavENGer Hunt! is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! Hunt is an exciting night of challenges for all comfort levels.",
+        "What is Skule Hunt!? Skule Hunt! is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! Hunt is an exciting night of challenges for all comfort levels.",
       isBold: true,
     },
-    attendingNiteLifeCarnival: {
-      type: 'dropdown',
-      label: 'Would you be interested in attending a carnival with other UofT Departments?',
-      values: ['Yes', 'No'],
-      initialSelectedIndex: 0,
-      isRequiredInput: false,
-      noEdit: false,
-      localStorageKey: 'registration-attendingNiteLifeCarnival',
-    },
     attendingRetreat: {
-      type: 'dropdown',
+      type: 'radio',
       label:
         'Would you like to attend an overnight retreat on August 31st-September 1st at Hart House Farms (at an additional cost)?',
       values: ['Yes', 'No'],
@@ -432,7 +423,7 @@ export const fields = {
     },
 
     summerLocationQuery: {
-      type: 'dropdown',
+      type: 'radio',
       label:
         'Will you be based in Toronto or the GTA over the summer?  (or would you be available for events)',
       values: ['Yes', 'No'],
@@ -451,8 +442,8 @@ export const fields = {
       noEdit: false,
       localStorageKey: 'registration-moveToToronto',
     },
-    bursary: {
-      type: 'dropdown',
+    bursaryRequested: {
+      type: 'radio',
       label: 'Do you require any bursary or financial aid for your Frosh Week ticket?',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
@@ -461,7 +452,7 @@ export const fields = {
       localStorageKey: 'registration-bursary',
     },
     photograph: {
-      type: 'dropdown',
+      type: 'radio',
       label: 'Are you okay with being photographed during Frosh Week?',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,

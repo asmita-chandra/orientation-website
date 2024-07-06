@@ -296,7 +296,7 @@ export const scuntJudges = [
       'Hay there! My name is Will I’m a chem 2T5 I’m one of the scunt co-chairs and I L O V E love animal facts',
     content: [
       'Get sturdy for me',
-      'Get something new banded from the SUDS, the pit or SkavEnger Hunt’ that wasn’t banned before',
+      'Get something new banded from the SUDS, the pit or Skule Hunt’ that wasn’t banned before',
       'Make fan art of me and Tyler',
       'Best performance of“Jamaica there trapped down in…”',
       'Bring me a grocery store cake, I’ll pay you back',

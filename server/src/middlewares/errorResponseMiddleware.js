@@ -9,7 +9,7 @@ function errorResponseMiddleware(err, req, res, next) {
   } else if (err.errors) {
     // TODO: finish error handling when implementing proper backend validation
     statusCode = 400;
-    errorMessage = err.message;
+    errorMessage = 'Please provide your full name.';
   } else if (err.message === 'INVALID_EMAIL') {
     statusCode = 400;
     errorMessage = 'Please submit a valid email address.';
