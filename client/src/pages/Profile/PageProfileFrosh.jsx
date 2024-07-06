@@ -175,7 +175,7 @@ const ProfilePageFroshScuntMessage = () => {
       <div className="frosh-instagram-container">
         <img src={ScuntIcon} alt="Scunt" style={{ filter: darkMode ? 'invert(1)' : 'unset' }} />
         <div>
-          <h2>Skule Hunt!</h2>
+          <h2>SKULE™ HUNT</h2>
           <p>Find more information about The Hunt by clicking here!</p>
         </div>
       </div>

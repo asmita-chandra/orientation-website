@@ -149,6 +149,14 @@ const FroshSchema = new mongoose.Schema(
       type: Boolean, // true is okay with being photographed, false it not
       required: true,
     },
+    marketing: {
+      type: [String],
+      required: false,
+    },
+    marketingOther: {
+      type: String,
+      required: false,
+    },
     froshGroup: {
       type: String, //TODO: add enum validation to frosh groups with all valid Frosh Group names
       required: true,

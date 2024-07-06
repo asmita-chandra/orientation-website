@@ -398,7 +398,7 @@ export const fields = {
     attendingScunt: {
       type: 'radio',
       label:
-        'Would you like to participate in Skule Hunt!? (It will take place on the evening of Wednesday, August 28th)',
+        'Would you like to participate in SKULE™ HUNT? (It will take place on the evening of Wednesday, August 28th)',
       values: ['Yes', 'No'],
       initialSelectedIndex: 0,
       localStorageKey: 'registration-scunt',
@@ -408,7 +408,7 @@ export const fields = {
     scuntInfo: {
       type: 'label',
       label:
-        "What is Skule Hunt!? Skule Hunt! is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! Hunt is an exciting night of challenges for all comfort levels.",
+        "What is SKULE™ HUNT? SKULE™ HUNT is a scavenger hunt around the city of Toronto! Don't miss out on one of the most popular f!rosh week events! Hunt is an exciting night of challenges for all comfort levels.",
       isBold: true,
     },
     attendingRetreat: {
@@ -458,6 +458,45 @@ export const fields = {
       initialSelectedIndex: 0,
       noEdit: true,
       localStorageKey: 'registration-photograph',
+    },
+    marketing: {
+      type: 'checkbox',
+      label: 'Do you have any of the following dietary restrictions or allergies?',
+      values: [
+        'Instagram',
+        'First Year News Feed',
+        'Word of Mouth',
+        'Discord',
+        'Other',
+      ],
+      isRequiredInput: false,
+      noEdit: false,
+      localStorageKey: 'registration-marketing',
+      onChanged: (values, disableField) => {
+        if (values.includes('Other')) {
+          disableField(false, 'marketingOther', 'ExtraEvents');
+        } else {
+          disableField(true, 'marketingOther', 'ExtraEvents');
+        }
+      },
+    },
+    marketingOther: {
+      type: 'text',
+      inputType: 'textArea',
+      label: 'If you heard about F!rosh Week through a different method not listed above, please list it here.',
+      placeholder: 'Facebook',
+      hasRestrictedInput: true,
+      isRequiredInput: false,
+      noEdit: false,
+      localStorageKey: 'registration-marketingMore',
+      isDisabled: true, // to initially set to disabled until 'Other' is clicked
+      validation: (value) => {
+        if (value.length > 100) {
+          return 'Please use less than 100 characters';
+        } else {
+          return true;
+        }
+      },
     },
   },
 };
