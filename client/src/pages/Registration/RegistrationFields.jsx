@@ -461,7 +461,7 @@ export const fields = {
     },
     marketing: {
       type: 'checkbox',
-      label: 'Do you have any of the following dietary restrictions or allergies?',
+      label: 'How did you hear about F!rosh Week?',
       values: [
         'Instagram',
         'First Year News Feed',

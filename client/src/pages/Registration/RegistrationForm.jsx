@@ -48,6 +48,33 @@ const PageRegistrationForm = ({ editFieldsPage, initialValues, onEditSubmit }) =
       return setCanRegister(true);
     } else {
       try {
+        // const convertedFroshObject = { ...froshObject };
+
+        // // Convert string values to booleans
+        // if (convertedFroshObject.attendingScunt === 'Yes') {
+        //   convertedFroshObject.attendingScunt = true;
+        // } else if (convertedFroshObject.attendingScunt === 'No') {
+        //   convertedFroshObject.attendingScunt = false;
+        // }
+
+        // if (convertedFroshObject.photograph === 'Yes') {
+        //   convertedFroshObject.photograph = true;
+        // } else if (convertedFroshObject.photograph === 'No') {
+        //   convertedFroshObject.photograph = false;
+        // }
+
+        // if (convertedFroshObject.accommodation === 'Yes') {
+        //   convertedFroshObject.accommodation = true;
+        // } else if (convertedFroshObject.accommodation === 'No') {
+        //   convertedFroshObject.accommodation = false;
+        // }
+
+        // if (convertedFroshObject.summerLocationQuery === 'Yes') {
+        //   convertedFroshObject.summerLocationQuery = true;
+        // } else if (convertedFroshObject.summerLocationQuery === 'No') {
+        //   convertedFroshObject.summerLocationQuery = false;
+        // }
+        
         let formData = new FormData();
         for (const [key, value] of Object.entries(froshObject)) {
           if (value === undefined) continue;
