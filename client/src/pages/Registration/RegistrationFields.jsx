@@ -199,14 +199,14 @@ export const fields = {
       localStorageKey: 'registration-phoneNumberCountryCode',
       className: 'small-width-input',
       inputTitle: 'Country Code',
-      maxLength: 3,
+      maxLength: 4,
       noEdit: false,
       validation: (value) => {
         if (/^[+0-9]*$/.test(value)) {
-          if (value.length <= 3) {
+          if (value.length <= 4) {
             return true;
           } else {
-            return 'Must be at most 3 characters';
+            return 'Must be at most 4 characters';
           }
         } else {
           return 'Must contain characters 0-9 or +';
@@ -253,17 +253,43 @@ export const fields = {
       className: 'half-width-input',
       validation: textLengthValidation,
     },
+    emergencyContactNumberLabel: {
+      type: 'label',
+      label: 'Emergency Contact Phone Number',
+      isRequiredInput: true,
+    },
+    emergencyContactCountryCode: {
+      type: 'text',
+      inputType: 'text',
+      placeholder: '+1',
+      hasRestrictedInput: false,
+      localStorageKey: 'registration-emergencyContactNumberCountryCode',
+      className: 'small-width-input',
+      inputTitle: 'Country Code',
+      maxLength: 4,
+      noEdit: false,
+      validation: (value) => {
+        if (/^[+0-9]*$/.test(value)) {
+          if (value.length <= 4) {
+            return true;
+          } else {
+            return 'Must be at most 4 characters';
+          }
+        } else {
+          return 'Must contain characters 0-9 or +';
+        }
+      },
+    },
     emergencyContactNumber: {
       type: 'text',
       inputType: 'text',
-      label: 'Emergency Contact Phone Number',
       placeholder: '(416) 123-4567',
       hasRestrictedInput: true,
       isRequiredInput: true,
       noEdit: false,
       errorMessage: 'Please enter a valid phone number',
       localStorageKey: 'registration-emergencyContactNumber',
-      className: 'half-width-input',
+      className: 'fill-remaining-width-input',
       isPhoneNumber: true,
       inputTitle: 'Phone Number',
       validation: phoneNumberValidation,
@@ -378,7 +404,6 @@ export const fields = {
       type: 'radio',
       label: 'Would you like us to reach out to you about how we can best accommodate you?',
       values: ['Yes', 'No'],
-      initialSelectedIndex: 0,
       isRequiredInput: false,
       noEdit: false,
       localStorageKey: 'registration-accommodation',

@@ -91,6 +91,10 @@ const FroshSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    emergencyContactCountryCode: {
+      type: String,
+      required: false,
+    },
     emergencyContactNumber: {
       type: String,
       required: true,
