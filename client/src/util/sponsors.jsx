@@ -6,6 +6,7 @@ import PEO from '../assets/sponsors/PEO.png';
 import UTSU from '../assets/sponsors/UTSU.jpg';
 import Mogu from '../assets/sponsors/MoguMogu.png';
 import Nani from '../assets/sponsors/Nanis.png';
+import Longos from '../assets/sponsors/Longos.jpg';
 
 export const sponsors = [
   {
@@ -61,5 +62,12 @@ export const sponsors = [
     scale: 0.82,
     rank: 'bronze',
     label: 'Bronze sponsor: Nani’s Gelato',
+  },
+  {
+    website: 'https://www.longos.com/about-us/in-the-community',
+    image: Longos,
+    scale: 0.82,
+    rank: 'bronze',
+    label: 'Bronze sponsor: Longos',
   },
 ];
