@@ -54,7 +54,7 @@ const PageProfileFrosh = () => {
       <div className="profile-info-row">
         <div className="profile-info-row-right">
           {user?.attendingScunt === true ? <ProfilePageFroshScuntMessage /> : null}
-          {isRegistered ? /*<ProfilePageRetreat />*/ null : null}
+          {isRegistered ? <ProfilePageRetreat /> : null}
           {/* <ProfilePageNitelife /> */}
           <ProfilePageInstagrams />
           <ProfilePageAnnouncements />
@@ -130,7 +130,7 @@ const ProfilePageRetreat = () => {
               }}
             >
               <div>
-                <h2>Want to participate in F!rosh Retreat?</h2>
+                <h2>WANT TO PARTICIPATE IN F!ROSH RETREAT?</h2>
                 <p>
                   There are only a limited number of tickets, so get yours before it&apos;s too
                   late!{' '}
