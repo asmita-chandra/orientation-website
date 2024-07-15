@@ -467,6 +467,19 @@ export const fields = {
       noEdit: false,
       localStorageKey: 'registration-moveToToronto',
     },
+    photograph: {
+      type: 'radio',
+      label: 'Are you okay with being photographed during Frosh Week?',
+      values: ['Yes', 'No'],
+      initialSelectedIndex: 0,
+      noEdit: true,
+      localStorageKey: 'registration-photograph',
+    },
+    priceInfo: {
+      type: 'label',
+      label: 'The price of one Frosh Week ticket is 130 CAD',
+      isBold: true,
+    },
     bursaryRequested: {
       type: 'radio',
       label: 'Do you require any bursary or financial aid for your Frosh Week ticket?',
@@ -476,24 +489,10 @@ export const fields = {
       noEdit: false,
       localStorageKey: 'registration-bursary',
     },
-    photograph: {
-      type: 'radio',
-      label: 'Are you okay with being photographed during Frosh Week?',
-      values: ['Yes', 'No'],
-      initialSelectedIndex: 0,
-      noEdit: true,
-      localStorageKey: 'registration-photograph',
-    },
     marketing: {
       type: 'checkbox',
       label: 'How did you hear about F!rosh Week?',
-      values: [
-        'Instagram',
-        'First Year News Feed',
-        'Word of Mouth',
-        'Discord',
-        'Other',
-      ],
+      values: ['Instagram', 'First Year News Feed', 'Word of Mouth', 'Discord', 'Other'],
       isRequiredInput: false,
       noEdit: false,
       localStorageKey: 'registration-marketing',
@@ -508,7 +507,8 @@ export const fields = {
     marketingOther: {
       type: 'text',
       inputType: 'textArea',
-      label: 'If you heard about F!rosh Week through a different method not listed above, please list it here.',
+      label:
+        'If you heard about F!rosh Week through a different method not listed above, please list it here.',
       placeholder: 'Facebook',
       hasRestrictedInput: true,
       isRequiredInput: false,
