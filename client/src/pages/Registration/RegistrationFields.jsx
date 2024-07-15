@@ -477,7 +477,7 @@ export const fields = {
     },
     priceInfo: {
       type: 'label',
-      label: 'The price of one Frosh Week ticket is 130 CAD',
+      label: 'The price of one Frosh Week ticket is 130 CAD.',
       isBold: true,
     },
     bursaryRequested: {
