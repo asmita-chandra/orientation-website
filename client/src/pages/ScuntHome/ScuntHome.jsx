@@ -54,11 +54,10 @@ const AboutScunt = () => {
           {/* <div className="about-scunt-token">
             <ProfilePageScuntTeam />
           </div> */}
-
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <img src={scuntLogo} style={{ width: '300px', margin: '20px' }} />
             <div style={{ display: 'block' }}>
-              <h2 style={{ display: 'block' }}>The Hunt</h2>
+              <h2 style={{ display: 'block' }}>THE HUNT</h2>
               Come participate in the most iconic event that is part of Frosh Week: Skule™ Hunt!
               <br />
               <br />
@@ -66,17 +65,19 @@ const AboutScunt = () => {
               is completely free, so hurry and sign up by clicking YES on your registration!
               <br />
               <br />
-          <div dangerouslySetInnerHTML={{ __html: aboutScunt }} />
-          <h4>
-            CHECK THE <Link to={'/skule-hunt-rules'}>RULES</Link> FOR MORE INFORMATION
-          </h4>
+              {/* <div dangerouslySetInnerHTML={{ __html: aboutScunt }} /> */}
+              <h4>
+                CHECK THE <Link to={'/skule-hunt-rules'}>RULES</Link> FOR MORE INFORMATION
+              </h4>
+            </div>
+          </div>
         </div>
       </div>
       <img
         className="header-page-wave-bottom"
         src={darkMode ? waveBottomDarkMode : waveBottom}
         alt="wave"
-      ></img>
+      />
 
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <SkuleHuntFAQ />
