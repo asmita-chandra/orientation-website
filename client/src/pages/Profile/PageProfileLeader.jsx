@@ -155,8 +155,8 @@ const ProfilePageLeaderHeader = () => {
       />
       {leaderApproved === false ? (
         <div className={'profile-not-registered'}>
-          <h1>Your Leedur Account is not Approved!</h1>
-          <h2>Please contact a VC to get your account approved.</h2>
+          <h1>YOUR LEEDUR ACCOUNT IS NOT APPROVED!</h1>
+          <h2>Please contact VCM or Webmasters to get your account approved.</h2>
         </div>
       ) : null}
     </>
