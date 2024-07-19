@@ -54,6 +54,7 @@ const AboutScunt = () => {
           {/* <div className="about-scunt-token">
             <ProfilePageScuntTeam />
           </div> */}
+
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <img src={scuntLogo} style={{ width: '300px', margin: '20px' }} />
             <div style={{ display: 'block' }}>
@@ -65,11 +66,10 @@ const AboutScunt = () => {
               is completely free, so hurry and sign up by clicking YES on your registration!
               <br />
               <br />
-              <h4 style={{ display: 'block' }}>
-                Check the FAQ below and <Link to={'/scunt-rules'}>Rules</Link> for more information
-              </h4>
-            </div>
-          </div>
+          <div dangerouslySetInnerHTML={{ __html: aboutScunt }} />
+          <h4>
+            CHECK THE <Link to={'/skule-hunt-rules'}>RULES</Link> FOR MORE INFORMATION
+          </h4>
         </div>
       </div>
       <img
@@ -96,7 +96,8 @@ const ScuntCountdown = () => {
   useEffect(() => {
     if (scuntSettings !== undefined) {
       let settings = scuntSettings;
-      const tempDate = new Date(settings?.scuntDate);
+      //const tempDate = new Date(settings?.scuntDate);
+      const tempDate = new Date('2024-08-28T18:00:00'); // Hardcoded date??
       const tempCountDownDate = new Date(tempDate).getTime();
 
       setTargetDate(tempDate);
@@ -137,19 +138,19 @@ const ScuntCountdown = () => {
       <div className="scunt-countdown">
         <div className="scunt-countdown-number">
           <h1>{checkNaN(getDateValues(countDown)[0])}</h1>
-          <h3>days</h3>
+          <h3>DAYS</h3>
         </div>
         <div className="scunt-countdown-number">
           <h1>{checkNaN(getDateValues(countDown)[1])}</h1>
-          <h3>hours</h3>
+          <h3>HOURS</h3>
         </div>
         <div className="scunt-countdown-number">
           <h1>{checkNaN(getDateValues(countDown)[2])}</h1>
-          <h3>minutes</h3>
+          <h3>MINUTES</h3>
         </div>
         <div className="scunt-countdown-number">
           <h1>{checkNaN(getDateValues(countDown)[3])}</h1>
-          <h3>seconds</h3>
+          <h3>SECONDS</h3>
         </div>
       </div>
       {/* Only show confetti for the first 100 seconds overtime */}
