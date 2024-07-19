@@ -75,7 +75,8 @@ const ScuntCountdown = () => {
   useEffect(() => {
     if (scuntSettings !== undefined) {
       let settings = scuntSettings;
-      const tempDate = new Date(settings?.scuntDate);
+      //const tempDate = new Date(settings?.scuntDate);
+      const tempDate = new Date('2024-08-28T18:00:00'); // Hardcoded date??
       const tempCountDownDate = new Date(tempDate).getTime();
 
       setTargetDate(tempDate);

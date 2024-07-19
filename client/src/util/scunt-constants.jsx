@@ -1,6 +1,6 @@
 export const okayToInviteToScunt = false;
 export const scuntDiscord = 'https://discord.gg/mRutbwuCK9';
-export const scuntDate = 'September 7, 2022 18:00:00';
+export const scuntDate = 'August 28, 2024 18:00:00';
 export const aboutScunt = `
   <h2>THE H!UNT</h2>
   <h3>WHAT IS SKULE™ HUNT?</h3>
