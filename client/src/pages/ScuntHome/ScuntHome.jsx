@@ -66,9 +66,9 @@ const AboutScunt = () => {
               <br />
               <br />
               {/* <div dangerouslySetInnerHTML={{ __html: aboutScunt }} /> */}
-              <h4>
+              {/* <h4>
                 CHECK THE <Link to={'/skule-hunt-rules'}>RULES</Link> FOR MORE INFORMATION
-              </h4>
+              </h4> */}
             </div>
           </div>
         </div>
