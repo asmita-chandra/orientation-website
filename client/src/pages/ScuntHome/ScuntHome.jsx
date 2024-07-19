@@ -51,7 +51,7 @@ const AboutScunt = () => {
           </div> */}
           <div dangerouslySetInnerHTML={{ __html: aboutScunt }} />
           <h4>
-            Check the <Link to={'/scunt-rules'}>Rules</Link> for more information
+            CHECK THE <Link to={'/skule-hunt-rules'}>RULES</Link> FOR MORE INFORMATION
           </h4>
         </div>
       </div>
@@ -116,19 +116,19 @@ const ScuntCountdown = () => {
       <div className="scunt-countdown">
         <div className="scunt-countdown-number">
           <h1>{checkNaN(getDateValues(countDown)[0])}</h1>
-          <h3>days</h3>
+          <h3>DAYS</h3>
         </div>
         <div className="scunt-countdown-number">
           <h1>{checkNaN(getDateValues(countDown)[1])}</h1>
-          <h3>hours</h3>
+          <h3>HOURS</h3>
         </div>
         <div className="scunt-countdown-number">
           <h1>{checkNaN(getDateValues(countDown)[2])}</h1>
-          <h3>minutes</h3>
+          <h3>MINUTES</h3>
         </div>
         <div className="scunt-countdown-number">
           <h1>{checkNaN(getDateValues(countDown)[3])}</h1>
-          <h3>seconds</h3>
+          <h3>SECONDS</h3>
         </div>
       </div>
       {/* Only show confetti for the first 100 seconds overtime */}

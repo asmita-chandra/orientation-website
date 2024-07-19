@@ -97,12 +97,12 @@ export const ProfilePageLeaderScuntMessage = () => {
   const { darkMode, setDarkModeStatus } = useContext(DarkModeContext);
 
   return (
-    <Link to="/scunt">
+    <Link to="/skule-hunt">
       <div className="frosh-instagram-container">
         <img src={ScuntIcon} alt="Scunt" style={{ filter: darkMode ? 'invert(1)' : 'unset' }} />
         <div>
           <h2>SKULE™ HUNT!</h2>
-          <p>Find more information about The Hunt by clicking here!</p>
+          <p>Find more information about the Hunt by clicking here!</p>
         </div>
       </div>
     </Link>
