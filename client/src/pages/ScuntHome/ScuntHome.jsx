@@ -21,7 +21,7 @@ import { getScuntTeams } from '../../state/scuntTeams/saga';
 // import { ProfilePageScuntTeam } from '../Profile/PageProfileFrosh';
 const { axios } = useAxios();
 import scuntLogo from '../../assets/scuntlogo/scunt_color_2t4.svg';
-import arrowLogo from '../../assets/misc/left-arrow-svgrepo-com.svg'
+import arrowLogo from '../../assets/misc/left-arrow-svgrepo-com.svg';
 import { SingleAccordion } from '../../components/text/Accordion/SingleAccordion/SingleAccordion';
 
 export const PageScuntHome = () => {
@@ -43,9 +43,9 @@ export const PageScuntHome = () => {
 };
 
 const BackToProfileButton = () => {
-
   return (
     <Link to="/profile" className="back-button">
+      <div className="circle"></div>
       <img src={arrowLogo} alt="Back" className="back-icon" />
     </Link>
   );

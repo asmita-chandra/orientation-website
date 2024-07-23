@@ -132,11 +132,28 @@
   top: 16px;
   left: 16px;
   display: inline-block;
-  background: none; 
+  background: none;
 }
 
 .back-icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   fill: purple;
+  filter: invert(1) opacity(100%);
+}
+
+.back-button:hover .back-icon,
+.back-button:active .back-icon {
+  filter: invert(1) opacity(50%);
+}
+
+.circle {
+  position: absolute;
+  top: -0.5px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-52%);
+  width: 22px; /* Adjust size */
+  height: 22px;
+  background-color: #a04fb9; /* Light purple */
+  border-radius: 50%;
 }
