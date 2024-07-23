@@ -60,6 +60,8 @@
 .about-scunt-content {
   color: var(--text-white);
   width: 100%;
+  display: flex;
+  align-items: center;
   h4 {
     font-size: 22px;
   }
@@ -67,6 +69,28 @@
     color: var(--text-link-for-dark);
   }
 }
+
+.about-scunt-content img {
+  width: 300px;
+  margin: 20px;
+}
+
+.about-scunt-content .text-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .about-scunt-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-scunt-content img {
+    width: 100%; /* Adjust as needed */
+    margin: 10px 0;
+  }
+}
+
 .about-scunt-token {
   padding: 20px;
   float: right;

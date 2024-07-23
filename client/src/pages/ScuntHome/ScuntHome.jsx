@@ -65,22 +65,17 @@ const AboutScunt = () => {
           {/* <div className="about-scunt-token">
             <ProfilePageScuntTeam />
           </div> */}
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <img src={scuntLogo} style={{ width: '300px', margin: '20px' }} />
-            <div style={{ display: 'block' }}>
-              <h2 style={{ display: 'block' }}>THE HUNT</h2>
-              Come participate in the most iconic event that is part of Frosh Week: Skule™ Hunt!
-              <br />
-              <br />
-              Skule™ Hunt takes place the night of <b>Wednesday August 28th from 6PM to 11PM</b>. It
-              is completely free, so hurry and sign up by clicking YES on your registration!
-              <br />
-              <br />
-              {/* <div dangerouslySetInnerHTML={{ __html: aboutScunt }} /> */}
-              {/* <h4>
-                CHECK THE <Link to={'/skule-hunt-rules'}>RULES</Link> FOR MORE INFORMATION
-              </h4> */}
-            </div>
+
+          <img src={scuntLogo} style={{ width: '300px', margin: '20px' }} />
+          <div className="text-content">
+            <h2>THE HUNT</h2>
+            Come participate in the most iconic event that is part of Frosh Week: Skule™ Hunt!
+            <br />
+            <br />
+            Skule™ Hunt takes place the night of <b>Wednesday August 28th from 6PM to 11PM</b>. It
+            is completely free, so hurry and sign up by clicking YES on your registration!
+            <br />
+            <br />
           </div>
         </div>
       </div>
