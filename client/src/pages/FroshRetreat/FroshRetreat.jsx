@@ -28,11 +28,11 @@ export const FroshRetreat = () => {
     remainingTicketsSetter();
   }, []);
 
-  useEffect(() => {
-    if (!isRegistered) {
-      navigate('/profile');
-    }
-  }, [isRegistered]);
+  // useEffect(() => {
+  //   if (!isRegistered) {
+  //     navigate('/profile');
+  //   }
+  // }, [isRegistered]);
 
   return (
     <div className="frosh-retreat-page">
