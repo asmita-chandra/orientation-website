@@ -50,7 +50,7 @@ export const FroshRetreat = () => {
             before they sell out!{' '}
           </p>
           <p style={{ color: 'var(--white)' }}>
-            Tickets to Retreat are $95.00 &#40;they include bus transportation; no tickets without
+            Tickets to Retreat are $103.00 &#40;they include bus transportation; no tickets without
             bus transportation&#41;
           </p>
         </div>
