@@ -28,7 +28,7 @@ export function* createMultipleMissionsSaga({ payload: { array, setSnackbar } })
   const { axios } = useAxios();
   try {
     yield put(getScuntMissionsStart());
-    const result = yield call(axios.post, 'scunt-missions/bulk', { array });
+    const result = yield call(axios.post, 'skule-hunt-missions/bulk', { array });
     yield put(getScuntMissionsSuccess(result.data.missions));
     setSnackbar && setSnackbar('Successfully uploaded missions!', false);
   } catch (error) {

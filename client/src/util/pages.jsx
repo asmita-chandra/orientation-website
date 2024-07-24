@@ -258,34 +258,34 @@ export const pages = {
       path: '/skule-hunt',
       includeFooter: true,
     },
-    // {
-    //   label: 'Judges',
-    //   scuntLabel: 'Judges',
-    //   component: <ScuntJudges />,
-    //   path: '/skule-hunt-judges',
-    //   includeFooter: true,
-    // },
-    // {
-    //   label: 'Missions',
-    //   scuntLabel: 'Missions',
-    //   component: <PageScuntMissionsList />,
-    //   path: '/skule-hunt-missions',
-    //   includeFooter: true,
-    // },
-    // {
-    //   label: 'Leaderboard',
-    //   scuntLabel: 'Leaderboard',
-    //   component: <ScuntLeaderboard />,
-    //   path: '/skule-hunt-leaderboard',
-    //   includeFooter: true,
-    // },
-    // {
-    //   label: 'Rules',
-    //   scuntLabel: 'Rules',
-    //   component: <PageScuntRules />,
-    //   path: '/skule-hunt-rules',
-    //   includeFooter: true,
-    // },
+    {
+      label: 'Judges',
+      scuntLabel: 'Judges',
+      component: <ScuntJudges />,
+      path: '/skule-hunt-judges',
+      includeFooter: true,
+    },
+    {
+      label: 'Missions',
+      scuntLabel: 'Missions',
+      component: <PageScuntMissionsList />,
+      path: '/skule-hunt-missions',
+      includeFooter: true,
+    },
+    {
+      label: 'Leaderboard',
+      scuntLabel: 'Leaderboard',
+      component: <ScuntLeaderboard />,
+      path: '/skule-hunt-leaderboard',
+      includeFooter: true,
+    },
+    {
+      label: 'Rules',
+      scuntLabel: 'Rules',
+      component: <PageScuntRules />,
+      path: '/skule-hunt-rules',
+      includeFooter: true,
+    },
   ],
   scuntHidden: [
     {
@@ -321,7 +321,7 @@ export const pages = {
           <PageScuntMissionsDashboard />
         </AuthorizedPage>
       ),
-      path: '/skule-hunt-missions',
+      path: '/skule-hunt-missions-dashboard',
     },
     {
       label: 'Skule™ Hunt Point Transactions',
