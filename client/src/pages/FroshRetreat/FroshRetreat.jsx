@@ -112,6 +112,13 @@ const retreatFAQs = [
       '• Anything appropriate for a 36-hour camping trip on a farm!',
     ],
   },
+  {
+    title:
+      'What time does the bus leave?',
+    description: [
+      'The bus leaves from campus at 11:00am on August 31st and returns to campus at 1:00pm on September 1st.',
+    ],
+  }
 ];
 
 const FroshRetreatFAQ = () => {
@@ -131,7 +138,7 @@ const FroshRetreatFAQ = () => {
       >
         <img src={dragon} style={{ width: '350px', margin: '20px' }}></img>
         <h2 style={{ marginBottom: '20px' }}>
-          GET MOO-VING WITH OUR FAQS: PREPARE FOR A GOOD TIME DOWN ON THE FARM!
+          FAQS: PREPARE FOR A GOOD TIME DOWN ON THE FARM!
         </h2>
         {retreatFAQs.map((item, index) => {
           const [isOpen, setIsOpen] = useState(false);
