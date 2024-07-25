@@ -9,10 +9,10 @@ import { useSelector } from 'react-redux';
 import { RadioButtons } from '../../components/form/RadioButtons/RadioButtons';
 import { ErrorSuccessBox } from '../../components/containers/ErrorSuccessBox/ErrorSuccessBox';
 import { SnackbarContext } from '../../util/SnackbarProvider';
-import waiverPDF from '../../assets/retreatWaiver/frosh-retreat-2T3-waiver.pdf';
+import waiverPDF from '../../assets/retreatWaiver/frosh-retreat-2T4-waiver.pdf';
 import useAxios from '../../hooks/useAxios';
 import { SingleAccordion } from '../../components/text/Accordion/SingleAccordion/SingleAccordion';
-import egglinton from '../../assets/mascots/Egglinton-1.png';
+import dragon from '../../assets/mascots/dragon-retreat.svg';
 
 export const FroshRetreat = () => {
   const [remainingTickets, setRemainingTickets] = useState();
@@ -43,15 +43,14 @@ export const FroshRetreat = () => {
             ESCAPE THE CITY TO THE LOVELY HART HOUSE FARMS FOR A WEEKEND OF WHOLESOME CAMP VIBES!
           </h3>
           <p style={{ color: 'var(--white)' }}>
-            The retreat is taking place on August 31st and September 1st, 2024 at Hart House
-            Farm.
+            The retreat is taking place on August 31st and September 1st, 2024 at Hart House Farm.
           </p>
           <p style={{ color: 'var(--white)' }}>
             Due to limited spaces, we are selling a limited number of tickets so purchase yours
             before they sell out!{' '}
           </p>
           <p style={{ color: 'var(--white)' }}>
-            Tickets to Retreat are $95.00 &#40;they include bus transportation; no tickets without
+            Tickets to Retreat are $103.00 &#40;they include bus transportation; no tickets without
             bus transportation&#41;
           </p>
         </div>
@@ -113,6 +112,13 @@ const retreatFAQs = [
       '• Anything appropriate for a 36-hour camping trip on a farm!',
     ],
   },
+  {
+    title:
+      'What time does the bus leave?',
+    description: [
+      'The bus leaves from campus at 11:00am on August 31st and returns to campus at 1:00pm on September 1st.',
+    ],
+  }
 ];
 
 const FroshRetreatFAQ = () => {
@@ -130,9 +136,9 @@ const FroshRetreatFAQ = () => {
           alignSelf: 'center',
         }}
       >
-        <img src={egglinton} style={{ width: '200px', margin: '20px' }}></img>
+        <img src={dragon} style={{ width: '350px', margin: '20px' }}></img>
         <h2 style={{ marginBottom: '20px' }}>
-          GET MOO-VING WITH OUR FAQS: PREPARE FOR A GOOD TIME DOWN ON THE FARM!
+          FAQS: PREPARE FOR A GOOD TIME DOWN ON THE FARM!
         </h2>
         {retreatFAQs.map((item, index) => {
           const [isOpen, setIsOpen] = useState(false);
@@ -188,7 +194,7 @@ const RetreatRegistration = () => {
   const [waiverValue, setWaiverValue] = useState();
   const [buttonClicked, setButtonClicked] = useState(false);
 
-  const waiverLink = '../../assests/retreatWaiver/frosh-retreat-2T3-waiver.pdf';
+  const waiverLink = '../../assests/retreatWaiver/frosh-retreat-2T4-waiver.pdf';
 
   const { user } = useSelector(userSelector);
   const { setSnackbar } = useContext(SnackbarContext);
