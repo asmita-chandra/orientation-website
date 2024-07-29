@@ -19,6 +19,24 @@ export const FroshRetreat = () => {
   const { setSnackbar } = useContext(SnackbarContext);
   const navigate = useNavigate();
   const isRegistered = useSelector(registeredSelector);
+  const { user } = useSelector(userSelector);
+  const accountObj = {
+    firstName: user.firstName || '',
+    lastName: user.lastName || '',
+    preferredName: user.preferredName || '',
+    phoneNumber: user.phoneNumber || '',
+    phoneNumberCountryCode: user.phoneNumberCountryCode || '',
+    emergencyContactName: user.emergencyContactName || '',
+    emergencyContactRelationship: user.emergencyContactRelationship || '',
+    emergencyContactCountryCode: user.emergencyContactCountryCode || '',
+    emergencyContactNumber: user.emergencyContactNumber || '',
+    email: user.email || '',
+    allergies: user.allergies || [],
+    allergiesOther: user.allergiesOther || '',
+    medicalInfo: user.medicalInfo || '',
+    specficMedicalInfo: user.specficMedicalInfo || '',
+    medication: user.medication || '',
+  };
 
   const remainingTicketsSetter = async () => {
     setRemainingTickets(await getRemainingTickets(setSnackbar));
@@ -210,8 +228,9 @@ const RetreatRegistration = () => {
       <p style={{ textAlign: 'center' }}>
         In order to register, the following information will be collected from your account. Please
         ensure this information is accurate and up to date. If any information needs to be modified,
-        please edit your information <Link to={'/profile-edit'}>here</Link>.
-      </p>
+        please edit your information {' '}
+      <Link to={isRegistered ? '/profile-edit' : '/profile-edit-unregistered'}>here</Link>.
+    </p>
       <div className="retreat-registration-form">
         <div className="display-field">
           <h3>FULL NAME:</h3>{' '}
