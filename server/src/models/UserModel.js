@@ -148,6 +148,10 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
+    waiver: {
+      type: String,
+      required: false,
+    }
   },
   { discriminatorKey: 'userType' },
 );

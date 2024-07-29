@@ -205,6 +205,7 @@ const RetreatRegistration = () => {
   const [viewedWaiver, setViewedWaiver] = useState(false);
   const [waiverValue, setWaiverValue] = useState();
   const [buttonClicked, setButtonClicked] = useState(false);
+  const isRegistered = useSelector(registeredSelector);
 
   const waiverLink = '../../assests/retreatWaiver/frosh-retreat-2T3-waiver.pdf';
 
@@ -212,6 +213,8 @@ const RetreatRegistration = () => {
   const { setSnackbar } = useContext(SnackbarContext);
   const { axios } = useAxios();
   const isRetreat = user?.isRetreat === true;
+
+  const [file, setFile] = useState(null);
 
   const [outOfTickets, setOutOfTickets] = useState(false);
 
@@ -222,6 +225,29 @@ const RetreatRegistration = () => {
   useEffect(() => {
     outOfTicketsSetter();
   }, []);
+
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]);
+  };
+
+  const handleUpload = async () => {
+    if (!file) {
+      setSnackbar('Please select a PDF file to upload.');
+      return;
+    }
+    const formData = new FormData();
+    formData.append('waiver', file);
+
+    try {
+      const response = await axios.post('/frosh/upload-waiver', formData, {
+        headers: { 'content-type': 'multipart/form-data' },
+      });
+      setSnackbar('File uploaded successfully!');
+    } catch (error) {
+      console.error('File upload failed:', error);
+      setSnackbar('File upload failed. Please try again.');
+    }
+  };
 
   return (
     <div style={{ margin: '0 20px' }}>
@@ -286,6 +312,16 @@ const RetreatRegistration = () => {
             }}
             style={{ marginBottom: '25px' }}
           />
+          <div className="display-field">
+            <h3>Upload Waiver:</h3>
+            <input type="file" accept=".pdf" onChange={handleFileChange} />
+            <Button
+              label="Upload PDF"
+              isSecondary
+              onClick={handleUpload}
+              style={{ marginTop: '10px' }}
+            />
+          </div>
           <h3>I HAVE READ AND AGREE TO THE FROSH RETREAT WAIVER.</h3>
           <h4>
             <i>

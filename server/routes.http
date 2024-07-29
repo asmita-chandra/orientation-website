@@ -93,6 +93,10 @@ post {{$dotenv API_BASE_URL}}/frosh/register
 
 ###
 
+post {{$dotenv API_BASE_URL}}/frosh/upload-waiver
+
+###
+
 put {{$dotenv API_BASE_URL}}/frosh/info
 
 ###
