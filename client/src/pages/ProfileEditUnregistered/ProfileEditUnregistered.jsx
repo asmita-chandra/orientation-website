@@ -124,10 +124,7 @@ const PageProfileEditUnregistered = () => {
       errorsCopy['phoneNumber'] = 'Please enter a phone number';
       anyErrorsNow = true;
     }
-    if (accountObj['phoneNumberCountryCode'] === undefined || accountObj['phoneNumberCountryCode'] === '') {
-      errorsCopy['phoneNumberCountryCode'] = 'Please enter a country code';
-      anyErrorsNow = true;
-    } else if (!/^[+0-9]*$/.test(accountObj['phoneNumberCountryCode'])) {
+    if (!/^[+0-9]*$/.test(accountObj['phoneNumberCountryCode'])) {
       errorsCopy['phoneNumberCountryCode'] = 'Must contain characters 0-9 or +';
       anyErrorsNow = true;
     } else if (accountObj['phoneNumberCountryCode'].length > 4) {
@@ -138,21 +135,15 @@ const PageProfileEditUnregistered = () => {
       errorsCopy['emergencyContactName'] = 'Please try to use 50 characters or less';
       anyErrorsNow = true;
     }
-    if (accountObj['emergencyContactRelationship'] === undefined || accountObj['emergencyContactRelationship'] === '') {
-      errorsCopy['emergencyContactRelationship'] = 'Please enter an emergency contact relationship';
-      anyErrorsNow = true;
-    } else if (accountObj['emergencyContactName'].length > 50) {
-      errorsCopy['emergencyContactName'] = 'Please try to use 50 characters or less';
+    if (accountObj['emergencyContactRelationship'].length > 50) {
+      errorsCopy['emergencyContactRelationship'] = 'Please try to use 50 characters or less';
       anyErrorsNow = true;
     }
     if (accountObj['emergencyContactNumber'] === undefined || accountObj['emergencyContactNumber'] === '') {
       errorsCopy['emergencyContactNumber'] = 'Please enter a phone number';
       anyErrorsNow = true;
     }
-    if (accountObj['emergencyContactCountryCode'] === undefined || accountObj['emergencyContactCountryCode'] === '') {
-      errorsCopy['emergencyContactCountryCode'] = 'Please enter a country code';
-      anyErrorsNow = true;
-    } else if (!/^[+0-9]*$/.test(accountObj['emergencyContactCountryCode'])) {
+    if (!/^[+0-9]*$/.test(accountObj['emergencyContactCountryCode'])) {
       errorsCopy['emergencyContactCountryCode'] = 'Must contain characters 0-9 or +';
       anyErrorsNow = true;
     } else if (accountObj['emergencyContactCountryCode'].length > 4) {
