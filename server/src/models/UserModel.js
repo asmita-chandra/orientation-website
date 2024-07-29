@@ -110,15 +110,15 @@ const UserSchema = new mongoose.Schema(
     },
     phoneNumber: {
       type: String,
-      required: true,
+      required: false,
     },
     emergencyContactName: {
       type: String,
-      required: true,
+      required: false,
     },
     emergencyContactRelationship: {
       type: String,
-      required: true,
+      required: false,
     },
     emergencyContactCountryCode: {
       type: String,
@@ -126,7 +126,7 @@ const UserSchema = new mongoose.Schema(
     },
     emergencyContactNumber: {
       type: String,
-      required: true,
+      required: false,
     },
     medicalInfo: {
       type: String,
