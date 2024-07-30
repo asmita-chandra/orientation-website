@@ -1,18 +1,8 @@
 const express = require('express');
 const path = require('path');
 const multer = require('multer');
-const mongoose = require('mongoose');
 const router = express.Router();
-
-const fileSchema = new mongoose.Schema({
-  filename: String,
-  contentType: String,
-  data: Buffer,
-  firstName: String,
-  lastName: String,
-});
-
-const File = mongoose.model('File', fileSchema);
+const User = require('../models/UserModel');
 
 const storage = multer.memoryStorage(); // Store files in memory temporarily
 const upload = multer({
@@ -32,18 +22,30 @@ router.post('/upload-waiver', (req, res) => {
   upload(req, res, async (err) => {
     if (err instanceof multer.MulterError) {
       if (err.code === 'LIMIT_FILE_SIZE') {
+        console.log('File too large');
         return res.status(400).send('File is too large. Maximum size is 1MB.');
       }
+      console.log('An error occurred while uploading the  file.');
       return res.status(400).send('An error occurred while uploading the file.');
     } else if (err) {
+      console.log('An unknown error occurred.');
       return res.status(400).send('An unknown error occurred.');
     }
 
     if (!req.file) {
+      console.log('No file uploaded.');
       return res.status(400).send('No file uploaded.');
     }
 
     try {
+      const userId = req.user._id;
+      const user = await User.findById(userId); // get user frm DB
+
+      if (!req.user) {
+        console.log('User not found.');
+        return res.status(404).send('User not found.');
+      }
+
       // do file processing here
       const firstName = req.user.firstName
         ? req.user.firstName.replace(/\s+/g, '_')
@@ -56,19 +58,18 @@ router.post('/upload-waiver', (req, res) => {
       )}`;
 
       // save to MongoDB
-      const fileDoc = new File({
+      user.waiver = {
         filename,
-        contentType: req.file.mimetype,
         data: req.file.buffer,
-        firstName: req.user.firstName,
-        lastName: req.user.lastName,
-      });
+        contentType: req.file.mimetype,
+      };
 
-      await fileDoc.save();
+      await user.save();
 
       res.status(200).send('File uploaded and saved successfully.');
     } catch (error) {
       console.error(error);
+      console.log('Error saving file.');
       res.status(500).send('Error saving file.');
     }
   });

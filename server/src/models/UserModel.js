@@ -148,11 +148,11 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    // waiver: {
-    //   filename: String,
-    //   contentType: String,
-    //   data: Buffer,
-    // }
+    waiver: {
+      filename: String,
+      contentType: String,
+      data: Buffer,
+    },
   },
   { discriminatorKey: 'userType' },
 );
