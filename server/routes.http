@@ -101,6 +101,10 @@ get {{$dotenv API_BASE_URL}}/view-waiver
 
 ###
 
+get {{$dotenv API_BASE_URL}}/user/view-waiver
+
+###
+
 put {{$dotenv API_BASE_URL}}/frosh/info
 
 ###
