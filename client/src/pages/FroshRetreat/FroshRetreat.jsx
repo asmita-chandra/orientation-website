@@ -214,6 +214,7 @@ const RetreatRegistration = () => {
   const isRetreat = user?.isRetreat === true;
 
   const [file, setFile] = useState(null);
+  const [isUploaded, setIsUploaded] = useState(false);
 
   const [outOfTickets, setOutOfTickets] = useState(false);
 
@@ -237,16 +238,17 @@ const RetreatRegistration = () => {
     const formData = new FormData();
     formData.append('waiver', file);
     formData.append('username', user.firstName);
-    console.log('FormData:', formData.get('username'));
 
     try {
       const response = await axios.post('/frosh/upload-waiver', formData, {
         headers: { 'content-type': 'multipart/form-data' },
       });
       setSnackbar('File uploaded successfully!');
+      setIsUploaded(true);
     } catch (error) {
       console.error('File upload failed:', error);
       setSnackbar('File upload failed. Please try again.');
+      setIsUploaded(false);
     }
   };
 
@@ -330,37 +332,17 @@ const RetreatRegistration = () => {
               <p>Please view the waiver before uploading the signed copy.</p>
             )}
           </div>
-          <h3>I HAVE READ AND AGREE TO THE FROSH RETREAT WAIVER.</h3>
-          <h4>
-            <i>
-              By pressing &apos;Yes&apos; you/a guardian if you are under 18 have digitally signed
-              the waiver.
-            </i>
-          </h4>
-          <div style={{ height: '10px' }} />
-          {viewedWaiver ? (
-            <RadioButtons
-              initialSelectedIndex={1}
-              values={['Yes', 'No']}
-              onSelected={(value) => {
-                setWaiverValue(value);
-                if (value === 'Yes') setSnackbar('Thanks for reading the waiver!');
-              }}
-            />
-          ) : (
-            <></>
-          )}
         </div>
         {isRetreat ? (
-          <h2>You have already payed for Frosh Retreat!</h2>
+          <h2>You have already paid for Frosh Retreat!</h2>
         ) : outOfTickets ? (
           <h2>Sorry there are no more tickets available!</h2>
         ) : viewedWaiver ? (
           <Button
             label={'Continue to Payment'}
-            isDisabled={waiverValue !== 'Yes' || buttonClicked}
+            isDisabled={!isUploaded || buttonClicked}
             onClick={() => {
-              if (waiverValue === 'Yes') {
+              if (isUploaded) {
                 setButtonClicked(true);
                 axios
                   .post('/payment/frosh-retreat-payment')

@@ -34,13 +34,6 @@ const router = express.Router();
  */
 router.post('/signup', UserController.signup);
 
-// router.post('/upload-waiver', upload.single('waiver'), (req, res) => {
-//     if (!req.file) {
-//       return res.status(400).send('No file uploaded.');
-//     }
-//     res.status(200).send('File uploaded successfully.');
-//   });
-
 /**
  * @swagger
  * /user/login:
