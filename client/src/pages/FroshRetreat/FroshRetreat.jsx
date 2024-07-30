@@ -61,8 +61,7 @@ export const FroshRetreat = () => {
             ESCAPE THE CITY TO THE LOVELY HART HOUSE FARMS FOR A WEEKEND OF WHOLESOME CAMP VIBES!
           </h3>
           <p style={{ color: 'var(--white)' }}>
-            The retreat is taking place on August 31st and September 1st, 2024 at Hart House
-            Farm.
+            The retreat is taking place on August 31st and September 1st, 2024 at Hart House Farm.
           </p>
           <p style={{ color: 'var(--white)' }}>
             Due to limited spaces, we are selling a limited number of tickets so purchase yours
@@ -237,6 +236,8 @@ const RetreatRegistration = () => {
     }
     const formData = new FormData();
     formData.append('waiver', file);
+    formData.append('username', user.firstName);
+    console.log('FormData:', formData.get('username'));
 
     try {
       const response = await axios.post('/frosh/upload-waiver', formData, {
@@ -254,9 +255,9 @@ const RetreatRegistration = () => {
       <p style={{ textAlign: 'center' }}>
         In order to register, the following information will be collected from your account. Please
         ensure this information is accurate and up to date. If any information needs to be modified,
-        please edit your information {' '}
-      <Link to={isRegistered ? '/profile-edit' : '/profile-edit-unregistered'}>here</Link>.
-    </p>
+        please edit your information{' '}
+        <Link to={isRegistered ? '/profile-edit' : '/profile-edit-unregistered'}>here</Link>.
+      </p>
       <div className="retreat-registration-form">
         <div className="display-field">
           <h3>FULL NAME:</h3>{' '}
@@ -313,14 +314,21 @@ const RetreatRegistration = () => {
             style={{ marginBottom: '25px' }}
           />
           <div className="display-field">
-            <h3>Upload Waiver:</h3>
-            <input type="file" accept=".pdf" onChange={handleFileChange} />
-            <Button
-              label="Upload PDF"
-              isSecondary
-              onClick={handleUpload}
-              style={{ marginTop: '10px' }}
-            />
+            <h3>UPLOAD SIGNED WAIVER:</h3>
+            <p>Only PDF files are accepted</p>
+            {viewedWaiver ? (
+              <>
+                <input type="file" accept=".pdf" onChange={handleFileChange} />
+                <Button
+                  label="Upload PDF"
+                  isSecondary
+                  onClick={handleUpload}
+                  style={{ marginTop: '10px' }}
+                />
+              </>
+            ) : (
+              <p>Please view the waiver before uploading the signed copy.</p>
+            )}
           </div>
           <h3>I HAVE READ AND AGREE TO THE FROSH RETREAT WAIVER.</h3>
           <h4>

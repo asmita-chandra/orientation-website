@@ -1,15 +1,37 @@
+const express = require('express');
 const path = require('path');
 const multer = require('multer');
+const router = express.Router();
 
-var storage = multer.diskStorage({
-    destination: function(req, file, cb){
-        cb(null, 'src/uploads/');    //location file is saved
-    },
-    filename: function(req, file, cb){
-        cb(null, file.originalname); //renaming 
-    }
+const storage = multer.diskStorage({
+  destination(req, file, cb) {
+    cb(null, 'src/uploads/'); //location file is saved
+  },
+  filename(req, file, cb) {
+    const ext = path.extname(file.originalname);
+    const username = req.body.username ? req.body.username.replace(/\s+/g, '_') : 'unknown_user';
+    console.log('Username:', req.body.username);
+    cb(null, `${username}_${Date.now()}${ext}`);
+  },
 });
 
-var upload = multer({storage: storage });
+const upload = multer({
+  storage,
+  fileFilter(req, file, callback) {
+    if (file.mimetype == 'application/pdf') {
+      callback(null, true);
+    } else {
+      console.log('only pdf files accepted!');
+      callback(null, false);
+    }
+  },
+});
 
-module.exports = upload 
+router.post('/upload-waiver', upload.single('waiver'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).send('No file uploaded.');
+  }
+  res.status(200).send('File uploaded successfully.');
+});
+
+module.exports = router;

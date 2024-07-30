@@ -1,7 +1,6 @@
 const express = require('express');
 
 const UserController = require('../controllers/UserController');
-const upload = require('../middlewares/upload')
 const checkLoggedIn = require('../middlewares/checkLoggedIn');
 const checkUserType = require('../middlewares/checkUserType');
 const hasAuthScopes = require('../middlewares/hasAuthScopes');
@@ -33,14 +32,14 @@ const router = express.Router();
  *                 user:
  *                   $ref: '#components/schemas/User'
  */
-router.post('/signup', upload.single('waiver'), UserController.signup);
+router.post('/signup', UserController.signup);
 
-router.post('/frosh/upload-waiver', upload.single('waiver'), (req, res) => {
-    if (!req.file) {
-      return res.status(400).send('No file uploaded.');
-    }
-    res.status(200).send('File uploaded successfully.');
-  });
+// router.post('/upload-waiver', upload.single('waiver'), (req, res) => {
+//     if (!req.file) {
+//       return res.status(400).send('No file uploaded.');
+//     }
+//     res.status(200).send('File uploaded successfully.');
+//   });
 
 /**
  * @swagger
