@@ -106,4 +106,9 @@ router.get('/view-waiver', async (req, res) => {
   }
 });
 
+// router.get('/view-waiver', (req, res) => {
+//   console.log('Reached /view-waiver route');
+//   res.send('View Waiver route is working');
+// });
+
 module.exports = router;

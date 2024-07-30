@@ -24,6 +24,7 @@ const routerLoader = (app) => {
   app.use('/skule-hunt-game-controls', scuntGameSettingsRouter);
   app.use('/scunt', scuntRouter);
   app.use('/upload-waiver', userRouter);
+  app.use('/view-waiver', userRouter);
   app.use('/frosh', uploadRouter);
   //default route
   app.get('*', (req, res) => {
