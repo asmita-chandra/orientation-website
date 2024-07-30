@@ -227,6 +227,13 @@ const RetreatRegistration = () => {
     outOfTicketsSetter();
   }, []);
 
+  useEffect(() => {
+    if (isWaiverUploaded) {
+      setViewedWaiver(true);
+      setIsUploaded(true);
+    }
+  }, [isWaiverUploaded]);
+
   const handleFileChange = (event) => {
     setFile(event.target.files[0]);
   };
@@ -334,7 +341,7 @@ const RetreatRegistration = () => {
 
           <div className="display-field">
             <h3>UPLOAD SIGNED WAIVER:</h3>
-            <p>Only PDF files are accepted</p>
+            <p>Only PDF files under 1 MB are accepted</p>
             {viewedWaiver ? (
               <>
                 <input type="file" accept=".pdf" onChange={handleFileChange} />
