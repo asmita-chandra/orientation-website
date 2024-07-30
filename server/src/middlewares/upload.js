@@ -9,10 +9,14 @@ const storage = multer.diskStorage({
   },
   filename(req, file, cb) {
     const ext = path.extname(file.originalname);
-    console.log('Request body in filename function:', req.body); // Debugging line
-    const username = req.body.username ? req.body.username.replace(/\s+/g, '_') : 'unknown_user';
-    console.log('Username:', req.body.username);
-    cb(null, `${username}_${Date.now()}${ext}`);
+    const firstName = req.user.firstName
+      ? req.user.firstName.replace(/\s+/g, '_')
+      : 'unknown_firstname';
+    const lastName = req.user.lastName
+      ? req.user.lastName.replace(/\s+/g, '_')
+      : 'unknown_lastname';
+    const filename = `${firstName}_${lastName}_Retreat_Waiver${ext}`;
+    cb(null, filename);
   },
 });
 
