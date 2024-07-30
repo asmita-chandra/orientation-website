@@ -1,25 +1,20 @@
 const express = require('express');
 const path = require('path');
 const multer = require('multer');
+const mongoose = require('mongoose');
 const router = express.Router();
 
-const storage = multer.diskStorage({
-  destination(req, file, cb) {
-    cb(null, 'src/uploads/'); //location file is saved
-  },
-  filename(req, file, cb) {
-    const ext = path.extname(file.originalname);
-    const firstName = req.user.firstName
-      ? req.user.firstName.replace(/\s+/g, '_')
-      : 'unknown_firstname';
-    const lastName = req.user.lastName
-      ? req.user.lastName.replace(/\s+/g, '_')
-      : 'unknown_lastname';
-    const filename = `${firstName}_${lastName}_Retreat_Waiver${ext}`;
-    cb(null, filename);
-  },
+const fileSchema = new mongoose.Schema({
+  filename: String,
+  contentType: String,
+  data: Buffer,
+  firstName: String,
+  lastName: String,
 });
 
+const File = mongoose.model('File', fileSchema);
+
+const storage = multer.memoryStorage(); // Store files in memory temporarily
 const upload = multer({
   storage,
   limits: { fileSize: 1 * 1024 * 1024 }, // 1MB limit
@@ -27,14 +22,14 @@ const upload = multer({
     if (file.mimetype == 'application/pdf') {
       callback(null, true);
     } else {
-      console.log('only pdf files accepted!');
+      console.log('Only PDF files are accepted!');
       callback(null, false);
     }
   },
 }).single('waiver');
 
 router.post('/upload-waiver', (req, res) => {
-  upload(req, res, (err) => {
+  upload(req, res, async (err) => {
     if (err instanceof multer.MulterError) {
       if (err.code === 'LIMIT_FILE_SIZE') {
         return res.status(400).send('File is too large. Maximum size is 1MB.');
@@ -44,11 +39,38 @@ router.post('/upload-waiver', (req, res) => {
       return res.status(400).send('An unknown error occurred.');
     }
 
-    // all good
     if (!req.file) {
       return res.status(400).send('No file uploaded.');
     }
-    res.status(200).send('File uploaded successfully.');
+
+    try {
+      // do file processing here
+      const firstName = req.user.firstName
+        ? req.user.firstName.replace(/\s+/g, '_')
+        : 'unknown_firstname';
+      const lastName = req.user.lastName
+        ? req.user.lastName.replace(/\s+/g, '_')
+        : 'unknown_lastname';
+      const filename = `${firstName}_${lastName}_Retreat_Waiver${path.extname(
+        req.file.originalname,
+      )}`;
+
+      // save to MongoDB
+      const fileDoc = new File({
+        filename,
+        contentType: req.file.mimetype,
+        data: req.file.buffer,
+        firstName: req.user.firstName,
+        lastName: req.user.lastName,
+      });
+
+      await fileDoc.save();
+
+      res.status(200).send('File uploaded and saved successfully.');
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Error saving file.');
+    }
   });
 });
 
