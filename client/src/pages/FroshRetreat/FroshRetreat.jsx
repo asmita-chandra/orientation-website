@@ -131,12 +131,11 @@ const retreatFAQs = [
     ],
   },
   {
-    title:
-      'What time does the bus leave?',
+    title: 'What time does the bus leave?',
     description: [
       'The bus leaves from campus at 11:00am on August 31st and returns to campus at 1:00pm on September 1st.',
     ],
-  }
+  },
 ];
 
 const FroshRetreatFAQ = () => {
@@ -155,9 +154,7 @@ const FroshRetreatFAQ = () => {
         }}
       >
         <img src={dragon} style={{ width: '350px', margin: '20px' }}></img>
-        <h2 style={{ marginBottom: '20px' }}>
-          FAQS: PREPARE FOR A GOOD TIME DOWN ON THE FARM!
-        </h2>
+        <h2 style={{ marginBottom: '20px' }}>FAQS: PREPARE FOR A GOOD TIME DOWN ON THE FARM!</h2>
         {retreatFAQs.map((item, index) => {
           const [isOpen, setIsOpen] = useState(false);
           return (
@@ -219,6 +216,7 @@ const RetreatRegistration = () => {
   const { setSnackbar } = useContext(SnackbarContext);
   const { axios } = useAxios();
   const isRetreat = user?.isRetreat === true;
+  console.log(isRetreat);
   const isWaiverUploaded = user?.waiver?.filename !== undefined;
 
   const [file, setFile] = useState(null);
