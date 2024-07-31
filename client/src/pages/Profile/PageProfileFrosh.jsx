@@ -193,6 +193,9 @@ const ProfilePageFroshHeader = ({ editButton }) => {
   const lastDigitF = gradYear.toString().slice(-1);
   let froshYear = `${firstDigitF}T${lastDigitF}`;
 
+  console.log('ProfilePageFroshHeader user:', user);
+  console.log('ProfilePageFroshHeader isRegistered:', isRegistered);
+
   return (
     <>
       <div className="profile-page-header">
@@ -224,10 +227,14 @@ const ProfilePageFroshHeader = ({ editButton }) => {
             <p>Class of</p>
             <h2>{froshYear}</h2>
           </div>
-          {editButton !== false && isRegistered ? (
-            <Link to={'/profile-edit'} className={'profile-edit-icon-link no-link-style'}>
+          {editButton !== false ? (
+          // {editButton !== false && isRegistered ? (
+            <Link to={isRegistered ? '/profile-edit' : '/profile-edit-unregistered'} className={'profile-edit-icon-link no-link-style'}>
               <img src={EditIcon} alt={'edit'} className={'profile-edit-icon'} />
             </Link>
+            // <Link to={'/profile-edit'} className={'profile-edit-icon-link no-link-style'}>
+            //   <img src={EditIcon} alt={'edit'} className={'profile-edit-icon'} />
+            // </Link>
           ) : null}
         </div>
       </div>
