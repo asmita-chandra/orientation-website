@@ -207,7 +207,7 @@ const PaymentServices = {
     const frosh = await FroshModel.findOne({ 'payments.paymentIntent': paymentIntent }).then(
       (frosh) => {
         if (!frosh) {
-          throw new Error('FROSH_NOT_FOUND');
+          throw new Error('PAYMENT_NOT_FOUND');
         }
         return frosh;
       },
