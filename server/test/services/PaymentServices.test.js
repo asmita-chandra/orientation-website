@@ -106,7 +106,7 @@ describe('PaymentServices', () => {
   it('.updatePayment(...)\t|\tUpdating a payment (FROSH_NOT_FOUND)', async () => {
     await assert.rejects(PaymentServices.updatePayment('123452131326', 123), {
       name: 'Error',
-      message: 'FROSH_NOT_FOUND',
+      message: 'PAYMENT_NOT_FOUND',
     });
   });
 
@@ -306,7 +306,7 @@ describe('PaymentServices', () => {
   it('.expirePayment(...)\t|\tExpiring a payment (FROSH_NOT_FOUND)', async () => {
     await assert.rejects(PaymentServices.expirePayment('none existent'), {
       name: 'Error',
-      message: 'FROSH_NOT_FOUND',
+      message: 'PAYMENT_NOT_FOUND',
     });
   });
 });

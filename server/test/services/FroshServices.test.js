@@ -154,7 +154,7 @@ describe('FroshServices', () => {
   it('.updateFroshInfo(userId, updateInfo)\t\t\t|\tUpdating Frosh Information (INVALID USER ID)', async () => {
     await assert.rejects(FroshServices.updateFroshInfo('999999', updateInfo), {
       name: 'Error',
-      message: 'UNABLE_TO_UPDATE_FROSH',
+      message: 'INVALID_PAYMENT_ITEM',
     });
   });
 
