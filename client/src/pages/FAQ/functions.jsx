@@ -75,7 +75,7 @@ export async function getQuestions(setSnackbar) {
     {
       question: 'When is the deadline to register for F!rosh week?',
       answer:
-        'No deadline technically. But you should sign up before August 26th if they want to take part in all of the activities!',
+        'No official deadline, but you should sign up before August 26th if you want to participate in all of the activities!',
       lastUpdated: '13:30pm, Jun 30, 2024',
       category: 'Registration',
     },
