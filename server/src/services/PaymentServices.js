@@ -116,14 +116,23 @@ const PaymentServices = {
    * @returns {Number} number of non-expired payments for a given item
    */
   async getNonExpiredPaymentsCountForItem(item) {
-    return FroshModel.countDocuments({
-      payments: { $elemMatch: { item, expired: false } },
-    }).then(
-      (count) => count,
-      (error) => {
-        throw new Error('UNABLE_TO_GET_COUNT_OF_PAYMENTS', { cause: error });
-      },
-    );
+    try {
+      // Count non-expired payments for the item in FroshModel
+      const froshCount = await FroshModel.countDocuments({
+        payments: { $elemMatch: { item, expired: false } },
+      });
+
+      // Count non-expired payments for the item in UserModel
+      const userCount = await UserModel.countDocuments({
+        payments: { $elemMatch: { item, expired: false } },
+      });
+
+      // Sum the counts from both models
+      const totalCount = froshCount + userCount;
+      return totalCount;
+    } catch (error) {
+      throw new Error('UNABLE_TO_GET_COUNT_OF_PAYMENTS', { cause: error });
+    }
   },
 
   /**
