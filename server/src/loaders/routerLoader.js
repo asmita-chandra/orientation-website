@@ -9,6 +9,8 @@ const scuntRouter = require('../routes/scuntRoutes');
 const scuntMissionRouter = require('../routes/scuntMissionRoutes');
 const scuntTeamRouter = require('../routes/scuntTeamRoutes');
 const scuntGameSettingsRouter = require('../routes/scuntGameSettingsRoutes');
+const uploadRouter = require('../middlewares/upload');
+const { viewWaiver } = require('../controllers/UserController');
 
 const routerLoader = (app) => {
   app.use('/frosh', froshRouter);
@@ -18,10 +20,14 @@ const routerLoader = (app) => {
   app.use('/payment', paymentRouter);
   app.use('/announcements', announcementRouter);
   app.use('/qr', qrRouter);
-  app.use('/scunt-missions', scuntMissionRouter);
+  app.use('/skule-hunt-missions', scuntMissionRouter);
   app.use('/scunt-teams', scuntTeamRouter);
-  app.use('/scunt-game-controls', scuntGameSettingsRouter);
+  app.use('/skule-hunt-game-controls', scuntGameSettingsRouter);
   app.use('/scunt', scuntRouter);
+  app.use('/upload-waiver', userRouter);
+  app.use('/view-waiver', userRouter);
+  app.get('/user/view-waiver/:id', viewWaiver);
+  app.use('/frosh', uploadRouter);
   //default route
   app.get('*', (req, res) => {
     res.status(200).send('Orientation Backend!');

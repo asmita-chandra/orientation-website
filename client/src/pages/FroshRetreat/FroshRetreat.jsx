@@ -9,16 +9,34 @@ import { useSelector } from 'react-redux';
 import { RadioButtons } from '../../components/form/RadioButtons/RadioButtons';
 import { ErrorSuccessBox } from '../../components/containers/ErrorSuccessBox/ErrorSuccessBox';
 import { SnackbarContext } from '../../util/SnackbarProvider';
-import waiverPDF from '../../assets/retreatWaiver/frosh-retreat-2T3-waiver.pdf';
+import waiverPDF from '../../assets/retreatWaiver/frosh-retreat-2T4-waiver.pdf';
 import useAxios from '../../hooks/useAxios';
 import { SingleAccordion } from '../../components/text/Accordion/SingleAccordion/SingleAccordion';
-import egglinton from '../../assets/mascots/Egglinton-1.png';
+import dragon from '../../assets/mascots/dragon-retreat.svg';
 
 export const FroshRetreat = () => {
   const [remainingTickets, setRemainingTickets] = useState();
   const { setSnackbar } = useContext(SnackbarContext);
   const navigate = useNavigate();
   const isRegistered = useSelector(registeredSelector);
+  const { user } = useSelector(userSelector);
+  const accountObj = {
+    firstName: user.firstName || '',
+    lastName: user.lastName || '',
+    preferredName: user.preferredName || '',
+    phoneNumber: user.phoneNumber || '',
+    phoneNumberCountryCode: user.phoneNumberCountryCode || '',
+    emergencyContactName: user.emergencyContactName || '',
+    emergencyContactRelationship: user.emergencyContactRelationship || '',
+    emergencyContactCountryCode: user.emergencyContactCountryCode || '',
+    emergencyContactNumber: user.emergencyContactNumber || '',
+    email: user.email || '',
+    allergies: user.allergies || [],
+    allergiesOther: user.allergiesOther || '',
+    medicalInfo: user.medicalInfo || '',
+    specficMedicalInfo: user.specficMedicalInfo || '',
+    medication: user.medication || '',
+  };
 
   const remainingTicketsSetter = async () => {
     setRemainingTickets(await getRemainingTickets(setSnackbar));
@@ -28,11 +46,11 @@ export const FroshRetreat = () => {
     remainingTicketsSetter();
   }, []);
 
-  useEffect(() => {
-    if (!isRegistered) {
-      navigate('/profile');
-    }
-  }, [isRegistered]);
+  // useEffect(() => {
+  //   if (!isRegistered) {
+  //     navigate('/profile');
+  //   }
+  // }, [isRegistered]);
 
   return (
     <div className="frosh-retreat-page">
@@ -43,15 +61,14 @@ export const FroshRetreat = () => {
             ESCAPE THE CITY TO THE LOVELY HART HOUSE FARMS FOR A WEEKEND OF WHOLESOME CAMP VIBES!
           </h3>
           <p style={{ color: 'var(--white)' }}>
-            The retreat is taking place on August 31st and September 1st, 2024 at Hart House
-            Farm.
+            The retreat is taking place on August 31st and September 1st, 2024 at Hart House Farm.
           </p>
           <p style={{ color: 'var(--white)' }}>
             Due to limited spaces, we are selling a limited number of tickets so purchase yours
             before they sell out!{' '}
           </p>
           <p style={{ color: 'var(--white)' }}>
-            Tickets to Retreat are $95.00 &#40;they include bus transportation; no tickets without
+            Tickets to Retreat are $103.00 &#40;they include bus transportation; no tickets without
             bus transportation&#41;
           </p>
         </div>
@@ -113,6 +130,13 @@ const retreatFAQs = [
       '• Anything appropriate for a 36-hour camping trip on a farm!',
     ],
   },
+  {
+    title:
+      'What time does the bus leave?',
+    description: [
+      'The bus leaves from campus at 11:00am on August 31st and returns to campus at 1:00pm on September 1st.',
+    ],
+  }
 ];
 
 const FroshRetreatFAQ = () => {
@@ -130,9 +154,9 @@ const FroshRetreatFAQ = () => {
           alignSelf: 'center',
         }}
       >
-        <img src={egglinton} style={{ width: '200px', margin: '20px' }}></img>
+        <img src={dragon} style={{ width: '350px', margin: '20px' }}></img>
         <h2 style={{ marginBottom: '20px' }}>
-          GET MOO-VING WITH OUR FAQS: PREPARE FOR A GOOD TIME DOWN ON THE FARM!
+          FAQS: PREPARE FOR A GOOD TIME DOWN ON THE FARM!
         </h2>
         {retreatFAQs.map((item, index) => {
           const [isOpen, setIsOpen] = useState(false);
@@ -187,13 +211,18 @@ const RetreatRegistration = () => {
   const [viewedWaiver, setViewedWaiver] = useState(false);
   const [waiverValue, setWaiverValue] = useState();
   const [buttonClicked, setButtonClicked] = useState(false);
+  const isRegistered = useSelector(registeredSelector);
 
-  const waiverLink = '../../assests/retreatWaiver/frosh-retreat-2T3-waiver.pdf';
+  const waiverLink = '../../assests/retreatWaiver/frosh-retreat-2T4-waiver.pdf';
 
   const { user } = useSelector(userSelector);
   const { setSnackbar } = useContext(SnackbarContext);
   const { axios } = useAxios();
   const isRetreat = user?.isRetreat === true;
+  const isWaiverUploaded = user?.waiver?.filename !== undefined;
+
+  const [file, setFile] = useState(null);
+  const [isUploaded, setIsUploaded] = useState(false);
 
   const [outOfTickets, setOutOfTickets] = useState(false);
 
@@ -205,12 +234,61 @@ const RetreatRegistration = () => {
     outOfTicketsSetter();
   }, []);
 
+  useEffect(() => {
+    if (isWaiverUploaded) {
+      setViewedWaiver(true);
+      setIsUploaded(true);
+    }
+  }, [isWaiverUploaded]);
+
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]);
+  };
+
+  const handleUpload = async () => {
+    if (!file) {
+      setSnackbar('Please select a PDF file to upload.');
+      return;
+    }
+    const formData = new FormData();
+    formData.append('waiver', file);
+    formData.append('username', user.firstName);
+
+    try {
+      const response = await axios.post('/frosh/upload-waiver', formData, {
+        headers: { 'content-type': 'multipart/form-data' },
+      });
+      setSnackbar('File uploaded successfully!');
+      setIsUploaded(true);
+    } catch (error) {
+      console.error('File upload failed:', error);
+      setSnackbar('File upload failed. Please try again.');
+      setIsUploaded(false);
+    }
+  };
+
+  const handleViewWaiver = async () => {
+    try {
+      const { axios } = useAxios();
+      const response = await axios.get(`/frosh/view-waiver/`, {
+        responseType: 'blob', //  handling binary data
+      });
+      const blob = new Blob([response.data], { type: 'application/pdf' });
+      const url = window.URL.createObjectURL(blob);
+      window.open(url);
+    } catch (e) {
+      console.error(e);
+      setSnackbar('Error viewing waiver', true);
+    }
+  };
+
   return (
     <div style={{ margin: '0 20px' }}>
       <p style={{ textAlign: 'center' }}>
         In order to register, the following information will be collected from your account. Please
         ensure this information is accurate and up to date. If any information needs to be modified,
-        please edit your information <Link to={'/profile-edit'}>here</Link>.
+        please edit your information{' '}
+        <Link to={isRegistered ? '/profile-edit' : '/profile-edit-unregistered'}>here</Link>.
       </p>
       <div className="retreat-registration-form">
         <div className="display-field">
@@ -267,37 +345,47 @@ const RetreatRegistration = () => {
             }}
             style={{ marginBottom: '25px' }}
           />
-          <h3>I HAVE READ AND AGREE TO THE FROSH RETREAT WAIVER.</h3>
-          <h4>
-            <i>
-              By pressing &apos;Yes&apos; you/a guardian if you are under 18 have digitally signed
-              the waiver.
-            </i>
-          </h4>
-          <div style={{ height: '10px' }} />
-          {viewedWaiver ? (
-            <RadioButtons
-              initialSelectedIndex={1}
-              values={['Yes', 'No']}
-              onSelected={(value) => {
-                setWaiverValue(value);
-                if (value === 'Yes') setSnackbar('Thanks for reading the waiver!');
-              }}
+
+          <div className="display-field">
+            <h3>UPLOAD SIGNED WAIVER:</h3>
+            <p>Only PDF files under 1 MB are accepted</p>
+            {viewedWaiver ? (
+              <>
+                <input type="file" accept=".pdf" onChange={handleFileChange} />
+                <Button
+                  label="Upload PDF"
+                  isSecondary
+                  onClick={handleUpload}
+                  style={{ marginTop: '10px' }}
+                />
+              </>
+            ) : (
+              <p>Please view the waiver before uploading the signed copy.</p>
+            )}
+          </div>
+
+          {isWaiverUploaded ? (
+            <Button
+              label="View Uploaded Waiver"
+              isSecondary
+              onClick={handleViewWaiver}
+              style={{ marginBottom: '25px' }}
             />
           ) : (
             <></>
           )}
         </div>
+
         {isRetreat ? (
-          <h2>You have already payed for Frosh Retreat!</h2>
+          <h2>You have already paid for Frosh Retreat!</h2>
         ) : outOfTickets ? (
           <h2>Sorry there are no more tickets available!</h2>
         ) : viewedWaiver ? (
           <Button
             label={'Continue to Payment'}
-            isDisabled={waiverValue !== 'Yes' || buttonClicked}
+            isDisabled={!isUploaded || buttonClicked}
             onClick={() => {
-              if (waiverValue === 'Yes') {
+              if (isUploaded) {
                 setButtonClicked(true);
                 axios
                   .post('/payment/frosh-retreat-payment')
