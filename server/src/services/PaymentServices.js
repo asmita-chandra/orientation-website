@@ -117,17 +117,19 @@ const PaymentServices = {
    */
   async getNonExpiredPaymentsCountForItem(item) {
     try {
-      // Count non-expired payments for the item in FroshModel
-      const froshCount = await FroshModel.countDocuments({
-        payments: { $elemMatch: { item, expired: false } },
-      });
+      let froshCount = 0;
+      let userCount = 0;
 
-      // Count non-expired payments for the item in UserModel
-      const userCount = await UserModel.countDocuments({
-        payments: { $elemMatch: { item, expired: false } },
-      });
+      if (item === 'Retreat Ticket') {
+        userCount = await UserModel.countDocuments({
+          payments: { $elemMatch: { item, expired: false } },
+        });
+      } else {
+        froshCount = await FroshModel.countDocuments({
+          payments: { $elemMatch: { item, expired: false } },
+        });
+      }
 
-      // Sum the counts from both models
       const totalCount = froshCount + userCount;
       return totalCount;
     } catch (error) {
