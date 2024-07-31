@@ -94,7 +94,7 @@ const FroshServices = {
           {
             item: 'Retreat Ticket',
             paymentIntent: paymentIntent.toString(),
-            amountDue: 9500,
+            amountDue: 10300,
           },
         ],
       },
