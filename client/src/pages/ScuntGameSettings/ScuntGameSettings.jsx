@@ -43,8 +43,8 @@ const scuntSettingsInfo = [
     parameter: 'Max Amount of Points',
     key: 'maxAmountPointsPercent',
     description:
-      'The max percentage of points allowed to be given out (enter as decimal value: 1.5 = 150%)',
-    placeholder: 1.5,
+      'The max percentage of points allowed to be given out (enter as decimal value: 1.3 = 130%)',
+    placeholder: 1.3,
   },
   {
     parameter: 'Min Amount of Points',
