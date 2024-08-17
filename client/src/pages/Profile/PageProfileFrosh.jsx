@@ -14,6 +14,7 @@ import { instagramAccounts } from '../../util/instagramAccounts';
 import InstagramIcon from '../../assets/social/instagram-brands.svg';
 // import NitelifeIcon from '../../assets/misc/nitelife.png';
 import ScuntIcon from '../../assets/misc/magnifier.png';
+import OlympiksIcon from '../../assets/misc/torch.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { registeredSelector, userSelector } from '../../state/user/userSlice';
 import { announcementsSelector } from '../../state/announcements/announcementsSlice';
@@ -55,6 +56,7 @@ const PageProfileFrosh = () => {
         <div className="profile-info-row-right">
           {user?.attendingScunt === true ? <ProfilePageFroshScuntMessage /> : null}
           <ProfilePageRetreat />
+          <ProfilePageFroshOlympiks />
           {/* <ProfilePageNitelife /> */}
           <ProfilePageInstagrams />
           <ProfilePageAnnouncements />
@@ -155,6 +157,28 @@ const ProfilePageRetreat = () => {
             </div>
           </div>
         )}
+      </div>
+    </Link>
+  );
+};
+
+const ProfilePageFroshOlympiks = () => {
+  const { user } = useSelector(userSelector);
+  const isRegistered = useSelector(registeredSelector);
+  const { darkMode } = useContext(DarkModeContext);
+
+  return (
+    <Link to="/frosh-olympiks">
+      <div className="frosh-instagram-container">
+        <img
+          src={OlympiksIcon}
+          alt="F!rosh Olympik"
+          style={{ filter: darkMode ? 'invert(1)' : 'unset' }}
+        />
+        <div>
+          <h2>F!ROSH OLYMPIKS</h2>
+          <p>Find more information and sign up for F!rosh Olympiks here!</p>
+        </div>
       </div>
     </Link>
   );
