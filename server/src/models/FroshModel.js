@@ -205,6 +205,7 @@ const FroshSchema = new mongoose.Schema(
       required: false,
       default: false,
     },
+    registeredOlympiksEvents: [{ type: mongoose.Schema.Types.ObjectId, ref: 'OlympiksEvent' }],
   },
   { discriminatorKey: 'userType' },
 );
