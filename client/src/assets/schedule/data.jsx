@@ -4606,6 +4606,15 @@ export const data = {
       Color: 'gray',
     },
     {
+      'Event Name': 'ENGINEERING CLUBS FAIR',
+      'Event Location': 'Bahen Lobby',
+      'Event Description':
+        'Interested in joining a club, intramural sport or getting involved with the Engineering Society (EngSoc)? Attend the Engineering Clubs Fair to learn more about the 100+ ways you can get involved.</a>.',
+      'Start Time': '11:00 AM',
+      'End Time': '2:00 PM',
+      Color: 'yellow',
+    },
+    {
       'Event Name': 'NITELIFE & ****',
       'Event Description':
         'You thought F!rosh Week ended at 6:00pm? Think again! We have activities the Monday, Tuesday, and Friday of F!rosh Week for you to keep the hype going all week long!',
