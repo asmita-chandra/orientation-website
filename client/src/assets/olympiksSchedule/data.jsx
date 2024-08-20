@@ -7,6 +7,7 @@ export const dataMSE = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
 
     {
@@ -16,6 +17,7 @@ export const dataMSE = {
       'Activity Description':
         'Haven’t played chess before or consider yourself a beginner? Come play others at the beginner skill level for a fun and light-hearted game to earn Skule Kup points!',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -23,6 +25,7 @@ export const dataMSE = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Chess Tournament',
@@ -31,6 +34,7 @@ export const dataMSE = {
       'Activity Description':
         'Represent MSE in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
       'Participant Limit': 2,
+      Color: 'purple',
     },
     {
       'Activity Name': 'Chess: Assorted Games',
@@ -39,6 +43,7 @@ export const dataMSE = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Chess: Advanced Hour!',
@@ -47,9 +52,10 @@ export const dataMSE = {
       'Activity Description':
         'Are you good at chess? Come meet and play other Frosh who enjoy chess and play at an intermediate-advanced level. Earn points for your discipline!!',
       'Participant Limit': 'Unlimited',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Elevator-side tables': [
+  'SF Pit - Elevator-side tables': [
     {
       'Activity Name': 'Assorted Board Games',
       'Start Time': '9:00:00 a1/p1',
@@ -57,6 +63,7 @@ export const dataMSE = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -64,6 +71,7 @@ export const dataMSE = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Assorted Board Games',
@@ -72,15 +80,17 @@ export const dataMSE = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 1': [
+  'SF Pit - Bar-side tables - pt 1': [
     {
       'Activity Name': 'Smash Bros',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'SUDS Hydration Pong',
@@ -88,22 +98,25 @@ export const dataMSE = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
-      'Activity Name': 'Assorted Board Games',
+      'Activity Name': 'Smash Bros',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 2': [
+  'SF Pit - Bar-side tables - pt 2': [
     {
       'Activity Name': 'Jackbox',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -111,6 +124,7 @@ export const dataMSE = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'prep period',
@@ -118,6 +132,7 @@ export const dataMSE = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -125,9 +140,10 @@ export const dataMSE = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/MSE, Chem, CivMin, ECE',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Main area': [
+  'SF Pit - Main area': [
     {
       'Activity Name': 'Smash Tournament - Individual',
       'Start Time': '9:00:00 a1/p1',
@@ -135,6 +151,7 @@ export const dataMSE = {
       'Activity Description':
         'Represent your discipline in a Smash Tournament run by UTSmash!! Earn SKUP points and prove you are the superior Smash player.',
       'Participant Limit': '2/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTAT Jeopardy',
@@ -142,6 +159,7 @@ export const dataMSE = {
       'End Time': '11:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '10/MSE, EngSci, Chem, Indy',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -149,6 +167,7 @@ export const dataMSE = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -156,6 +175,7 @@ export const dataMSE = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'LGMB Butt Scooter Floor Hockey',
@@ -164,6 +184,7 @@ export const dataMSE = {
       'Activity Description': '',
       'Participant Limit':
         '4/(Mech vs Indy then CivMin vs Chem for 15 Minutes each), 4/(EngSci vs TrackOne then MSE vs ECE for 15 Minutes each), 4/(Winner vs Winner)',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -171,6 +192,7 @@ export const dataMSE = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -178,6 +200,7 @@ export const dataMSE = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -185,9 +208,10 @@ export const dataMSE = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'purple',
     },
   ],
-  'Location: Myhal Arena': [
+  'Myhal Arena': [
     {
       'Activity Name': 'University of Toronto Sports Analytics Immaculate Grid',
       'Start Time': '9:00:00 a1/p1',
@@ -195,6 +219,7 @@ export const dataMSE = {
       'Activity Description':
         'UTSPAN Immaculate Grid! Participants will test their sports knowledge in this super fun game. There is a 3x3 grid which you fill out based on sports information.  The team with the most square filled out after 10 minutes wins! Teams will be 2-4 per discipline, no sign up necessary, just show up!!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 1)',
@@ -202,6 +227,7 @@ export const dataMSE = {
       'End Time': '12:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/CivMin, TrackOne, ECE, MSE',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 3)',
@@ -209,6 +235,7 @@ export const dataMSE = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Indy, TrackOne, EngSci, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Break',
@@ -216,6 +243,7 @@ export const dataMSE = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 1)',
@@ -223,6 +251,7 @@ export const dataMSE = {
       'End Time': '15:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
@@ -230,9 +259,10 @@ export const dataMSE = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
+      Color: 'yellow',
     },
   ],
-  'Location: Front Campus': [
+  'Front Campus': [
     {
       'Activity Name': 'TBog Slip n Slide',
       'Start Time': '9:00:00 a1/p1',
@@ -240,6 +270,7 @@ export const dataMSE = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -247,6 +278,7 @@ export const dataMSE = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'TBog Slip n Slide',
@@ -255,15 +287,17 @@ export const dataMSE = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: SF Lawn': [
+  'SF Lawn': [
     {
       'Activity Name': 'SPARK Game',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -271,6 +305,7 @@ export const dataMSE = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'SPARK Game',
@@ -278,15 +313,17 @@ export const dataMSE = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: Other': [
+  Other: [
     {
       'Activity Name': 'Lunch - break',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
@@ -294,6 +331,7 @@ export const dataMSE = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Skule Commuter Bikeshare Races',
@@ -302,9 +340,10 @@ export const dataMSE = {
       'Activity Description':
         "Represent your discipline in a relay style bike race around King's College Circle!",
       'Participant Limit': '4',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 1 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 1': [
     {
       'Activity Name': 'free for all',
       'Start Time': '15:00:00 a1/p1',
@@ -312,15 +351,17 @@ export const dataMSE = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 2 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 2': [
     {
       'Activity Name': 'Basketball',
       'Start Time': '10:00:00 a1/p1',
       'End Time': '11:00:00 a1/p1',
       'Activity Description': 'MSE vs. EngSci!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'free for all',
@@ -329,15 +370,17 @@ export const dataMSE = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 3 (Athletic centre Sports Gym)': [
+  'Court 3 - Athletic centre Sports Gym': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '11:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': 'Civ & Min vs. MSE!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball',
@@ -345,6 +388,7 @@ export const dataMSE = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'ECE vs. MSE!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Volleyball',
@@ -352,6 +396,7 @@ export const dataMSE = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': 'Chem vs. MSE!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball - free for all disciplines',
@@ -360,6 +405,7 @@ export const dataMSE = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
 };
@@ -373,6 +419,7 @@ export const dataMech = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
 
     {
@@ -382,6 +429,7 @@ export const dataMech = {
       'Activity Description':
         'Haven’t played chess before or consider yourself a beginner? Come play others at the beginner skill level for a fun and light-hearted game to earn Skule Kup points!',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -389,6 +437,7 @@ export const dataMech = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Chess Tournament',
@@ -397,6 +446,7 @@ export const dataMech = {
       'Activity Description':
         'Represent Mech in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
       'Participant Limit': 2,
+      Color: 'purple',
     },
     {
       'Activity Name': 'Chess: Assorted Games',
@@ -405,6 +455,7 @@ export const dataMech = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Chess: Advanced Hour!',
@@ -413,9 +464,10 @@ export const dataMech = {
       'Activity Description':
         'Are you good at chess? Come meet and play other Frosh who enjoy chess and play at an intermediate-advanced level. Earn points for your discipline!!',
       'Participant Limit': 'Unlimited',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Elevator-side tables': [
+  'SF Pit - Elevator-side tables': [
     {
       'Activity Name': 'Assorted Board Games',
       'Start Time': '9:00:00 a1/p1',
@@ -423,6 +475,7 @@ export const dataMech = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -430,6 +483,7 @@ export const dataMech = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Assorted Board Games',
@@ -438,15 +492,17 @@ export const dataMech = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 1': [
+  'SF Pit - Bar-side tables - pt 1': [
     {
       'Activity Name': 'Smash Bros',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'SUDS Hydration Pong',
@@ -454,6 +510,7 @@ export const dataMech = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Bros',
@@ -461,15 +518,17 @@ export const dataMech = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 2': [
+  'SF Pit - Bar-side tables - pt 2': [
     {
       'Activity Name': 'Jackbox',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -477,6 +536,7 @@ export const dataMech = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'prep period',
@@ -484,6 +544,7 @@ export const dataMech = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -491,6 +552,7 @@ export const dataMech = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Mech, Indy, EngSci, TrackOne',
+      Color: 'purple',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -498,9 +560,10 @@ export const dataMech = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Top Two Teams from each bracket (Same discipline different students)',
+      Color: 'yellow',
     },
   ],
-  'Location: SF Pit - Main area': [
+  'SF Pit - Main area': [
     {
       'Activity Name': 'Smash Tournament - Individual',
       'Start Time': '9:00:00 a1/p1',
@@ -508,6 +571,7 @@ export const dataMech = {
       'Activity Description':
         'Represent your discipline in a Smash Tournament run by UTSmash!! Earn SKUP points and prove you are the superior Smash player.',
       'Participant Limit': '2/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTAT Jeopardy',
@@ -515,6 +579,7 @@ export const dataMech = {
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '10/Mech, TrackOne, CivMin, ECE',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -522,6 +587,7 @@ export const dataMech = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -529,6 +595,7 @@ export const dataMech = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'LGMB Butt Scooter Floor Hockey',
@@ -537,6 +604,7 @@ export const dataMech = {
       'Activity Description': '',
       'Participant Limit':
         '4/(Mech vs Indy then CivMin vs Chem for 15 Minutes each), 4/(EngSci vs TrackOne then MSE vs ECE for 15 Minutes each), 4/(Winner vs Winner)',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -544,6 +612,7 @@ export const dataMech = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -551,6 +620,7 @@ export const dataMech = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -558,9 +628,10 @@ export const dataMech = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'purple',
     },
   ],
-  'Location: Myhal Arena': [
+  'Myhal Arena': [
     {
       'Activity Name': 'University of Toronto Sports Analytics Immaculate Grid',
       'Start Time': '9:00:00 a1/p1',
@@ -568,6 +639,7 @@ export const dataMech = {
       'Activity Description':
         'UTSPAN Immaculate Grid! Participants will test their sports knowledge in this super fun game. There is a 3x3 grid which you fill out based on sports information.  The team with the most square filled out after 10 minutes wins! Teams will be 2-4 per discipline, no sign up necessary, just show up!!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 2)',
@@ -575,6 +647,7 @@ export const dataMech = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/EngSci, Chem, Indy, Mech',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 4)',
@@ -582,6 +655,7 @@ export const dataMech = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/ECE, CivMin, Chem, Mech',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Break',
@@ -589,6 +663,7 @@ export const dataMech = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 2)',
@@ -596,6 +671,7 @@ export const dataMech = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
@@ -603,9 +679,10 @@ export const dataMech = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
+      Color: 'yellow',
     },
   ],
-  'Location: Front Campus': [
+  'Front Campus': [
     {
       'Activity Name': 'TBog Slip n Slide',
       'Start Time': '9:00:00 a1/p1',
@@ -613,6 +690,7 @@ export const dataMech = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -620,6 +698,7 @@ export const dataMech = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'TBog Slip n Slide',
@@ -628,15 +707,17 @@ export const dataMech = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: SF Lawn': [
+  'SF Lawn': [
     {
       'Activity Name': 'SPARK Game',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -644,6 +725,7 @@ export const dataMech = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'SPARK Game',
@@ -651,15 +733,17 @@ export const dataMech = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: Other': [
+  Other: [
     {
       'Activity Name': 'Lunch - break',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
@@ -667,6 +751,7 @@ export const dataMech = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Skule Commuter Bikeshare Races',
@@ -675,15 +760,17 @@ export const dataMech = {
       'Activity Description':
         "Represent your discipline in a relay style bike race around King's College Circle!",
       'Participant Limit': '4',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 1 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 1': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '11:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': 'Chem vs. Mech!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball',
@@ -691,6 +778,7 @@ export const dataMech = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': 'Mech vs. TrackOne!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'free for all',
@@ -699,15 +787,17 @@ export const dataMech = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 2 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 2': [
     {
       'Activity Name': 'Basketball',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '10:00:00 a1/p1',
       'Activity Description': 'Mech vs. Indy!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball',
@@ -715,6 +805,7 @@ export const dataMech = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': 'Mech vs. EngSci!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'free for all',
@@ -723,9 +814,10 @@ export const dataMech = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 3 (Athletic centre Sports Gym)': [
+  'Court 3 - Athletic centre Sports Gym': [
     {
       'Activity Name': 'Volleyball - free for all disciplines',
       'Start Time': '15:00:00 a1/p1',
@@ -733,6 +825,7 @@ export const dataMech = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
 };
@@ -746,6 +839,7 @@ export const dataCivMin = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
 
     {
@@ -755,6 +849,7 @@ export const dataCivMin = {
       'Activity Description':
         'Haven’t played chess before or consider yourself a beginner? Come play others at the beginner skill level for a fun and light-hearted game to earn Skule Kup points!',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -762,14 +857,16 @@ export const dataCivMin = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Chess Tournament',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '15:00:00 a1/p1',
       'Activity Description':
-        'Represent Mech in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
-      'Participant Limit': '2/discipline',
+        'Represent MSE in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
+      'Participant Limit': 2,
+      Color: 'purple',
     },
     {
       'Activity Name': 'Chess: Assorted Games',
@@ -778,6 +875,7 @@ export const dataCivMin = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Chess: Advanced Hour!',
@@ -786,9 +884,10 @@ export const dataCivMin = {
       'Activity Description':
         'Are you good at chess? Come meet and play other Frosh who enjoy chess and play at an intermediate-advanced level. Earn points for your discipline!!',
       'Participant Limit': 'Unlimited',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Elevator-side tables': [
+  'SF Pit - Elevator-side tables': [
     {
       'Activity Name': 'Assorted Board Games',
       'Start Time': '9:00:00 a1/p1',
@@ -796,6 +895,7 @@ export const dataCivMin = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -803,6 +903,7 @@ export const dataCivMin = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Assorted Board Games',
@@ -811,15 +912,17 @@ export const dataCivMin = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 1': [
+  'SF Pit - Bar-side tables - pt 1': [
     {
       'Activity Name': 'Smash Bros',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'SUDS Hydration Pong',
@@ -827,6 +930,7 @@ export const dataCivMin = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Bros',
@@ -834,15 +938,17 @@ export const dataCivMin = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 2': [
+  'SF Pit - Bar-side tables - pt 2': [
     {
       'Activity Name': 'Jackbox',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -850,6 +956,7 @@ export const dataCivMin = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'prep period',
@@ -857,6 +964,7 @@ export const dataCivMin = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -864,6 +972,7 @@ export const dataCivMin = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/MSE, Chem, CivMin, ECE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -871,9 +980,10 @@ export const dataCivMin = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Top Two Teams from each bracket (Same discipline different students)',
+      Color: 'yellow',
     },
   ],
-  'Location: SF Pit - Main area': [
+  'SF Pit - Main area': [
     {
       'Activity Name': 'Smash Tournament - Individual',
       'Start Time': '9:00:00 a1/p1',
@@ -881,6 +991,7 @@ export const dataCivMin = {
       'Activity Description':
         'Represent your discipline in a Smash Tournament run by UTSmash!! Earn SKUP points and prove you are the superior Smash player.',
       'Participant Limit': '2/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTAT Jeopardy',
@@ -888,6 +999,7 @@ export const dataCivMin = {
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '10/Mech, TrackOne, CivMin, ECE',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -895,6 +1007,7 @@ export const dataCivMin = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -902,6 +1015,7 @@ export const dataCivMin = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'LGMB Butt Scooter Floor Hockey',
@@ -910,6 +1024,7 @@ export const dataCivMin = {
       'Activity Description': '',
       'Participant Limit':
         '4/(Mech vs Indy then CivMin vs Chem for 15 Minutes each), 4/(EngSci vs TrackOne then MSE vs ECE for 15 Minutes each), 4/(Winner vs Winner)',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -917,6 +1032,7 @@ export const dataCivMin = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -924,6 +1040,7 @@ export const dataCivMin = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -931,9 +1048,10 @@ export const dataCivMin = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'purple',
     },
   ],
-  'Location: Myhal Arena': [
+  'Myhal Arena': [
     {
       'Activity Name': 'University of Toronto Sports Analytics Immaculate Grid',
       'Start Time': '9:00:00 a1/p1',
@@ -941,6 +1059,7 @@ export const dataCivMin = {
       'Activity Description':
         'UTSPAN Immaculate Grid! Participants will test their sports knowledge in this super fun game. There is a 3x3 grid which you fill out based on sports information.  The team with the most square filled out after 10 minutes wins! Teams will be 2-4 per discipline, no sign up necessary, just show up!!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 1)',
@@ -948,6 +1067,7 @@ export const dataCivMin = {
       'End Time': '12:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/CivMin, TrackOne, ECE, MSE',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 4)',
@@ -955,6 +1075,7 @@ export const dataCivMin = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/ECE, CivMin, Chem, Mech',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 5)',
@@ -962,6 +1083,7 @@ export const dataCivMin = {
       'End Time': '14:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/CivMin, TrackOne, ECE, EngSci',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Break',
@@ -969,6 +1091,7 @@ export const dataCivMin = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 2)',
@@ -976,6 +1099,7 @@ export const dataCivMin = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
@@ -983,9 +1107,10 @@ export const dataCivMin = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
+      Color: 'yellow',
     },
   ],
-  'Location: Front Campus': [
+  'Front Campus': [
     {
       'Activity Name': 'TBog Slip n Slide',
       'Start Time': '9:00:00 a1/p1',
@@ -993,6 +1118,7 @@ export const dataCivMin = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -1000,6 +1126,7 @@ export const dataCivMin = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'TBog Slip n Slide',
@@ -1008,15 +1135,17 @@ export const dataCivMin = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: SF Lawn': [
+  'SF Lawn': [
     {
       'Activity Name': 'SPARK Game',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -1024,6 +1153,7 @@ export const dataCivMin = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'SPARK Game',
@@ -1031,15 +1161,17 @@ export const dataCivMin = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: Other': [
+  Other: [
     {
       'Activity Name': 'Lunch - break',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
@@ -1047,6 +1179,7 @@ export const dataCivMin = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Skule Commuter Bikeshare Races',
@@ -1055,15 +1188,17 @@ export const dataCivMin = {
       'Activity Description':
         "Represent your discipline in a relay style bike race around King's College Circle!",
       'Participant Limit': '4',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 1 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 1': [
     {
       'Activity Name': 'Basketball',
       'Start Time': '10:00:00 a1/p1',
       'End Time': '11:00:00 a1/p1',
       'Activity Description': 'Civ & Min vs. TrackOne!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball',
@@ -1071,6 +1206,7 @@ export const dataCivMin = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': 'ECE vs. Civ & Min!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'free for all',
@@ -1079,15 +1215,17 @@ export const dataCivMin = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 2 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 2': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Chem vs. Civ & Min!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'free for all',
@@ -1096,15 +1234,17 @@ export const dataCivMin = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 3 (Athletic centre Sports Gym)': [
+  'Court 3 - Athletic centre Sports Gym': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '11:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': 'Civ & Min vs. MSE!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Volleyball - free for all disciplines',
@@ -1113,6 +1253,7 @@ export const dataCivMin = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
 };
@@ -1126,8 +1267,8 @@ export const dataIndy = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
-
     {
       'Activity Name': 'Chess: Beginner Hour!',
       'Start Time': '11:00:00 a1/p1',
@@ -1135,6 +1276,7 @@ export const dataIndy = {
       'Activity Description':
         'Haven’t played chess before or consider yourself a beginner? Come play others at the beginner skill level for a fun and light-hearted game to earn Skule Kup points!',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -1142,14 +1284,16 @@ export const dataIndy = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Chess Tournament',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '15:00:00 a1/p1',
       'Activity Description':
-        'Represent Mech in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
-      'Participant Limit': '2/discipline',
+        'Represent MSE in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
+      'Participant Limit': 2,
+      Color: 'purple',
     },
     {
       'Activity Name': 'Chess: Assorted Games',
@@ -1158,6 +1302,7 @@ export const dataIndy = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Chess: Advanced Hour!',
@@ -1166,9 +1311,10 @@ export const dataIndy = {
       'Activity Description':
         'Are you good at chess? Come meet and play other Frosh who enjoy chess and play at an intermediate-advanced level. Earn points for your discipline!!',
       'Participant Limit': 'Unlimited',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Elevator-side tables': [
+  'SF Pit - Elevator-side tables': [
     {
       'Activity Name': 'Assorted Board Games',
       'Start Time': '9:00:00 a1/p1',
@@ -1176,6 +1322,7 @@ export const dataIndy = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -1183,6 +1330,7 @@ export const dataIndy = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Assorted Board Games',
@@ -1191,15 +1339,17 @@ export const dataIndy = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 1': [
+  'SF Pit - Bar-side tables - pt 1': [
     {
       'Activity Name': 'Smash Bros',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'SUDS Hydration Pong',
@@ -1207,6 +1357,7 @@ export const dataIndy = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Bros',
@@ -1214,15 +1365,17 @@ export const dataIndy = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 2': [
+  'SF Pit - Bar-side tables - pt 2': [
     {
       'Activity Name': 'Jackbox',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -1230,6 +1383,7 @@ export const dataIndy = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'prep period',
@@ -1237,6 +1391,7 @@ export const dataIndy = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -1244,6 +1399,7 @@ export const dataIndy = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Mech, Indy, EngSci, TrackOne',
+      Color: 'purple',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -1251,9 +1407,10 @@ export const dataIndy = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Top Two Teams from each bracket (Same discipline different students)',
+      Color: 'yellow',
     },
   ],
-  'Location: SF Pit - Main area': [
+  'SF Pit - Main area': [
     {
       'Activity Name': 'Smash Tournament - Individual',
       'Start Time': '9:00:00 a1/p1',
@@ -1261,6 +1418,7 @@ export const dataIndy = {
       'Activity Description':
         'Represent your discipline in a Smash Tournament run by UTSmash!! Earn SKUP points and prove you are the superior Smash player.',
       'Participant Limit': '2/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTAT Jeopardy',
@@ -1268,6 +1426,7 @@ export const dataIndy = {
       'End Time': '11:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '10/MSE, EngSci, Chem, Indy',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -1275,6 +1434,7 @@ export const dataIndy = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -1282,6 +1442,7 @@ export const dataIndy = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'LGMB Butt Scooter Floor Hockey',
@@ -1290,6 +1451,7 @@ export const dataIndy = {
       'Activity Description': '',
       'Participant Limit':
         '4/(Mech vs Indy then CivMin vs Chem for 15 Minutes each), 4/(EngSci vs TrackOne then MSE vs ECE for 15 Minutes each), 4/(Winner vs Winner)',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -1297,6 +1459,7 @@ export const dataIndy = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -1304,6 +1467,7 @@ export const dataIndy = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -1311,9 +1475,10 @@ export const dataIndy = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'purple',
     },
   ],
-  'Location: Myhal Arena': [
+  'Myhal Arena': [
     {
       'Activity Name': 'University of Toronto Sports Analytics Immaculate Grid',
       'Start Time': '9:00:00 a1/p1',
@@ -1321,6 +1486,7 @@ export const dataIndy = {
       'Activity Description':
         'UTSPAN Immaculate Grid! Participants will test their sports knowledge in this super fun game. There is a 3x3 grid which you fill out based on sports information.  The team with the most square filled out after 10 minutes wins! Teams will be 2-4 per discipline, no sign up necessary, just show up!!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 2)',
@@ -1328,6 +1494,7 @@ export const dataIndy = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/EngSci, Chem, Indy, Mech',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 3)',
@@ -1335,6 +1502,7 @@ export const dataIndy = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Indy, TrackOne, EngSci, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Break',
@@ -1342,6 +1510,7 @@ export const dataIndy = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 2)',
@@ -1349,6 +1518,7 @@ export const dataIndy = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 4)',
@@ -1356,9 +1526,10 @@ export const dataIndy = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/EngSci, ECE, Indy, Chem',
+      Color: 'yellow',
     },
   ],
-  'Location: Front Campus': [
+  'Front Campus': [
     {
       'Activity Name': 'TBog Slip n Slide',
       'Start Time': '9:00:00 a1/p1',
@@ -1366,6 +1537,7 @@ export const dataIndy = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -1373,6 +1545,7 @@ export const dataIndy = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'TBog Slip n Slide',
@@ -1381,15 +1554,17 @@ export const dataIndy = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: SF Lawn': [
+  'SF Lawn': [
     {
       'Activity Name': 'SPARK Game',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -1397,6 +1572,7 @@ export const dataIndy = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'SPARK Game',
@@ -1404,15 +1580,17 @@ export const dataIndy = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: Other': [
+  Other: [
     {
       'Activity Name': 'Lunch - break',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
@@ -1420,6 +1598,7 @@ export const dataIndy = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Skule Commuter Bikeshare Races',
@@ -1428,9 +1607,10 @@ export const dataIndy = {
       'Activity Description':
         "Represent your discipline in a relay style bike race around King's College Circle!",
       'Participant Limit': '4',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 1 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 1': [
     {
       'Activity Name': 'free for all',
       'Start Time': '15:00:00 a1/p1',
@@ -1438,15 +1618,17 @@ export const dataIndy = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 2 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 2': [
     {
       'Activity Name': 'Basketball',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '10:00:00 a1/p1',
       'Activity Description': 'Mech vs. Indy!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball',
@@ -1454,6 +1636,7 @@ export const dataIndy = {
       'End Time': '12:00:00 a1/p1',
       'Activity Description': 'ECE vs. Indy!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Volleyball',
@@ -1461,6 +1644,7 @@ export const dataIndy = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': 'Indy vs. EngSci!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'free for all',
@@ -1469,15 +1653,17 @@ export const dataIndy = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 3 (Athletic centre Sports Gym)': [
+  'Court 3 - Athletic centre Sports Gym': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '14:00:00 a1/p1',
       'End Time': '15:00:00 a1/p1',
       'Activity Description': 'Indy vs. TrackOne!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball - free for all disciplines',
@@ -1486,6 +1672,7 @@ export const dataIndy = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
 };
@@ -1499,6 +1686,7 @@ export const dataTrackOne = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
 
     {
@@ -1508,6 +1696,7 @@ export const dataTrackOne = {
       'Activity Description':
         'Haven’t played chess before or consider yourself a beginner? Come play others at the beginner skill level for a fun and light-hearted game to earn Skule Kup points!',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -1515,14 +1704,16 @@ export const dataTrackOne = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Chess Tournament',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '15:00:00 a1/p1',
       'Activity Description':
-        'Represent Mech in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
-      'Participant Limit': '2/discipline',
+        'Represent MSE in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
+      'Participant Limit': 2,
+      Color: 'purple',
     },
     {
       'Activity Name': 'Chess: Assorted Games',
@@ -1531,6 +1722,7 @@ export const dataTrackOne = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Chess: Advanced Hour!',
@@ -1539,9 +1731,10 @@ export const dataTrackOne = {
       'Activity Description':
         'Are you good at chess? Come meet and play other Frosh who enjoy chess and play at an intermediate-advanced level. Earn points for your discipline!!',
       'Participant Limit': 'Unlimited',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Elevator-side tables': [
+  'SF Pit - Elevator-side tables': [
     {
       'Activity Name': 'Assorted Board Games',
       'Start Time': '9:00:00 a1/p1',
@@ -1549,6 +1742,7 @@ export const dataTrackOne = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -1556,6 +1750,7 @@ export const dataTrackOne = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Assorted Board Games',
@@ -1564,15 +1759,17 @@ export const dataTrackOne = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 1': [
+  'SF Pit - Bar-side tables - pt 1': [
     {
       'Activity Name': 'Smash Bros',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'SUDS Hydration Pong',
@@ -1580,6 +1777,7 @@ export const dataTrackOne = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Bros',
@@ -1587,15 +1785,17 @@ export const dataTrackOne = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 2': [
+  'SF Pit - Bar-side tables - pt 2': [
     {
       'Activity Name': 'Jackbox',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -1603,6 +1803,7 @@ export const dataTrackOne = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'prep period',
@@ -1610,6 +1811,7 @@ export const dataTrackOne = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -1617,6 +1819,7 @@ export const dataTrackOne = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Mech, Indy, EngSci, TrackOne',
+      Color: 'purple',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -1624,9 +1827,10 @@ export const dataTrackOne = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Top Two Teams from each bracket (Same discipline different students)',
+      Color: 'yellow',
     },
   ],
-  'Location: SF Pit - Main area': [
+  'SF Pit - Main area': [
     {
       'Activity Name': 'Smash Tournament - Individual',
       'Start Time': '9:00:00 a1/p1',
@@ -1634,6 +1838,7 @@ export const dataTrackOne = {
       'Activity Description':
         'Represent your discipline in a Smash Tournament run by UTSmash!! Earn SKUP points and prove you are the superior Smash player.',
       'Participant Limit': '2/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTAT Jeopardy',
@@ -1641,6 +1846,7 @@ export const dataTrackOne = {
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '10/Mech, TrackOne, CivMin, ECE',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -1648,6 +1854,7 @@ export const dataTrackOne = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -1655,6 +1862,7 @@ export const dataTrackOne = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'LGMB Butt Scooter Floor Hockey',
@@ -1663,6 +1871,7 @@ export const dataTrackOne = {
       'Activity Description': '',
       'Participant Limit':
         '4/(Mech vs Indy then CivMin vs Chem for 15 Minutes each), 4/(EngSci vs TrackOne then MSE vs ECE for 15 Minutes each), 4/(Winner vs Winner)',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -1670,6 +1879,7 @@ export const dataTrackOne = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -1677,6 +1887,7 @@ export const dataTrackOne = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -1684,9 +1895,10 @@ export const dataTrackOne = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'purple',
     },
   ],
-  'Location: Myhal Arena': [
+  'Myhal Arena': [
     {
       'Activity Name': 'University of Toronto Sports Analytics Immaculate Grid',
       'Start Time': '9:00:00 a1/p1',
@@ -1694,6 +1906,7 @@ export const dataTrackOne = {
       'Activity Description':
         'UTSPAN Immaculate Grid! Participants will test their sports knowledge in this super fun game. There is a 3x3 grid which you fill out based on sports information.  The team with the most square filled out after 10 minutes wins! Teams will be 2-4 per discipline, no sign up necessary, just show up!!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 1)',
@@ -1701,6 +1914,7 @@ export const dataTrackOne = {
       'End Time': '12:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/CivMin, TrackOne, ECE, MSE',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 3)',
@@ -1708,6 +1922,7 @@ export const dataTrackOne = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Indy, TrackOne, EngSci, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 5)',
@@ -1715,6 +1930,7 @@ export const dataTrackOne = {
       'End Time': '14:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/CivMin, TrackOne, ECE, EngSci',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Break',
@@ -1722,6 +1938,7 @@ export const dataTrackOne = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 1)',
@@ -1729,6 +1946,7 @@ export const dataTrackOne = {
       'End Time': '15:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
@@ -1736,9 +1954,10 @@ export const dataTrackOne = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
+      Color: 'yellow',
     },
   ],
-  'Location: Front Campus': [
+  'Front Campus': [
     {
       'Activity Name': 'TBog Slip n Slide',
       'Start Time': '9:00:00 a1/p1',
@@ -1746,6 +1965,7 @@ export const dataTrackOne = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -1753,6 +1973,7 @@ export const dataTrackOne = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'TBog Slip n Slide',
@@ -1761,15 +1982,17 @@ export const dataTrackOne = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: SF Lawn': [
+  'SF Lawn': [
     {
       'Activity Name': 'SPARK Game',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -1777,6 +2000,7 @@ export const dataTrackOne = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'SPARK Game',
@@ -1784,15 +2008,17 @@ export const dataTrackOne = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: Other': [
+  Other: [
     {
       'Activity Name': 'Lunch - break',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
@@ -1800,6 +2026,7 @@ export const dataTrackOne = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Skule Commuter Bikeshare Races',
@@ -1808,15 +2035,17 @@ export const dataTrackOne = {
       'Activity Description':
         "Represent your discipline in a relay style bike race around King's College Circle!",
       'Participant Limit': '4',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 1 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 1': [
     {
       'Activity Name': 'Basketball',
       'Start Time': '10:00:00 a1/p1',
       'End Time': '11:00:00 a1/p1',
       'Activity Description': 'Civ & Min vs. TrackOne!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball',
@@ -1824,13 +2053,16 @@ export const dataTrackOne = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'TrackOne vs. EngSci!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
+
     {
       'Activity Name': 'Volleyball',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': 'Mech vs. TrackOne!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'free for all',
@@ -1839,9 +2071,10 @@ export const dataTrackOne = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 2 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 2': [
     {
       'Activity Name': 'free for all',
       'Start Time': '15:00:00 a1/p1',
@@ -1849,15 +2082,17 @@ export const dataTrackOne = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 3 (Athletic centre Sports Gym)': [
+  'Court 3 - Athletic centre Sports Gym': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '14:00:00 a1/p1',
       'End Time': '15:00:00 a1/p1',
       'Activity Description': 'Indy vs. TrackOne!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball - free for all disciplines',
@@ -1866,6 +2101,7 @@ export const dataTrackOne = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
 };
@@ -1879,6 +2115,7 @@ export const dataECE = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
 
     {
@@ -1888,6 +2125,7 @@ export const dataECE = {
       'Activity Description':
         'Haven’t played chess before or consider yourself a beginner? Come play others at the beginner skill level for a fun and light-hearted game to earn Skule Kup points!',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -1895,14 +2133,16 @@ export const dataECE = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Chess Tournament',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '15:00:00 a1/p1',
       'Activity Description':
-        'Represent Mech in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
-      'Participant Limit': '2/discipline',
+        'Represent MSE in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
+      'Participant Limit': 2,
+      Color: 'purple',
     },
     {
       'Activity Name': 'Chess: Assorted Games',
@@ -1911,6 +2151,7 @@ export const dataECE = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Chess: Advanced Hour!',
@@ -1919,9 +2160,10 @@ export const dataECE = {
       'Activity Description':
         'Are you good at chess? Come meet and play other Frosh who enjoy chess and play at an intermediate-advanced level. Earn points for your discipline!!',
       'Participant Limit': 'Unlimited',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Elevator-side tables': [
+  'SF Pit - Elevator-side tables': [
     {
       'Activity Name': 'Assorted Board Games',
       'Start Time': '9:00:00 a1/p1',
@@ -1929,6 +2171,7 @@ export const dataECE = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -1936,6 +2179,7 @@ export const dataECE = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Assorted Board Games',
@@ -1944,15 +2188,17 @@ export const dataECE = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 1': [
+  'SF Pit - Bar-side tables - pt 1': [
     {
       'Activity Name': 'Smash Bros',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'SUDS Hydration Pong',
@@ -1960,6 +2206,7 @@ export const dataECE = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Bros',
@@ -1967,15 +2214,17 @@ export const dataECE = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 2': [
+  'SF Pit - Bar-side tables - pt 2': [
     {
       'Activity Name': 'Jackbox',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -1983,6 +2232,7 @@ export const dataECE = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'prep period',
@@ -1990,6 +2240,7 @@ export const dataECE = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -1997,6 +2248,7 @@ export const dataECE = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/MSE, Chem, CivMin, ECE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -2004,9 +2256,10 @@ export const dataECE = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Top Two Teams from each bracket (Same discipline different students)',
+      Color: 'yellow',
     },
   ],
-  'Location: SF Pit - Main area': [
+  'SF Pit - Main area': [
     {
       'Activity Name': 'Smash Tournament - Individual',
       'Start Time': '9:00:00 a1/p1',
@@ -2014,13 +2267,15 @@ export const dataECE = {
       'Activity Description':
         'Represent your discipline in a Smash Tournament run by UTSmash!! Earn SKUP points and prove you are the superior Smash player.',
       'Participant Limit': '2/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTAT Jeopardy',
-      'Start Time': '11:30:00 a1/p1',
-      'End Time': '12:00:00 a1/p1',
+      'Start Time': '11:00:00 a1/p1',
+      'End Time': '11:30:00 a1/p1',
       'Activity Description': '',
-      'Participant Limit': '10/Mech, TrackOne, CivMin, ECE',
+      'Participant Limit': '10/MSE, EngSci, Chem, Indy',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -2028,6 +2283,7 @@ export const dataECE = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -2035,6 +2291,7 @@ export const dataECE = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'LGMB Butt Scooter Floor Hockey',
@@ -2043,6 +2300,7 @@ export const dataECE = {
       'Activity Description': '',
       'Participant Limit':
         '4/(Mech vs Indy then CivMin vs Chem for 15 Minutes each), 4/(EngSci vs TrackOne then MSE vs ECE for 15 Minutes each), 4/(Winner vs Winner)',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -2050,6 +2308,7 @@ export const dataECE = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -2057,6 +2316,7 @@ export const dataECE = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -2064,9 +2324,10 @@ export const dataECE = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'purple',
     },
   ],
-  'Location: Myhal Arena': [
+  'Myhal Arena': [
     {
       'Activity Name': 'University of Toronto Sports Analytics Immaculate Grid',
       'Start Time': '9:00:00 a1/p1',
@@ -2074,6 +2335,7 @@ export const dataECE = {
       'Activity Description':
         'UTSPAN Immaculate Grid! Participants will test their sports knowledge in this super fun game. There is a 3x3 grid which you fill out based on sports information.  The team with the most square filled out after 10 minutes wins! Teams will be 2-4 per discipline, no sign up necessary, just show up!!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 1)',
@@ -2081,6 +2343,7 @@ export const dataECE = {
       'End Time': '12:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/CivMin, TrackOne, ECE, MSE',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 4)',
@@ -2088,6 +2351,7 @@ export const dataECE = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/ECE, CivMin, Chem, Mech',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 5)',
@@ -2095,6 +2359,7 @@ export const dataECE = {
       'End Time': '14:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/CivMin, TrackOne, ECE, EngSci',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Break',
@@ -2102,6 +2367,7 @@ export const dataECE = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 1)',
@@ -2109,6 +2375,7 @@ export const dataECE = {
       'End Time': '15:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 4)',
@@ -2116,9 +2383,10 @@ export const dataECE = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/EngSci, ECE, Indy, Chem',
+      Color: 'yellow',
     },
   ],
-  'Location: Front Campus': [
+  'Front Campus': [
     {
       'Activity Name': 'TBog Slip n Slide',
       'Start Time': '9:00:00 a1/p1',
@@ -2126,6 +2394,7 @@ export const dataECE = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -2133,6 +2402,7 @@ export const dataECE = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'TBog Slip n Slide',
@@ -2141,15 +2411,17 @@ export const dataECE = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: SF Lawn': [
+  'SF Lawn': [
     {
       'Activity Name': 'SPARK Game',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -2157,6 +2429,7 @@ export const dataECE = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'SPARK Game',
@@ -2164,15 +2437,17 @@ export const dataECE = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: Other': [
+  Other: [
     {
       'Activity Name': 'Lunch - break',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
@@ -2180,6 +2455,7 @@ export const dataECE = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Skule Commuter Bikeshare Races',
@@ -2188,15 +2464,17 @@ export const dataECE = {
       'Activity Description':
         "Represent your discipline in a relay style bike race around King's College Circle!",
       'Participant Limit': '4',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 1 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 1': [
     {
       'Activity Name': 'Basketball',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '10:00:00 a1/p1',
       'Activity Description': 'Chem vs. ECE!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball',
@@ -2204,6 +2482,7 @@ export const dataECE = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': 'ECE vs. Civ & Min!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'free for all',
@@ -2212,15 +2491,17 @@ export const dataECE = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 2 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 2': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '11:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': 'ECE vs. Indy!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'free for all',
@@ -2229,15 +2510,17 @@ export const dataECE = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 3 (Athletic centre Sports Gym)': [
+  'Court 3 - Athletic centre Sports Gym': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'ECE vs. MSE!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball - free for all disciplines',
@@ -2246,6 +2529,7 @@ export const dataECE = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
 };
@@ -2259,6 +2543,7 @@ export const dataEngSci = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
 
     {
@@ -2268,6 +2553,7 @@ export const dataEngSci = {
       'Activity Description':
         'Haven’t played chess before or consider yourself a beginner? Come play others at the beginner skill level for a fun and light-hearted game to earn Skule Kup points!',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -2275,14 +2561,16 @@ export const dataEngSci = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Chess Tournament',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '15:00:00 a1/p1',
       'Activity Description':
-        'Represent Mech in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
-      'Participant Limit': '2/discipline',
+        'Represent MSE in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
+      'Participant Limit': 2,
+      Color: 'purple',
     },
     {
       'Activity Name': 'Chess: Assorted Games',
@@ -2291,6 +2579,7 @@ export const dataEngSci = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Chess: Advanced Hour!',
@@ -2299,9 +2588,10 @@ export const dataEngSci = {
       'Activity Description':
         'Are you good at chess? Come meet and play other Frosh who enjoy chess and play at an intermediate-advanced level. Earn points for your discipline!!',
       'Participant Limit': 'Unlimited',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Elevator-side tables': [
+  'SF Pit - Elevator-side tables': [
     {
       'Activity Name': 'Assorted Board Games',
       'Start Time': '9:00:00 a1/p1',
@@ -2309,6 +2599,7 @@ export const dataEngSci = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -2316,6 +2607,7 @@ export const dataEngSci = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Assorted Board Games',
@@ -2324,15 +2616,17 @@ export const dataEngSci = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 1': [
+  'SF Pit - Bar-side tables - pt 1': [
     {
       'Activity Name': 'Smash Bros',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'SUDS Hydration Pong',
@@ -2340,6 +2634,7 @@ export const dataEngSci = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Bros',
@@ -2347,15 +2642,17 @@ export const dataEngSci = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 2': [
+  'SF Pit - Bar-side tables - pt 2': [
     {
       'Activity Name': 'Jackbox',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -2363,6 +2660,7 @@ export const dataEngSci = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'prep period',
@@ -2370,6 +2668,7 @@ export const dataEngSci = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -2377,6 +2676,7 @@ export const dataEngSci = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Mech, Indy, EngSci, TrackOne',
+      Color: 'purple',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -2384,9 +2684,10 @@ export const dataEngSci = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Top Two Teams from each bracket (Same discipline different students)',
+      Color: 'yellow',
     },
   ],
-  'Location: SF Pit - Main area': [
+  'SF Pit - Main area': [
     {
       'Activity Name': 'Smash Tournament - Individual',
       'Start Time': '9:00:00 a1/p1',
@@ -2394,6 +2695,7 @@ export const dataEngSci = {
       'Activity Description':
         'Represent your discipline in a Smash Tournament run by UTSmash!! Earn SKUP points and prove you are the superior Smash player.',
       'Participant Limit': '2/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTAT Jeopardy',
@@ -2401,6 +2703,7 @@ export const dataEngSci = {
       'End Time': '11:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '10/MSE, EngSci, Chem, Indy',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -2408,6 +2711,7 @@ export const dataEngSci = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -2415,6 +2719,7 @@ export const dataEngSci = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'LGMB Butt Scooter Floor Hockey',
@@ -2423,6 +2728,7 @@ export const dataEngSci = {
       'Activity Description': '',
       'Participant Limit':
         '4/(Mech vs Indy then CivMin vs Chem for 15 Minutes each), 4/(EngSci vs TrackOne then MSE vs ECE for 15 Minutes each), 4/(Winner vs Winner)',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -2430,6 +2736,7 @@ export const dataEngSci = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -2437,6 +2744,7 @@ export const dataEngSci = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -2444,9 +2752,10 @@ export const dataEngSci = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'purple',
     },
   ],
-  'Location: Myhal Arena': [
+  'Myhal Arena': [
     {
       'Activity Name': 'University of Toronto Sports Analytics Immaculate Grid',
       'Start Time': '9:00:00 a1/p1',
@@ -2454,6 +2763,7 @@ export const dataEngSci = {
       'Activity Description':
         'UTSPAN Immaculate Grid! Participants will test their sports knowledge in this super fun game. There is a 3x3 grid which you fill out based on sports information.  The team with the most square filled out after 10 minutes wins! Teams will be 2-4 per discipline, no sign up necessary, just show up!!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 2)',
@@ -2461,6 +2771,7 @@ export const dataEngSci = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/EngSci, Chem, Indy, Mech',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 3)',
@@ -2468,6 +2779,7 @@ export const dataEngSci = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Indy, TrackOne, EngSci, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 5)',
@@ -2475,6 +2787,7 @@ export const dataEngSci = {
       'End Time': '14:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/CivMin, TrackOne, ECE, EngSci',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Break',
@@ -2482,6 +2795,7 @@ export const dataEngSci = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 1)',
@@ -2489,6 +2803,7 @@ export const dataEngSci = {
       'End Time': '15:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 2)',
@@ -2496,6 +2811,7 @@ export const dataEngSci = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
@@ -2503,6 +2819,7 @@ export const dataEngSci = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 4)',
@@ -2510,9 +2827,10 @@ export const dataEngSci = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/EngSci, ECE, Indy, Chem',
+      Color: 'purple',
     },
   ],
-  'Location: Front Campus': [
+  'Front Campus': [
     {
       'Activity Name': 'TBog Slip n Slide',
       'Start Time': '9:00:00 a1/p1',
@@ -2520,6 +2838,7 @@ export const dataEngSci = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -2527,6 +2846,7 @@ export const dataEngSci = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'TBog Slip n Slide',
@@ -2535,15 +2855,17 @@ export const dataEngSci = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: SF Lawn': [
+  'SF Lawn': [
     {
       'Activity Name': 'SPARK Game',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -2551,6 +2873,7 @@ export const dataEngSci = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'SPARK Game',
@@ -2558,15 +2881,17 @@ export const dataEngSci = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: Other': [
+  Other: [
     {
       'Activity Name': 'Lunch - break',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
@@ -2574,6 +2899,7 @@ export const dataEngSci = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Skule Commuter Bikeshare Races',
@@ -2582,15 +2908,17 @@ export const dataEngSci = {
       'Activity Description':
         "Represent your discipline in a relay style bike race around King's College Circle!",
       'Participant Limit': '4',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 1 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 1': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'TrackOne vs. EngSci!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'free for all',
@@ -2599,15 +2927,17 @@ export const dataEngSci = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 2 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 2': [
     {
       'Activity Name': 'Basketball',
       'Start Time': '10:00:00 a1/p1',
       'End Time': '11:00:00 a1/p1',
       'Activity Description': 'MSE vs. EngSci!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Volleyball',
@@ -2615,6 +2945,7 @@ export const dataEngSci = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': 'Indy vs. EngSci!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball',
@@ -2622,6 +2953,7 @@ export const dataEngSci = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': 'Mech vs. EngSci!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'free for all',
@@ -2630,9 +2962,10 @@ export const dataEngSci = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 3 (Athletic centre Sports Gym)': [
+  'Court 3 - Athletic centre Sports Gym': [
     {
       'Activity Name': 'Volleyball - free for all disciplines',
       'Start Time': '15:00:00 a1/p1',
@@ -2640,6 +2973,7 @@ export const dataEngSci = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
 };
@@ -2653,6 +2987,7 @@ export const dataChem = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
 
     {
@@ -2662,6 +2997,7 @@ export const dataChem = {
       'Activity Description':
         'Haven’t played chess before or consider yourself a beginner? Come play others at the beginner skill level for a fun and light-hearted game to earn Skule Kup points!',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -2669,14 +3005,16 @@ export const dataChem = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Chess Tournament',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '15:00:00 a1/p1',
       'Activity Description':
-        'Represent Mech in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
-      'Participant Limit': '2/discipline',
+        'Represent MSE in a Chess Tournament run by HH Chess Club. Limited sign-ups per discipline.',
+      'Participant Limit': 2,
+      Color: 'purple',
     },
     {
       'Activity Name': 'Chess: Assorted Games',
@@ -2685,6 +3023,7 @@ export const dataChem = {
       'Activity Description':
         'Come play chess against Frosh from other disciplines!! Win points for your discipline to win the Skule Kup!',
       'Participant Limit': 'No sign ups',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Chess: Advanced Hour!',
@@ -2693,9 +3032,10 @@ export const dataChem = {
       'Activity Description':
         'Are you good at chess? Come meet and play other Frosh who enjoy chess and play at an intermediate-advanced level. Earn points for your discipline!!',
       'Participant Limit': 'Unlimited',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Elevator-side tables': [
+  'SF Pit - Elevator-side tables': [
     {
       'Activity Name': 'Assorted Board Games',
       'Start Time': '9:00:00 a1/p1',
@@ -2703,6 +3043,7 @@ export const dataChem = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - Break',
@@ -2710,6 +3051,7 @@ export const dataChem = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Take a break and grab some lunch!',
       'Participant Limit': 'No sign ups',
+      Color: 'green',
     },
     {
       'Activity Name': 'Assorted Board Games',
@@ -2718,15 +3060,17 @@ export const dataChem = {
       'Activity Description':
         'Play board games/cards for Skup points!! Use strategy and luck to play your friends and meet new people. We have a wide selection of board games that are SO much fun to play.',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 1': [
+  'SF Pit - Bar-side tables - pt 1': [
     {
       'Activity Name': 'Smash Bros',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'SUDS Hydration Pong',
@@ -2734,6 +3078,7 @@ export const dataChem = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'Unlimited',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Bros',
@@ -2741,15 +3086,17 @@ export const dataChem = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
   ],
-  'Location: SF Pit - Bar-side tables - pt 2': [
+  'SF Pit - Bar-side tables - pt 2': [
     {
       'Activity Name': 'Jackbox',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -2757,6 +3104,7 @@ export const dataChem = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'prep period',
@@ -2764,6 +3112,7 @@ export const dataChem = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -2771,6 +3120,7 @@ export const dataChem = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/MSE, Chem, CivMin, ECE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'F!rosh Feud',
@@ -2778,9 +3128,10 @@ export const dataChem = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/Top Two Teams from each bracket (Same discipline different students)',
+      Color: 'yellow',
     },
   ],
-  'Location: SF Pit - Main area': [
+  'SF Pit - Main area': [
     {
       'Activity Name': 'Smash Tournament - Individual',
       'Start Time': '9:00:00 a1/p1',
@@ -2788,6 +3139,7 @@ export const dataChem = {
       'Activity Description':
         'Represent your discipline in a Smash Tournament run by UTSmash!! Earn SKUP points and prove you are the superior Smash player.',
       'Participant Limit': '2/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTAT Jeopardy',
@@ -2795,6 +3147,7 @@ export const dataChem = {
       'End Time': '11:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '10/MSE, EngSci, Chem, Indy',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Smash Tournament - Teams',
@@ -2802,6 +3155,7 @@ export const dataChem = {
       'End Time': '13:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/discipline',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -2809,6 +3163,7 @@ export const dataChem = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'LGMB Butt Scooter Floor Hockey',
@@ -2817,6 +3172,7 @@ export const dataChem = {
       'Activity Description': '',
       'Participant Limit':
         '4/(Mech vs Indy then CivMin vs Chem for 15 Minutes each), 4/(EngSci vs TrackOne then MSE vs ECE for 15 Minutes each), 4/(Winner vs Winner)',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Toike Lettuce',
@@ -2824,6 +3180,7 @@ export const dataChem = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '3/discipline',
+      Color: 'green',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -2831,6 +3188,7 @@ export const dataChem = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'Hungry Hungry Hard Hats',
@@ -2838,9 +3196,10 @@ export const dataChem = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
+      Color: 'purple',
     },
   ],
-  'Location: Myhal Arena': [
+  'Myhal Arena': [
     {
       'Activity Name': 'University of Toronto Sports Analytics Immaculate Grid',
       'Start Time': '9:00:00 a1/p1',
@@ -2848,6 +3207,7 @@ export const dataChem = {
       'Activity Description':
         'UTSPAN Immaculate Grid! Participants will test their sports knowledge in this super fun game. There is a 3x3 grid which you fill out based on sports information.  The team with the most square filled out after 10 minutes wins! Teams will be 2-4 per discipline, no sign up necessary, just show up!!',
       'Participant Limit': 'No sign ups',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 2)',
@@ -2855,6 +3215,7 @@ export const dataChem = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/EngSci, Chem, Indy, Mech',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTSM Car Competition (Run 4)',
@@ -2862,6 +3223,7 @@ export const dataChem = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '5/ECE, CivMin, Chem, Mech',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Break',
@@ -2869,6 +3231,7 @@ export const dataChem = {
       'End Time': '15:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 1)',
@@ -2876,6 +3239,7 @@ export const dataChem = {
       'End Time': '15:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 2)',
@@ -2883,6 +3247,7 @@ export const dataChem = {
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
@@ -2890,6 +3255,7 @@ export const dataChem = {
       'End Time': '16:30:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
+      Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 4)',
@@ -2897,9 +3263,10 @@ export const dataChem = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '4/EngSci, ECE, Indy, Chem',
+      Color: 'yellow',
     },
   ],
-  'Location: Front Campus': [
+  'Front Campus': [
     {
       'Activity Name': 'TBog Slip n Slide',
       'Start Time': '9:00:00 a1/p1',
@@ -2907,6 +3274,7 @@ export const dataChem = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -2914,6 +3282,7 @@ export const dataChem = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'TBog Slip n Slide',
@@ -2922,15 +3291,17 @@ export const dataChem = {
       'Activity Description':
         "Frosh will race on a large slip n' slide from one end to the other on garbage bags taped together. Two people from different disciplines will race against each other on two slides, the person who gets to the end first will receive a point for their discipline. Each F!rosh may only go once.",
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: SF Lawn': [
+  'SF Lawn': [
     {
       'Activity Name': 'SPARK Game',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Lunch - break',
@@ -2938,6 +3309,7 @@ export const dataChem = {
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'SPARK Game',
@@ -2945,15 +3317,17 @@ export const dataChem = {
       'End Time': '17:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
   ],
-  'Location: Other': [
+  Other: [
     {
       'Activity Name': 'Lunch - break',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': '',
+      Color: 'green',
     },
     {
       'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
@@ -2961,6 +3335,7 @@ export const dataChem = {
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
       'Participant Limit': 'No sign ups necessary',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Skule Commuter Bikeshare Races',
@@ -2969,15 +3344,17 @@ export const dataChem = {
       'Activity Description':
         "Represent your discipline in a relay style bike race around King's College Circle!",
       'Participant Limit': '4',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 1 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 1': [
     {
       'Activity Name': 'Basketball',
       'Start Time': '9:00:00 a1/p1',
       'End Time': '10:00:00 a1/p1',
       'Activity Description': 'Chem vs. ECE!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball',
@@ -2985,6 +3362,7 @@ export const dataChem = {
       'End Time': '12:00:00 a1/p1',
       'Activity Description': 'Chem vs. Mech!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
     {
       'Activity Name': 'free for all',
@@ -2993,15 +3371,17 @@ export const dataChem = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
   ],
-  'Location: Court 2 (9-11 Athletic Centre Field House, 11-4 Athletic Centre Sports Gym)': [
+  'Court 2': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
       'Activity Description': 'Chem vs. Civ & Min!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'free for all',
@@ -3010,15 +3390,17 @@ export const dataChem = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
-  'Location: Court 3 (Athletic centre Sports Gym)': [
+  'Court 3 - Athletic centre Sports Gym': [
     {
       'Activity Name': 'Volleyball',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': 'Chem vs. MSE!',
       'Participant Limit': '16/discipline participating',
+      Color: 'purple',
     },
     {
       'Activity Name': 'Volleyball - free for all disciplines',
@@ -3027,6 +3409,7 @@ export const dataChem = {
       'Activity Description':
         'Come play volleyball with your friends or come and meet new people for a fun game of volleyball!!',
       'Participant Limit': '16/discipline participating',
+      Color: 'yellow',
     },
   ],
 };

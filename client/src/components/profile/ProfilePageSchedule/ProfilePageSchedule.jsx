@@ -5,7 +5,7 @@ import { getDaysSchedule, getFroshGroupSchedule } from '../../../pages/Profile/f
 import { ButtonSelector } from '../../buttonSelector/buttonSelector/ButtonSelector';
 import { ScheduleComponentAccordion } from '../../schedule/ScheduleHome/ScheduleHome';
 import './ProfilePageSchedule.scss';
-// import { froshGroups } from '../../../util/frosh-groups';
+import { froshGroups } from '../../../util/frosh-groups';
 
 export const ProfilePageSchedule = () => {
   const { user } = useSelector(userSelector);

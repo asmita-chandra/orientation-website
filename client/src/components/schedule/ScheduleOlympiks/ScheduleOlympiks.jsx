@@ -1,21 +1,28 @@
 import React, { useState, useEffect, useContext } from 'react';
+import { useSelector } from 'react-redux';
+import { userSelector } from '../../../state/user/userSlice';
 import PropTypes from 'prop-types';
 import { ButtonSelector } from '../../buttonSelector/buttonSelector/ButtonSelector';
 import { SingleAccordion } from '../../text/Accordion/SingleAccordion/SingleAccordion';
 import './ScheduleOlympiks.scss';
-import { data } from '../../../assets/schedule/data';
+import { dataMSE } from '../../../assets/olympiksSchedule/data';
 import location from '../../../assets/misc/location.png';
 import { DarkModeContext } from '../../../util/DarkModeProvider';
 import LilyDesign from '../../../assets/schedule/lily.svg';
+import { getDisciplineOlympikSchedule } from '../../../pages/Profile/functions';
 
 function getDaysSchedule() {
-  return Object.keys(data);
+  return Object.keys(dataMSE);
 }
 
 const ScheduleComponent = () => {
   const today = new Date();
   const options = { weekday: 'long', month: 'long', day: 'numeric' };
   const todayString = today.toLocaleDateString('en-US', options).replace(',', '');
+  const { user } = useSelector(userSelector);
+  const [discipline, setDiscipline] = useState(user?.discipline);
+  const scheduleData = getDisciplineOlympikSchedule(discipline);
+
   let count = 0;
   for (let day of getDaysSchedule()) {
     if (day === todayString) {
@@ -23,13 +30,13 @@ const ScheduleComponent = () => {
     }
     count++;
   }
-  if (count >= Object.keys(data).length) {
+  if (count >= Object.keys(scheduleData).length) {
     count = 0;
   }
-  const [selectedDayIndex, setSelectedDayIndex] = useState(count);
+  const [selectedLocationIndex, setSelectedLocationIndex] = useState(count);
   const [closeAll, setCloseAll] = useState(false);
-  const buttonList = Object.keys(data).map((item) => {
-    return { name: item };
+  const buttonList = Object.keys(scheduleData).map((location) => {
+    return { name: location };
   });
 
   return (
@@ -41,9 +48,9 @@ const ScheduleComponent = () => {
         <div className="mobile-only">
           <ButtonSelector
             buttonList={buttonList}
-            activeIndex={selectedDayIndex}
+            activeIndex={selectedLocationIndex}
             setActiveIndex={(index) => {
-              setSelectedDayIndex(index);
+              setSelectedLocationIndex(index);
               setCloseAll(!closeAll);
             }}
             style={{
@@ -56,29 +63,31 @@ const ScheduleComponent = () => {
           />
         </div>
         <div className="schedule-container-dates desktop-only">
-          {Object.keys(data).map((day, index) => {
-            const dayOfWeek = day.split(' ')[0];
-            const date = day.split(' ')[1] + ' ' + day.split(' ')[2];
+          {Object.keys(scheduleData).map((day, index) => {
+            const [dayOfWeek, ...locationParts] = day.split('-');
+            const location = locationParts.join(' ');
 
             return (
               <div className="schedule-container-left" key={index}>
                 <div
                   style={{
                     top: index === 0 ? '42.5px' : 'unset',
-                    height: index === Object.keys(data).length - 1 ? '42.5px' : '',
+                    height: index === Object.keys(scheduleData).length - 1 ? '42.5px' : '',
                   }}
                 ></div>
                 <div
                   className={`schedule-container-dates-container ${
-                    selectedDayIndex === index ? 'schedule-container-dates-container-selected' : ''
+                    selectedLocationIndex === index
+                      ? 'schedule-container-dates-container-selected'
+                      : ''
                   }`}
                   onClick={() => {
-                    setSelectedDayIndex(index);
+                    setSelectedLocationIndex(index);
                     setCloseAll(!closeAll);
                   }}
                 >
-                  <h1>{dayOfWeek}</h1>
-                  <h2>{date}</h2>
+                  <h1>{dayOfWeek.toUpperCase()}</h1>
+                  <h2>{location.toUpperCase()}</h2>
                 </div>
               </div>
             );
@@ -87,13 +96,9 @@ const ScheduleComponent = () => {
       </div>
       <div className="schedule-right-container">
         <div style={{ width: '100%' }}>
-          {data[Object.keys(data)[selectedDayIndex]].map((scheduleDay, index) => {
+          {scheduleData[Object.keys(scheduleData)[selectedLocationIndex]].map((activity, index) => {
             return (
-              <ScheduleComponentAccordion
-                key={index}
-                scheduleDay={scheduleDay}
-                closeAll={closeAll}
-              />
+              <ScheduleComponentAccordion key={index} scheduleDay={activity} closeAll={closeAll} />
             );
           })}
         </div>
@@ -105,6 +110,9 @@ const ScheduleComponent = () => {
 export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
   const [isOpen, setIsOpen] = useState(true);
   const { darkMode } = useContext(DarkModeContext);
+  const { user } = useSelector(userSelector);
+  const [discipline, setDiscipline] = useState(user?.discipline);
+  const scheduleData = getDisciplineOlympikSchedule(discipline);
 
   useEffect(() => {
     setIsOpen(false);
@@ -132,8 +140,8 @@ export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
         header={
           <div className="schedule-accordion-header-container">
             <div className="schedule-accordion-header">
-              <h1>{scheduleDay['Event Name']}</h1>
-              {scheduleDay['Event Location'] ? (
+              <h1>{scheduleDay['Activity Name'].toUpperCase()}</h1>
+              {/* {scheduleDay['Event Location'] ? (
                 <div className="schedule-accordion-header-location-container">
                   <img
                     style={{ filter: darkMode ? 'invert(0.8)' : 'invert(0.6)' }}
@@ -144,16 +152,16 @@ export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
                 </div>
               ) : (
                 <></>
-              )}
+              )} */}
             </div>
             <h2>{startTime + ' - ' + endTime}</h2>
           </div>
         }
         setIsOpen={setIsOpen}
         isOpen={isOpen}
-        canOpen={scheduleDay['Event Description'] !== undefined}
+        canOpen={scheduleDay['Activity Description'] !== undefined}
       >
-        <p dangerouslySetInnerHTML={{ __html: scheduleDay['Event Description'] }} />
+        <p dangerouslySetInnerHTML={{ __html: scheduleDay['Activity Description'] }} />
         <h3 className="schedule-accordion-spots">X SPOTS REMAINING!</h3>
         <button className="button button-secondary" onClick={handleClick}>
           Sign Up!
