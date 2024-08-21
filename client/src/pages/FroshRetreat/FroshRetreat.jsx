@@ -76,11 +76,11 @@ export const FroshRetreat = () => {
       </Header>
       <div style={{ height: '20px' }} />
       <h3 style={{ color: 'var(--white)', margin: '20px 0', textAlign: 'center' }}>
-        SEE THIS VIDEO OF RETREAT 2T0 FOR A SENSE OF THE TRIP!
+        SEE THIS VIDEO OF LEEDUR RETREAT 2T4 FOR A SENSE OF THE TRIP!
       </h3>
       <iframe
         className="frosh-retreat-video"
-        src="https://www.youtube.com/embed/eGwsNvgroCI?autoplay=1"
+        src="https://drive.google.com/file/d/1_lpjxS90MrYfqsgOosCd1gRf2xd7phoY/view?usp=sharing"
         title="F!rosh Retreat Info"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
