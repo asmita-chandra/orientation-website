@@ -445,6 +445,8 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
     'We live in a(n engineering) society',
   ];
 
+  const [currentCategory, setCurrentCategory] = useState(missionCategories[0]);
+
   return (
     <>
       <QRScannerDisplay
@@ -477,7 +479,9 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
         <Dropdown
           initialSelectedIndex={0}
           values={missionCategories}
-          onSelect={(value) => {}}
+          onSelect={(value) => {
+            setCurrentCategory(value);
+          }}
           isDisabled={false}
         />
       </div>
