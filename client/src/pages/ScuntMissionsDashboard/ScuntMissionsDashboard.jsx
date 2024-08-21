@@ -63,7 +63,6 @@ const ScuntCreateMissions = () => {
     category: '',
     points: '',
     isHidden: false,
-    isJudgingStation: false,
   };
 
   const { setSnackbar } = useContext(SnackbarContext); // use Snackbar to send messages --> successfull hidden/deleted, etc.
@@ -364,7 +363,7 @@ const ScuntUploadMissions = () => {
   const { setSnackbar } = useContext(SnackbarContext);
   const fileReader = new FileReader();
 
-  const headerKeys = ['Number', 'Name', 'Category', 'Points', 'Hidden', 'JudgingStation'];
+  const headerKeys = ['Number', 'Name', 'Category', 'Points', 'Hidden'];
 
   const dispatch = useDispatch();
 
