@@ -139,7 +139,6 @@ export const ScheduleComponentAccordion = ({
   }
 
   const handleClick = async () => {
-    alert('sign up attempted');
     try {
       // check if there are available spots
       const availableSpots =
@@ -185,29 +184,31 @@ export const ScheduleComponentAccordion = ({
     scheduleDay[`max${user.discipline}`] - scheduleDay[`current${user.discipline}`];
 
   return (
-    <div className="schedule-accordion">
-      <SingleAccordion
-        className={`schedule-background-${scheduleDay['Color']}`}
-        header={
-          <div className="schedule-accordion-header-container">
-            <div className="schedule-accordion-header">
-              <h1>{scheduleDay['Activity Name'].toUpperCase()}</h1>
+    <>
+      <div className="schedule-accordion">
+        <SingleAccordion
+          className={`schedule-background-${scheduleDay['Color']}`}
+          header={
+            <div className="schedule-accordion-header-container">
+              <div className="schedule-accordion-header">
+                <h1>{scheduleDay['Activity Name'].toUpperCase()}</h1>
+              </div>
+              <h2>{startTime + ' - ' + endTime}</h2>
             </div>
-            <h2>{startTime + ' - ' + endTime}</h2>
-          </div>
-        }
-        setIsOpen={setIsOpen}
-        isOpen={isOpen}
-        canOpen={scheduleDay['Activity Description'] !== undefined}
-      >
-        <p dangerouslySetInnerHTML={{ __html: scheduleDay['Activity Description'] }} />
-        <h3 className="schedule-accordion-spots">{remainingSpots} SPOTS REMAINING!</h3>
+          }
+          setIsOpen={setIsOpen}
+          isOpen={isOpen}
+          canOpen={scheduleDay['Activity Description'] !== undefined}
+        >
+          <p dangerouslySetInnerHTML={{ __html: scheduleDay['Activity Description'] }} />
+          {/* <h3 className="schedule-accordion-spots">{remainingSpots} SPOTS REMAINING!</h3>
 
         <button className="button button-secondary" onClick={handleClick}>
           Sign Up!
-        </button>
-      </SingleAccordion>
-    </div>
+        </button> */}
+        </SingleAccordion>
+      </div>
+    </>
   );
 };
 

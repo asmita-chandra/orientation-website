@@ -25,10 +25,11 @@ export const FroshOlympiks = () => {
 };
 
 const OlympiksSchedule = () => {
+  const { user } = useSelector(userSelector);
   return (
     <>
       <div className="home-page-schedule">
-        <h2 className="home-page-section-header">DISCIPLINE</h2>
+        <h2 className="home-page-section-header">DISCIPLINE: {user.discipline}</h2>
         <ScheduleComponent />
       </div>
       <img
