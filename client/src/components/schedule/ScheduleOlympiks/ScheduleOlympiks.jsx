@@ -4,12 +4,14 @@ import { userSelector } from '../../../state/user/userSlice';
 import PropTypes from 'prop-types';
 import { ButtonSelector } from '../../buttonSelector/buttonSelector/ButtonSelector';
 import { SingleAccordion } from '../../text/Accordion/SingleAccordion/SingleAccordion';
+import { SnackbarContext } from '../../util/SnackbarProvider';
 import './ScheduleOlympiks.scss';
 import { dataMSE } from '../../../assets/olympiksSchedule/data';
 import location from '../../../assets/misc/location.png';
 import { DarkModeContext } from '../../../util/DarkModeProvider';
 import LilyDesign from '../../../assets/schedule/lily.svg';
 import { getDisciplineOlympikSchedule } from '../../../pages/Profile/functions';
+import axios from 'axios';
 
 function getDaysSchedule() {
   return Object.keys(dataMSE);
@@ -22,6 +24,7 @@ const ScheduleComponent = () => {
   const { user } = useSelector(userSelector);
   const [discipline, setDiscipline] = useState(user?.discipline);
   const scheduleData = getDisciplineOlympikSchedule(discipline);
+  const { setSnackbar } = useContext(SnackbarContext);
 
   let count = 0;
   for (let day of getDaysSchedule()) {
@@ -107,12 +110,18 @@ const ScheduleComponent = () => {
   );
 };
 
-export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
+export const ScheduleComponentAccordion = ({
+  scheduleDay,
+  closeAll,
+  setScheduleData,
+  selectedLocationIndex,
+}) => {
   const [isOpen, setIsOpen] = useState(true);
   const { darkMode } = useContext(DarkModeContext);
   const { user } = useSelector(userSelector);
   const [discipline, setDiscipline] = useState(user?.discipline);
   const scheduleData = getDisciplineOlympikSchedule(discipline);
+  const { setSnackbar } = useContext(SnackbarContext);
 
   useEffect(() => {
     setIsOpen(false);
@@ -129,9 +138,51 @@ export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
     endTime = convertTime(endTime);
   }
 
-  const handleClick = () => {
-    alert('Sign Up Button Pressed');
+  const handleClick = async () => {
+    alert('sign up attempted');
+    try {
+      // check if there are available spots
+      const availableSpots =
+        scheduleDay[`max${user.discipline}`] - scheduleDay[`current${user.discipline}`];
+      if (availableSpots <= 0) {
+        setSnackbar('No spots available for your discipline.');
+        return;
+      }
+
+      // snd to backend to sign up
+      const res = await axios.post('/frosh/olympiks-signup', {
+        eventId: scheduleDay._id,
+        eventName: scheduleDay.activityName,
+        userId: user._id,
+        discipline: user.discipline,
+      });
+      console.log('Signed up successfully:', res.data);
+      setSnackbar('Signed up successfully!');
+
+      const updatedSpots = scheduleDay[`current${user.discipline}`] + 1; // update the local state and increase the count in the database
+
+      // update state to reflect the new spot count
+      setScheduleData((prevData) => ({
+        ...prevData,
+        [selectedLocationIndex]: prevData[selectedLocationIndex].map((activity) =>
+          activity._id === scheduleDay._id
+            ? { ...activity, [`current${user.discipline}`]: updatedSpots }
+            : activity,
+        ),
+      }));
+
+      // update db to have the new spot count
+      await axios.put(`/frosh/olympiks-update/${scheduleDay._id}`, {
+        [`current${user.discipline}`]: updatedSpots,
+      });
+    } catch (error) {
+      console.error('Could not sign up:', error);
+      setSnackbar('Sign up failed. Please try again.');
+    }
   };
+
+  const remainingSpots =
+    scheduleDay[`max${user.discipline}`] - scheduleDay[`current${user.discipline}`];
 
   return (
     <div className="schedule-accordion">
@@ -141,18 +192,6 @@ export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
           <div className="schedule-accordion-header-container">
             <div className="schedule-accordion-header">
               <h1>{scheduleDay['Activity Name'].toUpperCase()}</h1>
-              {/* {scheduleDay['Event Location'] ? (
-                <div className="schedule-accordion-header-location-container">
-                  <img
-                    style={{ filter: darkMode ? 'invert(0.8)' : 'invert(0.6)' }}
-                    src={location}
-                    className="schedule-accordion-header-location-icon"
-                  ></img>
-                  <h3 className="schedule-accordion-location">{scheduleDay['Event Location']}</h3>
-                </div>
-              ) : (
-                <></>
-              )} */}
             </div>
             <h2>{startTime + ' - ' + endTime}</h2>
           </div>
@@ -162,7 +201,8 @@ export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
         canOpen={scheduleDay['Activity Description'] !== undefined}
       >
         <p dangerouslySetInnerHTML={{ __html: scheduleDay['Activity Description'] }} />
-        <h3 className="schedule-accordion-spots">X SPOTS REMAINING!</h3>
+        <h3 className="schedule-accordion-spots">{remainingSpots} SPOTS REMAINING!</h3>
+
         <button className="button button-secondary" onClick={handleClick}>
           Sign Up!
         </button>
@@ -174,6 +214,8 @@ export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
 ScheduleComponentAccordion.propTypes = {
   scheduleDay: PropTypes.object,
   closeAll: PropTypes.bool,
+  setScheduleData: PropTypes.func,
+  selectedLocationIndex: PropTypes.number,
 };
 
 export { ScheduleComponent };
