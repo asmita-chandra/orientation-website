@@ -170,7 +170,7 @@ export const dataMSE = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -187,7 +187,7 @@ export const dataMSE = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
@@ -198,7 +198,8 @@ export const dataMSE = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'yellow',
     },
@@ -206,7 +207,8 @@ export const dataMSE = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'purple',
     },
@@ -225,7 +227,8 @@ export const dataMSE = {
       'Activity Name': 'UTSM Car Competition (Run 1)',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '12:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/CivMin, TrackOne, ECE, MSE',
       Color: 'yellow',
     },
@@ -233,7 +236,8 @@ export const dataMSE = {
       'Activity Name': 'UTSM Car Competition (Run 3)',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '13:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/Indy, TrackOne, EngSci, MSE',
       Color: 'purple',
     },
@@ -249,7 +253,8 @@ export const dataMSE = {
       'Activity Name': 'UTRA Obstacle Course (Run 1)',
       'Start Time': '15:00:00 a1/p1',
       'End Time': '15:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
       Color: 'purple',
     },
@@ -257,7 +262,8 @@ export const dataMSE = {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
       Color: 'yellow',
     },
@@ -326,7 +332,7 @@ export const dataMSE = {
       Color: 'green',
     },
     {
-      'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
+      'Activity Name': 'Skule Patrol Ring Toss LOCATION TBD',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -590,7 +596,7 @@ export const dataMech = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -607,7 +613,7 @@ export const dataMech = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
@@ -618,7 +624,8 @@ export const dataMech = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'yellow',
     },
@@ -626,7 +633,8 @@ export const dataMech = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'purple',
     },
@@ -645,7 +653,8 @@ export const dataMech = {
       'Activity Name': 'UTSM Car Competition (Run 2)',
       'Start Time': '12:30:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/EngSci, Chem, Indy, Mech',
       Color: 'yellow',
     },
@@ -653,7 +662,8 @@ export const dataMech = {
       'Activity Name': 'UTSM Car Competition (Run 4)',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/ECE, CivMin, Chem, Mech',
       Color: 'purple',
     },
@@ -669,7 +679,8 @@ export const dataMech = {
       'Activity Name': 'UTRA Obstacle Course (Run 2)',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
       Color: 'purple',
     },
@@ -677,7 +688,8 @@ export const dataMech = {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
       Color: 'yellow',
     },
@@ -746,7 +758,7 @@ export const dataMech = {
       Color: 'green',
     },
     {
-      'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
+      'Activity Name': 'Skule Patrol Ring Toss LOCATION TBD',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -1010,7 +1022,7 @@ export const dataCivMin = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -1027,7 +1039,7 @@ export const dataCivMin = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
@@ -1038,7 +1050,8 @@ export const dataCivMin = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'yellow',
     },
@@ -1046,7 +1059,8 @@ export const dataCivMin = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'purple',
     },
@@ -1065,7 +1079,8 @@ export const dataCivMin = {
       'Activity Name': 'UTSM Car Competition (Run 1)',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '12:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/CivMin, TrackOne, ECE, MSE',
       Color: 'yellow',
     },
@@ -1073,7 +1088,8 @@ export const dataCivMin = {
       'Activity Name': 'UTSM Car Competition (Run 4)',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/ECE, CivMin, Chem, Mech',
       Color: 'purple',
     },
@@ -1081,7 +1097,8 @@ export const dataCivMin = {
       'Activity Name': 'UTSM Car Competition (Run 5)',
       'Start Time': '14:00:00 a1/p1',
       'End Time': '14:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/CivMin, TrackOne, ECE, EngSci',
       Color: 'yellow',
     },
@@ -1097,7 +1114,8 @@ export const dataCivMin = {
       'Activity Name': 'UTRA Obstacle Course (Run 2)',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
       Color: 'purple',
     },
@@ -1105,7 +1123,8 @@ export const dataCivMin = {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
       Color: 'yellow',
     },
@@ -1174,7 +1193,7 @@ export const dataCivMin = {
       Color: 'green',
     },
     {
-      'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
+      'Activity Name': 'Skule Patrol Ring Toss LOCATION TBD',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -1437,7 +1456,7 @@ export const dataIndy = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -1454,7 +1473,7 @@ export const dataIndy = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
@@ -1465,7 +1484,8 @@ export const dataIndy = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'yellow',
     },
@@ -1473,7 +1493,8 @@ export const dataIndy = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'purple',
     },
@@ -1492,7 +1513,8 @@ export const dataIndy = {
       'Activity Name': 'UTSM Car Competition (Run 2)',
       'Start Time': '12:30:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/EngSci, Chem, Indy, Mech',
       Color: 'yellow',
     },
@@ -1500,7 +1522,8 @@ export const dataIndy = {
       'Activity Name': 'UTSM Car Competition (Run 3)',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '13:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/Indy, TrackOne, EngSci, MSE',
       Color: 'purple',
     },
@@ -1516,7 +1539,8 @@ export const dataIndy = {
       'Activity Name': 'UTRA Obstacle Course (Run 2)',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
       Color: 'purple',
     },
@@ -1524,7 +1548,8 @@ export const dataIndy = {
       'Activity Name': 'UTRA Obstacle Course (Run 4)',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/EngSci, ECE, Indy, Chem',
       Color: 'yellow',
     },
@@ -1593,7 +1618,7 @@ export const dataIndy = {
       Color: 'green',
     },
     {
-      'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
+      'Activity Name': 'Skule Patrol Ring Toss LOCATION TBD',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -1857,7 +1882,7 @@ export const dataTrackOne = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -1874,7 +1899,7 @@ export const dataTrackOne = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
@@ -1885,7 +1910,8 @@ export const dataTrackOne = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'yellow',
     },
@@ -1893,7 +1919,8 @@ export const dataTrackOne = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'purple',
     },
@@ -1912,7 +1939,8 @@ export const dataTrackOne = {
       'Activity Name': 'UTSM Car Competition (Run 1)',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '12:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/CivMin, TrackOne, ECE, MSE',
       Color: 'yellow',
     },
@@ -1920,7 +1948,8 @@ export const dataTrackOne = {
       'Activity Name': 'UTSM Car Competition (Run 3)',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '13:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/Indy, TrackOne, EngSci, MSE',
       Color: 'purple',
     },
@@ -1928,7 +1957,8 @@ export const dataTrackOne = {
       'Activity Name': 'UTSM Car Competition (Run 5)',
       'Start Time': '14:00:00 a1/p1',
       'End Time': '14:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/CivMin, TrackOne, ECE, EngSci',
       Color: 'yellow',
     },
@@ -1944,7 +1974,8 @@ export const dataTrackOne = {
       'Activity Name': 'UTRA Obstacle Course (Run 1)',
       'Start Time': '15:00:00 a1/p1',
       'End Time': '15:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
       Color: 'purple',
     },
@@ -1952,7 +1983,8 @@ export const dataTrackOne = {
       'Activity Name': 'UTRA Obstacle Course (Run 3)',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
       Color: 'yellow',
     },
@@ -2021,7 +2053,7 @@ export const dataTrackOne = {
       Color: 'green',
     },
     {
-      'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
+      'Activity Name': 'Skule Patrol Ring Toss LOCATION TBD',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -2271,10 +2303,10 @@ export const dataECE = {
     },
     {
       'Activity Name': 'UTAT Jeopardy',
-      'Start Time': '11:00:00 a1/p1',
-      'End Time': '11:30:00 a1/p1',
+      'Start Time': '11:30:00 a1/p1',
+      'End Time': '12:00:00 a1/p1',
       'Activity Description': '',
-      'Participant Limit': '10/MSE, EngSci, Chem, Indy',
+      'Participant Limit': '10/Mech, TrackOne, CivMin, ECE',
       Color: 'yellow',
     },
     {
@@ -2286,7 +2318,7 @@ export const dataECE = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -2303,7 +2335,7 @@ export const dataECE = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
@@ -2314,7 +2346,8 @@ export const dataECE = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'yellow',
     },
@@ -2322,7 +2355,8 @@ export const dataECE = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'purple',
     },
@@ -2341,7 +2375,8 @@ export const dataECE = {
       'Activity Name': 'UTSM Car Competition (Run 1)',
       'Start Time': '12:00:00 a1/p1',
       'End Time': '12:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/CivMin, TrackOne, ECE, MSE',
       Color: 'yellow',
     },
@@ -2349,7 +2384,8 @@ export const dataECE = {
       'Activity Name': 'UTSM Car Competition (Run 4)',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/ECE, CivMin, Chem, Mech',
       Color: 'purple',
     },
@@ -2357,7 +2393,8 @@ export const dataECE = {
       'Activity Name': 'UTSM Car Competition (Run 5)',
       'Start Time': '14:00:00 a1/p1',
       'End Time': '14:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/CivMin, TrackOne, ECE, EngSci',
       Color: 'yellow',
     },
@@ -2373,7 +2410,8 @@ export const dataECE = {
       'Activity Name': 'UTRA Obstacle Course (Run 1)',
       'Start Time': '15:00:00 a1/p1',
       'End Time': '15:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
       Color: 'purple',
     },
@@ -2381,7 +2419,8 @@ export const dataECE = {
       'Activity Name': 'UTRA Obstacle Course (Run 4)',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/EngSci, ECE, Indy, Chem',
       Color: 'yellow',
     },
@@ -2450,7 +2489,7 @@ export const dataECE = {
       Color: 'green',
     },
     {
-      'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
+      'Activity Name': 'Skule Patrol Ring Toss LOCATION TBD',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -2714,7 +2753,7 @@ export const dataEngSci = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -2731,7 +2770,7 @@ export const dataEngSci = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
@@ -2742,7 +2781,8 @@ export const dataEngSci = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'yellow',
     },
@@ -2750,7 +2790,8 @@ export const dataEngSci = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'purple',
     },
@@ -2769,7 +2810,8 @@ export const dataEngSci = {
       'Activity Name': 'UTSM Car Competition (Run 2)',
       'Start Time': '12:30:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/EngSci, Chem, Indy, Mech',
       Color: 'yellow',
     },
@@ -2777,7 +2819,8 @@ export const dataEngSci = {
       'Activity Name': 'UTSM Car Competition (Run 3)',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '13:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/Indy, TrackOne, EngSci, MSE',
       Color: 'purple',
     },
@@ -2785,7 +2828,8 @@ export const dataEngSci = {
       'Activity Name': 'UTSM Car Competition (Run 5)',
       'Start Time': '14:00:00 a1/p1',
       'End Time': '14:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/CivMin, TrackOne, ECE, EngSci',
       Color: 'yellow',
     },
@@ -2798,34 +2842,20 @@ export const dataEngSci = {
       Color: 'green',
     },
     {
-      'Activity Name': 'UTRA Obstacle Course (Run 1)',
-      'Start Time': '15:00:00 a1/p1',
-      'End Time': '15:30:00 a1/p1',
-      'Activity Description': '',
-      'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
-      Color: 'purple',
-    },
-    {
       'Activity Name': 'UTRA Obstacle Course (Run 2)',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
       Color: 'purple',
-    },
-    {
-      'Activity Name': 'UTRA Obstacle Course (Run 3)',
-      'Start Time': '16:00:00 a1/p1',
-      'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
-      'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
-      Color: 'yellow',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 4)',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/EngSci, ECE, Indy, Chem',
       Color: 'purple',
     },
@@ -2894,7 +2924,7 @@ export const dataEngSci = {
       Color: 'green',
     },
     {
-      'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
+      'Activity Name': 'Skule Patrol Ring Toss LOCATION TBD',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -3158,7 +3188,7 @@ export const dataChem = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
@@ -3175,7 +3205,7 @@ export const dataChem = {
       Color: 'purple',
     },
     {
-      'Activity Name': 'Toike Lettuce',
+      'Activity Name': 'Toike Lettuce Eating Competition',
       'Start Time': '15:30:00 a1/p1',
       'End Time': '16:00:00 a1/p1',
       'Activity Description': '',
@@ -3186,7 +3216,8 @@ export const dataChem = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:00:00 a1/p1',
       'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'yellow',
     },
@@ -3194,7 +3225,8 @@ export const dataChem = {
       'Activity Name': 'Hungry Hungry Hard Hats',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Participate in the engineering life-sized version of Hungry Hungry Hippos!!',
       'Participant Limit': '2/Discipline/Run (3 Disciplines at a time)',
       Color: 'purple',
     },
@@ -3213,7 +3245,8 @@ export const dataChem = {
       'Activity Name': 'UTSM Car Competition (Run 2)',
       'Start Time': '12:30:00 a1/p1',
       'End Time': '13:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/EngSci, Chem, Indy, Mech',
       Color: 'yellow',
     },
@@ -3221,7 +3254,8 @@ export const dataChem = {
       'Activity Name': 'UTSM Car Competition (Run 4)',
       'Start Time': '13:30:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Assemble and race a 3D printed car! The winner is the one who can get their car the furthest. There are opportunities to customize the car and gain a competitive advantage.',
       'Participant Limit': '5/ECE, CivMin, Chem, Mech',
       Color: 'purple',
     },
@@ -3237,31 +3271,17 @@ export const dataChem = {
       'Activity Name': 'UTRA Obstacle Course (Run 1)',
       'Start Time': '15:00:00 a1/p1',
       'End Time': '15:30:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/Chem, TrackOne, ECE, MSE',
-      Color: 'purple',
-    },
-    {
-      'Activity Name': 'UTRA Obstacle Course (Run 2)',
-      'Start Time': '15:30:00 a1/p1',
-      'End Time': '16:00:00 a1/p1',
-      'Activity Description': '',
-      'Participant Limit': '4/EngSci, CivMin, Indy, Mech',
-      Color: 'yellow',
-    },
-    {
-      'Activity Name': 'UTRA Obstacle Course (Run 3)',
-      'Start Time': '16:00:00 a1/p1',
-      'End Time': '16:30:00 a1/p1',
-      'Activity Description': '',
-      'Participant Limit': '4/Mech, TrackOne, CivMin, MSE',
       Color: 'purple',
     },
     {
       'Activity Name': 'UTRA Obstacle Course (Run 4)',
       'Start Time': '16:30:00 a1/p1',
       'End Time': '17:00:00 a1/p1',
-      'Activity Description': '',
+      'Activity Description':
+        'Teams of 4 from each frosh group will build an Arduino obstacle detector (with a twist!)',
       'Participant Limit': '4/EngSci, ECE, Indy, Chem',
       Color: 'yellow',
     },
@@ -3330,7 +3350,7 @@ export const dataChem = {
       Color: 'green',
     },
     {
-      'Activity Name': 'Skule Patrol Ring Toss (Front campus)',
+      'Activity Name': 'Skule Patrol Ring Toss LOCATION TBD',
       'Start Time': '13:00:00 a1/p1',
       'End Time': '14:00:00 a1/p1',
       'Activity Description': '',
