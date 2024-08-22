@@ -1,11 +1,22 @@
 import React, { useState, useEffect, useContext } from 'react';
 import './FroshOlympiks.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { registeredSelector, userSelector } from '../../state/user/userSlice';
+import { useSelector } from 'react-redux';
 import { ScheduleComponent } from '../../components/schedule/ScheduleOlympiks/ScheduleOlympiks';
 import useAxios from '../../hooks/useAxios';
 const { axios } = useAxios();
 
 export const FroshOlympiks = () => {
+  const navigate = useNavigate();
+  const isRegistered = useSelector(registeredSelector);
+
+  useEffect(() => {
+    if (!isRegistered) {
+      navigate('/profile');
+    }
+  }, [isRegistered]);
+
   return (
     <>
       <OlympiksSchedule />

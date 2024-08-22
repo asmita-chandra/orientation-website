@@ -202,7 +202,11 @@ export const pages = {
     },
     {
       label: 'frosh-olympiks',
-      component: <FroshOlympiks />,
+      component: (
+        <AuthorizedPage>
+          <FroshOlympiks />
+        </AuthorizedPage>
+      ),
       path: '/frosh-olympiks',
       includeFooter: true,
     },

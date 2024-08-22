@@ -56,7 +56,7 @@ const PageProfileFrosh = () => {
         <div className="profile-info-row-right">
           {user?.attendingScunt === true ? <ProfilePageFroshScuntMessage /> : null}
           <ProfilePageRetreat />
-          <ProfilePageFroshOlympiks />
+          {isRegistered ? <ProfilePageFroshOlympiks /> : null}
           {/* <ProfilePageNitelife /> */}
           <ProfilePageInstagrams />
           <ProfilePageAnnouncements />
