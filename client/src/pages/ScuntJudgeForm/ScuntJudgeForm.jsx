@@ -396,7 +396,7 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
     }
   }, [missionStatus]);
 
-  const getMissionSearchName = (searchName) => {
+  const getMissionSearchName = (searchName, category) => {
     if (searchName === '') {
       setSearchedMissions([]);
       return;
@@ -404,7 +404,11 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
     const output = [];
     for (let mission of missions) {
       if (mission?.name?.toLowerCase().includes(searchName.toLowerCase())) {
-        output.push(mission);
+        if (currentCategory == 'Select Category') {
+          output.push(mission);
+        } else {
+          if (mission?.category == currentCategory) output.push(mission);
+        }
       }
     }
     setSearchedMissions(output);
@@ -514,7 +518,7 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
           onChange={(value) => {
             if (hasQRScanned === true) setHasQRScanned(false);
             setAssignedMission(undefined);
-            getMissionSearchName(value);
+            getMissionSearchName(value, currentCategory);
           }}
           onEnterKey={(value) => {
             if (hasQRScanned === true) setHasQRScanned(false);
