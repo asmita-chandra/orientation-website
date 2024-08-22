@@ -5,7 +5,7 @@ import { getDaysSchedule, getFroshGroupSchedule } from '../../../pages/Profile/f
 import { ButtonSelector } from '../../buttonSelector/buttonSelector/ButtonSelector';
 import { ScheduleComponentAccordion } from '../../schedule/ScheduleHome/ScheduleHome';
 import './ProfilePageSchedule.scss';
-// import { froshGroups } from '../../../util/frosh-groups';
+import { froshGroups } from '../../../util/frosh-groups';
 
 export const ProfilePageSchedule = () => {
   const { user } = useSelector(userSelector);
@@ -33,10 +33,10 @@ export const ProfilePageSchedule = () => {
     return { name: item };
   });
 
-  // const froshGroupNames = [];
-  // for (let froshGroup of froshGroups) {
-  //   froshGroupNames.push(froshGroup?.name);
-  // } // i think this is for leedur page, but not sure where the code went...
+  const froshGroupNames = [];
+  for (let froshGroup of froshGroups) {
+    froshGroupNames.push(froshGroup?.name);
+  } // i think this is for leedur page, but not sure where the code went...
 
   return (
     <div className="profile-page-schedule">

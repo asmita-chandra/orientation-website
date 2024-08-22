@@ -1,4 +1,26 @@
-import { data } from '../../assets/schedule/data';
+import {
+  data,
+  dataAlpha,
+  dataBeta,
+  dataIota,
+  dataPhi,
+  dataPsi,
+  dataRho,
+  dataZeta,
+  dataGamma,
+  dataOmega,
+  dataChi,
+  dataUpsilon,
+  dataPi,
+  dataNu,
+  dataDelta,
+  dataSigma,
+  dataTau,
+  dataKappa,
+  dataTheta,
+  dataLambda,
+  dataOmicron,
+} from '../../assets/schedule/data';
 
 // function checks if email is valid and sends a reset password email
 export async function resetPassword(email) {
@@ -23,50 +45,50 @@ export function getDaysSchedule(scheduleData) {
 }
 
 export function getFroshGroupSchedule(froshGroup) {
-  return data; // for now, return the default schedule
-  // if (froshGroup === 'Alpha') {
-  //   return dataAlpha;
-  // } else if (froshGroup === 'Beta') {
-  //   return dataBeta;
-  // } else if (froshGroup === 'Iota') {
-  //   return dataIota;
-  // } else if (froshGroup === 'Phi') {
-  //   return dataPhi;
-  // } else if (froshGroup === 'Psi') {
-  //   return dataPsi;
-  // } else if (froshGroup === 'Rho') {
-  //   return dataRho;
-  // } else if (froshGroup === 'Zeta') {
-  //   return dataZeta;
-  // } else if (froshGroup === 'Gamma') {
-  //   return dataGamma;
-  // } else if (froshGroup === 'Omega') {
-  //   return dataOmega;
-  // } else if (froshGroup === 'Chi') {
-  //   return dataChi;
-  // } else if (froshGroup === 'Upsilon') {
-  //   return dataUpsilon;
-  // } else if (froshGroup === 'Pi') {
-  //   return dataPi;
-  // } else if (froshGroup === 'Nu') {
-  //   return dataNu;
-  // } else if (froshGroup === 'Delta') {
-  //   return dataDelta;
-  // } else if (froshGroup === 'Sigma') {
-  //   return dataSigma;
-  // } else if (froshGroup === 'Tau') {
-  //   return dataTau;
-  // } else if (froshGroup === 'Kappa') {
-  //   return dataKappa;
-  // } else if (froshGroup === 'Theta') {
-  //   return dataTheta;
-  // } else if (froshGroup === 'Lambda') {
-  //   return dataLambda;
-  // } else if (froshGroup === 'Omicron') {
-  //   return dataOmicron;
-  // } else {
-  //   return data;
-  // }
+  // return data; // for now, return the default schedule
+  if (froshGroup === 'Alpha') {
+    return dataAlpha;
+  } else if (froshGroup === 'Beta') {
+    return dataBeta;
+  } else if (froshGroup === 'Iota') {
+    return dataIota;
+  } else if (froshGroup === 'Phi') {
+    return dataPhi;
+  } else if (froshGroup === 'Psi') {
+    return dataPsi;
+  } else if (froshGroup === 'Rho') {
+    return dataRho;
+  } else if (froshGroup === 'Zeta') {
+    return dataZeta;
+  } else if (froshGroup === 'Gamma') {
+    return dataGamma;
+  } else if (froshGroup === 'Omega') {
+    return dataOmega;
+  } else if (froshGroup === 'Chi') {
+    return dataChi;
+  } else if (froshGroup === 'Upsilon') {
+    return dataUpsilon;
+  } else if (froshGroup === 'Pi') {
+    return dataPi;
+  } else if (froshGroup === 'Nu') {
+    return dataNu;
+  } else if (froshGroup === 'Delta') {
+    return dataDelta;
+  } else if (froshGroup === 'Sigma') {
+    return dataSigma;
+  } else if (froshGroup === 'Tau') {
+    return dataTau;
+  } else if (froshGroup === 'Kappa') {
+    return dataKappa;
+  } else if (froshGroup === 'Theta') {
+    return dataTheta;
+  } else if (froshGroup === 'Lambda') {
+    return dataLambda;
+  } else if (froshGroup === 'Omicron') {
+    return dataOmicron;
+  } else {
+    return data;
+  }
 }
 
 export function capitalizeFirstLetter(string) {
