@@ -4,7 +4,7 @@ import { userSelector } from '../../../state/user/userSlice';
 import PropTypes from 'prop-types';
 import { ButtonSelector } from '../../buttonSelector/buttonSelector/ButtonSelector';
 import { SingleAccordion } from '../../text/Accordion/SingleAccordion/SingleAccordion';
-import { SnackbarContext } from '../../util/SnackbarProvider';
+import { SnackbarContext } from '../../../util/SnackbarProvider';
 import './ScheduleOlympiks.scss';
 import { dataMSE } from '../../../assets/olympiksSchedule/data';
 import location from '../../../assets/misc/location.png';
