@@ -429,11 +429,10 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
   const missionCategories = [
     'Select Category',
     '✨ENCHANTED✨',
-    'Wholesome 100',
-    'Getting STEAMy (arts and crafts)',
-    'Getting even STEAMier',
-    'BOUNDLESS',
+    'B O U N D L E S S',
     'But can you do THIS',
+    'Getting even STEAMier!',
+    'Getting STEAMy (arts and crafts)',
     'Myhal and other nicely designed buildings',
     'Ocomm',
     'Ok Zoomer',
@@ -447,6 +446,7 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
     'Turrono-wide items',
     'Walk walk fashion baby',
     'We live in a(n engineering) society',
+    'Wholesome 100',
   ];
 
   const [currentCategory, setCurrentCategory] = useState(missionCategories[0]);

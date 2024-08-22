@@ -561,7 +561,8 @@ const parseCsvString = (csvString, mapping, delimiter = ',') => {
       const values = row.split(regex);
       const parsedRow = headers.reduce((previousObj, current, index) => {
         if (allowedHeaders.includes(current)) {
-          const val = mapping[current].parseFunction(values[index].replace(/^(["'])(.*)\1$/, '$2')); // removes any surrounding quotation marks
+          const value = values[index] || ''; // Provide a default if undefined
+          const val = mapping[current].parseFunction(value.replace(/^(["'])(.*)\1$/, '$2'));
           if (mapping[current].validator(val)) {
             previousObj[mapping[current].key] = val;
           } else {
