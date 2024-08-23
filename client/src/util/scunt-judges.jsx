@@ -17,7 +17,7 @@ import will from '../assets/judges/Will.png';
 
 export const scuntJudges = [
   {
-    name: 'Ashlyn',
+    name: 'Ashlyn ✏️',
     description:
       "Hello Frosh!!! I'm Ashlyn and I'm a Mech 2T5 +PEY. My hobbies include being loud, crocheting, eating, and just generally judging everyone and everything. This year I'm your Cannonball Director and Mech Board of Directors Rep. I probably won't see most of you around Skule™ this year because I'm taking a year long mental health break (on PEY), but I hope you enjoy F!rosh week and first year!",
     content: [
@@ -34,7 +34,7 @@ export const scuntJudges = [
     img: ashlyn,
   },
   {
-    name: 'Carl',
+    name: 'Carl ✏️',
     description:
       'Heyoooooo I’m Carl (he/him), EngSci MI 2T5+PEY. Being in Machine Intelligence I’ve seen my fair share of forgotten semicolons and just laptop going brrrr. Skule™ also knows that *graphic design is my passion*. I’ve been the editor for three different Skule™ publications (F!rosh Handbook, Skule™ Agenda, Skulebook, ask me about these!). Around campus and maybe at a dinner dance, you won’t find me holding a beer but actually holding a camera. The paparazzi are scared of me since I can easily take 70 GB or over 2000 photos in one night and get them uploaded the next day for your viewing pleasure. And now more about me rapid fire: I listen to a lot of k-pop (mainly TWICE and JYP nation!) p-pop/opm and genz music (think Lyn Lapid or Laufey), I love baking, I love going to karaoke or gambling claw machine arcades with my friends, I’m a dad to a growing army of succulents, and I’m a part-time gamer playing Minecraft, Pokémon, Teamfight Tactics, Typeracer (if you wanna count that) and some rhythm games too. ',
     content: [
@@ -49,7 +49,7 @@ export const scuntJudges = [
     img: carl,
   },
   {
-    name: 'Keira',
+    name: 'Keira ✏️',
     description:
       "Hello, I’m Keira, a mech 2T6 doing the bioengineering minor! I am one of the head leedurs for kappa this frosh! I'm also the current captain of the UofT Equestrian Team, one of the Engineering Stores managers, and one of the mechanical leads on UTSM. In my free time, I like playing video games, singing, and baking sweet treats. ",
     content: [
@@ -65,7 +65,7 @@ export const scuntJudges = [
     img: kiera,
   },
   {
-    name: 'Shosh',
+    name: 'Shosh ✏️',
     description:
       "Hello 2T8s and welcome! I am Shosh, an Indy 2T5 +PEY who is chronically in the Pit. I am this year's Skule™ Kup director, but I am also very passionate about the Toike, the Bnad, SUDS, BnG, and more! I love Skule™, indie video games, flowers, cooking, and classic rock. I'm looking forward to meeting you all, and best of luck!",
     content: [
@@ -81,7 +81,7 @@ export const scuntJudges = [
     img: shosh,
   },
   {
-    name: 'Matthew',
+    name: 'Matthew ✏️',
     description:
       "I'm Matthew. 2T6, Mech, proud member of the Lady Godiva Memorial Bnad, yadda yadda. I am ethnically Vietnamese and mention it a lot. I was born and raised in the Greater Toronto Area, and mention it a lot. I spent the summer in the far North of Canada, and mention it a lot. I am overly optimistic, naive, enthusiastic, excessively agreeable, oblivious and scatterbrained. My interests include car racing (specifically NASCAR and IndyCar), pop music (following the charts such as the Canadian Hot 100), American college football (for some reason), spreadsheets (of the above three), drawing sports logos, reading Wikipedia, Minecraft, installing mods for games I don't plan to play, boasting that I met one of the creators of the YouTube show Battle for Dream Island, watching DougDoug streams, and fanfiction (ask me for recommendations or headcanons; I am very obsessive over it and keep a list, most of which are for things I have never watched or played)",
     content: [
@@ -97,7 +97,7 @@ export const scuntJudges = [
     img: matthew,
   },
   {
-    name: 'Nidaa',
+    name: 'Nidaa ✏️',
     description:
       'Hello, I am Nidaa, ECE2T5 + PEY (currently on my PEY). I am an international student from Lebanon. I have been involved with a bunch of Skule™ clubs during my first 3 years. I like video games , soccer, and F1.',
     content: [
@@ -111,7 +111,7 @@ export const scuntJudges = [
     img: nidaa,
   },
   {
-    name: 'Tudor',
+    name: 'Tudor ✏️',
     description:
       "I'm Tudor, an ECE2T4T1+PEY (what a mouthful). 2T-OLD. I am one of the Head Leedurs for Psi this year and a felow Judgemental person. I used to be an electrical lead for Hyperloop, a podcast director for the best newpaper on campus (only one correct answer) and I sometimes dable in the occational BnG event. I'm a big scifi book reader, movie score listener and sports fanatic. I look forward to seeing you put on a show!",
     content: [
@@ -128,7 +128,7 @@ export const scuntJudges = [
     img: tudor,
   },
   {
-    name: 'Reid',
+    name: 'Reid ✏️',
     description:
       "Hey, I'm Reid (ECE2T4+PEY)! I'm a fan of basically anything electrical, so show me your cool side projects! You can find me spending my hours designing and operating satellites with UTAT, lighting the one and only Skule Nite, and playing with Skule™ Orchestra. In my free time, I like to read scifi and nonfiction, cook random yummy things, and once in a while I'll do my schoolwork too.",
     content: [
@@ -144,7 +144,7 @@ export const scuntJudges = [
     img: reid,
   },
   {
-    name: 'Jason',
+    name: 'Jason ✏️',
     description:
       'HI FROSH!! I am an EngSci 2T4 + PEY specializing in the biomedical option (yes I know, I’m old). Skule™ Hunt was my favourite part of Frosh, and I’m sooo excited to be a Judge this year. It’s also going to be my last one (very sad), so it is IMPERATIVE we make this the best Skule™ Hunt ever. I am originally from Vancouver (go Canucks!), and in my spare time I love to play anything competitive, become a better chef, and hang out with friends! Don’t hesitate to ask me anything related to EngSci, Biomed (honestly any of the options), clubs I’ve been part of, the housing and job market and secret tips to succeed at UofT!',
     content: [
@@ -160,7 +160,7 @@ export const scuntJudges = [
     img: jason,
   },
   {
-    name: 'Brian',
+    name: 'Brian ✏️',
     description:
       "Hello there! I'm Brian, ECE 2T4 + PEY. This will be my last year at SKULE™ (unless…) and I will be judging in this year's Skule™ Hunt! Some things I like to do are binging shawarmas from the green food truck, yapping in the study room, and playing soccer. Find me if you want some fair judgment or to dabble in a bit of BRIBERY!",
     content: [
@@ -176,7 +176,7 @@ export const scuntJudges = [
     img: brian,
   },
   {
-    name: 'Tobin ',
+    name: 'Tobin ✏️',
     description:
       "Whats up motherfuckers my name is Tobin, I'm an MSE 2T4, recovering cosplayer, and toboggan enthusiast. I have bounced around different parts of Skule™, amassing a number of hardhats, stories, and niche skills along the way. I enjoy studying metal, listening to metal, and also sticking pieces of metal in my face.",
     content: [
@@ -191,7 +191,7 @@ export const scuntJudges = [
     img: tobin,
   },
   {
-    name: 'Nafew ',
+    name: 'Nafew ✏️',
     description:
       "Heyyy 2T8s, I'm Nafew, a Mech 2T6, I'm super glad to be one of your judges this year. You might also know me from the summer events, and on the Discord server (I run the entire server with some other cool people, which unfortunately, puts me in the centre of discord mod jokes ), and if you don't know what I'm talking about, I'm also one of the Outreach chairs this year! I'm also a DL for Beta! I mainly love stuff that involves space (I've been in UTAT before, and I'm returning), robotics-y stuff (I've been on NeurotechUofT before), weightlifting (Athletic centre goes hard, just don't go at 5 pm) and music (particularly playing the guitar and singing). I think I have more to my personality, but I haven't really figured that out yet, I don't know, all I know is how to judge. Anyways, let's begin The Hunt!",
     content: [
@@ -207,7 +207,7 @@ export const scuntJudges = [
     img: nafew,
   },
   {
-    name: 'Bhoovi',
+    name: 'Bhoovi ✏️',
     description:
       'Hey Yall, My name is Bhoovi and I am an Indy 2T6 + PEY, who is very excited to be a Skule™ Hunt Judge this year. Additionally, I am an HL for Lambda a.k.a the most fun frosh group ever, so if you have Yanni (my-co) and I as your HLs, you are very lucky.  I have been fortunate enough to be a part of Frosh, Skule™ Nite and YNCN, so if you have any questions about that (or anything else really), you are welcome to come to me. Lastly, in my free time, I like to nap and read books, and if my step count is too low then convince myself to go on a walk. ',
     content: [
@@ -223,7 +223,7 @@ export const scuntJudges = [
     img: bhoovi,
   },
   {
-    name: 'LC',
+    name: 'LC ✏️',
     description:
       "Hey y'all! My name is LC, I'm a mech 2T6 in the Energy and Solids streams. This year I'm super stoked to be the aero-structural co-lead for the UTSM design team and a co-HL for theta!  In my free time I like reading just about anything, listening to music, going to the gym, and figure skating. Fun fact about me is I'm a skating coach. ",
     content: [
@@ -239,7 +239,7 @@ export const scuntJudges = [
     img: LC,
   },
   {
-    name: 'Hamza',
+    name: 'Hamza ✏️',
     description:
       'Ah my dudes, I’m Hamza: ECE 2T6, a proud Engsci dropout and connoisseur of city property and random crap you’d find on the side of the street. I’m taking a bit of a hiatus from design teams while I’m on PEY but I’ve been a part of RSX, UTAT and UTFR (so feel free to bore me with your naive questions). I’m a big fan of F1, UFC, rugby and tackling homeless people in Queens park. Yea anyway here are my bribes.',
     content: [
@@ -255,7 +255,7 @@ export const scuntJudges = [
     img: hamza,
   },
   {
-    name: 'Will',
+    name: 'Will ✏️',
     description:
       'Hey yall, my name is Will I’m a Chem 2T5 and I L O V E love industrial grade glycine and all Belzona products. I grew up in Kingston and now live in Halifax. I am a chem club and Skule™ external enjoyer and had over 120k minutes on Spotify last Year.',
     content: [
