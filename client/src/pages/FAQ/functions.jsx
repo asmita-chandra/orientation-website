@@ -97,7 +97,7 @@ export async function getQuestions(setSnackbar) {
     {
       question: 'When and How are we getting the F!rosh kits?',
       answer:
-        "You will get your F!rosh Kit during F!rosh Week, there will be no pre-distributed portion.",
+        "You will get your MEGAkit (pre-kit + F!rosh kit) the day of F!rosh during registration.",
       lastUpdated: '3:00 am, Aug 23, 2024',
       category: 'F!rosh Kits',
     },
