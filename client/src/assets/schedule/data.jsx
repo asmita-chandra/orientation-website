@@ -4616,8 +4616,8 @@ export const data = {
   'WEDNESDAY AUGUST 28': [
     {
       'Event Name': 'FACULTY EVENTS',
-      'Start Time': '9:00 AM',
-      'End Time': '5:00 PM',
+      'Start Time': ' ',
+      'End Time': ' ',
       Color: 'gray',
     },
     {
@@ -4639,8 +4639,8 @@ export const data = {
   'THURSDAY AUGUST 29': [
     {
       'Event Name': 'FACULTY EVENTS',
-      'Start Time': '9:00 AM',
-      'End Time': '5:00 PM',
+      'Start Time': ' ',
+      'End Time': ' ',
       Color: 'gray',
     },
     {
