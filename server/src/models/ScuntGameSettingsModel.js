@@ -5,7 +5,7 @@ const ScuntGameSettingSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    default: 'Scunt 2T3 Settings',
+    default: 'Skule™ Hunt 2T4 Settings',
   },
   amountOfTeams: {
     type: Number,
