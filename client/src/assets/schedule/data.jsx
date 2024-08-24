@@ -4542,17 +4542,16 @@ export const data = {
       'Event Location': 'The Pit',
       'Start Time': '6:00 PM',
       'End Time': '11:00 PM',
-      Color: 'dark-purple',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
-      'Event Name': 'ARRIVE FOR CONSENT SEMINAR',
+      'Event Name': 'MEET WITH YOUR GROUP',
+      'Event Location': 'Front Campus',
       'Start Time': '8:30 AM',
       'End Time': '9:30 AM',
-      'Event Description':
-        'If you attend the consent workshop, you can be entered to win amazing prizes, ranging from $50 to $1000, including a tablet and a laptop!',
-      Color: 'gray',
+      Color: 'purple',
     },
     {
       'Event Name': 'CONSENT WORKSHOP',
@@ -4560,7 +4559,7 @@ export const data = {
       'End Time': '10:30 AM',
       'Event Description':
         'If you attend the consent workshop, you can be entered to win amazing prizes, ranging from $50 to $1000, including a tablet and a laptop!',
-      Color: 'gray',
+      Color: 'dark-purple',
     },
     {
       'Event Name': 'CAMPUS TOUR & BUILD BATTLE',
@@ -4582,7 +4581,7 @@ export const data = {
         "Learn from some of your amazing new TA's about all the strategies you need to know for success here at UofT Engineering!",
       'Start Time': '1:30 PM',
       'End Time': '3:00 PM',
-      Color: 'gray',
+      Color: 'dark-purple',
     },
     {
       'Event Name': 'CAMPUS TOUR & BUILD BATTLE',
@@ -4596,7 +4595,7 @@ export const data = {
       'Event Name': 'CHEER OFF',
       'Start Time': '6:00 PM',
       'End Time': '6:30 PM',
-      Color: 'purple',
+      Color: 'green',
     },
     {
       'Event Name': 'TOTES & TRIVIA',
@@ -4610,13 +4609,13 @@ export const data = {
       'Event Location': 'The Pit',
       'Start Time': '6:00 PM',
       'End Time': '11:00 PM',
-      Color: 'dark-purple',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
     {
       'Event Name': 'FACULTY EVENTS',
-      'Event Description': `Check out more information about Faculty Events here: <a href="#other-events">Other Events</a>`,
+      'Event Description': `Check out more information about Faculty Events here: <a href='https://undergrad.engineering.utoronto.ca/event/faculty-orientation-events/'>Faculty Events</a>`,
       'Start Time': ' ',
       'End Time': ' ',
       Color: 'gray',
@@ -4634,13 +4633,13 @@ export const data = {
       'Event Location': 'The Pit',
       'Start Time': '6:00 PM',
       'End Time': '11:00 PM',
-      Color: 'dark-purple',
+      Color: 'purple',
     },
   ],
   'THURSDAY AUGUST 29': [
     {
       'Event Name': 'FACULTY EVENTS',
-      'Event Description': `Check out more information about Faculty Events here: <a href="#other-events">Other Events</a>`,
+      'Event Description': `Check out more information about Faculty Events here: <a href='https://undergrad.engineering.utoronto.ca/event/faculty-orientation-events/'>Faculty Events</a>`,
       'Start Time': ' ',
       'End Time': ' ',
       Color: 'gray',
@@ -4656,6 +4655,8 @@ export const data = {
     },
     {
       'Event Name': 'COMMON ROOM GAME NIGHT',
+      'Event Description':
+        "Sign up for game night <a href='https://docs.google.com/forms/d/e/1FAIpQLSfDGU1ejsC8bIwtHwCWC0YiEIULjcpsCm4yJ3x2cRvwCBIA7Q/viewform'>here</a>!",
       'Event Location': 'MB225',
       'Start Time': '6:00 PM',
       'End Time': '9:00 PM',
@@ -4666,7 +4667,7 @@ export const data = {
       'Event Location': 'The Pit',
       'Start Time': '6:00 PM',
       'End Time': '11:00 PM',
-      Color: 'dark-purple',
+      Color: 'purple',
     },
   ],
   'FRIDAY AUGUST 30': [
@@ -4674,21 +4675,23 @@ export const data = {
       'Event Name': 'F!ROSH OLYMPIKS',
       'Start Time': '10:00 AM',
       'End Time': '5:00 PM',
-      Color: 'gray',
+      Color: 'purple',
     },
     {
       'Event Name': 'SKULE’S GOT TALENT',
+      'Event Description':
+        "Sign up for the talent show <a href='https://docs.google.com/forms/d/e/1FAIpQLSf4O3uIvwVlFQ-kuobHp_OUWwPA9f7kfUvzSWhrBMv_jQqgZg/viewform'>here</a>!",
       'Event Location': 'GB Front Steps',
       'Start Time': '6:00 PM',
       'End Time': '9:00 PM',
-      Color: 'dark-purple',
+      Color: 'yellow',
     },
     {
       'Event Name': '****',
       'Event Location': 'The Pit',
       'Start Time': '6:00 PM',
       'End Time': '11:00 PM',
-      Color: 'dark-purple',
+      Color: 'purple',
     },
   ],
   'SATURDAY AUGUST 31': [
