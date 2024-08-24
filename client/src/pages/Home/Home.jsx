@@ -24,8 +24,8 @@ import { Header } from '../../components/text/Header/Header';
 import { otherEventsData } from './otherevents';
 
 import ProgressiveImage from '../../components/progressiveImg/ProgressiveImg';
-import blackstudentorientationlogo from '../../assets/misc/blackstudentorientationlogo.png';
 import facultylogo from '../../assets/misc/facultylogo.png';
+import bsologo from '../../assets/misc/bsologo.svg';
 
 const PageHome = () => {
   return (
@@ -34,7 +34,6 @@ const PageHome = () => {
       <HomePageTimeline />
       <HomePageSchedule />
       <PageAbout />
-      {/* <HomePageBlackStudentOrientation /> */}
       <HomePageSponsors />
     </>
   );
@@ -229,34 +228,32 @@ const PageAbout = () => {
 
 const AboutUsSection = () => {
   return (
-    <div id="other-events">
-      <Header text="OTHER EVENTS">
-        <>
-          {otherEventsData.map((info, index) => {
-            return (
-              <div className="otherevents-subsubcontainer" key={info.title}>
-                <div className="otherevents-image-container">
-                  <LazyLoadImage
-                    className="otherevents-image"
-                    src={index === 0 ? blackstudentorientationlogo : facultylogo}
-                    alt={info.title}
-                  ></LazyLoadImage>
-                </div>
-                <div className="otherevents-info-container" key={info.title}>
-                  <div className="otherevents-info">
-                    <h2 className="otherevents-info-title">{info.title}</h2>
-                    <p
-                      className="otherevents-info-des"
-                      dangerouslySetInnerHTML={{ __html: info.description }}
-                    ></p>
-                  </div>
+    <Header text="OTHER EVENTS">
+      <>
+        {otherEventsData.map((info, index) => {
+          return (
+            <div className="otherevents-subsubcontainer" key={info.title}>
+              <div className="otherevents-image-container">
+                <LazyLoadImage
+                  className="otherevents-image"
+                  src={index === 0 ? bsologo : facultylogo}
+                  alt={info.title}
+                ></LazyLoadImage>
+              </div>
+              <div className="otherevents-info-container" key={info.title}>
+                <div className="otherevents-info">
+                  <h2 className="otherevents-info-title">{info.title}</h2>
+                  <p
+                    className="otherevents-info-des"
+                    dangerouslySetInnerHTML={{ __html: info.description }}
+                  ></p>
                 </div>
               </div>
-            );
-          })}
-        </>
-      </Header>
-    </div>
+            </div>
+          );
+        })}
+      </>
+    </Header>
   );
 };
 
