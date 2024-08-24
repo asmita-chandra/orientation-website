@@ -97,8 +97,8 @@ export async function getQuestions(setSnackbar) {
     {
       question: 'When and How are we getting the F!rosh kits?',
       answer:
-        "You can pick up a pre-distributed portion of your kit in August (information about this will be emailed to you later this summer). The rest of your kit will be given to you during F!rosh Week where you'll also be able to pick up the pre-distributed kit if you haven't already.",
-      lastUpdated: '2:00 pm',
+        "You will get your MEGAkit (pre-kit + F!rosh kit) the day of F!rosh during registration.",
+      lastUpdated: '3:00 am, Aug 23, 2024',
       category: 'F!rosh Kits',
     },
     {
