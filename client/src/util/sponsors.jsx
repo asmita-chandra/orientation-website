@@ -1,13 +1,14 @@
 import Alumni from '../assets/sponsors/Alumni.jpg';
-import Neo from '../assets/sponsors/Neo.jpg';
-import Coco from '../assets/sponsors/Coco.jpg';
 import OSPE from '../assets/sponsors/OSPE.jpg';
 import PEO from '../assets/sponsors/PEO.png';
-import UTSU from '../assets/sponsors/UTSU.jpg';
-import Mogu from '../assets/sponsors/MoguMogu.png';
 import Nani from '../assets/sponsors/Nanis.png';
-import Longos from '../assets/sponsors/Longos.jpg';
-
+import Longos from '../assets/sponsors/Longos.png';
+import Troost_iLead from '../assets/sponsors/Troost_iLead.jpg';
+import Panago from '../assets/sponsors/Panago.png';
+// import Neo from '../assets/sponsors/Neo.jpg';
+// import Coco from '../assets/sponsors/Coco.jpg';
+// import UTSU from '../assets/sponsors/UTSU.jpg';
+// import Mogu from '../assets/sponsors/MoguMogu.png';
 export const sponsors = [
   {
     website: 'https://alumni.engineering.utoronto.ca/engineering-alumni-network/',
@@ -24,6 +25,7 @@ export const sponsors = [
     label: 'Bronze sponsor: PEO',
   },
   {
+    website: 'https://www.nanisgelato.com/',
     image: Nani,
     scale: 0.82,
     rank: 'bronze',
@@ -36,13 +38,27 @@ export const sponsors = [
     rank: 'bronze',
     label: 'Bronze sponsor: Longos',
   },
-  // {
-  //   website: 'https://ospe.on.ca/',
-  //   image: OSPE,
-  //   scale: 0.82,
-  //   rank: 'bronze',
-  //   label: 'Bronze sponsor: OSPE',
-  // },
+  {
+    website: 'https://ospe.on.ca/',
+    image: OSPE,
+    scale: 0.82,
+    rank: 'bronze',
+    label: 'Bronze sponsor: OSPE',
+  },
+  {
+    website: 'https://ilead.engineering.utoronto.ca/',
+    image: Troost_iLead,
+    scale: 0.82,
+    rank: 'bronze',
+    label: 'Bronze sponsor: Troost iLead',
+  },
+  {
+    website: 'https://www.panago.com/',
+    image: Panago,
+    scale: 0.82,
+    rank: 'bronze',
+    label: 'Bronze sponsor: Panago',
+  },
   // {
   //   image: Mogu,
   //   scale: 0.82,
