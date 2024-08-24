@@ -24,7 +24,7 @@ import { Header } from '../../components/text/Header/Header';
 import { otherEventsData } from './otherevents';
 
 import ProgressiveImage from '../../components/progressiveImg/ProgressiveImg';
-import blackstudentorientationlogo from '../../assets/misc/blackstudentorientationlogo.png';
+import studentlogo from 'src/assets/misc/blackstudentorientationlogo.png';
 import facultylogo from '../../assets/misc/facultylogo.png';
 
 const PageHome = () => {
@@ -238,7 +238,7 @@ const AboutUsSection = () => {
                 <div className="otherevents-image-container">
                   <LazyLoadImage
                     className="otherevents-image"
-                    src={index === 0 ? blackstudentorientationlogo : facultylogo}
+                    src={index === 0 ? studentlogo : facultylogo}
                     alt={info.title}
                   ></LazyLoadImage>
                 </div>
