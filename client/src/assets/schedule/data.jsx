@@ -4503,7 +4503,7 @@ export const data = {
     {
       'Event Name': 'F!ROSH GAMES + D!YE STATION',
       'Event Description':
-        'Frosh Games: Compete against other frosh groups in the craziest competitions imaginable.\nDye: When I say purple you say purple! Where F!rosh and Leedurs alike dye their bodies (or parts thereof) purple. The colour purple represents great significance in the traditions of engineering schools across Canada.',
+        'Frosh Games: Compete against other frosh groups in the craziest competitions imaginable.<br />Dye: When I say purple you say purple! Where F!rosh and Leedurs alike dye their bodies (or parts thereof) purple. The colour purple represents great significance in the traditions of engineering schools across Canada.',
       'Start Time': '10:30 AM',
       'End Time': '12:30 PM',
       Color: 'purple',
@@ -4517,7 +4517,7 @@ export const data = {
     {
       'Event Name': 'F!ROSH GAMES + D!YE STATION',
       'Event Description':
-        'Frosh Games: Compete against other frosh groups in the craziest competitions imaginable.\nDye: When I say purple you say purple! Where F!rosh and Leedurs alike dye their bodies (or parts thereof) purple. The colour purple represents great significance in the traditions of engineering schools across Canada.',
+        'Frosh Games: Compete against other frosh groups in the craziest competitions imaginable.<br />Dye: When I say purple you say purple! Where F!rosh and Leedurs alike dye their bodies (or parts thereof) purple. The colour purple represents great significance in the traditions of engineering schools across Canada.',
       'Start Time': '1:30 AM',
       'End Time': '3:00 PM',
       Color: 'purple',
@@ -4565,7 +4565,7 @@ export const data = {
     {
       'Event Name': 'CAMPUS TOUR & BUILD BATTLE',
       'Event Description':
-        "Campus Tour: Be guided by your F!rosh Leedurs on a tour of our gorgeous campus, showing you all the best places to study, grab food, participate in extracurriculars, and nap! \nBuild Battle: Your first of many design challenges at UofT Engineering, except its probably the one of the coolest ones you do! Work with your frosh group to tackle your piece of the puzzle for this year's unique design challenge, coming together to build something truly amazing as a 2T8 class!",
+        "Campus Tour: Be guided by your F!rosh Leedurs on a tour of our gorgeous campus, showing you all the best places to study, grab food, participate in extracurriculars, and nap! <br />Build Battle: Your first of many design challenges at UofT Engineering, except its probably the one of the coolest ones you do! Work with your frosh group to tackle your piece of the puzzle for this year's unique design challenge, coming together to build something truly amazing as a 2T8 class!",
       'Start Time': '11:00 AM',
       'End Time': '12:10 PM',
       Color: 'yellow',
@@ -4587,7 +4587,7 @@ export const data = {
     {
       'Event Name': 'CAMPUS TOUR & BUILD BATTLE',
       'Event Description':
-        "Campus Tour: Be guided by your F!rosh Leedurs on a tour of our gorgeous campus, showing you all the best places to study, grab food, participate in extracurriculars, and nap! \nBuild Battle: Your first of many design challenges at UofT Engineering, except its probably the one of the coolest ones you do! Work with your frosh group to tackle your piece of the puzzle for this year's unique design challenge, coming together to build something truly amazing as a 2T8 class!",
+        "Campus Tour: Be guided by your F!rosh Leedurs on a tour of our gorgeous campus, showing you all the best places to study, grab food, participate in extracurriculars, and nap! <br />Build Battle: Your first of many design challenges at UofT Engineering, except its probably the one of the coolest ones you do! Work with your frosh group to tackle your piece of the puzzle for this year's unique design challenge, coming together to build something truly amazing as a 2T8 class!",
       'Start Time': '3:00 PM',
       'End Time': '6:00 PM',
       Color: 'yellow',
@@ -4616,6 +4616,7 @@ export const data = {
   'WEDNESDAY AUGUST 28': [
     {
       'Event Name': 'FACULTY EVENTS',
+      'Event Description': `Check out more information about Faculty Events here: <a href="#other-events">Other Events</a>`,
       'Start Time': ' ',
       'End Time': ' ',
       Color: 'gray',
@@ -4639,6 +4640,7 @@ export const data = {
   'THURSDAY AUGUST 29': [
     {
       'Event Name': 'FACULTY EVENTS',
+      'Event Description': `Check out more information about Faculty Events here: <a href="#other-events">Other Events</a>`,
       'Start Time': ' ',
       'End Time': ' ',
       Color: 'gray',
