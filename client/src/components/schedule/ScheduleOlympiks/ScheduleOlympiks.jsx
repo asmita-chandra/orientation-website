@@ -67,7 +67,7 @@ const ScheduleComponent = () => {
         </div>
         <div className="schedule-container-dates desktop-only">
           {Object.keys(scheduleData).map((day, index) => {
-            const [dayOfWeek, ...locationParts] = day.split('-');
+            const [dayOfWeek, ...locationParts] = day.split(' - ');
             const location = locationParts.join(' ');
 
             return (
