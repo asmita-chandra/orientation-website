@@ -53,19 +53,26 @@
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -127,12 +134,18 @@
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -281,19 +294,26 @@ export const dataBeta = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -355,12 +375,18 @@ export const dataBeta = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -509,19 +535,26 @@ export const dataChi = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -567,12 +600,18 @@ export const dataChi = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -721,19 +760,26 @@ export const dataDelta = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -779,12 +825,18 @@ export const dataDelta = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -925,19 +977,26 @@ export const dataGamma = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -983,12 +1042,18 @@ export const dataGamma = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -1137,19 +1202,26 @@ export const dataIota = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -1211,12 +1283,18 @@ export const dataIota = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -1357,19 +1435,26 @@ export const dataKappa = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -1431,12 +1516,18 @@ export const dataKappa = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -1585,19 +1676,26 @@ export const dataLambda = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -1659,12 +1757,18 @@ export const dataLambda = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -1813,19 +1917,26 @@ export const dataNu = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -1887,12 +1998,18 @@ export const dataNu = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -2033,19 +2150,26 @@ export const dataOmega = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -2099,12 +2223,18 @@ export const dataOmega = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -2253,19 +2383,26 @@ export const dataOmicron = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -2327,12 +2464,18 @@ export const dataOmicron = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -2481,19 +2624,26 @@ export const dataPhi = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -2547,12 +2697,18 @@ export const dataPhi = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -2701,19 +2857,26 @@ export const dataPi = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -2759,12 +2922,18 @@ export const dataPi = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -2913,19 +3082,26 @@ export const dataPsi = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -2971,12 +3147,18 @@ export const dataPsi = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -3125,19 +3307,26 @@ export const dataRho = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -3199,12 +3388,18 @@ export const dataRho = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -3353,19 +3548,26 @@ export const dataSigma = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -3427,12 +3629,18 @@ export const dataSigma = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -3581,19 +3789,26 @@ export const dataTau = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -3655,12 +3870,18 @@ export const dataTau = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -3809,19 +4030,26 @@ export const dataTheta = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -3867,12 +4095,18 @@ export const dataTheta = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -4021,19 +4255,26 @@ export const dataUpsilon = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -4087,12 +4328,18 @@ export const dataUpsilon = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -4233,19 +4480,26 @@ export const dataZeta = {
       Color: 'purple',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 5:30 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:30:00 a1/p1',
-      'End Time': 'Late',
+      'Event Name': 'UNWIND NIGHT',
+      'Event Location': 'GB303',
+      'Start Time': '6:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'TUESDAY AUGUST 27': [
     {
       'Event Name': 'MEET WITH YOUR GROUP',
-      'Start Time': '8:30:00 a1/p1',
-      'End Time': '9:00:00 a1/p1',
+      'Event Location': 'Front Campus',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
@@ -4291,12 +4545,18 @@ export const dataZeta = {
       Color: 'green',
     },
     {
-      'Event Name': 'NITELIFE',
-      'Event Description':
-        "You thought F!rosh week stopped at 6:00 pm? Think again we have activities every day of F!rosh Week for you to engage in! The Nitelife event schedule can be found <a href='https://drive.google.com/file/d/1-C3Pq7neNUuPlIC5an4W031vWLajS1HD/view'>here</a>.",
-      'Start Time': '18:00:00 a1/p1',
-      'End Time': 'late',
+      'Event Name': 'TOTES & TRIVIA',
+      'Event Location': 'GB303',
+      'Start Time': '7:00 PM',
+      'End Time': '9:00 PM',
       Color: 'dark-purple',
+    },
+    {
+      'Event Name': '****',
+      'Event Location': 'The Pit',
+      'Start Time': '6:00 PM',
+      'End Time': '11:00 PM',
+      Color: 'purple',
     },
   ],
   'WEDNESDAY AUGUST 28': [
@@ -4451,8 +4711,8 @@ export const data = {
     {
       'Event Name': 'MEET WITH YOUR GROUP',
       'Event Location': 'Front Campus',
-      'Start Time': '8:30 AM',
-      'End Time': '9:00 AM',
+      'Start Time': '8:15:00 a1/p1',
+      'End Time': '8:45:00 a1/p1',
       Color: 'purple',
     },
     {
