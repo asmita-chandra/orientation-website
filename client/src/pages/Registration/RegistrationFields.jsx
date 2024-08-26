@@ -53,7 +53,7 @@ export const fields = {
       placeholder: 'john.doe@email.com',
       label: 'Email',
       isRequiredInput: true,
-      noEdit: true,
+      noEdit: false,
     },
     firstName: {
       type: 'text',
@@ -183,7 +183,7 @@ export const fields = {
       className: 'half-width-input',
       initialSelectedIndex: 0,
       isRequiredInput: true,
-      noEdit: true,
+      noEdit: false,
       localStorageKey: 'registration-discipline',
     },
     phoneNumberLabel: {
@@ -417,7 +417,7 @@ export const fields = {
       initialSelectedIndex: 1,
       className: 'half-width-input',
       isRequiredInput: true,
-      noEdit: true,
+      noEdit: false,
       localStorageKey: 'registration-shirtSize',
     },
     attendingScunt: {
@@ -515,13 +515,13 @@ export const fields = {
       noEdit: false,
       localStorageKey: 'registration-marketingMore',
       isDisabled: true, // to initially set to disabled until 'Other' is clicked
-      validation: (value) => {
-        if (value.length > 100) {
-          return 'Please use less than 100 characters';
-        } else {
-          return true;
-        }
-      },
+      // validation: (value) => {
+      //   if (value.length > 100) {
+      //     return 'Please use less than 100 characters';
+      //   } else {
+      //     return true;
+      //   }
+      // },
     },
   },
 };
