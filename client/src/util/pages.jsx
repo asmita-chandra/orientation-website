@@ -29,6 +29,7 @@ import { PageResubscribe } from '../pages/Resubscribe/Resubscribe';
 import { ScuntJudges } from '../pages/ScuntJudges/ScuntJudges';
 import { ScuntLeaderboard } from '../pages/ScuntLeaderboard/ScuntLeaderboard';
 import { FroshRetreat } from '../pages/FroshRetreat/FroshRetreat';
+import { FroshOlympiks } from '../pages/FroshOlympiks/FroshOlympiks';
 import { PagePaymentSuccess } from '../pages/PagePaymentSuccess/PagePaymentSuccess';
 import { ScuntGameSettings } from '../pages/ScuntGameSettings/ScuntGameSettings';
 import { PageScuntMissionsDashboard } from '../pages/ScuntMissionsDashboard/ScuntMissionsDashboard';
@@ -197,6 +198,16 @@ export const pages = {
         </AuthorizedPage>
       ),
       path: '/frosh-retreat',
+      includeFooter: true,
+    },
+    {
+      label: 'frosh-olympiks',
+      component: (
+        <AuthorizedPage>
+          <FroshOlympiks />
+        </AuthorizedPage>
+      ),
+      path: '/frosh-olympiks',
       includeFooter: true,
     },
     {

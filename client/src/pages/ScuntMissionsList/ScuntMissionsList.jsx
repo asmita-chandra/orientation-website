@@ -301,7 +301,9 @@ const PageScuntMissionsListShow = () => {
       <div className="scunt-missions-header">
         <h2>WANT ANOTHER WAY TO EARN POINTS?</h2>
         <div className="scunt-missions-header-link">
-          <Link to={'/skule-hunt-judges'}>Don&apos;t forget to bribe the judges!</Link>
+          <Link to={'/skule-hunt-judges'}>
+            Don&apos;t forget you can get bonus points from the judges!
+          </Link>
         </div>
         <div className="scunt-missions-judging-station-info">
           <img
