@@ -2,25 +2,35 @@ import {
   data,
   dataAlpha,
   dataBeta,
+  dataChi,
+  dataDelta,
+  dataGamma,
   dataIota,
+  dataKappa,
+  dataLambda,
+  dataNu,
+  dataOmega,
+  dataOmicron,
   dataPhi,
+  dataPi,
   dataPsi,
   dataRho,
-  dataZeta,
-  dataGamma,
-  dataOmega,
-  dataChi,
-  dataUpsilon,
-  dataPi,
-  dataNu,
-  dataDelta,
   dataSigma,
   dataTau,
-  dataKappa,
   dataTheta,
-  dataLambda,
-  dataOmicron,
+  dataUpsilon,
+  dataZeta,
 } from '../../assets/schedule/data';
+import {
+  dataMSE,
+  dataMech,
+  dataCivMin,
+  dataIndy,
+  dataTrackOne,
+  dataECE,
+  dataEngSci,
+  dataChem,
+} from '../../assets/olympiksSchedule/data';
 
 // function checks if email is valid and sends a reset password email
 export async function resetPassword(email) {
@@ -86,6 +96,31 @@ export function getFroshGroupSchedule(froshGroup) {
     return dataLambda;
   } else if (froshGroup === 'Omicron') {
     return dataOmicron;
+  } else {
+    return data;
+  }
+}
+
+export function getDisciplineOlympikSchedule(discipline) {
+  // return data; // for now, return the default schedule
+  if (discipline === 'Chemical') {
+    return dataChem;
+  } else if (discipline === 'Civil') {
+    return dataCivMin;
+  } else if (discipline === 'Electrical & Computer') {
+    return dataECE;
+  } else if (discipline === 'Engineering Science') {
+    return dataEngSci;
+  } else if (discipline === 'Industrial') {
+    return dataIndy;
+  } else if (discipline === 'Materials') {
+    return dataMSE;
+  } else if (discipline === 'Mechanical') {
+    return dataMech;
+  } else if (discipline === 'Mineral') {
+    return dataCivMin;
+  } else if (discipline === 'Track One (Undeclared)') {
+    return dataTrackOne;
   } else {
     return data;
   }
