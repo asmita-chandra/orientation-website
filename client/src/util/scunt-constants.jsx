@@ -1,11 +1,11 @@
 export const okayToInviteToScunt = false;
-export const scuntDiscord = 'https://discord.gg/mRutbwuCK9';
+export const scuntDiscord = 'https://discord.gg/3mbFPvE9j6';
 export const scuntDate = 'August 28, 2024 18:00:00';
 export const aboutScunt = `
   <h2>THE H!UNT</h2>
   <h3>WHAT IS SKULE™ HUNT?</h3>
   <p>
-    The Skule™ Hunt is the best part of F!rosh Week (we promise we aren’t biased)! It’s a chaos filled event where you and your team compete against other F!rosh to get as many points as you possibly can. Your team gains points by completing <a href='/skule-hunt-missions'>missions</a> and getting them judged by our super judgy judges (judging stations are located in the Pit). The top three teams mayyyy also get something special on top of well-deserved bragging rights ;)
+    Skule™ Hunt is the best part of F!rosh Week (we promise we aren’t biased)! It’s a chaos filled event where you and your team compete against other F!rosh to get as many points as you possibly can. Your team gains points by completing <a href='/skule-hunt-missions'>missions</a> and getting them judged by our super judgy judges (judging stations are located in the Pit). The top teams mayyyy also get something special on top of well-deserved bragging rights ;)
   </p>
    
 `;
@@ -13,7 +13,7 @@ export const rules = {
   start: [
     {
       title: 'Eligibility',
-      sub: 'To compete in the Skule™ Hunt, one must be:',
+      sub: 'To compete in Skule™ Hunt, one must be:',
       items: [
         'Human, or near human (Engineering Science students will be accepted).',
         'A F!rosh (2T8!).',
@@ -26,8 +26,8 @@ export const rules = {
       sub: 'The following applies for registration:',
       items: [
         'Registration will be done through the same portal as the regular F!rosh Week registration.',
-        'It will conclude the same day F!rosh Week registration does, Sunday August 25th right before F!rosh Week.',
-        'It will be a checkbox on that form, and you can register retroactively by editing your responses on that website.',
+        'It will conclude Tuesday night at 11:59 PM.',
+        'There is an option in your registration profile to indicate your participation in the event. By default, you have been opted in. To opt out, visit the <a href="/profile-edit">profile edit</a> page.',
       ],
     },
     {
@@ -35,7 +35,7 @@ export const rules = {
       sub: 'The team structure of Skule™ Hunt will be as follows:',
       items: [
         'Contestants will be assigned randomly to 1 of 10 teams to approximate fairness prior to the event.',
-        'Each team will consist of 2 Head Leedurs and a number of Leedurs.',
+        'Each team will consist of 2 Skule™ Hunt Leedurs and a number of Leedurs.',
         'Each team will be identified by a number and a team name. The number will be used to identify your team during judging, and the team name will appear on the leaderboard.',
       ],
     },
@@ -43,7 +43,7 @@ export const rules = {
       title: 'Event Schedule',
       sub: 'The timing of Skule™ Hunt will be as follows:',
       items: [
-        'The event shall begin on Wednesday, August 28th at 6:00 PM EST. At this time, orientation.skule.ca/scunt will go live with the list. Oh yeah and the judges will rise from their upper year slumber too.',
+        'The event shall begin on Wednesday, August 28th at 6:00 PM EST. At this time, orientation.skule.ca/skule-hunt will go live with the list. Oh yeah and the judges will rise from their upper year slumber too.',
         'The Royal Wedding will occur at approximately 10:00 PM',
         'The event will end on Wednesday, August 28th at 11:00 PM EST. There will be a 15-minute warning announcement.',
       ],
@@ -58,16 +58,16 @@ export const rules = {
         '<strong>***The item must be on the list.***</strong>',
         'Said item must have been completed by (at minimum) one freshman (F!rosh) from said team. Items completed by Leedurs alone will be ineligible for scoring.<ol><li>Leedurs may present digital evidence to a Judge to submit an item for their team, but there must either be a F!rosh featured in the photo/video, or proof that it was sent to the Leedur by a F!rosh.</li></ol>',
         '<strong>***The item must be on the list.***</strong>',
-        'It is encouraged to let Judges keep physical items brought in person (like a bigass fucking dildo) as part of the Skule™ Hunt unless the items have a significant sentimental value.',
+        'It is encouraged to let Judges keep physical items brought in person as part of the Skule™ Hunt unless the items have a significant sentimental value.',
         '<strong>***The item must be on the list.***</strong>',
         'If there is any mess created by performing an item, it must be cleaned up or you will not get the points.',
         '<strong>***The item must be on the list.***</strong>',
-        'The item should not bring harm to the performant, including but not limited to: physical harm, illness, inebriety, allergic reactions, vomiting, or anything else that requires the attention of Skule™ Patrol. If you believe that doing this item would cause any of this to occur to you, do not do it.',
+        'The item should not bring harm to the performant, including but not limited to: physical harm, illness, inebriety, allergic reactions, vomiting, or anything else that requires the attention of Skule™ Patrol. If you believe that doing this item would cause any of this to occur to you, do not do it. However, Skule Patrol will be available, on campus, throughout the event if needed.',
         '<strong>***The item must be on the list.***</strong>',
         'Read the room. Don’t perform an item that makes anyone in the general public uncomfortable.',
         '<strong>***The item must be on the list.***</strong>',
         'Media consent must be acquired from strangers prior to all videos/photos which involve them. Additionally, do NOT share media involving strangers on social media unless they have explicitly consented to such.',
-        'Alright fine, if you clear it with a particular judge beforehand, you may perform something not on the list to THAT JUDGE IN PARTICULAR as a “Bring a Reward In Beneficial to Expert” (B.R.I.B.E.). But again ONLY if you clear it beforehand, otherwise <b>***The item must be on the list.***</b>',
+        'Alright fine, if you clear it with a particular judge beforehand, you may perform something not on the list to THAT JUDGE IN PARTICULAR for bonus points. But again ONLY if you clear it beforehand, otherwise <b>***The item must be on the list.***</b>',
       ],
     },
     {
@@ -77,15 +77,15 @@ export const rules = {
         'There will be sixteen (16) total judges for Skule™ Hunt.<ol><li>Occasionally, members of the F!rosh Week Executive Team may stand in as judges, during busy periods. </li></ol>',
         'There will be two (2) Judging Stations, one in the Pit and another on the steps of Galbraith Building. Each station will have eight (8) judges.<ol><li>Partway through the evening, the judges will swap stations.</li></ol>',
         'A maximum of three (3) items may be submitted to a single judge by one person at once. This is required both to keep traffic flowing and to eliminate biases from particular judges. <ol><li>If there is a line, the submitter must return to the back of the line upon completion of the three items. </li><li>If there is no line, the submitter must move to a different judge to submit more items. </li><li>Judges and Base Leedurs are entitled to further limit the number of items judged at once if needed, to decrease wait times. </li></ol>',
-        'There will be Skule Patrollers and Base Leedurs at each station to promote safety and control traffic at each station. <ol><li>The Base Leedurs and Patrollers must be obeyed, if they get sad points will be deducted.</li></ol>',
+        'There will be Skule Patrollers at each station to promote safety and control traffic at each station. <ol><li>The Patrollers must be obeyed, if they get sad points will be deducted.</li></ol>',
         'The actual number of points awarded per item will be roughly based on how creative/impressive the judge thinks the item is.<ol><li>Items can be resubmitted to potentially obtain more points. The higher of the multiple submissions will be the one counted.</li><li>If you go particularly above and beyond expectations, there is a slim possibility to earn slightly above the maximum number of points for a given item.</li></ol>',
       ],
     },
     {
       title: 'Bribery',
       items: [
-        'The Judges are unwavering in their tremendously unbiased and fair judging practices. That being said, you might want to check out the Judges page on the website… It is permissible to “Bring a Reward In Beneficial to Expert” (B.R.I.B.E.). <b>No liquid assets or anything else of substantial value</b> should be among your “Rewards”.',
-        'All bribes must follow the same principles as used when pranking. They are as follows:<ol><li>Successful school rivalries, competitions, and pranks are built upon mutual respect for people, property and possessions.</li><li>A notable prank/kidnapping/mascot theft/etc. is one that leaves the affected group thinking "Damn, those crafty bastards!"</li></ol>',
+        'The Judges are unwavering in their tremendously unbiased and fair judging practices. That being said, you might want to check out the Judges page on the website… It is permissible to “Bring a Reward In Beneficial to Expert” for bonus points. <b>No liquid assets or anything else of substantial value</b> should be among your “Rewards”.',
+        'All bonus points must follow the same principles as used when pranking. They are as follows:<ol><li>Successful school rivalries, competitions, and pranks are built upon mutual respect for people, property and possessions.</li><li>A notable prank/kidnapping/mascot theft/etc. is one that leaves the affected group thinking "Damn, those crafty bastards!"</li></ol>',
       ],
     },
     {

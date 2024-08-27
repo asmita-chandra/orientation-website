@@ -142,7 +142,7 @@ export const ScheduleComponentAccordion = ({ scheduleDay, closeAll }) => {
                 <></>
               )}
             </div>
-            <h2>{startTime + ' - ' + endTime}</h2>
+            <h2>{startTime === ' ' && endTime === ' ' ? '' : `${startTime} - ${endTime}`}</h2>
           </div>
         }
         setIsOpen={setIsOpen}
