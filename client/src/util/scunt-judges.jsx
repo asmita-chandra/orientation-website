@@ -1,7 +1,9 @@
+import ashley from '../assets/judges/Ashley.png';
 import ashlyn from '../assets/judges/Ashlyn.png';
 import bhoovi from '../assets/judges/Bhoovi.png';
 import brian from '../assets/judges/Brian.png';
 import carl from '../assets/judges/Carl.png';
+import cochairs from '../assets/judges/CoChairs.png';
 import hamza from '../assets/judges/Hamza.png';
 import jason from '../assets/judges/Jason.png';
 import kiera from '../assets/judges/Kiera.png';
@@ -12,10 +14,17 @@ import nidaa from '../assets/judges/Nidaa.png';
 import reid from '../assets/judges/Reid.png';
 import shosh from '../assets/judges/Shosh.png';
 import tobin from '../assets/judges/Tobin.png';
+import tori from '../assets/judges/Tori.png';
 import tudor from '../assets/judges/Tudor.png';
 import will from '../assets/judges/Will.png';
 
 export const scuntJudges = [
+  {
+    name: 'Co-Chairs 🧭',
+    description: ' ',
+    content: [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    img: cochairs,
+  },
   {
     name: 'Ashlyn ✏️',
     description:
@@ -207,20 +216,21 @@ export const scuntJudges = [
     img: nafew,
   },
   {
-    name: 'Bhoovi ✏️',
+    name: 'Tori ✏️',
     description:
-      'Hey Yall, My name is Bhoovi and I am an Indy 2T6 + PEY, who is very excited to be a Skule™ Hunt Judge this year. Additionally, I am an HL for Lambda a.k.a the most fun frosh group ever, so if you have Yanni (my-co) and I as your HLs, you are very lucky.  I have been fortunate enough to be a part of Frosh, Skule™ Nite and YNCN, so if you have any questions about that (or anything else really), you are welcome to come to me. Lastly, in my free time, I like to nap and read books, and if my step count is too low then convince myself to go on a walk. ',
+      'Hi y’all, I’m Tori and I’m an ECE 2T5. I’m Filipino (find FEAST at clubs fair!) but born and raised in Mississauga so I can count up to 2 in Tagalog. Diet coke is my preferred source of hydration, and I can bench a whopping 20 lbs. I help make thermostats for a living (wooo ecobee pey plug)',
     content: [
-      ' Recreate an iconic scene from a film or a tv-show',
-      ' Find me 3 members of YNCN, who were also in Skule Nite ',
-      ' Find me a UofT engineering student who is also in 150 Consulting and convince them to recruit/interview you',
-      ' Eat 3 Tacos from Fresh Burrito (make sure they have extra extra 3x spicy Sauce and do not give a single reaction while eating)',
-      ' Buy me as many things as you can within the $5 limit (You can not spend more than 5 bucks)',
-      ' Find out the city, time and place I was born in',
-      ' Make a music video/TikTok to trending songs -> you are welcome to include me (At least 1 min 30 seconds)',
-      " Find me a man in Finance, A Trust Fund (Not strictly enforced), 6'5 (Over 5'10 is acceptable), Blue eyes (any other colour also acceptable)",
+      ' Lobster',
+      ' Make the 2023 F!rosh recap video (are you the next F!rosh videographer??)',
+      ' Draw my portrait (you only get points if it’s the best I’ve gotten so far)',
+      ' Best Jojo Siwa dance and impression',
+      ' Reenact a scene from the titanic but base it during a different real life tragedy ',
+      ' Make me cringe',
+      ' Let me choose someone from your followers list and like every post on that person’s account',
+      ' Plank for 69.69 seconds',
+      ' Fruit loops (no milk)',
     ],
-    img: bhoovi,
+    img: tori,
   },
   {
     name: 'LC ✏️',
@@ -269,5 +279,21 @@ export const scuntJudges = [
       ' A most fantastical portrait',
     ],
     img: will,
+  },
+  {
+    name: 'Ashley 🖥️',
+    description:
+      'Hi!!! I’m Ashley and I’m an ECE 2T6 + PEY minoring in AI and business. I’m one of the webmasters this year and I’m also tech team director at IEEE UofT! I like video games, listening to music, hackathons, inline skating, and drawing. ',
+    content: [
+      ' DM me the most brainrot reel you can find @ashleyy.leal',
+      ' Get me matcha',
+      ' Give me rock/metal music recs for my playlist (bonus points if it’s from a band/artist I’ve never heard of before)',
+      ' Join the ieee uoft mailing list',
+      ' Draw me a pretty picture of anything related to SKULE culture (materials provided)',
+      ' Bring me a sticker for my laptop!',
+      ' Connect with me on linkedin ',
+      ' Star the frosh website github repo',
+    ],
+    img: ashley,
   },
 ];

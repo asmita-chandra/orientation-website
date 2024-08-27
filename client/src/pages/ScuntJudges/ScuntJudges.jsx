@@ -136,6 +136,7 @@ const ScuntJudgesShow = ({ judges }) => {
       {/* <Header text={'Judges'} underlineDesktop={'265px'} underlineMobile={'180px'}>
         <ScuntLinks />
       </Header> */}
+      <h2 className="legend-text"> Judges ✏️ , TechTeam 🖥️ , Co-Chairs 🧭 </h2>
       <div className="scunt-judges-container">
         {judges.map((judge) => {
           const [clickProfile, setClickProfile] = useState(false);
