@@ -2,7 +2,6 @@
 
 .scunt-judges-container {
   display: grid;
-  //width: 90vw;
   grid-template-columns: repeat(auto-fit, 450px);
   align-items: center;
   justify-items: center;
@@ -15,4 +14,17 @@
   color: var(--white);
   margin-top: 5px;
   font-size: 17px;
+}
+
+.scunt-judges-profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+  object-position: center; /* Center the image within the container */
+}
+
+.legend-text {
+  color: white;
+  text-align: center;
+  margin: 0 auto; /* Center the text horizontally */
 }

@@ -61,7 +61,7 @@ describe('ScuntMissionServices', () => {
       name: 'Skule™ Hunt 2T4 Settings',
       amountOfTeams: 10,
       amountOfStarterBribePoints: 10000,
-      maxAmountPointsPercent: 1.5,
+      maxAmountPointsPercent: 1.3,
       minAmountPointsPercent: 0.5,
       revealJudgesAndBribes: true,
       revealTeams: true,

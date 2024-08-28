@@ -66,8 +66,8 @@ export const rules = {
         '<strong>***The item must be on the list.***</strong>',
         'Read the room. Don’t perform an item that makes anyone in the general public uncomfortable.',
         '<strong>***The item must be on the list.***</strong>',
-        'Media consent must be acquired from strangers prior to all videos/photos which involve them. Additionally, do NOT share media involving strangers on social media unless they have explicitly consented to such.',
-        'Alright fine, if you clear it with a particular judge beforehand, you may perform something not on the list to THAT JUDGE IN PARTICULAR for bonus points. But again ONLY if you clear it beforehand, otherwise <b>***The item must be on the list.***</b>',
+        'Media consent must be acquired from strangers prior to all videos/photos which involve them. Additionally, do NOT share media involving strangers on social media unless they have explicitly consented to such. Do not heckle or harass anybody - ask for their consent for the item beforehand, and ask for their consent when filming as well. Be very mindful very demure, do not do anything that would make anyone uncomfortable.',
+        'Alright fine, if you clear it with a particular judge beforehand, you may perform something not on the list to THAT JUDGE IN PARTICULAR as “Bring a Reward In Beneficial to Expert” for bonus points. But again ONLY if you clear it beforehand, otherwise <b>***The item must be on the list.***</b>',
       ],
     },
     {
@@ -85,12 +85,8 @@ export const rules = {
       title: 'Bribery',
       items: [
         'The Judges are unwavering in their tremendously unbiased and fair judging practices. That being said, you might want to check out the Judges page on the website… It is permissible to “Bring a Reward In Beneficial to Expert” for bonus points. <b>No liquid assets or anything else of substantial value</b> should be among your “Rewards”.',
-        'All bonus points must follow the same principles as used when pranking. They are as follows:<ol><li>Successful school rivalries, competitions, and pranks are built upon mutual respect for people, property and possessions.</li><li>A notable prank/kidnapping/mascot theft/etc. is one that leaves the affected group thinking "Damn, those crafty bastards!"</li></ol>',
+        'All bonus points must follow the same principles as used when pranking. They are as follows:<ol><li>Successful school rivalries, competitions, and pranks are built upon mutual respect for people, property and possessions.</li><li>A notable prank/mascot theft/etc. is one that leaves the affected group thinking "Damn, those crafty bastards!"</li></ol>',
       ],
-    },
-    {
-      title: 'COVID-19 Protocols',
-      sub: 'All participants are required to follow any COVID-19 Safety Protocols as outlined by the University of Toronto. Regular hand sanitizing and mask-wearing is encouraged, especially in crowded areas. ',
     },
     {
       title: 'The Royal Wedding',
@@ -101,20 +97,6 @@ export const rules = {
       sub: 'The group that accumulates the most points, in the absence of any obvious cheating and/or other misconduct, by the end of the night shall be declared the winners.',
     },
     {
-      title: 'Kidnapping',
-      sub: 'Any kidnapping requested by judges that occurs during the Skule™ Hunt must follow this code:',
-      items: [
-        'In accordance with the second guiding principle the kidnapping should be well planned. Knowing in advance how the kidnapee will respond, or pre-staging the kidnapping is essential for avoiding conflict.',
-        'Any use of force must desist if the kidnapee is unwilling to participate.',
-        'Kidnapees should be fed adequate, if not excessive, amounts of food and beverages.',
-        'Conditions for release should be feasible and reasonable. It should also be possible to meet these conditions within a time period of 24 hours.',
-        'Emergency release should be given in the case of impeding midterms, exams or other similar situations.',
-        'In the case where the guidelines of the “Code” have been respected, both schools should do their best to keep the ensuing discussion/debate between the student societies. If the “Code” was disregarded, however, the victim school has every right to alert the faculty, campus authorities or city police.',
-        'Kidnapped individuals can be ransomed to the judges for points over Discord. The amount of points is non-negotiable.',
-        'Each kidnapping may only be completed once during the event, unless the kidnapee consents otherwise. So if they tell you that they have already been kidnapped, leave them alone.',
-      ],
-    },
-    {
       title: 'Skule™ Hunt Chairs',
       sub: 'Oh Hey, that’s us!',
       items: [
@@ -123,7 +105,7 @@ export const rules = {
         'The Chairs have the reserved right to deduct up to infinity points from any team found to be in violation of Section 12 rules (Kidnapping) as laid out above or for breaking the law. This is only an option for situations that can be resolved to the satisfaction of all parties.',
         'The Chairs have the reserved right to disqualify teams or individuals that are found to be in irreparable breach of these rules. Furthermore, it is the Chairs’ responsibilities to bar judges that have proven to be in breach of their expected conduct.',
         'We may decide to have certain “requests” throughout the evening. Do keep in mind that we can give out as many points as we please while the judges have only so many… ',
-        'Our names are Tyler and William. You can probably find out more about us if you try.',
+        'Our names are Emaan and Melanie. You can probably find out more about us if you try.',
       ],
     },
     {

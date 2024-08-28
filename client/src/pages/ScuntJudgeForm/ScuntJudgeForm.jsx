@@ -409,7 +409,7 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
     }
   }, [missionStatus]);
 
-  const getMissionSearchName = (searchName) => {
+  const getMissionSearchName = (searchName, category) => {
     if (searchName === '') {
       setSearchedMissions([]);
       return;
@@ -417,7 +417,11 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
     const output = [];
     for (let mission of missions) {
       if (mission?.name?.toLowerCase().includes(searchName.toLowerCase())) {
-        output.push(mission);
+        if (currentCategory == 'Select Category') {
+          output.push(mission);
+        } else {
+          if (mission?.category == currentCategory) output.push(mission);
+        }
       }
     }
     setSearchedMissions(output);
@@ -434,6 +438,31 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
     }
     getMissionSearchName('');
   };
+
+  const missionCategories = [
+    'Select Category',
+    '✨ENCHANTED✨',
+    'B O U N D L E S S',
+    'But can you do THIS',
+    'Getting even STEAMier!',
+    'Getting STEAMy (arts and crafts)',
+    'Myhal and other nicely designed buildings',
+    'Ocomm',
+    'Ok Zoomer',
+    'Pop CULTured',
+    'S-K-U-L-E, Engineering U of T!',
+    'Skuligans at Skule Again??',
+    'Tales from time immemorial',
+    'The Classics',
+    'The Royal Wedding',
+    'This is some serious gourmet shit!',
+    'Turrono-wide items',
+    'Walk walk fashion baby',
+    'We live in a(n engineering) society',
+    'Wholesome 100',
+  ];
+
+  const [currentCategory, setCurrentCategory] = useState(missionCategories[0]);
 
   return (
     <>
@@ -462,6 +491,18 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
       />
       <h2>Mission Points</h2>
       <p className="text-input-title">{'Search for a mission'}</p>
+
+      <div style={{ width: '100%' }}>
+        <Dropdown
+          initialSelectedIndex={0}
+          values={missionCategories}
+          onSelect={(value) => {
+            setCurrentCategory(value);
+          }}
+          isDisabled={false}
+        />
+      </div>
+
       <div className="small-width-input">
         <TextInput
           clearText={clearText}
@@ -480,6 +521,7 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
           }}
         />
       </div>
+
       <div className="fill-remaining-width-input">
         <TextInput
           clearText={clearText}
@@ -489,7 +531,7 @@ const ScuntMissionSelection = ({ missions, teams, teamObjs }) => {
           onChange={(value) => {
             if (hasQRScanned === true) setHasQRScanned(false);
             setAssignedMission(undefined);
-            getMissionSearchName(value);
+            getMissionSearchName(value, currentCategory);
           }}
           onEnterKey={(value) => {
             if (hasQRScanned === true) setHasQRScanned(false);

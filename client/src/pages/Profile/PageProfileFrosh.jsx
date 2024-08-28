@@ -491,7 +491,7 @@ export const ProfilePageScuntTeam = () => {
   if (!isRegistered || !scuntSettings || !scuntSettings?.revealTeams) return null;
   return (
     <div className="profile-page-scunt-team profile-page-side-section">
-      <h3>Your Scunt Team:</h3>
+      <h3>YOUR SKULE™ HUNT TEAM:</h3>
       <h2>
         <b>{scuntTeam ? scuntTeam.name : null}</b>
       </h2>

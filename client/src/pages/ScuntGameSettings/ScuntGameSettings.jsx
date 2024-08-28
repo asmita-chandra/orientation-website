@@ -43,8 +43,8 @@ const scuntSettingsInfo = [
     parameter: 'Max Amount of Points',
     key: 'maxAmountPointsPercent',
     description:
-      'The max percentage of points allowed to be given out (enter as decimal value: 1.5 = 150%)',
-    placeholder: 1.5,
+      'The max percentage of points allowed to be given out (enter as decimal value: 1.3 = 130%)',
+    placeholder: 1.3,
   },
   {
     parameter: 'Min Amount of Points',
@@ -103,7 +103,7 @@ const ScuntGameSettings = () => {
     name: 'Skule™ Hunt 2T4 Settings',
     amountOfTeams: 10,
     amountOfStarterBribePoints: 2500,
-    maxAmountPointsPercent: 1.5,
+    maxAmountPointsPercent: 1.3,
     minAmountPointsPercent: 0.5,
     revealJudgesAndBribes: true,
     revealTeams: true,

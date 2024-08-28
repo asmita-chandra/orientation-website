@@ -63,7 +63,6 @@ const ScuntCreateMissions = () => {
     category: '',
     points: '',
     isHidden: false,
-    isJudgingStation: false,
   };
 
   const { setSnackbar } = useContext(SnackbarContext); // use Snackbar to send messages --> successfull hidden/deleted, etc.
