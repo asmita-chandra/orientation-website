@@ -190,7 +190,7 @@ const ProfilePageFroshScuntMessage = () => {
   const isRegistered = useSelector(registeredSelector);
   const { darkMode } = useContext(DarkModeContext);
 
-  if (!isRegistered || !scuntSettings || !scuntSettings?.revealTeams) {
+  if (!isRegistered || !scuntSettings) {
     return null;
   }
 
