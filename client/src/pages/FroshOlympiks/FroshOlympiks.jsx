@@ -6,6 +6,9 @@ import { useSelector } from 'react-redux';
 import { ScheduleComponent } from '../../components/schedule/ScheduleOlympiks/ScheduleOlympiks';
 import useAxios from '../../hooks/useAxios';
 const { axios } = useAxios();
+import waveBottom from '../../assets/misc/wave-reverse.png';
+import waveBottomDarkMode from '../../assets/darkmode/misc/wave-reverse.png';
+import { DarkModeContext } from '../../util/DarkModeProvider';
 
 export const FroshOlympiks = () => {
   const navigate = useNavigate();
@@ -26,6 +29,7 @@ export const FroshOlympiks = () => {
 
 const OlympiksSchedule = () => {
   const { user } = useSelector(userSelector);
+  const { darkMode, setDarkModeStatus } = useContext(DarkModeContext);
 
   const disciplineSignUpLinks = {
     Materials: 'https://www.signupgenius.com/go/10C0A4CAFA92FA3FAC07-50910872-msefrosh',
@@ -55,11 +59,20 @@ const OlympiksSchedule = () => {
         </div>
         <ScheduleComponent />
       </div>
-      <img
-        src="../../assets/misc/wave-reverse.png"
+      {darkMode ? (
+        <img
+          className="wave-image home-page-bottom-wave-image"
+          src={waveBottomDarkMode}
+          alt="wave"
+        ></img>
+      ) : (
+        <img className="wave-image home-page-bottom-wave-image" src={waveBottom} alt="wave"></img>
+      )}
+      {/* <img
+        src={reverseWave}
         className="wave-image home-page-bottom-wave-image"
         alt="wave-img"
-      ></img>
+      ></img> */}
     </>
   );
 };
