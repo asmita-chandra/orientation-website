@@ -21,8 +21,20 @@ import will from '../assets/judges/Will.png';
 export const scuntJudges = [
   {
     name: 'Co-Chairs 🧭',
-    description: ' ',
-    content: [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    description:
+      'YOOOO, it’s Emaan and Melanie!! We’re THE connoisseurs behind this wild and crazy event :) You can probably beg us for points, but since we’re assuming (unlike us) you want to keep your dignity intact - here are some potential bribes! ',
+    content: [
+      ' Create the backstory for Melanie’s fake frosh adventures next year (the crazier the better)',
+      ' Pitch what role Emaan should have for 2t5 Frosh Week (her last one!) ',
+      ' Guess a song in our “On Repeat” playlist on Spotify',
+      ' Friendship bracelets for us and you -  so we match with you!',
+      ' Send Emaan BeReals with as many people as possible during Skule™ Hunt (more people, more points! (bonus points if she’s in them too!))',
+      ' Build Melanie an indestructible water bottle that won’t break no matter how many times she drops it (bonus points if its insulated)',
+      ' A signed letter from as many Judges and HSLs as you can that says that Skule™ Hunt is their favorite event',
+      ' Improve Melanie’s dogshit immune system',
+      ' Make us crosswords!',
+      ' Tell us your favorite parts of The Hunt <3',
+    ],
     img: cochairs,
   },
   {
