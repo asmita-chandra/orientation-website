@@ -201,6 +201,8 @@ const ScuntAllMissions = () => {
   const items = ['true', 'false'];
 
   const handleSubmit = async () => {
+    console.log('from:', fromMission, 'to:', toMission, 'visibility:', visibilty);
+
     if (toMission == '' || fromMission == '') {
       setSnackbar('Please input required fields', true);
     } else if (toMission < fromMission) {

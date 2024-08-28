@@ -1,12 +1,10 @@
 import Alumni from '../assets/sponsors/Alumni.jpg';
-import Neo from '../assets/sponsors/Neo.jpg';
-import Coco from '../assets/sponsors/Coco.jpg';
 import OSPE from '../assets/sponsors/OSPE.jpg';
 import PEO from '../assets/sponsors/PEO.png';
-import UTSU from '../assets/sponsors/UTSU.jpg';
-import Mogu from '../assets/sponsors/MoguMogu.png';
 import Nani from '../assets/sponsors/Nanis.png';
-import Longos from '../assets/sponsors/Longos.jpg';
+import Longos from '../assets/sponsors/Longos.png';
+import Troost_iLead from '../assets/sponsors/Troost_iLead.jpg';
+import Panago from '../assets/sponsors/Panago.png';
 
 export const sponsors = [
   {
@@ -17,6 +15,20 @@ export const sponsors = [
     label: 'Diamond sponsor: Alumni Office', // the label when user hovers on image in 'View All' state
   },
   {
+    website: 'https://www.panago.com/',
+    image: Panago,
+    scale: 0.82,
+    rank: 'diamond',
+    label: 'Diamond sponsor: Panago',
+  },
+  {
+    website: 'https://ospe.on.ca/',
+    image: OSPE,
+    scale: 0.82,
+    rank: 'silver',
+    label: 'Silver sponsor: OSPE',
+  },
+  {
     website: 'https://www.peo.on.ca/',
     image: PEO,
     scale: 0.82,
@@ -24,6 +36,7 @@ export const sponsors = [
     label: 'Bronze sponsor: PEO',
   },
   {
+    website: 'https://www.nanisgelato.com/',
     image: Nani,
     scale: 0.82,
     rank: 'bronze',
@@ -36,38 +49,11 @@ export const sponsors = [
     rank: 'bronze',
     label: 'Bronze sponsor: Longos',
   },
-  // {
-  //   website: 'https://ospe.on.ca/',
-  //   image: OSPE,
-  //   scale: 0.82,
-  //   rank: 'bronze',
-  //   label: 'Bronze sponsor: OSPE',
-  // },
-  // {
-  //   image: Mogu,
-  //   scale: 0.82,
-  //   rank: 'bronze',
-  //   label: 'Bronze sponsor: Mogu',
-  // },
-  // {
-  //   website: 'https://www.neomaterials.com/',
-  //   image: Neo,
-  //   scale: 0.7,
-  //   rank: 'gold',
-  //   label: 'Gold sponsor: Neo Performance',
-  // },
-  // {
-  //   website: 'https://www.cocofreshtea.ca/',
-  //   image: Coco,
-  //   scale: 0.7,
-  //   rank: 'gold',
-  //   label: 'Silver sponsor: Coco',
-  // },
-  // {
-  //   website: 'https://www.utsu.ca/',
-  //   image: UTSU,
-  //   scale: 0.7,
-  //   rank: 'bronze',
-  //   label: 'Bronze sponsor: UTSU',
-  // },
+  {
+    website: 'https://ilead.engineering.utoronto.ca/',
+    image: Troost_iLead,
+    scale: 0.82,
+    rank: 'bronze',
+    label: 'Bronze sponsor: Troost iLead',
+  },
 ];

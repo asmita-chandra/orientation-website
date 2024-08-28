@@ -20,7 +20,12 @@ import { DarkModeContext } from '../../util/DarkModeProvider';
 import { useSelector } from 'react-redux';
 import { loggedInSelector, userSelector } from '../../state/user/userSlice';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Header } from '../../components/text/Header/Header';
+import { otherEventsData } from './otherevents';
+
 import ProgressiveImage from '../../components/progressiveImg/ProgressiveImg';
+import facultylogo from '../../assets/misc/facultylogo.png';
+import bsologo from '../../assets/misc/bsologo.svg';
 
 const PageHome = () => {
   return (
@@ -28,6 +33,7 @@ const PageHome = () => {
       <HomePageHeader />
       <HomePageTimeline />
       <HomePageSchedule />
+      <PageAbout />
       <HomePageSponsors />
     </>
   );
@@ -209,21 +215,54 @@ const HomePageSchedule = () => {
   );
 };
 
+const PageAbout = () => {
+  return (
+    <>
+      <div className="aboutus-page-components">
+        <AboutUsSection />
+        {/* <AboutUsTeamsTabWrapper /> */}
+      </div>
+    </>
+  );
+};
+
+const AboutUsSection = () => {
+  return (
+    <Header text="OTHER EVENTS">
+      <>
+        {otherEventsData.map((info, index) => {
+          return (
+            <div className="otherevents-subsubcontainer" key={info.title}>
+              <div className="otherevents-image-container">
+                <LazyLoadImage
+                  className="otherevents-image"
+                  src={index === 0 ? bsologo : facultylogo}
+                  alt={info.title}
+                ></LazyLoadImage>
+              </div>
+              <div className="otherevents-info-container" key={info.title}>
+                <div className="otherevents-info">
+                  <h2 className="otherevents-info-title">{info.title}</h2>
+                  <p
+                    className="otherevents-info-des"
+                    dangerouslySetInnerHTML={{ __html: info.description }}
+                  ></p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </>
+    </Header>
+  );
+};
+
 const HomePageSponsors = () => {
   const { darkMode, setDarkModeStatus } = useContext(DarkModeContext);
   const [viewAll, setViewAll] = useState(false);
 
   return (
     <div className="home-page-sponsors">
-      {darkMode ? (
-        <img
-          src={WaveReverseDarkmode}
-          className="wave-image home-page-bottom-wave-image"
-          alt="wave-img"
-        />
-      ) : (
-        <img src={WaveReverse} className="wave-image home-page-bottom-wave-image" alt="wave-img" />
-      )}
       <h2>OUR SPONSORS</h2>
       <PleaseSponsor />
 

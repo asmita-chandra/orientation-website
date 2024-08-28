@@ -5,7 +5,7 @@ import { getDaysSchedule, getFroshGroupSchedule } from '../../../pages/Profile/f
 import { ButtonSelector } from '../../buttonSelector/buttonSelector/ButtonSelector';
 import { ScheduleComponentAccordion } from '../../schedule/ScheduleHome/ScheduleHome';
 import './ProfilePageSchedule.scss';
-// import { froshGroups } from '../../../util/frosh-groups';
+import { froshGroups } from '../../../util/frosh-groups';
 
 export const ProfilePageSchedule = () => {
   const { user } = useSelector(userSelector);
@@ -33,10 +33,10 @@ export const ProfilePageSchedule = () => {
     return { name: item };
   });
 
-  // const froshGroupNames = [];
-  // for (let froshGroup of froshGroups) {
-  //   froshGroupNames.push(froshGroup?.name);
-  // } // i think this is for leedur page, but not sure where the code went...
+  const froshGroupNames = [];
+  for (let froshGroup of froshGroups) {
+    froshGroupNames.push(froshGroup?.name);
+  } // i think this is for leedur page, but not sure where the code went...
 
   return (
     <div className="profile-page-schedule">
@@ -50,6 +50,11 @@ export const ProfilePageSchedule = () => {
       >
         <h2 className="profile-page-section-header profile-page-section-header-schedule">
           SCHEDULE
+          <h3 className="profile-page-sesction-header profile-page-section-header-schedule-note">
+            *Once you have arrived to F!rosh Week on Monday and Tuesday you do not need to worry
+            about the schedule as it is your head leedurs’ responsibility to keep track of the
+            schedule of events.
+          </h3>
         </h2>
       </div>
       <div className="profile-page-schedule-content">
