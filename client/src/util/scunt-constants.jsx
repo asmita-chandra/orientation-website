@@ -85,7 +85,6 @@ export const rules = {
       title: 'Bribery',
       items: [
         'The Judges are unwavering in their tremendously unbiased and fair judging practices. That being said, you might want to check out the Judges page on the website… It is permissible to “Bring a Reward In Beneficial to Expert” for bonus points. <b>No liquid assets or anything else of substantial value</b> should be among your “Rewards”.',
-        'All bonus points must follow the same principles as used when pranking. They are as follows:<ol><li>Successful school rivalries, competitions, and pranks are built upon mutual respect for people, property and possessions.</li><li>A notable prank/mascot theft/etc. is one that leaves the affected group thinking "Damn, those crafty bastards!"</li></ol>',
       ],
     },
     {
