@@ -56,7 +56,7 @@ const OlympiksSchedule = () => {
         <ScheduleComponent />
       </div>
       <img
-        src="/src/assets/misc/wave-reverse.png"
+        src="../../assets/misc/wave-reverse.png"
         className="wave-image home-page-bottom-wave-image"
         alt="wave-img"
       ></img>
